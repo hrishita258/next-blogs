@@ -1,0 +1,192 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id                String          @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name              String
+  email             String          @unique
+  password          String
+  bio               String?
+  image             String?
+  createdAt         DateTime        @default(now()) @db.Timestamptz()
+  updatedAt         DateTime        @default(now()) @updatedAt @db.Timestamptz()
+  posts             Post[]
+  comments          Comment[]
+  likes             Like[]
+  View              View[]
+  followers         Follow[]        @relation("Followers")
+  following         Follow[]        @relation("Following")
+  bookmarks         Bookmark[]
+  CommentReport     CommentReport[]
+  notifications     Notification[]
+  notificationsRead Notification[]  @relation("NotificationsRead")
+}
+
+model Notification {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  type      String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now()) @db.Timestamptz()
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz()
+  userId    String?  @db.Uuid
+  post      Post?    @relation(fields: [postId], references: [id])
+  postId    String?  @db.Uuid
+  comment   Comment? @relation(fields: [commentId], references: [id])
+  commentId String?  @db.Uuid
+  User      User?    @relation(fields: [userId], references: [id])
+  UserRead  User?    @relation("NotificationsRead", fields: [userId], references: [id], map: "NotificationsRead")
+}
+
+model Follow {
+  id          String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  follower    User     @relation("Followers", fields: [followerId], references: [id])
+  following   User     @relation("Following", fields: [followingId], references: [id])
+  followerId  String   @db.Uuid
+  followingId String   @db.Uuid
+  createdAt   DateTime @default(now()) @db.Timestamptz()
+  updatedAt   DateTime @default(now()) @updatedAt @db.Timestamptz()
+}
+
+model Bookmark {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  userId    String   @db.Uuid
+  postId    String   @db.Uuid
+  user      User     @relation(fields: [userId], references: [id])
+  post      Post     @relation(fields: [postId], references: [id])
+  createdAt DateTime @default(now()) @db.Timestamptz()
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz()
+}
+
+model Post {
+  id           String         @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  title        String
+  content      String
+  slug         String         @unique
+  published    Boolean        @default(false)
+  image        String?
+  bannerImage  String?
+  isPremium    Boolean        @default(false)
+  isFeatured   Boolean        @default(false)
+  isPublic     Boolean        @default(true)
+  authorId     String         @db.Uuid
+  author       User           @relation(fields: [authorId], references: [id])
+  categories   Category[]
+  likes        Like[]
+  tags         Tag[]          @relation("PostTag")
+  PostTag      PostTag[]
+  views        View[]
+  comments     Comment[]      @relation("CommentForPost", map: "CommentForPostTo")
+  Comment      Comment[]
+  Analytics    Analytics[]
+  bookmarks    Bookmark[]
+  Notification Notification[]
+  createdAt    DateTime       @default(now()) @db.Timestamptz()
+  updatedAt    DateTime       @default(now()) @updatedAt @db.Timestamptz()
+}
+
+model Category {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name      String
+  slug      String   @unique
+  createdAt DateTime @default(now()) @db.Timestamptz()
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz()
+  posts     Post[]
+}
+
+model Tag {
+  id        String    @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name      String    @unique
+  posts     Post[]    @relation("PostTag")
+  PostTag   PostTag[]
+  createdAt DateTime  @default(now()) @db.Timestamptz()
+  updatedAt DateTime  @default(now()) @updatedAt @db.Timestamptz()
+}
+
+model PostTag {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  post      Post     @relation(fields: [postId], references: [id])
+  tag       Tag      @relation(fields: [tagId], references: [id])
+  postId    String   @db.Uuid
+  tagId     String   @db.Uuid
+  createdAt DateTime @default(now()) @db.Timestamptz()
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz()
+}
+
+model Comment {
+  id           String          @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  content      String
+  author       User            @relation(fields: [authorId], references: [id], map: "AuthorCommentTo")
+  authorId     String          @db.Uuid
+  post         Post            @relation("CommentForPost", fields: [postId], references: [id], map: "CommentForPostFrom")
+  postId       String          @db.Uuid
+  likes        Like[]
+  Post         Post            @relation(fields: [postId], references: [id])
+  createdAt    DateTime        @default(now()) @db.Timestamptz()
+  updatedAt    DateTime        @default(now()) @updatedAt @db.Timestamptz()
+  replies      Comment[]       @relation("ReplyToComment")
+  replyTo      Comment?        @relation("ReplyToComment", fields: [replyToId], references: [id])
+  replyToId    String?         @db.Uuid
+  reports      CommentReport[]
+  Notification Notification[]
+}
+
+model CommentReport {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  reason    String
+  createdAt DateTime @default(now()) @db.Timestamptz()
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz()
+  comment   Comment  @relation(fields: [commentId], references: [id])
+  commentId String   @db.Uuid
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String   @db.Uuid
+}
+
+model Like {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String   @db.Uuid
+  post      Post?    @relation(fields: [postId], references: [id])
+  postId    String?  @db.Uuid
+  comment   Comment? @relation(fields: [commentId], references: [id])
+  commentId String?  @db.Uuid
+  createdAt DateTime @default(now()) @db.Timestamptz()
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz()
+}
+
+model View {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  createdAt DateTime @default(now()) @db.Timestamptz()
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz()
+  userId    String   @db.Uuid
+  user      User     @relation(fields: [userId], references: [id])
+  postId    String   @db.Uuid
+  post      Post     @relation(fields: [postId], references: [id])
+}
+
+model Analytics {
+  id               String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  postId           String   @db.Uuid
+  post             Post     @relation(fields: [postId], references: [id])
+  pageViews        Int      @default(0)
+  uniqueViews      Int      @default(0)
+  timeOnPage       Float    @default(0)
+  scrollDepth      Float    @default(0)
+  bounceRate       Float    @default(0)
+  exitRate         Float    @default(0)
+  avgTimeOnPage    Float    @default(0)
+  avgScrollDepth   Float    @default(0)
+  trafficSources   String[]
+  deviceTypes      String[]
+  operatingSystems String[]
+  countries        String[]
+  cities           String[]
+  createdAt        DateTime @default(now()) @db.Timestamptz()
+  updatedAt        DateTime @default(now()) @updatedAt @db.Timestamptz()
+}
