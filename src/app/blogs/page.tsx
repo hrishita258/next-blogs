@@ -1,7 +1,7 @@
 const Blogs = () => {
   return (
-    <div className="bg-pink-500">
-      <h1>Blog</h1>
+    <div>
+      <h1 className="text-red-300">Blog</h1>
     </div>
   )
 }
