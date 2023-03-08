@@ -6,7 +6,6 @@ interface Props {
   image: string
 }
 const BecomeAuthor = (Props: Props) => {
-  console.log(Props)
   return (
     <div className="wp-block-ncmaz-core-block-become-author">
       <div className="relative py-16">

@@ -1,7 +1,8 @@
-import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import 'swiper/swiper.min.css'
+
 import Footer from './Components/Footer'
 import Header from './Components/Header'
 import './globals.css'

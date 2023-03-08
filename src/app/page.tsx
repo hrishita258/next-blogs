@@ -12,17 +12,34 @@ async function getHomePageData() {
       }
     }
   })
-  const users = await prisma.user.findMany({})
-  return { posts, users }
+  const users = await prisma.user.findMany({
+    include: {
+      _count: {
+        select: {
+          posts: true
+        }
+      }
+    }
+  })
+  const tags = await prisma.tag.findMany({
+    include: {
+      _count: {
+        select: {
+          PostTag: true
+        }
+      }
+    }
+  })
+  return { posts, users, tags }
 }
 
 export default async function Page() {
   const HomePageData = await getHomePageData()
-  console.log(HomePageData)
   return (
     <div>
       <HomePage
         key={'homepage'}
+        tags={JSON.stringify(HomePageData.tags)}
         posts={JSON.stringify(HomePageData.posts)}
         users={JSON.stringify(HomePageData.users)}
       />

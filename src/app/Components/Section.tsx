@@ -1,9 +1,18 @@
+import React from 'react'
+import { FcNext, FcPrevious } from 'react-icons/fc'
 interface Props {
   title: string
   subtitle: string
   background?: string
   slider?: Boolean
   children?: React.ReactNode
+  handleSwiperNavigation?: (
+    direction: string,
+    prevId: string,
+    nextId: string,
+    swiperState: any
+  ) => void
+  swiperElement?: any
 }
 
 const Section = ({
@@ -11,7 +20,9 @@ const Section = ({
   subtitle,
   slider = false,
   children,
-  background
+  background,
+  handleSwiperNavigation,
+  swiperElement
 }: Props) => {
   return (
     <div>
@@ -31,24 +42,40 @@ const Section = ({
                 </div>
                 {slider ? (
                   <div className="mt-4 hidden sm:flex justify-end sm:ml-2 sm:mt-0 flex-shrink-0">
-                    <div
-                      className="nc-NextPrev flex items-center text-neutral-900 dark:text-neutral-300 space-x-2 relative"
-                      data-nc-id="NextPrev"
-                      data-glide-el="controls"
-                    >
+                    <div className="nc-NextPrev flex items-center text-neutral-900 dark:text-neutral-300 space-x-2 relative">
                       <button
                         className="w-10 h-10 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-6000 dark:hover:border-neutral-500 rounded-full flex items-center justify-center hover:border-neutral-300 disabled:opacity-60 disabled:cursor-not-allowed focus:outline-none"
                         title="Prev"
-                        data-glide-dir="<"
+                        id="topWritersPrev"
+                        onClick={() => {
+                          if (handleSwiperNavigation) {
+                            handleSwiperNavigation(
+                              'prev',
+                              'topWritersPrev',
+                              'topWritersNext',
+                              swiperElement
+                            )
+                          }
+                        }}
                       >
-                        <i className="las la-angle-left"></i>
+                        <FcPrevious />
                       </button>
                       <button
                         className="w-10 h-10 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-6000 dark:hover:border-neutral-500 rounded-full flex items-center justify-center hover:border-neutral-300 disabled:opacity-60 disabled:cursor-not-allowed focus:outline-none"
                         title="Next"
-                        data-glide-dir=">"
+                        id="topWritersNext"
+                        onClick={() => {
+                          if (handleSwiperNavigation) {
+                            handleSwiperNavigation(
+                              'next',
+                              'topWritersPrev',
+                              'topWritersNext',
+                              swiperElement
+                            )
+                          }
+                        }}
                       >
-                        <i className="las la-angle-right"></i>
+                        <FcNext />
                       </button>
                     </div>
                   </div>

@@ -1,32 +1,31 @@
 'use client'
 
-import { User } from '@prisma/client'
+import { Tag } from '@prisma/client'
 import Image from 'next/image'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import {
-  JSXElementConstructor,
-  Key,
-  ReactElement,
-  ReactFragment,
-  ReactPortal,
-  useState
-} from 'react'
+import { Key, useState } from 'react'
 import { Navigation, Pagination } from 'swiper'
 import Section from './Components/Section'
+import HandleSwiperNavigations from './Components/SwiperNavigation'
 
 interface Props {
   posts: any
   users: any
+  tags: any
 }
 
-const HomePage = ({ users, posts }: Props) => {
+const HomePage = ({ users, posts, tags }: Props) => {
   const [homeComponentData, setHomeComponentData] = useState({
     posts: JSON.parse(posts),
-    users: JSON.parse(users)
+    users: JSON.parse(users),
+    tags: JSON.parse(tags)
   })
+
   console.log(homeComponentData)
+
+  const [swiperState, setSwiperState] = useState<any>(null)
 
   return (
     <main className="pb-16 relative overflow-hidden">
@@ -373,6 +372,8 @@ const HomePage = ({ users, posts }: Props) => {
             subtitle={'Say hello to future creator potentials'}
             slider
             background="bg-neutral-100"
+            handleSwiperNavigation={HandleSwiperNavigations}
+            swiperElement={swiperState}
           >
             <div className="flex">
               <Swiper
@@ -382,7 +383,7 @@ const HomePage = ({ users, posts }: Props) => {
                 navigation={true}
                 breakpoints={{
                   390: {
-                    slidesPerView: 3
+                    slidesPerView: 2
                   },
                   550: {
                     slidesPerView: 2
@@ -394,17 +395,18 @@ const HomePage = ({ users, posts }: Props) => {
                     slidesPerView: 4
                   },
                   1280: {
-                    slidesPerView: 6
+                    slidesPerView: 5
                   },
                   1536: {
-                    slidesPerView: 7
+                    slidesPerView: 6
                   }
                 }}
                 modules={[Pagination, Navigation]}
+                onSwiper={s => setSwiperState(s)}
               >
-                {homeComponentData?.users?.map((user: User) => (
+                {homeComponentData?.users?.map((user: any) => (
                   <SwiperSlide key={user.id}>
-                    <div key={user.id} style={{ width: '250px' }}>
+                    <div key={user.id}>
                       <a
                         href="https://ncmaz.chisnghiax.com/author/jaren-nader/"
                         className=" flex flex-col overflow-hidden [ nc-box-has-hover nc-dark-box-bg-has-hover ] hover:!shadow-none"
@@ -412,17 +414,21 @@ const HomePage = ({ users, posts }: Props) => {
                         <div className="relative flex-shrink-0 ">
                           <div>
                             <div className="nc-NcImage flex aspect-w-8 sm:aspect-w-7 aspect-h-5 w-full h-0 overflow-hidden z-0 mabeUrlOk">
-                              <img
-                                src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-3330118.jpeg"
+                              <Image
                                 alt="nc-imgs"
                                 className="object-cover w-full h-full"
                                 loading="lazy"
+                                width={1}
+                                height={1}
+                                src={
+                                  'https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-3330118.jpeg'
+                                }
                               />
                             </div>
                           </div>
                           <div className="absolute top-3 inset-x-3 flex">
                             <div className=" py-1 px-4 bg-neutral-100 dark:bg-neutral-800 rounded-full flex items-center justify-center leading-none text-xs font-medium">
-                              13
+                              {user?._count.posts}
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
@@ -441,11 +447,13 @@ const HomePage = ({ users, posts }: Props) => {
                         </div>
                         <div className="-mt-5 sm:-mt-7 mx-2 mb-5 sm:mb-7 text-center">
                           <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden z-0 text-neutral-100 uppercase font-semibold shadow-inner rounded-full w-10 h-10 sm:w-14 sm:h-14 text-2xl ring-2 ring-white">
-                            <img
+                            <Image
                               className="absolute inset-0 w-full h-full object-cover"
-                              src={user.image}
+                              src={user.image || ''}
                               alt="pcormier"
                               loading="lazy"
+                              width={1}
+                              height={1}
                             />
                             <span className="wil-avatar__name">p</span>
                           </div>
@@ -454,7 +462,7 @@ const HomePage = ({ users, posts }: Props) => {
                               <span className="line-clamp-1">{user.name}</span>
                             </h4>
                             <span className="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">
-                              UX Designer {user.id}
+                              UX Designer
                             </span>
                           </div>
                         </div>
@@ -469,56 +477,81 @@ const HomePage = ({ users, posts }: Props) => {
           {/* third */}
           <Section
             title={' Top trending topics 🎨'}
-            subtitle={' Discover over 115 topics'}
+            subtitle={` Discover over ${homeComponentData?.tags?.length} topics`}
             slider
           >
-            <div className="glide__track" data-glide-el="track">
-              <ul className="glide__slides">
-                <li
-                  className="glide__slide !h-auto"
-                  style={{ width: '227px', marginRight: '16px' }}
-                >
-                  <a
-                    href="https://ncmaz.chisnghiax.com/category/photos/"
-                    className="nc-CardCategory4 flex flex-col "
-                    data-nc-id="CardCategory4"
-                  >
-                    <div className="flex-shrink-0 relative w-full aspect-w-7 aspect-h-5 h-0 rounded-3xl overflow-hidden z-0 group">
-                      <div
-                        className="nc-NcImage  overflow-hidden z-0 mabeUrlOk"
-                        data-nc-id="NcImage"
-                      >
-                        <img
-                          src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2.jpeg"
-                          alt="Photos"
-                          className="object-cover w-full h-full rounded-2xl"
-                          loading="lazy"
-                          srcSet="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2-375x500.jpeg 375w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2-768x1024.jpeg 768w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2-1152x1536.jpeg 1152w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2-1536x2048.jpeg 1536w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2-1320x1759.jpeg 1320w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2-225x300.jpeg 225w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2.jpeg 1440w"
-                          sizes="(max-width: 475px) 100vw, 475px"
-                        />
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={16}
+              pagination={{ clickable: true }}
+              navigation={true}
+              breakpoints={{
+                390: {
+                  slidesPerView: 2
+                },
+                550: {
+                  slidesPerView: 2
+                },
+                640: {
+                  slidesPerView: 3
+                },
+                1024: {
+                  slidesPerView: 4
+                },
+                1280: {
+                  slidesPerView: 5
+                },
+                1536: {
+                  slidesPerView: 6
+                }
+              }}
+            >
+              {homeComponentData?.tags?.map((tag: Tag) => (
+                <SwiperSlide key={tag.id}>
+                  <li key={tag.id} className="!h-auto">
+                    <a
+                      href="https://ncmaz.chisnghiax.com/category/photos/"
+                      className="nc-CardCategory4 flex flex-col "
+                      data-nc-id="CardCategory4"
+                    >
+                      <div className="flex-shrink-0 relative w-full aspect-w-7 aspect-h-5 h-0 rounded-3xl overflow-hidden z-0 group">
+                        <div
+                          className="nc-NcImage  overflow-hidden z-0 mabeUrlOk"
+                          data-nc-id="NcImage"
+                        >
+                          <Image
+                            src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2.jpeg"
+                            alt="Photos"
+                            className="object-cover w-full h-full rounded-2xl"
+                            loading="lazy"
+                            width={1}
+                            height={1}
+                            sizes="(max-width: 475px) 100vw, 475px"
+                          />
+                        </div>
+                        <div>
+                          <span className="nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs  text-indigo-800 bg-indigo-100  absolute top-3 left-3">
+                            #1
+                          </span>
+                        </div>
+                        <span className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-10 transition-opacity"></span>
                       </div>
-                      <div>
-                        <span className="nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs absolute top-3 left-3 text-indigo-800 bg-indigo-100  absolute top-3 left-3">
-                          #1
-                        </span>
+                      <div className="flex items-center mt-2.5 sm:mt-5">
+                        <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9 bg-indigo-500 rounded-full"></div>
+                        <div className="ml-3 truncate">
+                          <h3 className="text-base text-neutral-700 dark:text-neutral-100 font-medium truncate">
+                            {tag.displayTitle}
+                          </h3>
+                          <span className="block sm:mt-1 text-sm text-neutral-6000 dark:text-neutral-400">
+                            {(tag as any)._count?.PostTag} Articles
+                          </span>
+                        </div>
                       </div>
-                      <span className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-10 transition-opacity"></span>
-                    </div>
-                    <div className="flex items-center mt-2.5 sm:mt-5">
-                      <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9 bg-indigo-500 rounded-full"></div>
-                      <div className="ml-3 truncate">
-                        <h3 className="text-base sm:text-lg text-neutral-900 dark:text-neutral-100 font-medium truncate">
-                          Photos
-                        </h3>
-                        <span className="block sm:mt-1 text-sm text-neutral-6000 dark:text-neutral-400">
-                          17 Articles
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                    </a>
+                  </li>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </Section>
 
           {/* fourth */}
@@ -544,12 +577,14 @@ const HomePage = ({ users, posts }: Props) => {
                         className="nc-NcImage  overflow-hidden z-0 mabeUrlOk"
                         data-nc-id="NcImage"
                       >
-                        <img
+                        <Image
                           src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/o2u6ga2esai-1.jpg"
                           alt="Education"
                           className="osbject-cover w-full h-full rounded-2xl"
                           loading="lazy"
                           sizes="(max-width: 475px) 100vw, 475px"
+                          width={1}
+                          height={1}
                         />
                       </div>
                       <span className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-10 transition-opacity"></span>
@@ -570,185 +605,190 @@ const HomePage = ({ users, posts }: Props) => {
 
           {/* fifth */}
           <Section
-            title={'Slider Articles 🧬'}
+            title={'Featured Articles 🧬'}
             subtitle={'This is sub-heading of section'}
             slider
           >
-            <div className="glide__track" data-glide-el="track">
-              <ul className="glide__slides">
-                <li
-                  className="glide__slide !h-auto glide__slide--active"
-                  style={{ width: '291.75px', marginRight: '16px' }}
-                >
-                  <div
-                    className="nc-Card7 relative flex flex-col group rounded-lg sm:rounded-3xl z-0 overflow-hidden  h-full"
-                    data-nc-id="Card7"
-                  >
-                    <div className="ncmaz-button-like-post hidden sm:block absolute top-3 right-3 z-10">
-                      <button
-                        className="simplefavorite-button active has-count"
-                        data-postid="76"
-                        data-siteid="1"
-                        data-groupid="1"
-                        data-favoritecount="16"
-                      >
-                        <svg
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="1"
-                            d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-                            clipRule="evenodd"
-                          ></path>
-                        </svg>
-                        <span className="simplefavorite-button-count">16</span>
-                      </button>
-                    </div>
-                    <a
-                      href="https://ncmaz.chisnghiax.com/quae-quis-vel-sit/"
-                      className="flex items-start relative w-full aspect-h-5 aspect-w-5 sm:aspect-h-6"
-                      draggable="true"
-                    >
-                      <div
-                        className="nc-NcImage absolute inset-0 overflow-hidden z-0 overflow-hidden z-0 mabeUrlOk"
-                        data-nc-id="NcImage"
-                      >
-                        <img
-                          src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-4397840-1.jpeg"
-                          alt="Quae quis vel sit"
-                          className="object-cover w-full h-full rounded-lg sm:rounded-3xl "
-                          loading="lazy"
-                          sizes="(max-width: 475px) 100vw, 475px"
-                        />
-                      </div>
-                      <div
-                        className="nc-PostTypeFeaturedIcon absolute top-3 left-3"
-                        data-nc-id="PostTypeFeaturedIcon"
-                      >
-                        <span className="bg-neutral-900/60 rounded-full flex items-center justify-center text-xl text-white border border-white w-7 h-7">
-                          <svg
-                            className="w-4 h-4"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M2 12.99V15C2 20 4 22 9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9"
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            ></path>
-                            <path
-                              d="M11 8C11 9.1 10.1 10 9 10C7.9 10 7 9.1 7 8C7 6.9 7.9 6 9 6"
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            ></path>
-                            <path
-                              d="M2.66992 18.9501L7.59992 15.6401C8.38992 15.1101 9.52992 15.1701 10.2399 15.7801L10.5699 16.0701C11.3499 16.7401 12.6099 16.7401 13.3899 16.0701L17.5499 12.5001C18.3299 11.8301 19.5899 11.8301 20.3699 12.5001L21.9999 13.9001"
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            ></path>
-                          </svg>
-                        </span>
-                      </div>
-                      <span className="absolute inset-0 bg-neutral-900 bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    </a>
-                    <div className="absolute bottom-2 sm:bottom-3 inset-x-2 sm:inset-x-3 p-2.5 sm:p-4 bg-white dark:bg-neutral-900 flex flex-col flex-grow rounded-lg sm:rounded-3xl group-hover:shadow-2xl transition-shadow">
-                      <a
-                        href="https://ncmaz.chisnghiax.com/quae-quis-vel-sit/"
-                        className="absolute inset-0"
-                        draggable="true"
-                      ></a>
-                      <div className="space-y-2.5 mb-3">
-                        <div className="hidden sm:block">
-                          <div
-                            className="nc-CategoryBadgeList flow-root "
-                            data-nc-id="CategoryBadgeList"
-                          >
-                            <div className="flex flex-wrap space-x-2 -my-1 ">
-                              <a
-                                href="https://ncmaz.chisnghiax.com/category/photos/"
-                                className="transition-colors hover:text-white duration-300 nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs  text-indigo-800 bg-indigo-100 hover:bg-indigo-800"
-                                draggable="true"
-                              >
-                                Photos
-                              </a>
-                              <a
-                                href="https://ncmaz.chisnghiax.com/category/uncategorized/"
-                                className="transition-colors hover:text-white duration-300 nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs  text-yellow-800 bg-yellow-100 hover:bg-yellow-800"
-                                draggable="true"
-                              >
-                                Uncategorized
-                              </a>
-                            </div>
-                          </div>
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={16}
+              breakpoints={{
+                390: {
+                  slidesPerView: 1
+                },
+                550: {
+                  slidesPerView: 2
+                },
+                640: {
+                  slidesPerView: 2
+                },
+                1024: {
+                  slidesPerView: 3
+                },
+                1280: {
+                  slidesPerView: 3
+                },
+                1536: {
+                  slidesPerView: 4
+                }
+              }}
+            >
+              {homeComponentData?.posts
+                ?.filter((p: any) => p.isFeatured)
+                ?.map((post: any) => (
+                  <SwiperSlide key={post.id}>
+                    <li className="!h-auto">
+                      <div className="nc-Card7 relative flex flex-col group rounded-lg sm:rounded-3xl z-0 overflow-hidden  h-full">
+                        <div className="ncmaz-button-like-post hidden sm:block absolute top-3 right-3 z-10">
+                          <button className="simplefavorite-button active has-count">
+                            <svg
+                              width="24"
+                              height="24"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="1"
+                                d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+                                clipRule="evenodd"
+                              ></path>
+                            </svg>
+                            <span className="simplefavorite-button-count">
+                              16
+                            </span>
+                          </button>
                         </div>
-                        <h3 className="block text-sm sm:text-base font-semibold text-neutral-900 dark:text-neutral-100 ">
+                        <a
+                          href="https://ncmaz.chisnghiax.com/quae-quis-vel-sit/"
+                          className="flex items-start relative w-full aspect-h-5 aspect-w-5 sm:aspect-h-6"
+                        >
+                          <div className="nc-NcImage absolute inset-0 overflow-hidden z-0  mabeUrlOk">
+                            <Image
+                              src={post.bannerImage}
+                              alt="Quae quis vel sit"
+                              className="object-cover w-full h-full rounded-lg sm:rounded-3xl "
+                              loading="lazy"
+                              sizes="(max-width: 475px) 100vw, 475px"
+                              width={1}
+                              height={1}
+                            />
+                          </div>
+                          <div className="nc-PostTypeFeaturedIcon absolute top-3 left-3">
+                            <span className="bg-neutral-900/60 rounded-full flex items-center justify-center text-xl text-white border border-white w-7 h-7">
+                              <svg
+                                className="w-4 h-4"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M2 12.99V15C2 20 4 22 9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9"
+                                  stroke="currentColor"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                ></path>
+                                <path
+                                  d="M11 8C11 9.1 10.1 10 9 10C7.9 10 7 9.1 7 8C7 6.9 7.9 6 9 6"
+                                  stroke="currentColor"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                ></path>
+                                <path
+                                  d="M2.66992 18.9501L7.59992 15.6401C8.38992 15.1101 9.52992 15.1701 10.2399 15.7801L10.5699 16.0701C11.3499 16.7401 12.6099 16.7401 13.3899 16.0701L17.5499 12.5001C18.3299 11.8301 19.5899 11.8301 20.3699 12.5001L21.9999 13.9001"
+                                  stroke="currentColor"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                ></path>
+                              </svg>
+                            </span>
+                          </div>
+                          <span className="absolute inset-0 bg-neutral-900 bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        </a>
+                        <div className="absolute bottom-2 sm:bottom-3 inset-x-2 sm:inset-x-3 p-2.5 sm:p-4 bg-white dark:bg-neutral-900 flex flex-col flex-grow rounded-lg sm:rounded-3xl group-hover:shadow-2xl transition-shadow">
                           <a
                             href="https://ncmaz.chisnghiax.com/quae-quis-vel-sit/"
-                            className="line-clamp-2"
-                            title="Quae quis vel sit"
-                            draggable="true"
+                            className="absolute inset-0"
+                          ></a>
+                          <div className="space-y-2.5 mb-3">
+                            <div className="hidden sm:block">
+                              <div className="nc-CategoryBadgeList flow-root ">
+                                <div className="flex flex-wrap space-x-2 -my-1 ">
+                                  <a
+                                    href="https://ncmaz.chisnghiax.com/category/photos/"
+                                    className="transition-colors hover:text-white duration-300 nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs  text-indigo-800 bg-indigo-100 hover:bg-indigo-800"
+                                  >
+                                    Photos
+                                  </a>
+                                  <a
+                                    href="https://ncmaz.chisnghiax.com/category/uncategorized/"
+                                    className="transition-colors hover:text-white duration-300 nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs  text-yellow-800 bg-yellow-100 hover:bg-yellow-800"
+                                  >
+                                    Uncategorized
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <h3 className="block text-sm sm:text-base font-semibold text-neutral-900 dark:text-neutral-100 ">
+                              <a
+                                href="https://ncmaz.chisnghiax.com/quae-quis-vel-sit/"
+                                className="line-clamp-2"
+                                title="Quae quis vel sit"
+                              >
+                                {post.title}
+                              </a>
+                            </h3>
+                          </div>
+                          <a
+                            href="https://ncmaz.chisnghiax.com/author/admin/"
+                            className="nc-CardAuthor2 relative inline-flex items-center overflow-hidden"
+                            data-nc-id="CardAuthor2"
                           >
-                            Quae quis vel sit
-                          </a>
-                        </h3>
-                      </div>
-                      <a
-                        href="https://ncmaz.chisnghiax.com/author/admin/"
-                        className="nc-CardAuthor2 relative inline-flex items-center overflow-hidden"
-                        data-nc-id="CardAuthor2"
-                        draggable="true"
-                      >
-                        <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden z-0 text-neutral-100 uppercase font-semibold shadow-inner rounded-full h-8 w-8 sm:h-9 sm:w-9 text-base flex-shrink-0 mr-3">
-                          <img
-                            className="absolute inset-0 w-full h-full object-cover"
-                            src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-e1633222451952.jpg"
-                            srcSet="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-200x300.jpg 200w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-683x1024.jpg 683w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-768x1152.jpg 768w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-e1633222451952.jpg 300w"
-                            sizes="100px"
-                            alt="admin"
-                            loading="lazy"
-                          />
-                          <span className="wil-avatar__name">a</span>
-                        </div>
-                        <div className="overflow-hidden">
-                          <h4 className="text-sm text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white font-medium truncate">
-                            admin
-                          </h4>
-                          <span className="flex items-center mt-1 text-xs text-neutral-500 dark:text-neutral-400 truncate">
-                            <span>Sep 02, 2021</span>
-                            <span className="hidden lg:inline mx-1 transition-opacity ">
-                              ·
-                            </span>
-                            <span className="hidden lg:inline transition-opacity truncate ">
-                              <span className="span-reading-time rt-reading-time">
-                                <span className="rt-label rt-prefix"></span>{' '}
-                                <span className="rt-time"> 3</span>{' '}
-                                <span className="rt-label rt-postfix">
-                                  minutes
+                            <div className="wil-avatar relative inline-flex items-center justify-center overflow-hidden z-0 text-neutral-100 uppercase font-semibold shadow-inner rounded-full h-8 w-8 sm:h-9 sm:w-9 text-base flex-shrink-0 mr-3">
+                              <Image
+                                className="absolute inset-0 w-full h-full object-cover"
+                                src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-e1633222451952.jpg"
+                                width={1}
+                                height={1}
+                                sizes="100px"
+                                alt="admin"
+                                loading="lazy"
+                              />
+                              <span className="wil-avatar__name">a</span>
+                            </div>
+                            <div className="overflow-hidden">
+                              <h4 className="text-sm text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white font-medium truncate">
+                                admin
+                              </h4>
+                              <span className="flex items-center mt-1 text-xs text-neutral-500 dark:text-neutral-400 truncate">
+                                <span>Sep 02, 2021</span>
+                                <span className="hidden lg:inline mx-1 transition-opacity ">
+                                  ·
+                                </span>
+                                <span className="hidden lg:inline transition-opacity truncate ">
+                                  <span className="span-reading-time rt-reading-time">
+                                    <span className="rt-label rt-prefix"></span>{' '}
+                                    <span className="rt-time"> 3</span>{' '}
+                                    <span className="rt-label rt-postfix">
+                                      minutes
+                                    </span>
+                                  </span>
                                 </span>
                               </span>
-                            </span>
-                          </span>
+                            </div>
+                          </a>
                         </div>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+                      </div>
+                    </li>
+                  </SwiperSlide>
+                ))}
+            </Swiper>
           </Section>
 
           {/* sixth */}
@@ -759,7 +799,7 @@ const HomePage = ({ users, posts }: Props) => {
             }
           >
             <div className="grid gap-x-2.5 gap-y-4 sm:gap-6 2xl:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-              {homeComponentData?.posts?.map(post => (
+              {homeComponentData?.posts?.map((post: any) => (
                 <div
                   key={post.id}
                   className="nc-Card10V2 relative flex flex-col h-full"
@@ -793,22 +833,11 @@ const HomePage = ({ users, posts }: Props) => {
                   <div className="hidden absolute top-3 inset-x-3 sm:flex justify-between items-start space-x-4 z-10">
                     <div className="nc-CategoryBadgeList flow-root ">
                       <div className="flex flex-wrap space-x-2 -my-1 ">
-                        {post?.PostTag?.map(
+                        {post?.PostTag?.slice(0, 2)?.map(
                           (tag: {
                             id: Key | null | undefined
                             tag: {
-                              displayTitle:
-                                | string
-                                | number
-                                | boolean
-                                | ReactElement<
-                                    any,
-                                    string | JSXElementConstructor<any>
-                                  >
-                                | ReactFragment
-                                | ReactPortal
-                                | null
-                                | undefined
+                              displayTitle: string | undefined
                             }
                           }) => (
                             <a
@@ -851,25 +880,13 @@ const HomePage = ({ users, posts }: Props) => {
                     </div>
                   </div>
                   <div className="space-y-2.5 mt-4 sm:px-2.5">
-                    <div
-                      className="nc-PostCardMetaV2 inline-flex items-center flex-wrap text-neutral-800 dark:text-neutral-200 overflow-hidden text-xs leading-none"
-                      data-nc-id="PostCardMetaV2"
-                    >
+                    <div className="nc-PostCardMetaV2 inline-flex items-center flex-wrap text-neutral-800 dark:text-neutral-200 overflow-hidden text-xs leading-none">
                       <div className="relative flex sm:space-x-2 overflow-hidden">
                         <a
                           className="hidden sm:flex flex-shrink-0 pt-1"
                           href="https://ncmaz.chisnghiax.com/author/admin/"
                         >
                           <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden z-0 text-neutral-100 uppercase font-semibold shadow-inner rounded-full h-9 w-9 text-base ring-1 ring-white/80 dark:ring-neutral-900">
-                            {/* <img
-                              className="absolute inset-0 w-full h-full object-cover"
-                              src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-e1633222451952.jpg"
-                              srcSet="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-200x300.jpg 200w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-683x1024.jpg 683w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-768x1152.jpg 768w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-e1633222451952.jpg 300w"
-                              sizes="100px"
-                              alt="admin"
-                              loading="lazy"
-                            /> */}
-
                             <Image
                               className="absolute inset-0 w-full h-full object-cover"
                               src={post.bannerImage || ''}
@@ -878,7 +895,6 @@ const HomePage = ({ users, posts }: Props) => {
                               width={1}
                               height={1}
                               sizes="100px"
-                              srcSet="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-200x300.jpg 200w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-683x1024.jpg 683w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-768x1152.jpg 768w, https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/v-bw-tdto2c-1-e1633222451952.jpg 300w"
                             />
                             <span className="wil-avatar__name">a</span>
                           </div>
