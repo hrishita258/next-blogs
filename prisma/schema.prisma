@@ -101,12 +101,13 @@ model Category {
 }
 
 model Tag {
-  id        String    @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
-  name      String    @unique
-  posts     Post[]    @relation("PostTag")
-  PostTag   PostTag[]
-  createdAt DateTime  @default(now()) @db.Timestamptz()
-  updatedAt DateTime  @default(now()) @updatedAt @db.Timestamptz()
+  id                String    @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  normalizedTagSlug String    @unique
+  displayTitle      String
+  posts             Post[]    @relation("PostTag")
+  PostTag           PostTag[]
+  createdAt         DateTime  @default(now()) @db.Timestamptz()
+  updatedAt         DateTime  @default(now()) @updatedAt @db.Timestamptz()
 }
 
 model PostTag {
