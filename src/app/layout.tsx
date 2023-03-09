@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="antialiased text-gray-800 ">
+        <div>
           <Header />
-          <div className="pt-12">{children}</div>
+          <div className="pt-20">{children}</div>
           <Footer />
         </div>
       </body>

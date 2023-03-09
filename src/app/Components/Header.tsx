@@ -5,12 +5,12 @@ const Header = () => {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="https://flowbite.com" className="flex items-center">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="mr-3 h-6 sm:h-9"
-              alt="Flowbite Logo"
+              src="/logo-no-background.png"
+              className="mr-2 h-6 sm:h-9"
+              alt="Sanchaar"
             />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
+            <span className="self-center text-pink-600 text-xl font-semibold whitespace-nowrap dark:text-white">
+              Sanchaar
             </span>
           </a>
           <div className="flex items-center lg:order-2">

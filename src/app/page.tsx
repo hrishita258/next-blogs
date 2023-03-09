@@ -6,8 +6,19 @@ async function getHomePageData() {
     include: {
       author: true,
       PostTag: {
-        include: {
-          tag: true
+        select: {
+          tag: {
+            select: {
+              normalizedTagSlug: true,
+              displayTitle: true,
+              id: true
+            }
+          }
+        }
+      },
+      _count: {
+        select: {
+          likes: true
         }
       }
     }
