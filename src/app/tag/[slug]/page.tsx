@@ -62,7 +62,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                             <a
                               key={tag.tag.id}
                               href="https://ncmaz.chisnghiax.com/category/garden/"
-                              className="transition-colors hover:text-white duration-300 nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs  text-green-800 bg-green-100 hover:bg-green-800"
+                              className="transition-colors hover:text-white duration-300 nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs  text-blue-800 bg-blue-100 hover:bg-blue-800"
                             >
                               {tag.tag.displayTitle}
                             </a>
