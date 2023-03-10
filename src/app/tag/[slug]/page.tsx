@@ -1,50 +1,226 @@
 import { formatDate } from '@/Utils/formatDate'
+import { AiFillTags } from 'react-icons/ai'
 import prisma from '../../../../prisma/client'
 
 async function getPostsByTag(slug: string) {
-  return await prisma.post.findMany({
+  const posts = await prisma.post.findMany({
     where: {
-      PostTag: {
-        some: {
-          tag: {
-            normalizedTagSlug: slug
+      OR: [
+        {
+          PostTag: {
+            some: {
+              tag: {
+                normalizedTagSlug: slug
+              }
+            }
+          }
+        },
+        {
+          PostTag: {
+            some: {
+              post: {
+                PostTag: {
+                  some: {
+                    tag: {
+                      PostTag: {
+                        some: {
+                          tag: {
+                            normalizedTagSlug: slug
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
-      }
+      ]
     },
     include: {
-      author: true,
+      author: {
+        select: {
+          id: true,
+          name: true,
+          image: true
+        }
+      },
       PostTag: {
         select: {
           tag: {
             select: {
-              normalizedTagSlug: true,
               displayTitle: true,
+              normalizedTagSlug: true,
               id: true
             }
           }
         }
-      },
-      _count: {
-        select: {
-          likes: true
-        }
       }
+    },
+    orderBy: {
+      published: 'desc'
     }
   })
+
+  const relatedTags = await prisma.tag.findMany({
+    where: {
+      OR: [
+        {
+          PostTag: {
+            some: {
+              post: {
+                PostTag: {
+                  some: {
+                    tag: {
+                      normalizedTagSlug: slug
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          PostTag: {
+            some: {
+              post: {
+                PostTag: {
+                  some: {
+                    tag: {
+                      PostTag: {
+                        some: {
+                          tag: {
+                            normalizedTagSlug: slug
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      NOT: {
+        normalizedTagSlug: slug
+      }
+    },
+    orderBy: {
+      posts: {
+        _count: 'desc'
+      }
+    },
+    take: 10
+  })
+
+  const topAuthors = await prisma.user.findMany({
+    where: {
+      posts: {
+        some: {
+          PostTag: {
+            some: {
+              tag: {
+                normalizedTagSlug: slug
+              }
+            }
+          }
+        }
+      }
+    },
+    select: {
+      id: true,
+      name: true,
+      image: true,
+      bio: true,
+      email: true,
+      _count: {
+        select: {
+          posts: true
+        }
+      }
+    },
+    orderBy: {
+      posts: {
+        _count: 'desc'
+      }
+    },
+    take: 10
+  })
+
+  return { posts, relatedTags, topAuthors }
 }
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const { slug } = params
 
-  const posts = await getPostsByTag(slug)
+  const { posts, relatedTags, topAuthors } = await getPostsByTag(slug)
+  const UsersImages = topAuthors.map(user => user.image)
+
+  // console.log(JSON.stringify({ posts, relatedTags, topAuthors }))
 
   return (
     <div className="relative">
       <div className="wp-block-group container">
         <div className="wp-block-group__inner-container">
           <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-8 ">
+            <div className="lg:col-span-8 col-span-12">
+              <div className="py-5">
+                <div className="flex items-center">
+                  <AiFillTags className="text-xl" />
+                  <div>
+                    <h1 className="ml-2  lg:text-4xl text-3xl lg:font-medium  text-ellipsis overflow-hidden max-h-[52px] break-words uppercase">
+                      {slug}
+                    </h1>
+                  </div>
+                </div>
+                <div className="flex mt-3 gap-3">
+                  <button
+                    type="button"
+                    className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200  rounded-full text-sm px-5 py-1  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                  >
+                    Follow
+                  </button>
+                  <button
+                    className=" relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm   px-5 py-1  disabled:bg-opacity-70 bg-pink-600 hover:bg-pink-700 text-neutral-50  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-600 dark:focus:ring-offset-0"
+                    title=""
+                  >
+                    Write
+                  </button>
+                </div>
+              </div>
+              <div className="mb-3">
+                <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+                  <ul className="flex flex-wrap -mb-px">
+                    <li className="mr-2">
+                      <a
+                        href="#"
+                        className="inline-block p-4 font-normal text-pink-600 border-b-2 border-pink-600 rounded-t-lg active dark:text-pink-500 dark:border-pink-500"
+                        aria-current="page"
+                      >
+                        Trending
+                      </a>
+                    </li>
+                    <li className="mr-2">
+                      <a
+                        href="#"
+                        className="inline-block p-4 border-b-2 font-normal border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                      >
+                        Latest
+                      </a>
+                    </li>
+                    <li className="mr-2">
+                      <a
+                        href="#"
+                        className="inline-block p-4 border-b-2 font-normal border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                      >
+                        Writers
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               {posts.map(post => (
                 <div
                   key={post.id}
@@ -58,15 +234,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
                     <div className="space-y-2 sm:space-y-3 sm:mb-4">
                       <div className="nc-CategoryBadgeList flow-root ">
                         <div className="flex flex-wrap space-x-2 -my-1 ">
-                          {post?.PostTag?.map(tag => (
-                            <a
-                              key={tag.tag.id}
-                              href="https://ncmaz.chisnghiax.com/category/garden/"
-                              className="transition-colors hover:text-white duration-300 nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs  text-blue-800 bg-blue-100 hover:bg-blue-800"
-                            >
-                              {tag.tag.displayTitle}
-                            </a>
-                          ))}
+                          <a
+                            href="https://ncmaz.chisnghiax.com/category/garden/"
+                            className="transition-colors py-0.5  hover:text-white duration-300 nc-Badge inline-flex lg:py-1 rounded-full lg:font-medium  relative  px-3 my-1  text-sm  text-blue-800 bg-blue-100 hover:bg-blue-800"
+                          >
+                            {
+                              post?.PostTag.find(
+                                s => s.tag.normalizedTagSlug === slug
+                              )?.tag?.displayTitle
+                            }
+                          </a>
                         </div>
                       </div>
                       <h3 className="block font-semibold text-sm sm:text-base nc-card-title">
@@ -249,7 +426,67 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 </div>
               ))}
             </div>
-            <div className="col-span-4 border-l p-5"></div>
+            <div className="lg:col-span-4 border-l p-9 hidden lg:block">
+              <aside className="sticky top-[80px] self-start w-full">
+                <div>
+                  {/* first */}
+                  <div className="mt-10 pb-10 border-b border-b-[rgba(230, 230, 230, 1)]">
+                    <div className="flex">
+                      <div className="flex-auto block">
+                        <div className="block">
+                          <h2 className="text-2xl font-bold">217K</h2>
+                        </div>
+                        <div className="mt-2 block font-normal">Stories</div>
+                      </div>
+                      <div className="flex-auto block">
+                        <div className="block">
+                          <h2 className="text-2xl font-bold">77K</h2>
+                        </div>
+                        <div className="mt-2 block font-normal">Writers</div>
+                      </div>
+                    </div>
+                    <div className="flex -space-x-2 overflow-hidden mt-4">
+                      {UsersImages.map(src => (
+                        <img
+                          key={src}
+                          className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                          src={src || ''}
+                          alt=""
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  {/* second */}
+                  <div className="mt-10">
+                    <div className="pb-4 block">
+                      <h2 className="text-[18px] text-gray-900 font-medium">
+                        Related Topics
+                      </h2>
+                    </div>
+                    <div className="flex gap-3 flex-wrap">
+                      {relatedTags.map(topic => (
+                        <div
+                          key={topic.id}
+                          className="py-1.5 px-5 text-sm  text-gray-800 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-pink-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 hover:cursor-pointer hover:border-pink-600"
+                        >
+                          {topic?.displayTitle}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* third */}
+                  <div className="mt-10">
+                    <div className="pb-4 block">
+                      <h2 className="text-[18px] text-gray-900 font-medium">
+                        Top Writers
+                      </h2>
+                    </div>
+                    <div className=""></div>
+                  </div>
+                </div>
+              </aside>
+            </div>
           </div>
         </div>
       </div>
