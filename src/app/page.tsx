@@ -21,7 +21,8 @@ async function getHomePageData() {
           likes: true
         }
       }
-    }
+    },
+    take: 10
   })
   const users = await prisma.user.findMany({
     include: {
@@ -30,7 +31,11 @@ async function getHomePageData() {
           posts: true
         }
       }
-    }
+    },
+    orderBy: {
+      createdAt: 'desc'
+    },
+    take: 12
   })
   const tags = await prisma.tag.findMany({
     include: {

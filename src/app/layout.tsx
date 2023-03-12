@@ -22,7 +22,7 @@ export default function RootLayout({
       <body>
         <div>
           <Header />
-          <div className="pt-20">{children}</div>
+          <div className="pt-16">{children}</div>
           <Footer />
         </div>
       </body>

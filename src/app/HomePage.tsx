@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import Link from 'next/link'
 import { useState } from 'react'
 import { Navigation, Pagination } from 'swiper'
 import BecomeAuthor from './Components/Blocks/BecomeAuthor'
@@ -417,9 +418,9 @@ const HomePage = ({ users, posts, tags }: Props) => {
                   {homeComponentData?.users?.map((user: any) => (
                     <SwiperSlide key={user.id}>
                       <div key={user.id}>
-                        <a
-                          href="https://ncmaz.chisnghiax.com/author/jaren-nader/"
-                          className=" flex flex-col overflow-hidden [ nc-box-has-hover nc-dark-box-bg-has-hover ] hover:!shadow-none"
+                        <Link
+                          href={'/' + user.username}
+                          className="flex flex-col overflow-hidden [ nc-box-has-hover nc-dark-box-bg-has-hover ] hover:!shadow-none"
                         >
                           <div className="relative flex-shrink-0 ">
                             <div>
@@ -428,8 +429,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                                   alt="nc-imgs"
                                   className="object-cover w-full h-full"
                                   loading="lazy"
-                                  width={1}
-                                  height={1}
+                                  fill
                                   src={
                                     'https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-3330118.jpeg'
                                   }
@@ -462,8 +462,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                                 src={user.image || ''}
                                 alt="pcormier"
                                 loading="lazy"
-                                width={1}
-                                height={1}
+                                fill
                               />
                               <span className="wil-avatar__name">p</span>
                             </div>
@@ -478,7 +477,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                               </span>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </SwiperSlide>
                   ))}

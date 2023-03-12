@@ -9,7 +9,7 @@ const BecomeAuthor = (Props: Props) => {
   return (
     <div className="wp-block-ncmaz-core-block-become-author">
       <div className="relative py-16">
-        <div className="nc-BackgroundSection absolute inset-y-0 w-screen xl:max-w-[1340px] 2xl:max-w-screen-2xl left-1/2 transform -translate-x-1/2 xl:rounded-[40px] z-0 bg-neutral-100 dark:bg-black dark:bg-opacity-20 "></div>
+        <div className="nc-BackgroundSection absolute inset-y-0 w-screen xl:max-w-[1340px] 2xl:max-w-screen-2xl left-1/2 transform -translate-x-1/2 z-0 bg-neutral-100 dark:bg-black dark:bg-opacity-20 "></div>
         <div
           className="nc-SectionBecomeAnAuthor relative flex flex-col lg:flex-row items-center  "
           data-nc-id="SectionBecomeAnAuthor"

@@ -8,24 +8,29 @@ generator client {
 }
 
 model User {
-  id                String          @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  id                String             @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
   name              String
-  email             String          @unique
+  email             String             @unique
   password          String
   bio               String?
   image             String?
-  createdAt         DateTime        @default(now()) @db.Timestamptz()
-  updatedAt         DateTime        @default(now()) @updatedAt @db.Timestamptz()
+  username          String?            @unique
+  createdAt         DateTime           @default(now()) @db.Timestamptz()
+  updatedAt         DateTime           @default(now()) @updatedAt @db.Timestamptz()
   posts             Post[]
   comments          Comment[]
   likes             Like[]
   View              View[]
-  followers         Follow[]        @relation("Followers")
-  following         Follow[]        @relation("Following")
+  followers         Follow[]           @relation("Followers")
+  following         Follow[]           @relation("Following")
   bookmarks         Bookmark[]
   CommentReport     CommentReport[]
   notifications     Notification[]
-  notificationsRead Notification[]  @relation("NotificationsRead")
+  notificationsRead Notification[]     @relation("NotificationsRead")
+  collections       Collection[]
+  UserCollection    UserCollection[]
+  CollectionPost    CollectionPost[]
+  CollectionMember  CollectionMember[]
 }
 
 model Notification {
@@ -65,30 +70,31 @@ model Bookmark {
 }
 
 model Post {
-  id           String         @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
-  title        String
-  content      String
-  slug         String         @unique
-  published    Boolean        @default(false)
-  image        String?
-  bannerImage  String?
-  isPremium    Boolean        @default(false)
-  isFeatured   Boolean        @default(false)
-  isPublic     Boolean        @default(true)
-  authorId     String         @db.Uuid
-  author       User           @relation(fields: [authorId], references: [id])
-  categories   Category[]
-  likes        Like[]
-  tags         Tag[]          @relation("PostTag")
-  PostTag      PostTag[]
-  views        View[]
-  comments     Comment[]      @relation("CommentForPost", map: "CommentForPostTo")
-  Comment      Comment[]
-  Analytics    Analytics[]
-  bookmarks    Bookmark[]
-  Notification Notification[]
-  createdAt    DateTime       @default(now()) @db.Timestamptz()
-  updatedAt    DateTime       @default(now()) @updatedAt @db.Timestamptz()
+  id             String           @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  title          String
+  content        String
+  slug           String           @unique
+  published      Boolean          @default(false)
+  image          String?
+  bannerImage    String?
+  isPremium      Boolean          @default(false)
+  isFeatured     Boolean          @default(false)
+  isPublic       Boolean          @default(true)
+  authorId       String           @db.Uuid
+  author         User             @relation(fields: [authorId], references: [id])
+  categories     Category[]
+  likes          Like[]
+  tags           Tag[]            @relation("PostTag")
+  PostTag        PostTag[]
+  views          View[]
+  comments       Comment[]        @relation("CommentForPost", map: "CommentForPostTo")
+  Comment        Comment[]
+  Analytics      Analytics[]
+  bookmarks      Bookmark[]
+  Notification   Notification[]
+  createdAt      DateTime         @default(now()) @db.Timestamptz()
+  updatedAt      DateTime         @default(now()) @updatedAt @db.Timestamptz()
+  CollectionPost CollectionPost[]
 }
 
 model Category {
@@ -118,6 +124,59 @@ model PostTag {
   tagId     String   @db.Uuid
   createdAt DateTime @default(now()) @db.Timestamptz()
   updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz()
+}
+
+model Collection {
+  id          String             @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name        String
+  slug        String             @unique
+  description String?
+  image       String?
+  isPublic    Boolean            @default(true)
+  subtitle    String?
+  bgColor     String?
+  textColor   String?
+  author      User               @relation(fields: [authorId], references: [id])
+  authorId    String             @db.Uuid
+  followers   UserCollection[]
+  members     CollectionMember[]
+  posts       CollectionPost[]
+  createdAt   DateTime           @default(now()) @db.Timestamptz()
+  updatedAt   DateTime           @default(now()) @updatedAt @db.Timestamptz()
+}
+
+model CollectionPost {
+  id           String     @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  post         Post       @relation(fields: [postId], references: [id])
+  collection   Collection @relation(fields: [collectionId], references: [id])
+  author       User       @relation(fields: [authorId], references: [id])
+  postId       String     @db.Uuid
+  collectionId String     @db.Uuid
+  authorId     String     @db.Uuid
+  createdAt    DateTime   @default(now()) @db.Timestamptz()
+  updatedAt    DateTime   @default(now()) @updatedAt @db.Timestamptz()
+
+  @@unique([postId, collectionId, authorId])
+}
+
+model UserCollection {
+  id           String     @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  user         User       @relation(fields: [userId], references: [id])
+  collection   Collection @relation(fields: [collectionId], references: [id])
+  userId       String     @db.Uuid
+  collectionId String     @db.Uuid
+  createdAt    DateTime   @default(now()) @db.Timestamptz()
+  updatedAt    DateTime   @default(now()) @updatedAt @db.Timestamptz()
+}
+
+model CollectionMember {
+  id           String     @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  user         User       @relation(fields: [userId], references: [id])
+  collection   Collection @relation(fields: [collectionId], references: [id])
+  userId       String     @db.Uuid
+  collectionId String     @db.Uuid
+  createdAt    DateTime   @default(now()) @db.Timestamptz()
+  updatedAt    DateTime   @default(now()) @updatedAt @db.Timestamptz()
 }
 
 model Comment {

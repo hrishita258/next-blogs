@@ -1,5 +1,3 @@
-import prisma from '../../../../prisma/client'
-
 export async function GET(request: Request) {
   const data = [
     {
@@ -7,7 +5,7 @@ export async function GET(request: Request) {
         tagFeed: {
           items: [
             {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
               reason: 84,
               moduleSourceEncoding: 17,
               postProviderExplanation: {
@@ -16,38 +14,38 @@ export async function GET(request: Request) {
                 __typename: 'PostProviderExplanation'
               },
               post: {
-                id: '854e05ff6ca5',
+                id: '629c57e73e42',
                 creator: {
                   __typename: 'User',
-                  name: 'Coinscapture',
-                  username: 'coinscapture',
-                  id: 'dc9f8db02ffc',
+                  name: 'Linus Schlumberger',
+                  username: 'LinusSchlumberger',
+                  id: '8fd06e48978e',
                   mediumMemberAt: 0,
                   socialStats: {
-                    followerCount: 1687,
+                    followerCount: 20,
                     __typename: 'SocialStats'
                   },
                   verifications: {
                     isBookAuthor: false,
                     __typename: 'VerifiedInfo'
                   },
-                  customDomainState: {
-                    live: {
-                      domain: 'coinscapture.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'Coinscapture is the best, real-time, high-quality cryptocurrency market data provider, by listing 2000+ cryptocurrency globally. https://coinscapture.com/',
-                  imageId: '1*xiMJSE4dK16XP4xRUIp8bw.jpeg'
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'Web Developer & Student in AI',
+                  imageId: '1*eKlxioCvDYPiMUjdc1K8YQ.jpeg'
                 },
-                collection: null,
+                collection: {
+                  __typename: 'Collection',
+                  id: 'd0b105d10f0a',
+                  name: 'Better Programming',
+                  domain: 'betterprogramming.pub',
+                  slug: 'better-programming'
+                },
                 extendedPreviewContent: {
                   bodyModel: {
                     sections: [
                       {
-                        name: 'a4f1',
+                        name: '6cc9',
                         startIndex: 0,
                         textLayout: null,
                         imageLayout: null,
@@ -59,13 +57,13 @@ export async function GET(request: Request) {
                     ],
                     paragraphs: [
                       {
-                        id: '371891d74e49_preview_0',
-                        name: '2945',
+                        id: '12d00519f67a_preview_0',
+                        name: '8982',
                         type: 'H3',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Building a Billion-Dollar Economy in Indian Fintech',
+                        text: 'All JavaScript and TypeScript Features From the Last 3 Years',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -75,21 +73,21 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: '371891d74e49_preview_1',
-                        name: 'c4fa',
+                        id: '12d00519f67a_preview_1',
+                        name: '936a',
                         type: 'IMG',
                         href: null,
                         layout: 'INSET_CENTER',
                         metadata: {
-                          id: '1*r5vhPOm2GKsIN20yMwHymA.jpeg',
-                          originalHeight: 1078,
-                          originalWidth: 2346,
+                          id: '1*2yo_1MdBQE1pOYWV4ueyfQ.png',
+                          originalHeight: 512,
+                          originalWidth: 512,
                           focusPercentX: null,
                           focusPercentY: null,
                           alt: null,
                           __typename: 'ImageMetadata'
                         },
-                        text: '',
+                        text: 'TypeScript as envisioned by Stable Diffusion',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -99,13 +97,50 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: '371891d74e49_preview_2',
-                        name: '9b86',
+                        id: '12d00519f67a_preview_2',
+                        name: 'e852',
                         type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Growth in India’s financial technology industry is skyrocketing. India has just surpassed China as Asia’s leading fintech market, and has become the globe’s second economy, behind only the United States. Across the financial services industry in India, fintech firms are utilizing cutting-edge technology to expand their reach, enhance their customer…',
+                        text: 'This article goes through almost all of the changes of the last 3 years (and some from earlier) in JavaScript / ECMAScript and TypeScript.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 112,
+                            end: 123,
+                            href: 'https://www.ecma-international.org/publications-and-standards/standards/ecma-262/',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 127,
+                            end: 137,
+                            href: 'https://www.typescriptlang.org/',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '12d00519f67a_preview_3',
+                        name: '7f15',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Not all of the following features will be relevant to you or even practical, but they should instead serve to show what’s possible and to deepen…',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -122,78 +157,79 @@ export async function GET(request: Request) {
                   subtitle: ''
                 },
                 __typename: 'Post',
-                firstPublishedAt: 1678273842518,
+                firstPublishedAt: 1678358020648,
                 isLocked: false,
                 isSeries: false,
                 isShortform: false,
-                latestPublishedAt: 1678273842518,
+                latestPublishedAt: 1678452393013,
                 inResponseToCatalogResult: null,
                 pinnedAt: 0,
                 pinnedByCreatorAt: 0,
                 previewImage: {
-                  id: '1*r5vhPOm2GKsIN20yMwHymA.jpeg',
+                  id: '1*2yo_1MdBQE1pOYWV4ueyfQ.png',
                   focusPercentX: null,
                   focusPercentY: null,
                   __typename: 'ImageMetadata'
                 },
-                readingTime: 4.166037735849057,
+                readingTime: 29.255974842767294,
                 sequence: null,
-                title: 'Building a Billion-Dollar Economy in Indian Fintech',
+                title:
+                  'All JavaScript and TypeScript Features From the Last 3 Years',
                 uniqueSlug:
-                  'building-a-billion-dollar-economy-in-indian-fintech-854e05ff6ca5',
+                  'all-javascript-and-typescript-features-of-the-last-3-years-629c57e73e42',
                 visibility: 'PUBLIC',
                 pendingCollection: null,
-                statusForCollection: null,
+                statusForCollection: 'APPROVED',
                 isPublished: true,
+                mediumUrl:
+                  'https://betterprogramming.pub/all-javascript-and-typescript-features-of-the-last-3-years-629c57e73e42',
+                clapCount: 163,
+                voterCount: 25,
+                recommenders: [],
                 allowResponses: true,
                 postResponses: {
-                  count: 0,
+                  count: 4,
                   __typename: 'PostResponses'
                 },
                 isLimitedState: false,
-                mediumUrl:
-                  'https://coinscapture.medium.com/building-a-billion-dollar-economy-in-indian-fintech-854e05ff6ca5',
-                voterCount: 0,
-                recommenders: [],
-                clapCount: 0,
                 inResponseToEntityType: null,
                 tags: [
                   {
                     __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-economy',
-                    displayTitle: 'Indian Economy',
-                    normalizedTagSlug: 'indian-economy'
+                    id: 'typescript',
+                    displayTitle: 'Typescript',
+                    normalizedTagSlug: 'typescript'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-blogger',
-                    displayTitle: 'Indian Blogger',
-                    normalizedTagSlug: 'indian-blogger'
+                    id: 'programming',
+                    displayTitle: 'Programming',
+                    normalizedTagSlug: 'programming'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'fintech',
-                    displayTitle: 'Fintech',
-                    normalizedTagSlug: 'fintech'
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
+                    id: 'software-development',
+                    displayTitle: 'Software Development',
+                    normalizedTagSlug: 'software-development'
                   }
                 ]
               },
               __typename: 'TagFeedItem'
             },
             {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
               reason: 84,
               moduleSourceEncoding: 17,
               postProviderExplanation: {
@@ -202,38 +238,32 @@ export async function GET(request: Request) {
                 __typename: 'PostProviderExplanation'
               },
               post: {
-                id: '1e8255686ba6',
+                id: '37a8e5c26d81',
                 creator: {
                   __typename: 'User',
-                  name: 'Suvangi',
-                  username: 'soumyasuvangi',
-                  id: '7b76545dba23',
+                  name: 'Nicholas Roberto Drabowski',
+                  username: 'nicholas.drabowski',
+                  id: 'e56ace1270e8',
                   mediumMemberAt: 0,
                   socialStats: {
-                    followerCount: 6,
+                    followerCount: 102,
                     __typename: 'SocialStats'
                   },
                   verifications: {
                     isBookAuthor: false,
                     __typename: 'VerifiedInfo'
                   },
-                  customDomainState: {
-                    live: {
-                      domain: 'soumyasuvangi.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'Hey! I am a 21-year-old bookworm and full-time professional content writer. Crafting clever quips and diving deep into complex subjects comes easily to me!',
-                  imageId: '0*EyRKQjwr5NdwtHiK'
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'My life goal is to improve lives at scale through healthcare engineering while having fun on the journey! https://www.linkedin.com/in/ndrabowski/',
+                  imageId: '1*-zLvdiqmFI_ciUZeVrcPfQ.png'
                 },
                 collection: null,
                 extendedPreviewContent: {
                   bodyModel: {
                     sections: [
                       {
-                        name: 'b342',
+                        name: '8fb8',
                         startIndex: 0,
                         textLayout: null,
                         imageLayout: null,
@@ -245,13 +275,13 @@ export async function GET(request: Request) {
                     ],
                     paragraphs: [
                       {
-                        id: '82f2ad80d0e3_preview_0',
-                        name: 'd091',
+                        id: 'b171bbc666ae_preview_0',
+                        name: '33e1',
                         type: 'H3',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Manto’s Mottled Dawn',
+                        text: 'Calling All Developers: Help Us Make a Difference with Open Source Healthcare Technology',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -261,200 +291,21 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: '82f2ad80d0e3_preview_1',
-                        name: '53f3',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Independence comes at a price. The cleaving of the golden bird will spill blood but free her from her cage. One little moment has the capacity of snowballing into an avalanche. Who knew traders from a company will one day have the country closed in their fists?',
-                        hasDropCap: true,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'EM',
-                            start: 0,
-                            end: 261,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '82f2ad80d0e3_preview_2',
-                        name: '9a21',
+                        id: 'b171bbc666ae_preview_1',
+                        name: '045e',
                         type: 'IMG',
                         href: null,
                         layout: 'INSET_CENTER',
                         metadata: {
-                          id: '1*fbYpmUaFBSTi3CAYJN-kAA.jpeg',
-                          originalHeight: 600,
-                          originalWidth: 455,
+                          id: '1*dGHL9OpyXsnSwVdaV9w3QA.png',
+                          originalHeight: 498,
+                          originalWidth: 1301,
                           focusPercentX: null,
                           focusPercentY: null,
                           alt: null,
                           __typename: 'ImageMetadata'
                         },
-                        text: 'Saadat Hasan Manto…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'Independence comes at a price. The cleaving of the golden bird will spill blood but free her from her cage. One little moment has the…'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1676737320565,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1676737533145,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 1677262708606,
-                previewImage: {
-                  id: '1*ZYnHEoqUars2yqLQNy3Vig.jpeg',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 3.054716981132075,
-                sequence: null,
-                title: 'Manto’s Mottled Dawn',
-                uniqueSlug: 'mantos-mottled-dawn-1e8255686ba6',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 2,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://soumyasuvangi.medium.com/mantos-mottled-dawn-1e8255686ba6',
-                voterCount: 6,
-                recommenders: [],
-                clapCount: 6,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'literature',
-                    displayTitle: 'Literature',
-                    normalizedTagSlug: 'literature'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-literature',
-                    displayTitle: 'Indian Literature',
-                    normalizedTagSlug: 'indian-literature'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'book-review',
-                    displayTitle: 'Book Review',
-                    normalizedTagSlug: 'book-review'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'books',
-                    displayTitle: 'Books',
-                    normalizedTagSlug: 'books'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'e8fdd820a6d0',
-                creator: {
-                  __typename: 'User',
-                  name: 'Jairam R Prabhu',
-                  username: 'jairamrprabhu',
-                  id: '1788b9e1965',
-                  mediumMemberAt: 1657911068000,
-                  socialStats: {
-                    followerCount: 5523,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'jairamrprabhu.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'Blogger|Podcaster|Student|Engineer|Content Writing. Writes on Science, Elections, Technology, Politics, International Relations|Runs Journal of Knowledge',
-                  imageId: '0*iC5snBC2_aYDxkTo.'
-                },
-                collection: {
-                  name: 'ILLUMINATION',
-                  id: 'eca1ba5ae1ca',
-                  domain: null,
-                  slug: 'illumination',
-                  __typename: 'Collection'
-                },
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: '5a88',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: 'c3b48902309_preview_0',
-                        name: 'a0bc',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Takeaways from Indian Financial Budget 2023',
+                        text: 'The cost of ineffective action is a continuation of global cycles of poverty and social…',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -464,13 +315,13 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'c3b48902309_preview_1',
-                        name: '4219',
+                        id: 'b171bbc666ae_preview_2',
+                        name: '6853',
                         type: 'H4',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Deconstructing India’s Budget for the year 2023–2024',
+                        text: 'Dear Developers,',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -480,13 +331,13 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'c3b48902309_preview_2',
-                        name: 'e101',
+                        id: 'b171bbc666ae_preview_3',
+                        name: '6fbd',
                         type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'On February 1st 2023, the Finance Minister of India, Mrs Nirmala Sitharaman, presented the financial budget for the financial year 2023–2024. It was a well-sought-after budget this time as the world is recovering from the biggest pandemic of the century as well as the war in Ukraine.',
+                        text: 'are you ready to make a difference in healthcare technology? Join our open-source initiative to improve the quality of healthcare for children worldwide.',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -496,13 +347,13 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'c3b48902309_preview_3',
-                        name: 'f84e',
+                        id: 'b171bbc666ae_preview_4',
+                        name: '9930',
                         type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'On January 31st…',
+                        text: 'At the heart of this initiative is a telehealth platform called Portal Telemedicine, which integrates data from over 30M patients to provide quality healthcare access in underserved…',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -517,892 +368,82 @@ export async function GET(request: Request) {
                   isFullContent: false,
                   __typename: 'PreviewContent',
                   subtitle:
-                    'Deconstructing India’s Budget for the year 2023–2024'
+                    'Learn how we are helping improve the health of children with tech.'
                 },
                 __typename: 'Post',
-                firstPublishedAt: 1676709866103,
-                isLocked: true,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1676709866103,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '0*y7wLhbanlUoELtME.jpg',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 5.649056603773585,
-                sequence: null,
-                title: 'Takeaways from Indian Financial Budget 2023',
-                uniqueSlug:
-                  'takeaways-from-indian-financial-budget-2023-e8fdd820a6d0',
-                visibility: 'LOCKED',
-                pendingCollection: null,
-                statusForCollection: 'APPROVED',
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 16,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/illumination/takeaways-from-indian-financial-budget-2023-e8fdd820a6d0',
-                voterCount: 102,
-                recommenders: [],
-                clapCount: 3703,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'economics',
-                    displayTitle: 'Economics',
-                    normalizedTagSlug: 'economics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'finance',
-                    displayTitle: 'Finance',
-                    normalizedTagSlug: 'finance'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'politics',
-                    displayTitle: 'Politics',
-                    normalizedTagSlug: 'politics'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: '8f67f6cc3a2',
-                creator: {
-                  __typename: 'User',
-                  name: 'Ayub Khan',
-                  username: 'ayubkhan2020',
-                  id: '4f3199ca5d17',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 3,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: null,
-                  hasSubdomain: false,
-                  bio: '',
-                  imageId: '1*2Q7sbzsH4xNKLgmfUwsCcg.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: 'c0ae',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '9e5011913922_preview_0',
-                        name: 'd74e',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Hyderabad Mystery: The Case of Missing Documents from Andhra Pradesh State Archives',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'STRONG',
-                            start: 0,
-                            end: 83,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '9e5011913922_preview_1',
-                        name: '9cef',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'by Ayub Khan',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '9e5011913922_preview_2',
-                        name: '26a0',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Footnotes make for interesting reading, and I always read them first before reading the actual book. They provide important information on the author’s sources and open new avenues of research. When I read footnote 29…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle: 'by Ayub Khan'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1675992154170,
+                firstPublishedAt: 1678394208375,
                 isLocked: false,
                 isSeries: false,
                 isShortform: false,
-                latestPublishedAt: 1675992154170,
+                latestPublishedAt: 1678394208375,
                 inResponseToCatalogResult: null,
                 pinnedAt: 0,
                 pinnedByCreatorAt: 0,
                 previewImage: {
-                  id: '1*r14_mB4gdg3JoEslVeXYgg.jpeg',
+                  id: '1*dGHL9OpyXsnSwVdaV9w3QA.png',
                   focusPercentX: null,
                   focusPercentY: null,
                   __typename: 'ImageMetadata'
                 },
-                readingTime: 2.7660377358490567,
+                readingTime: 4.2650943396226415,
                 sequence: null,
                 title:
-                  'Hyderabad Mystery: The Case of Missing Documents from Andhra Pradesh State Archives',
+                  'Calling All Developers: Help Us Make a Difference with Open Source Healthcare Technology',
                 uniqueSlug:
-                  'hyderabad-mystery-the-case-of-missing-documents-from-andhra-pradesh-state-archives-8f67f6cc3a2',
+                  'calling-all-developers-help-us-make-a-difference-with-open-source-healthcare-technology-37a8e5c26d81',
                 visibility: 'PUBLIC',
                 pendingCollection: null,
                 statusForCollection: null,
                 isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
                 mediumUrl:
-                  'https://medium.com/@ayubkhan2020/hyderabad-mystery-the-case-of-missing-documents-from-andhra-pradesh-state-archives-8f67f6cc3a2',
-                voterCount: 0,
-                recommenders: [],
-                clapCount: 0,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'hyderabad',
-                    displayTitle: 'Hyderabad',
-                    normalizedTagSlug: 'hyderabad'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'lucien-benichou',
-                    displayTitle: 'Lucien Benichou',
-                    normalizedTagSlug: 'lucien-benichou'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'research-ethics',
-                    displayTitle: 'Research Ethics',
-                    normalizedTagSlug: 'research-ethics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: '15dbace609a4',
-                creator: {
-                  __typename: 'User',
-                  name: 'Can Hoang Tran',
-                  username: 'canhoangtran',
-                  id: 'ef32a4ab36ed',
-                  mediumMemberAt: 1638549668000,
-                  socialStats: {
-                    followerCount: 198,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'canhoangtran.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'Veteran citizen journalist who enjoys martial arts, indie & foreign film, anime, manga, gaming, music, and martial arts. https://ko-fi.com/aeonxtrigger',
-                  imageId: '0*E4JBjFpezxV0Tqbu.'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: 'bfb4',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '9eaceae741d8_preview_0',
-                        name: '8d6c',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: '“Honor” & “Prestige” Are Subjective BS, Open To Interpretation — Part 2.2',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '9eaceae741d8_preview_1',
-                        name: 'db6c',
-                        type: 'H4',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'India happens to have the largest English-speaking population in the world but it is a byproduct of the oppression by the British Empire, which resulted in the deaths of tens of millions of Indian citizens.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '9eaceae741d8_preview_2',
-                        name: 'd4b6',
-                        type: 'IMG',
-                        href: null,
-                        layout: 'INSET_CENTER',
-                        metadata: {
-                          id: '0*U1VGO2xTHdsqawGD',
-                          originalHeight: 4000,
-                          originalWidth: 5073,
-                          focusPercentX: null,
-                          focusPercentY: null,
-                          alt: null,
-                          __typename: 'ImageMetadata'
-                        },
-                        text: 'Photo by Debashis RC Biswas on Unsplash',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 9,
-                            end: 27,
-                            href: 'https://unsplash.com/@rcsalbum?utm_source=medium&utm_medium=referral',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'A',
-                            start: 31,
-                            end: 39,
-                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '9eaceae741d8_preview_3',
-                        name: 'fa37',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Continuing on from 2.1, which focused on the atrocities committed against First Nation Canadians (the Indigenous peoples of Canada for the uninformed), the British Empire committed further atrocities across the globe.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '9eaceae741d8_preview_4',
-                        name: '4969',
-                        type: 'MIXTAPE_EMBED',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: '“Honor” & “Prestige” Are Subjective BS, Open To Interpretation — Part 2.1\nPart 2 of this series is dedicated to the British Royal Family with 2.1 focused on its role in the oppression and…canhoangtran.medium.com',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 0,
-                            end: 211,
-                            href: 'https://canhoangtran.medium.com/honor-prestige-are-subjective-bs-open-to-interpretation-part-2-1-2b0a9583fa1a',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 0,
-                            end: 73,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'EM',
-                            start: 74,
-                            end: 188,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: {
-                          href: 'https://canhoangtran.medium.com/honor-prestige-are-subjective-bs-open-to-interpretation-part-2-1-2b0a9583fa1a',
-                          mediaResource: {
-                            mediumCatalog: null,
-                            __typename: 'MediaResource'
-                          },
-                          __typename: 'MixtapeMetadata',
-                          thumbnailImageId: '0*rjAOu7DQcu6Q9gFc'
-                        }
-                      },
-                      {
-                        id: '9eaceae741d8_preview_5',
-                        name: 'd3ab',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'A friend and mentor once told me that the largest English-speaking population lives in India which initially surprised me…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'India happens to have the largest English-speaking population in the world but it is a byproduct of the oppression by the British Empire…'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1675966201141,
-                isLocked: true,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1677001954985,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '0*U1VGO2xTHdsqawGD',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 5.94622641509434,
-                sequence: null,
-                title:
-                  '“Honor” & “Prestige” Are Subjective BS, Open To Interpretation — Part 2.2',
-                uniqueSlug:
-                  'honor-prestige-are-subjective-bs-open-to-interpretation-part-2-2-15dbace609a4',
-                visibility: 'LOCKED',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://canhoangtran.medium.com/honor-prestige-are-subjective-bs-open-to-interpretation-part-2-2-15dbace609a4',
-                voterCount: 4,
-                recommenders: [],
-                clapCount: 89,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'queen-elizabeth-ii',
-                    displayTitle: 'Queen Elizabeth Ii',
-                    normalizedTagSlug: 'queen-elizabeth-ii'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'british-royal-family',
-                    displayTitle: 'British Royal Family',
-                    normalizedTagSlug: 'british-royal-family'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'british-empire',
-                    displayTitle: 'British Empire',
-                    normalizedTagSlug: 'british-empire'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: '9630994f8b81',
-                creator: {
-                  __typename: 'User',
-                  name: 'Jaimine',
-                  username: 'jaiminism',
-                  id: 'dc6a98b5467b',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 155,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'jaiminism.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'A libertarian professor based in Mumbai, youtubing at times, and reading books all-the-time. I write too. Dhamma practitioner.',
-                  imageId: '1*7g93WY1HO3KCe2O7_WIdfw.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: 'c7da',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '30d51a2921bb_preview_0',
-                        name: '4811',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Why Delhi Police Didn’t Generate Hash Value After Seizing My Cellphone?',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '30d51a2921bb_preview_1',
-                        name: '9497',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Having recovered from COVID-19, around 15:45 pm, on 22nd January 2022, two police personnel from the Intelligence Fusion and Strategic Operations (IFSO) unit of the Delhi Police knocked on my door. I was deep asleep, amid the recent chaos. They had come home to investigate my whistleblowing activity, which went…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 277,
-                            end: 300,
-                            href: 'https://www.youthkiawaaz.com/2022/01/how-i-exposed-anti-muslim-views-on-the-clubhouse-app-because-silence-cannot-be-golden/',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'The avoidance of the Delhi Police in the Sulli Deals case did not indelibly deter the Bulli Bai case or the Clubhouse hate chat case.'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1675741207628,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1675741207628,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '1*Jj6InX_fbaEew7SyQ-2Zhg.jpeg',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 4.811320754716982,
-                sequence: null,
-                title:
-                  'Why Delhi Police Didn’t Generate Hash Value After Seizing My Cellphone?',
-                uniqueSlug:
-                  'why-delhi-police-didnt-generate-hash-value-after-seizing-my-cellphone-9630994f8b81',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://jaiminism.medium.com/why-delhi-police-didnt-generate-hash-value-after-seizing-my-cellphone-9630994f8b81',
+                  'https://medium.com/@nicholas.drabowski/calling-all-developers-help-us-make-a-difference-with-open-source-healthcare-technology-37a8e5c26d81',
+                clapCount: 5,
                 voterCount: 1,
                 recommenders: [],
-                clapCount: 10,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'islamophobia',
-                    displayTitle: 'Islamophobia',
-                    normalizedTagSlug: 'islamophobia'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'hate-crimes',
-                    displayTitle: 'Hate Crimes',
-                    normalizedTagSlug: 'hate-crimes'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'hate-speech',
-                    displayTitle: 'Hate Speech',
-                    normalizedTagSlug: 'hate-speech'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'modi',
-                    displayTitle: 'Modi',
-                    normalizedTagSlug: 'modi'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'b7e7f5002973',
-                creator: {
-                  __typename: 'User',
-                  name: 'The Overthinker',
-                  username: 'theoverthinker4',
-                  id: '7d4ada2bfa91',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 0,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: null,
-                  hasSubdomain: false,
-                  bio: '',
-                  imageId: '0*B8jW_Bcngdb6j-gr'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: 'f44a',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '8fa70cb08527_preview_0',
-                        name: '5612',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Indian Journalism as understood by me.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'STRONG',
-                            start: 0,
-                            end: 38,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '8fa70cb08527_preview_1',
-                        name: '2279',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Everyone has heard the line that Media is the fourth pillar of Democracy. Media, in particular Journalism, is thus considered an important part of any democratically ruled nation. Since Independence, Media has been an integral part of this country. Whether Media is truly a part of Democracy or not is…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'Everyone has heard the line that Media is the fourth pillar of Democracy. Media, in particular Journalism, is thus considered an important…'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1675670230185,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1675670230185,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '1*57OeURSNswNbewcJntb10w.jpeg',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 3.818867924528302,
-                sequence: null,
-                title: 'Indian Journalism as understood by me.',
-                uniqueSlug:
-                  'indian-journalism-as-understood-by-me-b7e7f5002973',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
                 allowResponses: true,
                 postResponses: {
                   count: 0,
                   __typename: 'PostResponses'
                 },
                 isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@theoverthinker4/indian-journalism-as-understood-by-me-b7e7f5002973',
-                voterCount: 1,
-                recommenders: [],
-                clapCount: 1,
                 inResponseToEntityType: null,
                 tags: [
                   {
                     __typename: 'Tag',
-                    id: 'journalism',
-                    displayTitle: 'Journalism',
-                    normalizedTagSlug: 'journalism'
+                    id: 'technology',
+                    displayTitle: 'Technology',
+                    normalizedTagSlug: 'technology'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian',
-                    displayTitle: 'Indian',
-                    normalizedTagSlug: 'indian'
+                    id: 'self-improvement',
+                    displayTitle: 'Self Improvement',
+                    normalizedTagSlug: 'self-improvement'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
+                    id: 'python',
+                    displayTitle: 'Python',
+                    normalizedTagSlug: 'python'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-journalism',
-                    displayTitle: 'Indian Journalism',
-                    normalizedTagSlug: 'indian-journalism'
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'development',
+                    displayTitle: 'Development',
+                    normalizedTagSlug: 'development'
                   }
                 ]
               },
               __typename: 'TagFeedItem'
             },
             {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
               reason: 84,
               moduleSourceEncoding: 17,
               postProviderExplanation: {
@@ -1411,1511 +452,13 @@ export async function GET(request: Request) {
                 __typename: 'PostProviderExplanation'
               },
               post: {
-                id: '2c9f831761b4',
+                id: '1cd633b9755a',
                 creator: {
                   __typename: 'User',
-                  name: 'Your buddy shivam',
-                  username: 'nitroskj51',
-                  id: 'dc85e37fe6d',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 555,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'nitroskj51.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'I love writing, but not in examination hall.',
-                  imageId: '1*b6MdWFVXc9ZAHVSYVmFStA.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: 'bb21',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: 'e9051e7fd3b7_preview_0',
-                        name: 'edd5',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Geopolitical facts on India',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'e9051e7fd3b7_preview_1',
-                        name: '3694',
-                        type: 'IMG',
-                        href: null,
-                        layout: 'INSET_CENTER',
-                        metadata: {
-                          id: '0*onSpvAiIXjYt5Raj',
-                          originalHeight: 3216,
-                          originalWidth: 4856,
-                          focusPercentX: null,
-                          focusPercentY: null,
-                          alt: null,
-                          __typename: 'ImageMetadata'
-                        },
-                        text: 'Photo by Naveed Ahmed on Unsplash',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 9,
-                            end: 21,
-                            href: 'https://unsplash.com/@naveedahmed?utm_source=medium&utm_medium=referral',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'A',
-                            start: 25,
-                            end: 33,
-                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'e9051e7fd3b7_preview_2',
-                        name: '8cef',
-                        type: 'OLI',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'India is the largest democracy in the world, with a federal parliamentary system of government that divides power between the central government and the states. The head of state is the President, while the head of government is the Prime Minister. The Parliament consists of two houses: the Lok Sabha…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'India is the largest democracy in the world, with a federal parliamentary system of government that divides power between the central…'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1675617791042,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1675617791042,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '0*onSpvAiIXjYt5Raj',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 2.1245283018867926,
-                sequence: null,
-                title: 'Geopolitical facts on India',
-                uniqueSlug: 'geopolitical-facts-on-india-2c9f831761b4',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 1,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://nitroskj51.medium.com/geopolitical-facts-on-india-2c9f831761b4',
-                voterCount: 3,
-                recommenders: [],
-                clapCount: 6,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'geopolitics',
-                    displayTitle: 'Geopolitics',
-                    normalizedTagSlug: 'geopolitics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian',
-                    displayTitle: 'Indian',
-                    normalizedTagSlug: 'indian'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'narendra-modi',
-                    displayTitle: 'Narendra Modi',
-                    normalizedTagSlug: 'narendra-modi'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'pm-of-india',
-                    displayTitle: 'Pm Of India',
-                    normalizedTagSlug: 'pm-of-india'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: '19a81f754c08',
-                creator: {
-                  __typename: 'User',
-                  name: 'Sagnik Chatterjee',
-                  username: 'Sagnik.Chatterjee',
-                  id: '5317a0a475d3',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 55,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: null,
-                  hasSubdomain: false,
-                  bio: 'I am Sagnik Chatterjee and I love to create any form of content.',
-                  imageId: '1*nqB_tocP0FYOVsh4Bhq-2A.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: '0bbd',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      },
-                      {
-                        name: 'c50e',
-                        startIndex: 2,
-                        textLayout: 'FLOW',
-                        imageLayout: 'NONE',
-                        backgroundImage: null,
-                        videoLayout: 'NO_VIDEO',
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: 'fb2d1e88f3e1_preview_0',
-                        name: 'b445',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Measuring the Success of Bharat Jodo Yatra',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'fb2d1e88f3e1_preview_1',
-                        name: 'cc7a',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'The Bharat Jodo Yatra that began on 7th September, 2022 has now come to an end. Rahul Gandhi has covered 4084 kilometers, starting from Kanyakumari to Srinagar, on foot, as promised by him.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 80,
-                            end: 92,
-                            href: 'https://en.wikipedia.org/wiki/Rahul_Gandhi',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'A',
-                            start: 136,
-                            end: 147,
-                            href: 'https://en.wikipedia.org/wiki/Kanyakumari',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'A',
-                            start: 151,
-                            end: 159,
-                            href: 'https://en.wikipedia.org/wiki/Srinagar',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 4,
-                            end: 21,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 80,
-                            end: 92,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 136,
-                            end: 147,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 151,
-                            end: 159,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'EM',
-                            start: 36,
-                            end: 55,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'fb2d1e88f3e1_preview_2',
-                        name: 'fcb2',
-                        type: 'IMG',
-                        href: null,
-                        layout: 'INSET_CENTER',
-                        metadata: {
-                          id: '1*rcFsOYWiLANi9xSuXPtZ3A.png',
-                          originalHeight: 617,
-                          originalWidth: 996,
-                          focusPercentX: -1,
-                          focusPercentY: -1,
-                          alt: '',
-                          __typename: 'ImageMetadata'
-                        },
-                        text: '',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'fb2d1e88f3e1_preview_3',
-                        name: 'c71c',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'What is the Bharat Jodo Yatra?',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'fb2d1e88f3e1_preview_4',
-                        name: 'b9e4',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'According to the official website of the Bharat Jodo Yatra,',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'STRONG',
-                            start: 41,
-                            end: 58,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'fb2d1e88f3e1_preview_5',
-                        name: 'd407',
-                        type: 'BQ',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'The aim of this Yatra is to…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'The Bharat Jodo Yatra was a non-political movement started by Rahul Gandhi of the Indian National Congress on 7th September, 2022.'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1675484977928,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1675681573755,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '1*rcFsOYWiLANi9xSuXPtZ3A.png',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 5.226415094339623,
-                sequence: null,
-                title: 'Measuring the Success of Bharat Jodo Yatra',
-                uniqueSlug:
-                  'measuring-the-success-of-bharat-jodo-yatra-19a81f754c08',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@Sagnik.Chatterjee/measuring-the-success-of-bharat-jodo-yatra-19a81f754c08',
-                voterCount: 1,
-                recommenders: [],
-                clapCount: 7,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'bharat-jodo-yatra',
-                    displayTitle: 'Bharat Jodo Yatra',
-                    normalizedTagSlug: 'bharat-jodo-yatra'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'rahul-gandhi',
-                    displayTitle: 'Rahul Gandhi',
-                    normalizedTagSlug: 'rahul-gandhi'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-national-congress',
-                    displayTitle: 'Indian National Congress',
-                    normalizedTagSlug: 'indian-national-congress'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'd36606dffc6e',
-                creator: {
-                  __typename: 'User',
-                  name: 'Doogie',
-                  username: 'Doogie33',
-                  id: '18736e531170',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 229,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: null,
-                  hasSubdomain: false,
-                  bio: 'Certified Crypto Genie | Follow and subscribe to stay up to date on everything Crypto! Support the articles here - https://medium.com/@Doogie33/membership',
-                  imageId: '1*P44qerXONd7cOzg1jxkdBw.png'
-                },
-                collection: {
-                  name: 'Coinmonks',
-                  id: '721b17443fd5',
-                  domain: null,
-                  slug: 'coinmonks',
-                  __typename: 'Collection'
-                },
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: '4216',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: 'ea3391f13f94_preview_0',
-                        name: '7ebd',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'India Wants G20 Members To Agree On Cryptocurrency Regulations',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'ea3391f13f94_preview_1',
-                        name: 'bac2',
-                        type: 'IMG',
-                        href: null,
-                        layout: 'INSET_CENTER',
-                        metadata: {
-                          id: '1*X6hjJ9lncJaEYqZWkIU-gw.png',
-                          originalHeight: 1024,
-                          originalWidth: 1024,
-                          focusPercentX: null,
-                          focusPercentY: null,
-                          alt: null,
-                          __typename: 'ImageMetadata'
-                        },
-                        text: 'If you want to support these articles, and you want access to millions of articles…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 141,
-                            end: 180,
-                            href: 'https://medium.com/@Doogie33/membership',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'ea3391f13f94_preview_2',
-                        name: '8002',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'India is making efforts to bring the G20 member nations to a unified agreement on the regulations of digital assets, as reported by the Economic Times of India on February 2nd, 2023. India assumed the presidency of the G20 in December of 2022, which has put India in a crucial…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle: ''
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1675356476008,
-                isLocked: true,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1675356801480,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '1*X6hjJ9lncJaEYqZWkIU-gw.png',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 1.230188679245283,
-                sequence: null,
-                title:
-                  'India Wants G20 Members To Agree On Cryptocurrency Regulations',
-                uniqueSlug:
-                  'india-wants-g20-members-to-agree-on-cryptocurrency-regulations-d36606dffc6e',
-                visibility: 'LOCKED',
-                pendingCollection: null,
-                statusForCollection: 'APPROVED',
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/coinmonks/india-wants-g20-members-to-agree-on-cryptocurrency-regulations-d36606dffc6e',
-                voterCount: 2,
-                recommenders: [],
-                clapCount: 14,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'cryptocurrency-news',
-                    displayTitle: 'Cryptocurrency News',
-                    normalizedTagSlug: 'cryptocurrency-news'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'cryptocurrency-investment',
-                    displayTitle: 'Cryptocurrency Investment',
-                    normalizedTagSlug: 'cryptocurrency-investment'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'cryptocurrency',
-                    displayTitle: 'Cryptocurrency',
-                    normalizedTagSlug: 'cryptocurrency'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: '217efb9faec7',
-                creator: {
-                  __typename: 'User',
-                  name: 'Srikari Rallabandi',
-                  username: 'sreeku.ralla',
-                  id: '8f480f7ab25c',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 141,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: null,
-                  hasSubdomain: false,
-                  bio: "Hi! Welcome! is this page going to be abstract? technical? random anecdotes? it's going to be all of them!",
-                  imageId: '1*44__sG7amjplIVDxJztMug.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: '588a',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '42d874d21df3_preview_0',
-                        name: '9f26',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'From India to Bharat — A ‘millennial’s view.’',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '42d874d21df3_preview_1',
-                        name: '18a6',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'When I woke up today, I wanted to write something different from my regular blogs on Technology. I couldn’t find a better topic than today’s title. Then I thought, what qualifies me to write on this matter? The following struck.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '42d874d21df3_preview_2',
-                        name: '983b',
-                        type: 'ULI',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'I witnessed the formation of Telangana.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 29,
-                            end: 38,
-                            href: 'https://en.wikipedia.org/wiki/Telangana',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '42d874d21df3_preview_3',
-                        name: '8245',
-                        type: 'ULI',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Observed the movement from…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 100,
-                            end: 109,
-                            href: 'https://en.wikipedia.org/wiki/Bharat_Rashtra_Samithi',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'When I woke up today, I wanted to write something different from my regular blogs on Technology. I couldn’t find a better topic than…'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1674710094149,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1674710094149,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '0*jVlFpQBaEVM-nsA_',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 3.5839622641509434,
-                sequence: null,
-                title: 'From India to Bharat — A ‘millennial’s view.’',
-                uniqueSlug:
-                  'from-india-to-bharat-a-millennials-view-217efb9faec7',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@sreeku.ralla/from-india-to-bharat-a-millennials-view-217efb9faec7',
-                voterCount: 10,
-                recommenders: [],
-                clapCount: 45,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'bharat',
-                    displayTitle: 'Bharat',
-                    normalizedTagSlug: 'bharat'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian',
-                    displayTitle: 'Indian',
-                    normalizedTagSlug: 'indian'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-economy',
-                    displayTitle: 'Indian Economy',
-                    normalizedTagSlug: 'indian-economy'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'a4062ed168e4',
-                creator: {
-                  __typename: 'User',
-                  name: 'Ankita Bose',
-                  username: 'ankitabose',
-                  id: '24d19385f1d8',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 98,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'ankitabose.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'Ankita is a middle-class Bengali woman whose eyelids are painted with yet-to-be fulfilled dreams. An avowed reader, she only wants to learn and write in life.',
-                  imageId: '1*vS09IeuXmBUPn1xoQd5YJA.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: 'bed4',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: 'fa933ed8c628_preview_0',
-                        name: '97cc',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Of Beauty And Ugliness: A Journalist’s Journey',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'fa933ed8c628_preview_1',
-                        name: 'a47e',
-                        type: 'IMG',
-                        href: null,
-                        layout: 'INSET_CENTER',
-                        metadata: {
-                          id: '1*E3kuivmrPLFy6iY-zEBj0A.jpeg',
-                          originalHeight: 1488,
-                          originalWidth: 1631,
-                          focusPercentX: -1,
-                          focusPercentY: -1,
-                          alt: '',
-                          __typename: 'ImageMetadata'
-                        },
-                        text: 'Artwork by Baibhab Bose',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'fa933ed8c628_preview_2',
-                        name: '506c',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Her fingers were stout and slender at the same time. One can hardly fathom how these two could fit together. She had bulgy fingers which were short. They were slender in itself but obscure when compared to her skeletal frame. Her fingers were ugly, she thought. The one part of…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'Her fingers were stout and slender at the same time. One can hardly fathom how these two could fit together. She had bulgy fingers which…'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1674690036447,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1677137677564,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '1*E3kuivmrPLFy6iY-zEBj0A.jpeg',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 5.867924528301887,
-                sequence: null,
-                title: 'Of Beauty And Ugliness: A Journalist’s Journey',
-                uniqueSlug:
-                  'of-beauty-and-ugliness-a-journalists-journey-a4062ed168e4',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://ankitabose.medium.com/of-beauty-and-ugliness-a-journalists-journey-a4062ed168e4',
-                voterCount: 1,
-                recommenders: [],
-                clapCount: 1,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'republic-day',
-                    displayTitle: 'Republic Day',
-                    normalizedTagSlug: 'republic-day'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'journalism',
-                    displayTitle: 'Journalism',
-                    normalizedTagSlug: 'journalism'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'stream-of-conciousness',
-                    displayTitle: 'Stream Of Conciousness',
-                    normalizedTagSlug: 'stream-of-conciousness'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-independence',
-                    displayTitle: 'Indian Independence',
-                    normalizedTagSlug: 'indian-independence'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'bffd3b435968',
-                creator: {
-                  __typename: 'User',
-                  name: 'Anurag Singh Tomar',
-                  username: 'anuragsinghtomar_41628',
-                  id: 'b565f688a83c',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 74,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: null,
-                  hasSubdomain: false,
-                  bio: '',
-                  imageId: '0*Z6tgHLNtHNGVU8eX.'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: 'cab0',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '730cc045409d_preview_0',
-                        name: 'd4f2',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Lifting foot off India’s brake pedals',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '730cc045409d_preview_1',
-                        name: 'c354',
-                        type: 'IMG',
-                        href: null,
-                        layout: 'INSET_CENTER',
-                        metadata: {
-                          id: '0*fa5sZqr04k65Dwl_',
-                          originalHeight: 380,
-                          originalWidth: 725,
-                          focusPercentX: null,
-                          focusPercentY: null,
-                          alt: null,
-                          __typename: 'ImageMetadata'
-                        },
-                        text: '',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '730cc045409d_preview_2',
-                        name: '38d5',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'What actually makes the world beautiful and meaningful? Among many other responses, Diversity and Novelty in life are a couple of answers to the above questions. New ideas, new innovations, constant progress, diversity of art forms, and diversity of opinions and options are what make life feel interesting and kicking…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'EM',
-                            start: 84,
-                            end: 93,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'EM',
-                            start: 98,
-                            end: 105,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'What actually makes the world beautiful and meaningful? Among many other responses, Diversity and Novelty in life are a couple of answers…'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1674715986637,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1674715986637,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '0*fa5sZqr04k65Dwl_',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 5.184905660377359,
-                sequence: null,
-                title: 'Lifting foot off India’s brake pedals',
-                uniqueSlug: 'lifting-foot-off-indias-brake-pedals-bffd3b435968',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@anuragsinghtomar_41628/lifting-foot-off-indias-brake-pedals-bffd3b435968',
-                voterCount: 0,
-                recommenders: [],
-                clapCount: 0,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-history',
-                    displayTitle: 'Indian History',
-                    normalizedTagSlug: 'indian-history'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian',
-                    displayTitle: 'Indian',
-                    normalizedTagSlug: 'indian'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'india-rising',
-                    displayTitle: 'India Rising',
-                    normalizedTagSlug: 'india-rising'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: '635b4b4200ee',
-                creator: {
-                  __typename: 'User',
-                  name: 'Jaimine',
-                  username: 'jaiminism',
-                  id: 'dc6a98b5467b',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 155,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'jaiminism.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'A libertarian professor based in Mumbai, youtubing at times, and reading books all-the-time. I write too. Dhamma practitioner.',
-                  imageId: '1*7g93WY1HO3KCe2O7_WIdfw.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: '31c3',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '410d40068d27_preview_0',
-                        name: '5161',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Is Taxation A System Of Legal Robbery?',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '410d40068d27_preview_1',
-                        name: '733d',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'The most reliable source of revenue for the government is “tax”, and the act of charging tax is Taxation. Taxes are classified into two categories: Direct Taxes are those that are levied on the income or profits of a person and include Income Tax, Property Tax, and Entitlement Tax among…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'So, if you are eating a cake for Rs 300, the government has eaten a pastry out of it already.'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1674010815000,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1674010846919,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '1*l4Y04GyEWwCq9CMBzCluGg.jpeg',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 6.832389937106918,
-                sequence: null,
-                title: 'Is Taxation A System Of Legal Robbery?',
-                uniqueSlug:
-                  'is-taxation-a-system-of-legal-robbery-635b4b4200ee',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://jaiminism.medium.com/is-taxation-a-system-of-legal-robbery-635b4b4200ee',
-                voterCount: 1,
-                recommenders: [],
-                clapCount: 1,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'taxation-is-theft',
-                    displayTitle: 'Taxation Is Theft',
-                    normalizedTagSlug: 'taxation-is-theft'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'taxes',
-                    displayTitle: 'Taxes',
-                    normalizedTagSlug: 'taxes'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'economics',
-                    displayTitle: 'Economics',
-                    normalizedTagSlug: 'economics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-economy',
-                    displayTitle: 'Indian Economy',
-                    normalizedTagSlug: 'indian-economy'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'ecf7f69407b1',
-                creator: {
-                  __typename: 'User',
-                  name: 'Politics For India',
-                  username: 'politicsforindia',
-                  id: 'ea8cdd56098a',
-                  mediumMemberAt: 0,
+                  name: 'Syed Mohsin',
+                  username: 'syedmohsin',
+                  id: '8008fa80c712',
+                  mediumMemberAt: 1671284486000,
                   socialStats: {
                     followerCount: 149,
                     __typename: 'SocialStats'
@@ -2926,33 +469,33 @@ export async function GET(request: Request) {
                   },
                   customDomainState: null,
                   hasSubdomain: false,
-                  bio: '',
-                  imageId: '1*Alg3EBSqlu1aNYc1SXjSdw.png'
+                  bio: "Engineering Leader | Full-Stack Engineer | Player-Coach — I write about engineering lessons I don't want to forget https://linktr.ee/syedbmohsin",
+                  imageId: '1*gK7meSLQYjD66P6_9HjKLw.jpeg'
                 },
                 collection: null,
                 extendedPreviewContent: {
                   bodyModel: {
                     sections: [
                       {
-                        name: 'fb24',
+                        name: 'fe7d',
                         startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
+                        textLayout: 'FLOW',
+                        imageLayout: 'NONE',
                         backgroundImage: null,
-                        videoLayout: null,
+                        videoLayout: 'NO_VIDEO',
                         backgroundVideo: null,
                         __typename: 'Section'
                       }
                     ],
                     paragraphs: [
                       {
-                        id: '312b410871f9_preview_0',
-                        name: '9482',
+                        id: 'ec9851d9119d_preview_0',
+                        name: '3f40',
                         type: 'H3',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Caste census: Revival of Mandal Politics?',
+                        text: 'Writing a Pragmatic Tech Spec',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -2962,21 +505,74 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: '312b410871f9_preview_1',
-                        name: '4f85',
+                        id: 'ec9851d9119d_preview_1',
+                        name: '9c7e',
+                        type: 'H4',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Find joy in writing specs and avoid the waterfall trap.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'ec9851d9119d_preview_2',
+                        name: 'dc1b',
                         type: 'IMG',
                         href: null,
                         layout: 'INSET_CENTER',
                         metadata: {
-                          id: '1*zRCEINBodKau9KcBJKOCAA.jpeg',
-                          originalHeight: 540,
-                          originalWidth: 720,
+                          id: '0*tfBHQx2TTSSkuf7_',
+                          originalHeight: 563,
+                          originalWidth: 1000,
                           focusPercentX: null,
                           focusPercentY: null,
                           alt: null,
                           __typename: 'ImageMetadata'
                         },
-                        text: 'Even today, caste forms an inseparable part of Indian society.',
+                        text: 'From Daniel McCullough on Unsplash',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 5,
+                            end: 22,
+                            href: 'https://unsplash.com/@d_mccullough',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 26,
+                            end: 34,
+                            href: 'https://unsplash.com/photos/-FPFq_trr2Y',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'ec9851d9119d_preview_3',
+                        name: 'c28c',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Few things deflated my excitement faster than a manager announcing “let’s write a tech spec for this new project.”',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -2986,13 +582,13 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: '312b410871f9_preview_2',
-                        name: '4c18',
+                        id: 'ec9851d9119d_preview_4',
+                        name: 'fb3c',
                         type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Across religions, caste is an intrinsic part of Indian society. A mere name of a person tells everything about their social, political and economic location. Thus, to understand Indian society and politics, understanding caste is imperative.',
+                        text: 'When a meaty project lands on my desk, my brain goes into overdrive wrestling with the various approaches I could take.',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -3002,13 +598,13 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: '312b410871f9_preview_3',
-                        name: '02e4',
+                        id: 'ec9851d9119d_preview_5',
+                        name: '309d',
                         type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'A caste census was proposed after the release of the Mandal Commission report. Since…',
+                        text: 'My fingers itch to find a keyboard so I can…',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -3023,81 +619,80 @@ export async function GET(request: Request) {
                   isFullContent: false,
                   __typename: 'PreviewContent',
                   subtitle:
-                    'Across religions, caste is an intrinsic part of Indian society. A mere name of a person tells everything about their social, political and…'
+                    'Find joy in writing specs and avoid the waterfall trap.'
                 },
                 __typename: 'Post',
-                firstPublishedAt: 1673956968327,
-                isLocked: false,
+                firstPublishedAt: 1678461686505,
+                isLocked: true,
                 isSeries: false,
                 isShortform: false,
-                latestPublishedAt: 1673956968327,
+                latestPublishedAt: 1678461686505,
                 inResponseToCatalogResult: null,
                 pinnedAt: 0,
                 pinnedByCreatorAt: 0,
                 previewImage: {
-                  id: '1*zRCEINBodKau9KcBJKOCAA.jpeg',
+                  id: '0*tfBHQx2TTSSkuf7_',
                   focusPercentX: null,
                   focusPercentY: null,
                   __typename: 'ImageMetadata'
                 },
-                readingTime: 5.313207547169812,
+                readingTime: 8.647169811320754,
                 sequence: null,
-                title: 'Caste census: Revival of Mandal Politics?',
-                uniqueSlug:
-                  'caste-census-revival-of-mandal-politics-ecf7f69407b1',
-                visibility: 'PUBLIC',
+                title: 'Writing a Pragmatic Tech Spec',
+                uniqueSlug: 'writing-a-pragmatic-tech-spec-1cd633b9755a',
+                visibility: 'LOCKED',
                 pendingCollection: null,
                 statusForCollection: null,
                 isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@syedmohsin/writing-a-pragmatic-tech-spec-1cd633b9755a',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
                 allowResponses: true,
                 postResponses: {
-                  count: 1,
+                  count: 0,
                   __typename: 'PostResponses'
                 },
                 isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@politicsforindia/caste-census-revival-of-mandal-politics-ecf7f69407b1',
-                voterCount: 1,
-                recommenders: [],
-                clapCount: 5,
                 inResponseToEntityType: null,
                 tags: [
                   {
                     __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
+                    id: 'software-development',
+                    displayTitle: 'Software Development',
+                    normalizedTagSlug: 'software-development'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'census',
-                    displayTitle: 'Census',
-                    normalizedTagSlug: 'census'
+                    id: 'programming',
+                    displayTitle: 'Programming',
+                    normalizedTagSlug: 'programming'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'caste-systems',
-                    displayTitle: 'Caste Systems',
-                    normalizedTagSlug: 'caste-systems'
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'politics',
-                    displayTitle: 'Politics',
-                    normalizedTagSlug: 'politics'
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
+                    id: 'software-engineering',
+                    displayTitle: 'Software Engineering',
+                    normalizedTagSlug: 'software-engineering'
                   }
                 ]
               },
               __typename: 'TagFeedItem'
             },
             {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
               reason: 84,
               moduleSourceEncoding: 17,
               postProviderExplanation: {
@@ -3106,12 +701,565 @@ export async function GET(request: Request) {
                 __typename: 'PostProviderExplanation'
               },
               post: {
-                id: '7e16cf79ac05',
+                id: 'f69fdb09c976',
                 creator: {
                   __typename: 'User',
-                  name: 'IndicVoices',
-                  username: 'indicvoices',
-                  id: '909e6f1cf762',
+                  name: 'Balaji Dharma',
+                  username: 'balajidharma',
+                  id: '17217f29618a',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 351,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: {
+                    live: {
+                      domain: 'balajidharma.medium.com',
+                      __typename: 'CustomDomain'
+                    },
+                    __typename: 'CustomDomainState'
+                  },
+                  hasSubdomain: true,
+                  bio: 'Web developer. https://github.com/balajidharma Join Medium https://bit.ly/3SEeYvx Buy me a coffee https://bit.ly/41q4dku',
+                  imageId: '1*IZNRy-dku7WW2-hWe4CcJA.jpeg'
+                },
+                collection: {
+                  __typename: 'Collection',
+                  id: '4e2c1156667e',
+                  name: 'Dev Genius',
+                  domain: 'blog.devgenius.io',
+                  slug: 'dev-genius'
+                },
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '8794',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: 'd995108026b4_preview_0',
+                        name: '3735',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Laravel creates a chatGPT application using OpenAI API',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd995108026b4_preview_1',
+                        name: 'f3d9',
+                        type: 'H4',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'build a ChatGPT application using Laravel — Part 1 Installation',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd995108026b4_preview_2',
+                        name: 'c087',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '0*3OLyNnh5VX__Cw9q',
+                          originalHeight: 3456,
+                          originalWidth: 4608,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: 'Photo by Emiliano Vittoriosi on Unsplash',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 9,
+                            end: 28,
+                            href: 'https://unsplash.com/pt-br/@emilianovittoriosi?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 32,
+                            end: 40,
+                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd995108026b4_preview_3',
+                        name: '0355',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'The ChatGPT is an Artificial Intelligence(AI) chatbot launched by OpenAI. It is built on top of OpenAI’s GPT-3.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 66,
+                            end: 72,
+                            href: 'https://openai.com/',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd995108026b4_preview_4',
+                        name: '11bc',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'You can try the ChatGPT on https://chat.openai.com/chat',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 27,
+                            end: 55,
+                            href: 'https://chat.openai.com/chat',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd995108026b4_preview_5',
+                        name: 'ba0a',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Already I have published articles to create a chatGPT application using python.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd995108026b4_preview_6',
+                        name: 'e3e8',
+                        type: 'ULI',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Create an Application In ChatGPT using OpenAI API and Python flask framework.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 0,
+                            end: 77,
+                            href: 'https://medium.com/geekculture/how-to-create-an-application-in-chatgpt-using-openai-api-5d3f3d4be2d2',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd995108026b4_preview_7',
+                        name: 'c247',
+                        type: 'ULI',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Create…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 0,
+                            end: 60,
+                            href: 'https://medium.com/geekculture/how-to-create-an-application-in-chatgpt-using-openai-api-and-django-be7d5e36fbd7',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'build a ChatGPT application using Laravel — Part 1 Installation'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678447000928,
+                isLocked: true,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678447000928,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '0*3OLyNnh5VX__Cw9q',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 3.9141509433962263,
+                sequence: null,
+                title: 'Laravel creates a chatGPT application using OpenAI API',
+                uniqueSlug:
+                  'laravel-creates-a-chatgpt-application-using-openai-api-f69fdb09c976',
+                visibility: 'LOCKED',
+                pendingCollection: null,
+                statusForCollection: 'APPROVED',
+                isPublished: true,
+                mediumUrl:
+                  'https://blog.devgenius.io/laravel-creates-a-chatgpt-application-using-openai-api-f69fdb09c976',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'laravel',
+                    displayTitle: 'Laravel',
+                    normalizedTagSlug: 'laravel'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'php',
+                    displayTitle: 'PHP',
+                    normalizedTagSlug: 'php'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'chatgpt',
+                    displayTitle: 'Chatgpt',
+                    normalizedTagSlug: 'chatgpt'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'laravel-framework',
+                    displayTitle: 'Laravel Framework',
+                    normalizedTagSlug: 'laravel-framework'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: 'fa70f12b08a0',
+                creator: {
+                  __typename: 'User',
+                  name: 'Raphael Aleixo',
+                  username: 'raphaelaleixo',
+                  id: '11e9d366bb39',
+                  mediumMemberAt: 1505235030000,
+                  socialStats: {
+                    followerCount: 163,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: {
+                    live: {
+                      domain: 'raphaelaleixo.medium.com',
+                      __typename: 'CustomDomain'
+                    },
+                    __typename: 'CustomDomainState'
+                  },
+                  hasSubdomain: true,
+                  bio: '',
+                  imageId: '0*N24595m8q1L2lBYV.jpg'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '55fc',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '92e7294863fb_preview_0',
+                        name: '2d79',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Using React, Google Sheets, and CSS to create a dynamic cv and cover letter generator.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '92e7294863fb_preview_1',
+                        name: 'af89',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '1*a1Jyu1wp1SoscuQaL8NO-w.png',
+                          originalHeight: 1164,
+                          originalWidth: 2000,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: '',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '92e7294863fb_preview_2',
+                        name: 'f76b',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'The last few months have not been easy for those working in the tech industry. Week after week, we read news about hundreds of good professionals being left without jobs because of a new layoff.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '92e7294863fb_preview_3',
+                        name: 'c4ec',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'And now, with an excedent of good talent free in the job market, hunting jobs…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'STRONG',
+                            start: 97,
+                            end: 216,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'The last few months have not been easy for those working in the tech industry. Week after week, we read news about hundreds of good…'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678394234588,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678420372079,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '1*a1Jyu1wp1SoscuQaL8NO-w.png',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 2.8852201257861636,
+                sequence: null,
+                title:
+                  'Using React, Google Sheets, and CSS to create a dynamic cv and cover letter generator.',
+                uniqueSlug:
+                  'using-react-google-sheets-and-css-to-create-a-dynamic-cv-and-cover-letter-generator-fa70f12b08a0',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: null,
+                isPublished: true,
+                mediumUrl:
+                  'https://raphaelaleixo.medium.com/using-react-google-sheets-and-css-to-create-a-dynamic-cv-and-cover-letter-generator-fa70f12b08a0',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'job-hunting',
+                    displayTitle: 'Job Hunting',
+                    normalizedTagSlug: 'job-hunting'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'react',
+                    displayTitle: 'React',
+                    normalizedTagSlug: 'react'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'product-design',
+                    displayTitle: 'Product Design',
+                    normalizedTagSlug: 'product-design'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: 'cf7c5054d607',
+                creator: {
+                  __typename: 'User',
+                  name: 'Dmitrijus Glezeris',
+                  username: 'kerneldemon',
+                  id: 'a1995838e051',
                   mediumMemberAt: 0,
                   socialStats: {
                     followerCount: 0,
@@ -3123,1099 +1271,21 @@ export async function GET(request: Request) {
                   },
                   customDomainState: null,
                   hasSubdomain: false,
-                  bio: 'Software Engineer by profession. Writer by passion. Write primarily on Indian history and politics while covering world affairs as well. www.indicvoices.com',
-                  imageId: '1*O33_gWeW0A7QxrQ1AfZePQ.png'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: 'af2a',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '4ad61a1531f9_preview_0',
-                        name: 'ac09',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'GENESIS OF INDIAN NATIONAL CONGRESS',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '4ad61a1531f9_preview_1',
-                        name: 'a554',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Recently Indian National Congress has chosen its 98th president. After 24 years, Congress is going to have a non-Gandhi party president. Indian National Congress — a party that was founded on 1885 by a British civil service officer named Allan Octavian Hume; a party that had 6 European born persons…',
-                        hasDropCap: true,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    '“But one thing is clear, that the Congress was started more with the object of saving the British Empire…” — Lala Lajpat Rai'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1674010941646,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1674010941646,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '1*GYMjwr1b_q6Y7oB5skzjWw.png',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 9.976729559748428,
-                sequence: null,
-                title: 'GENESIS OF INDIAN NATIONAL CONGRESS',
-                uniqueSlug: 'genesis-of-indian-national-congress-7e16cf79ac05',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@indicvoices/genesis-of-indian-national-congress-7e16cf79ac05',
-                voterCount: 0,
-                recommenders: [],
-                clapCount: 0,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'politics',
-                    displayTitle: 'Politics',
-                    normalizedTagSlug: 'politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-national-congress',
-                    displayTitle: 'Indian National Congress',
-                    normalizedTagSlug: 'indian-national-congress'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-freedom-struggle',
-                    displayTitle: 'Indian Freedom Struggle',
-                    normalizedTagSlug: 'indian-freedom-struggle'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-history',
-                    displayTitle: 'Indian History',
-                    normalizedTagSlug: 'indian-history'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'f9628d54401a',
-                creator: {
-                  __typename: 'User',
-                  name: 'Ambuj Shukla',
-                  username: 'ambuj4373',
-                  id: '42afa3eb420b',
-                  mediumMemberAt: 1675428601000,
-                  socialStats: {
-                    followerCount: 301,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'ambuj4373.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'I write about Data Science, Psychology, Politics and some Random stuffs',
-                  imageId: '1*t9ZAdmbA0hw3mmTsLiL79w.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: 'f630',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      },
-                      {
-                        name: '44ca',
-                        startIndex: 3,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '18a14e42454a_preview_0',
-                        name: 'c8b9',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Onions Prices and Indian Politics',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '18a14e42454a_preview_1',
-                        name: 'b2f1',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'A simple EDA of onion prices dataset from 2020 in R and it’s role in Indian Politics',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '18a14e42454a_preview_2',
-                        name: '497e',
-                        type: 'IMG',
-                        href: null,
-                        layout: 'INSET_CENTER',
-                        metadata: {
-                          id: '1*KbS4URlRsWgGAp1N_kzWQw.png',
-                          originalHeight: 494,
-                          originalWidth: 604,
-                          focusPercentX: null,
-                          focusPercentY: null,
-                          alt: null,
-                          __typename: 'ImageMetadata'
-                        },
-                        text: '',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '18a14e42454a_preview_3',
-                        name: 'ab60',
-                        type: 'H4',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'About Dataset',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '18a14e42454a_preview_4',
-                        name: '2337',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'This dataset has daily/weekly market prices of onion from various markets of India for the year 2020. The data is collected from data.gov.in website. It consists of 9 columns:',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '18a14e42454a_preview_5',
-                        name: '7f32',
-                        type: 'BQ',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Name of State',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '18a14e42454a_preview_6',
-                        name: 'fc01',
-                        type: 'BQ',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'District',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '18a14e42454a_preview_7',
-                        name: '2a1c',
-                        type: 'BQ',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: '…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'A simple EDA of onion prices dataset from 2020 in R and it’s role in Indian Politics'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1673873571019,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1673912574225,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '1*KbS4URlRsWgGAp1N_kzWQw.png',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 3.436792452830189,
-                sequence: null,
-                title: 'Onions Prices and Indian Politics',
-                uniqueSlug: 'onions-prices-and-indian-politics-f9628d54401a',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://ambuj4373.medium.com/onions-prices-and-indian-politics-f9628d54401a',
-                voterCount: 2,
-                recommenders: [],
-                clapCount: 72,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'politics',
-                    displayTitle: 'Politics',
-                    normalizedTagSlug: 'politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'data',
-                    displayTitle: 'Data',
-                    normalizedTagSlug: 'data'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'psychology',
-                    displayTitle: 'Psychology',
-                    normalizedTagSlug: 'psychology'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: '38abae60d3bf',
-                creator: {
-                  __typename: 'User',
-                  name: 'Amrit Hallan',
-                  username: 'amritsupdates',
-                  id: 'b2c91c26325',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 1285,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'amritsupdates.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'I don’t care much about being politically correct. Things are just right or wrong and yes, sometimes there are grey areas in this is why we write, don’t we?',
-                  imageId: '1*Vq0e_U1LRt6_Asp7nPTGCA.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: '1e47',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '21e88d262ee0_preview_0',
-                        name: '57e3',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'About the Ram Charitmanas controversy',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '21e88d262ee0_preview_1',
-                        name: 'fdde',
-                        type: 'IMG',
-                        href: null,
-                        layout: 'INSET_CENTER',
-                        metadata: {
-                          id: '0*s7Itw2e0MGJ9wQVZ.jpg',
-                          originalHeight: 675,
-                          originalWidth: 1200,
-                          focusPercentX: null,
-                          focusPercentY: null,
-                          alt: null,
-                          __typename: 'ImageMetadata'
-                        },
-                        text: '',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '21e88d262ee0_preview_2',
-                        name: 'abfd',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Nupur Sharma offended the Muslim community by quoting something from Quran.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '21e88d262ee0_preview_3',
-                        name: 'e090',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Irrespective of whether what she quoted exists or not in Quran, offense was taken and she had to go underground.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '21e88d262ee0_preview_4',
-                        name: '2e22',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Death threats were issued. She was removed from the party post. Multiple people were killed just for supporting her.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '21e88d262ee0_preview_5',
-                        name: 'b052',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: '…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'Nupur Sharma offended the Muslim community by quoting something from Quran.'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1673780880487,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1673780880487,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '0*s7Itw2e0MGJ9wQVZ.jpg',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 4.233962264150944,
-                sequence: null,
-                title: 'About the Ram Charitmanas controversy',
-                uniqueSlug:
-                  'about-the-ram-charitmanas-controversy-38abae60d3bf',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://amritsupdates.medium.com/about-the-ram-charitmanas-controversy-38abae60d3bf',
-                voterCount: 1,
-                recommenders: [],
-                clapCount: 16,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'hinduism',
-                    displayTitle: 'Hinduism',
-                    normalizedTagSlug: 'hinduism'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'hindu-mythology',
-                    displayTitle: 'Hindu Mythology',
-                    normalizedTagSlug: 'hindu-mythology'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'mythology',
-                    displayTitle: 'Mythology',
-                    normalizedTagSlug: 'mythology'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'casteism',
-                    displayTitle: 'Casteism',
-                    normalizedTagSlug: 'casteism'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'c93beadc1cc2',
-                creator: {
-                  __typename: 'User',
-                  name: 'Arvind Rishi',
-                  username: 'arowrayne',
-                  id: 'e5731d75b80c',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 115,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: null,
-                  hasSubdomain: false,
-                  bio: 'Full Stack Developer — No Slack Hustler | Cryptocurrency | Blockchain | Spring Boot | Java | UI |Linkedin — https://www.linkedin.com/in/arvind-rishi-71451b168/',
-                  imageId: '1*gv0XOTkCvCuEYVVBPE9HeA.jpeg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: '2b07',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '65c963b37e23_preview_0',
-                        name: 'aeba',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Decoding India’s Tech Stack: BharatNet — Revolutionizing Rural Connectivity',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '65c963b37e23_preview_1',
-                        name: 'cba7',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Explore the impact and potential of BharatNet, the National Optical Fibre Network initiative connecting all of India’s village councils to high-speed broadband internet.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'EM',
-                            start: 0,
-                            end: 169,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '65c963b37e23_preview_2',
-                        name: '5acd',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Learn how it’s revolutionizing rural connectivity and enabling digital access to e-governance, e-commerce, e-education, and e-healthcare.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'EM',
-                            start: 0,
-                            end: 137,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '65c963b37e23_preview_3',
-                        name: '9645',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'What is BharatNet Project?',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '65c963b37e23_preview_4',
-                        name: 'adeb',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'The BharatNet project, also known as the National Optical Fibre Network…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'Explore BharatNet, the National Optical Fibre Network initiative connecting all of India’s village councils to high-speed broadband…'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1673501225365,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1673501225365,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 1673502071317,
-                previewImage: {
-                  id: '1*EJog4-HwJgSDTO_3JD4NVA.png',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 2.839937106918239,
-                sequence: null,
-                title:
-                  'Decoding India’s Tech Stack: BharatNet — Revolutionizing Rural Connectivity',
-                uniqueSlug:
-                  'decoding-indias-tech-stack-bharatnet-revolutionizing-rural-connectivity-c93beadc1cc2',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@arowrayne/decoding-indias-tech-stack-bharatnet-revolutionizing-rural-connectivity-c93beadc1cc2',
-                voterCount: 2,
-                recommenders: [],
-                clapCount: 2,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'technology',
-                    displayTitle: 'Technology',
-                    normalizedTagSlug: 'technology'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'rural-development',
-                    displayTitle: 'Rural Development',
-                    normalizedTagSlug: 'rural-development'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-government',
-                    displayTitle: 'Indian Government',
-                    normalizedTagSlug: 'indian-government'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'a3b26a78bc3a',
-                creator: {
-                  __typename: 'User',
-                  name: 'Snigdha Bhatnagar',
-                  username: 'snigdha9bhatnagar',
-                  id: '7fbf95f49bad',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 18,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'snigdha9bhatnagar.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'Starting afresh',
-                  imageId: '0*1oyx9TLzxC8tvoOx.jpg'
-                },
-                collection: null,
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: '78a6',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '717d2d50e3bc_preview_0',
-                        name: '8bbd',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'The Battle of the Viruses',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'STRONG',
-                            start: 0,
-                            end: 25,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '717d2d50e3bc_preview_1',
-                        name: '1963',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'If we talk about one of the most widely used words in recent years, it needs to have “virus” on the list.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '717d2d50e3bc_preview_2',
-                        name: '7b11',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Privileged was the virus, as it did capture its well-deserved limelight and found its space to hit it to the headlines for months, every day (It still is)…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle:
-                    'If we talk about one of the most widely used words in recent years, it needs to have “virus” on the list.'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1673211973810,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1673211973810,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 2.8075471698113206,
-                sequence: null,
-                title: 'The Battle of the Viruses',
-                uniqueSlug: 'the-battle-of-the-viruses-a3b26a78bc3a',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://snigdha9bhatnagar.medium.com/the-battle-of-the-viruses-a3b26a78bc3a',
-                voterCount: 1,
-                recommenders: [],
-                clapCount: 1,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'democracy',
-                    displayTitle: 'Democracy',
-                    normalizedTagSlug: 'democracy'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'society',
-                    displayTitle: 'Society',
-                    normalizedTagSlug: 'society'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: 'ebd94b9eec06',
-                creator: {
-                  __typename: 'User',
-                  name: 'Abhinav Jain',
-                  username: 'sirabhinavjain',
-                  id: '46f0a6ddb572',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 93,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'sirabhinavjain.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: 'https://www.yourquote.in/abhinav-jain-jk5/quotes',
-                  imageId: '0*uraWdQ5cms4xuxYW.'
+                  bio: '',
+                  imageId: '0*RHHEtrXvFoi5Nlz5'
                 },
                 collection: {
-                  name: 'CryptoStars',
-                  id: 'f99bf723d1f5',
-                  domain: 'blog.cryptostars.is',
-                  slug: 'cryptostars',
-                  __typename: 'Collection'
+                  __typename: 'Collection',
+                  id: '96ddce6ad17f',
+                  name: 'Nord Security tech blog',
+                  domain: null,
+                  slug: 'nord-security-tech-blog'
                 },
                 extendedPreviewContent: {
                   bodyModel: {
                     sections: [
                       {
-                        name: '0499',
+                        name: '2391',
                         startIndex: 0,
                         textLayout: null,
                         imageLayout: null,
@@ -4227,13 +1297,13 @@ export async function GET(request: Request) {
                     ],
                     paragraphs: [
                       {
-                        id: 'dd9a3575b517_preview_0',
-                        name: '2aea',
+                        id: '256f16833c2d_preview_0',
+                        name: 'd1c9',
                         type: 'H3',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Are our public spaces movement-friendly, especially for women?',
+                        text: 'Tips for tool-building using OpenAPI',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -4243,13 +1313,21 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'dd9a3575b517_preview_1',
-                        name: 'b294',
-                        type: 'P',
+                        id: '256f16833c2d_preview_1',
+                        name: '6d69',
+                        type: 'IMG',
                         href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'A picture is worth a thousand words — How is India transforming?',
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '1*4czGjRPzNmzS43843o3f8w.jpeg',
+                          originalHeight: 720,
+                          originalWidth: 1280,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: '',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -4259,13 +1337,13 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'dd9a3575b517_preview_2',
-                        name: '7b38',
+                        id: '256f16833c2d_preview_2',
+                        name: 'fece',
                         type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'India, despite being the world’s 5th largest economy, is a poor country. Most of its people don’t have access to necessities — food, housing, education, and health care. …',
+                        text: 'The main reason I became a developer was to build interesting things. But as with every job, you quickly realize that repetitive tasks are a big part of your life. …',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -4280,82 +1358,80 @@ export async function GET(request: Request) {
                   isFullContent: false,
                   __typename: 'PreviewContent',
                   subtitle:
-                    'A picture is worth a thousand words — How is India transforming?'
+                    'Engineering Manager Dmitrijus Glezeris walks us through how to create client SDKs for APIs and keep them up to date'
                 },
                 __typename: 'Post',
-                firstPublishedAt: 1673247114713,
+                firstPublishedAt: 1678457498910,
                 isLocked: false,
                 isSeries: false,
                 isShortform: false,
-                latestPublishedAt: 1673302078109,
+                latestPublishedAt: 1678457498910,
                 inResponseToCatalogResult: null,
                 pinnedAt: 0,
                 pinnedByCreatorAt: 0,
                 previewImage: {
-                  id: '0*wyvD1a3kqWfv9NyT',
+                  id: '1*4czGjRPzNmzS43843o3f8w.jpeg',
                   focusPercentX: null,
                   focusPercentY: null,
                   __typename: 'ImageMetadata'
                 },
-                readingTime: 4.607547169811321,
+                readingTime: 7.5122641509433965,
                 sequence: null,
-                title:
-                  'Are our public spaces movement-friendly, especially for women?',
-                uniqueSlug:
-                  'are-our-public-spaces-movement-friendly-especially-for-women-ebd94b9eec06',
+                title: 'Tips for tool-building using OpenAPI',
+                uniqueSlug: 'tips-for-tool-building-using-openapi-cf7c5054d607',
                 visibility: 'PUBLIC',
                 pendingCollection: null,
                 statusForCollection: 'APPROVED',
                 isPublished: true,
+                mediumUrl:
+                  'https://medium.com/nord-security-tech-blog/tips-for-tool-building-using-openapi-cf7c5054d607',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
                 allowResponses: true,
                 postResponses: {
                   count: 0,
                   __typename: 'PostResponses'
                 },
                 isLimitedState: false,
-                mediumUrl:
-                  'https://blog.cryptostars.is/are-our-public-spaces-movement-friendly-especially-for-women-ebd94b9eec06',
-                voterCount: 4,
-                recommenders: [],
-                clapCount: 105,
                 inResponseToEntityType: null,
                 tags: [
                   {
                     __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'womens-health',
-                    displayTitle: 'Womens Health',
-                    normalizedTagSlug: 'womens-health'
+                    id: 'software-development',
+                    displayTitle: 'Software Development',
+                    normalizedTagSlug: 'software-development'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'womens-rights',
-                    displayTitle: 'Womens Rights',
-                    normalizedTagSlug: 'womens-rights'
+                    id: 'api',
+                    displayTitle: 'API',
+                    normalizedTagSlug: 'api'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
+                    id: 'api-development',
+                    displayTitle: 'Api Development',
+                    normalizedTagSlug: 'api-development'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'change-management',
-                    displayTitle: 'Change Management',
-                    normalizedTagSlug: 'change-management'
+                    id: 'sdk',
+                    displayTitle: 'Sdk',
+                    normalizedTagSlug: 'sdk'
                   }
                 ]
               },
               __typename: 'TagFeedItem'
             },
             {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
               reason: 84,
               moduleSourceEncoding: 17,
               postProviderExplanation: {
@@ -4364,15 +1440,15 @@ export async function GET(request: Request) {
                 __typename: 'PostProviderExplanation'
               },
               post: {
-                id: 'd3997b5628b2',
+                id: '43f608a0e8b5',
                 creator: {
                   __typename: 'User',
-                  name: 'GowthamLabs',
-                  username: 'gowthamlabs',
-                  id: '70e7e52bfc4f',
+                  name: 'Himanshutiwary',
+                  username: 'himanshutiwary666',
+                  id: '9ae7e70c5ac4',
                   mediumMemberAt: 0,
                   socialStats: {
-                    followerCount: 130,
+                    followerCount: 0,
                     __typename: 'SocialStats'
                   },
                   verifications: {
@@ -4381,15 +1457,15 @@ export async function GET(request: Request) {
                   },
                   customDomainState: null,
                   hasSubdomain: false,
-                  bio: 'Astrologer | Enterprise Architect',
-                  imageId: '2*wWJSjfLRqesOxA37mmlxeQ.jpeg'
+                  bio: 'Google Cloud certified Professional DevOps Engineer | Cloud Network Engineer | Programmer Analyst at Cognizant',
+                  imageId: '0*z9iQucKFxA9FGLDK'
                 },
                 collection: null,
                 extendedPreviewContent: {
                   bodyModel: {
                     sections: [
                       {
-                        name: '624d',
+                        name: '1577',
                         startIndex: 0,
                         textLayout: null,
                         imageLayout: null,
@@ -4401,13 +1477,13 @@ export async function GET(request: Request) {
                     ],
                     paragraphs: [
                       {
-                        id: '5475c3c113a4_preview_0',
-                        name: 'f9b1',
+                        id: '3eab2a64ec5f_preview_0',
+                        name: 'e97a',
                         type: 'H3',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: '2023 Astrology Predictions — On Global, and India as well as Indian Stock Markets',
+                        text: 'Hosting a Static Website using IIS and GCP Load Balancer',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -4417,84 +1493,15 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: '5475c3c113a4_preview_1',
-                        name: '93c3',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'View my 2022 Global & India level predictions here',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 0,
-                            end: 50,
-                            href: 'https://medium.com/@gowthamlabs/india-2030-from-astrological-lenses-a0bbfdc82331',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 0,
-                            end: 50,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '5475c3c113a4_preview_2',
-                        name: '4a1a',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: '2022 Predictions v/s Happened',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '5475c3c113a4_preview_3',
-                        name: '201a',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'People who wish to know how my 2022 prediction worked can explore it here',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '5475c3c113a4_preview_4',
-                        name: 'bfe8',
+                        id: '3eab2a64ec5f_preview_1',
+                        name: 'f6d1',
                         type: 'IMG',
                         href: null,
                         layout: 'INSET_CENTER',
                         metadata: {
-                          id: '1*roHBnAILSTfiJAL6LDbr6A.png',
-                          originalHeight: 629,
-                          originalWidth: 995,
+                          id: '0*I4X-xF5NoFGEgcth.png',
+                          originalHeight: 333,
+                          originalWidth: 500,
                           focusPercentX: null,
                           focusPercentY: null,
                           alt: null,
@@ -4510,127 +1517,16 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: '5475c3c113a4_preview_5',
-                        name: '98cf',
-                        type: 'H3',
+                        id: '3eab2a64ec5f_preview_2',
+                        name: 'f686',
+                        type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'My 2022 prediction’s & news references in internet',
+                        text: 'Hosting a static website on the internet is a simple task. However, when it comes to deploying it on a production-level, load-balanced environment, it requires some expertise. …',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '5475c3c113a4_preview_6',
-                        name: '2ad3',
-                        type: 'OLI',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Prediction 1: High chance of re-election in Bihar during 2022–23',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 14,
-                            end: 64,
-                            href: 'https://en.wikipedia.org/wiki/Nitish_Kumar#Sixth_Term_(2022_-_present)',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 0,
-                            end: 12,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '5475c3c113a4_preview_7',
-                        name: '43e1',
-                        type: 'OLI',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Prediction 2:INDIA would establish a framework for MAKE IN INDIA type\u200b',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 13,
-                            end: 70,
-                            href: 'https://www.weforum.org/agenda/2022/11/india-rolls-first-f-its-digital-rupee-currency/',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 0,
-                            end: 12,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '5475c3c113a4_preview_8',
-                        name: '3c3d',
-                        type: 'OLI',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Prediction 3:Corona/virus would be controlled through…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 13,
-                            end: 130,
-                            href: 'https://www.who.int/publications/m/item/weekly-epidemiological-update-on-covid-19---11-may-2022',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 0,
-                            end: 12,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
                         __typename: 'Paragraph',
                         codeBlockMetadata: null,
                         iframe: null,
@@ -4641,82 +1537,71 @@ export async function GET(request: Request) {
                   },
                   isFullContent: false,
                   __typename: 'PreviewContent',
-                  subtitle: 'View my 2022 Global & India level predictions here'
+                  subtitle:
+                    'Hosting a static website on the internet is a simple task. However, when it comes to deploying it on a production-level, load-balanced…'
                 },
                 __typename: 'Post',
-                firstPublishedAt: 1671863468901,
+                firstPublishedAt: 1678455510763,
                 isLocked: false,
                 isSeries: false,
                 isShortform: false,
-                latestPublishedAt: 1673924702751,
+                latestPublishedAt: 1678455510763,
                 inResponseToCatalogResult: null,
                 pinnedAt: 0,
-                pinnedByCreatorAt: 1673921658373,
+                pinnedByCreatorAt: 0,
                 previewImage: {
-                  id: '1*roHBnAILSTfiJAL6LDbr6A.png',
+                  id: '0*I4X-xF5NoFGEgcth.png',
                   focusPercentX: null,
                   focusPercentY: null,
                   __typename: 'ImageMetadata'
                 },
-                readingTime: 8.35377358490566,
+                readingTime: 4.6745283018867925,
                 sequence: null,
                 title:
-                  '2023 Astrology Predictions — On Global, and India as well as Indian Stock Markets',
+                  'Hosting a Static Website using IIS and GCP Load Balancer',
                 uniqueSlug:
-                  '2023-astrology-predictions-on-global-and-india-as-well-as-indian-stock-markets-d3997b5628b2',
+                  'hosting-a-static-website-using-iis-and-gcp-load-balancer-43f608a0e8b5',
                 visibility: 'PUBLIC',
                 pendingCollection: null,
                 statusForCollection: null,
                 isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@himanshutiwary666/hosting-a-static-website-using-iis-and-gcp-load-balancer-43f608a0e8b5',
+                clapCount: 13,
+                voterCount: 1,
+                recommenders: [],
                 allowResponses: true,
                 postResponses: {
                   count: 0,
                   __typename: 'PostResponses'
                 },
                 isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@gowthamlabs/2023-astrology-predictions-on-global-and-india-as-well-as-indian-stock-markets-d3997b5628b2',
-                voterCount: 1,
-                recommenders: [],
-                clapCount: 1,
                 inResponseToEntityType: null,
                 tags: [
                   {
                     __typename: 'Tag',
-                    id: '2023',
-                    displayTitle: '2023',
-                    normalizedTagSlug: '2023'
+                    id: 'gcp',
+                    displayTitle: 'Gcp',
+                    normalizedTagSlug: 'gcp'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'astrology-services',
-                    displayTitle: 'Astrology Services',
-                    normalizedTagSlug: 'astrology-services'
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'nifty-trading-tips',
-                    displayTitle: 'Nifty Trading Tips',
-                    normalizedTagSlug: 'nifty-trading-tips'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'trumpism',
-                    displayTitle: 'Trumpism',
-                    normalizedTagSlug: 'trumpism'
+                    id: 'devops',
+                    displayTitle: 'DevOps',
+                    normalizedTagSlug: 'devops'
                   }
                 ]
               },
               __typename: 'TagFeedItem'
             },
             {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
               reason: 84,
               moduleSourceEncoding: 17,
               postProviderExplanation: {
@@ -4725,15 +1610,15 @@ export async function GET(request: Request) {
                 __typename: 'PostProviderExplanation'
               },
               post: {
-                id: 'dec017e20a4b',
+                id: '3e0c12a654e',
                 creator: {
                   __typename: 'User',
-                  name: 'Rajveer Sharma',
-                  username: 'rajveer761sharma',
-                  id: '9b50ba5958c0',
+                  name: 'Nikhil Karve',
+                  username: 'nikhilkarve007',
+                  id: 'f3eed6b09899',
                   mediumMemberAt: 0,
                   socialStats: {
-                    followerCount: 12,
+                    followerCount: 9,
                     __typename: 'SocialStats'
                   },
                   verifications: {
@@ -4742,15 +1627,15 @@ export async function GET(request: Request) {
                   },
                   customDomainState: null,
                   hasSubdomain: false,
-                  bio: 'CFA Level 1 Cleared | Software Developer @Tata Cliq | NITW@2022 | LifeLong Physics Student | Movies and Book Geek | Flutter | Finance | Entrepreneurship | Life',
-                  imageId: '0*LPTu8524gL6bFWAt'
+                  bio: 'MSCS student at GSU. Writing: Machine Learning, Frontend Development.',
+                  imageId: '1*JEUMqfJTSmbx4nhSiK6lwQ.jpeg'
                 },
                 collection: null,
                 extendedPreviewContent: {
                   bodyModel: {
                     sections: [
                       {
-                        name: '8904',
+                        name: 'ad51',
                         startIndex: 0,
                         textLayout: null,
                         imageLayout: null,
@@ -4762,13 +1647,13 @@ export async function GET(request: Request) {
                     ],
                     paragraphs: [
                       {
-                        id: 'ac92b0203762_preview_0',
-                        name: 'd0b5',
+                        id: 'fa8891ad253_preview_0',
+                        name: '9409',
                         type: 'H3',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Taxes Explained: Part 2| Direct Taxes…',
+                        text: 'Why do we need to understand JS deeply?',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -4778,52 +1663,46 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'ac92b0203762_preview_1',
-                        name: 'f8dc',
-                        type: 'BQ',
+                        id: 'fa8891ad253_preview_1',
+                        name: '6fc1',
+                        type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Hi Readers, It has been a while since I last posted on topic taxes!! So, let me continue with the same topic in this blog. We will be going through a little advance in this blog.',
+                        text: 'This is going to be a short and quick read.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'fa8891ad253_preview_2',
+                        name: 'e290',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '1*LlwIBSR3hKwy_YGIH61H2Q.png',
+                          originalHeight: 1280,
+                          originalWidth: 1024,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: '[Ref — https://torquemag.io/2016/01/torque-toons-learn-javascript-deeply/]',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [
                           {
-                            type: 'STRONG',
-                            start: 61,
-                            end: 69,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'STRONG',
-                            start: 71,
+                            type: 'A',
+                            start: 7,
                             end: 73,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'EM',
-                            start: 61,
-                            end: 69,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'EM',
-                            start: 71,
-                            end: 73,
-                            href: null,
-                            anchorType: null,
+                            href: 'https://torquemag.io/2016/01/torque-toons-learn-javascript-deeply/',
+                            anchorType: 'LINK',
                             userId: null,
                             linkMetadata: null,
                             __typename: 'Markup'
@@ -4835,29 +1714,357 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'ac92b0203762_preview_2',
-                        name: '12e4',
+                        id: 'fa8891ad253_preview_3',
+                        name: '3254',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Why should we learn and understand JS deeply before moving onto a new fancy framework?',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'fa8891ad253_preview_4',
+                        name: 'c76d',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'If you are writing JS for long, you must have come across some weird part of code where it was a very simple thing in…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle: 'This is going to be a short and quick read.'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678423112338,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678423112338,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '1*LlwIBSR3hKwy_YGIH61H2Q.png',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 1.2792452830188679,
+                sequence: null,
+                title: 'Why do we need to understand JS deeply?',
+                uniqueSlug:
+                  'why-do-we-need-to-understand-js-deeply-3e0c12a654e',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: null,
+                isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@nikhilkarve007/why-do-we-need-to-understand-js-deeply-3e0c12a654e',
+                clapCount: 1,
+                voterCount: 1,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 1,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'front-end-development',
+                    displayTitle: 'Front End Development',
+                    normalizedTagSlug: 'front-end-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'react',
+                    displayTitle: 'React',
+                    normalizedTagSlug: 'react'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'typescript',
+                    displayTitle: 'Typescript',
+                    normalizedTagSlug: 'typescript'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '9305cb274bf9',
+                creator: {
+                  __typename: 'User',
+                  name: 'Babylon.js',
+                  username: 'babylonjs',
+                  id: 'efd98bd3d8f4',
+                  mediumMemberAt: 1549267200000,
+                  socialStats: {
+                    followerCount: 1544,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: {
+                    live: {
+                      domain: 'babylonjs.medium.com',
+                      __typename: 'CustomDomain'
+                    },
+                    __typename: 'CustomDomainState'
+                  },
+                  hasSubdomain: true,
+                  bio: 'Babylon.js: Powerful, Beautiful, Simple, Open — Web-Based 3D At Its Best. https://www.babylonjs.com/',
+                  imageId: '2*O78yas4rOMHlTTy5PzcOIA.png'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: 'a68d',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '7f4c7ef8236_preview_0',
+                        name: '3567',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'POC: The Potato Optimized Carver',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '7f4c7ef8236_preview_1',
+                        name: '2340',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'This weekend, while cooking for my daughter, we decided to whip up some delicious french fries (or, as they should rightly be called, Belgium fries!). As we were cutting them up, I showed her how to carve a face into a potato — and that’s when it hit me. Why…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'This weekend, while cooking for my daughter, we decided to whip up some delicious french fries (or, as they should rightly be called…'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678376923319,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678376939541,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '1*OSWkLrDqUtwYluI-MMcPEQ.png',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 3.7,
+                sequence: null,
+                title: 'POC: The Potato Optimized Carver',
+                uniqueSlug: 'poc-the-potato-optimized-carver-9305cb274bf9',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: null,
+                isPublished: true,
+                mediumUrl:
+                  'https://babylonjs.medium.com/poc-the-potato-optimized-carver-9305cb274bf9',
+                clapCount: 2,
+                voterCount: 1,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'babylonjs',
+                    displayTitle: 'Babylonjs',
+                    normalizedTagSlug: 'babylonjs'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'webgl',
+                    displayTitle: 'Webgl',
+                    normalizedTagSlug: 'webgl'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: '3d',
+                    displayTitle: '3d',
+                    normalizedTagSlug: '3d'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '1e8772fe2dc0',
+                creator: {
+                  __typename: 'User',
+                  name: 'Ace D Baugh',
+                  username: 'ace.d.baugh',
+                  id: '109cc43a00d4',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 5,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'I am a Fine Art Photographer and Fine Code Programmer. I shoot Sony Raw and am a Full Stack Web Developer',
+                  imageId: '0*d3R932sPuHrikXjG'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: 'ab88',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '883773780c5_preview_0',
+                        name: '62e2',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Angular RouterOutlet',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '883773780c5_preview_1',
+                        name: '4137',
                         type: 'IMG',
                         href: null,
                         layout: 'INSET_CENTER',
                         metadata: {
-                          id: '0*Yb6qws5cfjEqua98',
-                          originalHeight: 3334,
-                          originalWidth: 5943,
+                          id: '0*q_vgoXsnWi5qKmu6',
+                          originalHeight: 4935,
+                          originalWidth: 3037,
                           focusPercentX: null,
                           focusPercentY: null,
                           alt: null,
                           __typename: 'ImageMetadata'
                         },
-                        text: 'Photo by Cytonn Photography on Unsplash',
+                        text: 'Photo by Joel Filipe on Unsplash',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [
                           {
                             type: 'A',
                             start: 9,
-                            end: 27,
-                            href: 'https://unsplash.com/es/@cytonn_photography?utm_source=medium&utm_medium=referral',
+                            end: 20,
+                            href: 'https://unsplash.com/de/@joelfilip?utm_source=medium&utm_medium=referral',
                             anchorType: 'LINK',
                             userId: null,
                             linkMetadata: null,
@@ -4865,8 +2072,8 @@ export async function GET(request: Request) {
                           },
                           {
                             type: 'A',
-                            start: 31,
-                            end: 39,
+                            start: 24,
+                            end: 32,
                             href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
                             anchorType: 'LINK',
                             userId: null,
@@ -4880,23 +2087,571 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'ac92b0203762_preview_3',
-                        name: 'bc26',
+                        id: '883773780c5_preview_2',
+                        name: '4c5b',
                         type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Index :',
+                        text: 'A route in an Angular app can be defined using the RouterOutlet directive. This directive creates an in-app navigation system by dynamically inserting components wherever specified in the template. The RouterOutlet directive indicates a location in the template where a component should be inserted based on the current route. …',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'A route in an Angular app can be defined using the RouterOutlet directive. This directive creates an in-app navigation system by…'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678411996310,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678411996310,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '0*q_vgoXsnWi5qKmu6',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 1.6943396226415093,
+                sequence: null,
+                title: 'Angular RouterOutlet',
+                uniqueSlug: 'angular-routeroutlet-1e8772fe2dc0',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: null,
+                isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@ace.d.baugh/angular-routeroutlet-1e8772fe2dc0',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'bellevue-university',
+                    displayTitle: 'Bellevue University',
+                    normalizedTagSlug: 'bellevue-university'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-425',
+                    displayTitle: 'Web 425',
+                    normalizedTagSlug: 'web-425'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'discussion-post',
+                    displayTitle: 'Discussion Post',
+                    normalizedTagSlug: 'discussion-post'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'router-outlet',
+                    displayTitle: 'Router Outlet',
+                    normalizedTagSlug: 'router-outlet'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '5cb43ef147ac',
+                creator: {
+                  __typename: 'User',
+                  name: 'Erwin',
+                  username: 'erwin_17615',
+                  id: '680ab6f6b2eb',
+                  mediumMemberAt: 1595813272000,
+                  socialStats: {
+                    followerCount: 206,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: '',
+                  imageId: '0*mLxsFFLjxOaiOTfm'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '07aa',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '2200c33a9d76_preview_0',
+                        name: '57fe',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Distinguishing Websites and Web Apps for Better Performance',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '2200c33a9d76_preview_1',
+                        name: '3a70',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '1*Uw3IaV-wHnYkMUrLBVTfpg.jpeg',
+                          originalHeight: 3648,
+                          originalWidth: 5472,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: '',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '2200c33a9d76_preview_2',
+                        name: '4944',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'I recently listened to an interesting podcast episode that highlighted the fact that only a small percentage of internet users browse the web using the newest devices. In fact, most people access the internet with relatively slow smartphones. …',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 38,
+                            end: 53,
+                            href: 'https://topenddevs.com/podcasts/javascript-jabber/episodes/web-performance-with-alex-russell-jsj-569',
+                            anchorType: 'LINK',
+                            userId: '',
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'I recently listened to an interesting podcast episode that highlighted the fact that only a small percentage of internet users browse the…'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678400626794,
+                isLocked: true,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678436901900,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '1*Uw3IaV-wHnYkMUrLBVTfpg.jpeg',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 1.7547169811320755,
+                sequence: null,
+                title:
+                  'Distinguishing Websites and Web Apps for Better Performance',
+                uniqueSlug:
+                  'web-performance-101-distinguishing-websites-and-web-apps-for-success-5cb43ef147ac',
+                visibility: 'LOCKED',
+                pendingCollection: {
+                  id: '4b3a1ed4f11c',
+                  creator: {
+                    id: 'a7b125868703',
+                    __typename: 'User'
+                  },
+                  name: 'JavaScript in Plain English',
+                  __typename: 'Collection'
+                },
+                statusForCollection: 'PENDING',
+                isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@erwin_17615/web-performance-101-distinguishing-websites-and-web-apps-for-success-5cb43ef147ac',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'react',
+                    displayTitle: 'React',
+                    normalizedTagSlug: 'react'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: 'd29e40226e50',
+                creator: {
+                  __typename: 'User',
+                  name: 'Aravind',
+                  username: 'aravind16101800',
+                  id: '92bddb167d49',
+                  mediumMemberAt: 1677868512794,
+                  socialStats: {
+                    followerCount: 107,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'I am a Fullstack web developer working in HCL technology. I have published articles on web development, system design, productivity and finance.',
+                  imageId: '1*C7tfaNf8ZKMYrJNb9m_7Bg.jpeg'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '5ffc',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: 'fedbf2b284e_preview_0',
+                        name: '3ecc',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'FreeCodeCamp vs The Odin Project: The Ultimate Web Development Showdown!',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'fedbf2b284e_preview_1',
+                        name: 'df3a',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '0*__57h0CCTqkOX5qy',
+                          originalHeight: 4000,
+                          originalWidth: 6000,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: 'Photo by GR Stocks on Unsplash',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 9,
+                            end: 18,
+                            href: 'https://unsplash.com/@grstocks?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 22,
+                            end: 30,
+                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'fedbf2b284e_preview_2',
+                        name: '6ebb',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Web development has become a highly sought-after skill in recent years, with many individuals looking to learn the ins and outs of coding and website design.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'fedbf2b284e_preview_3',
+                        name: 'ea47',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'There are many resources available for those looking to learn web development, but two of the most popular options are FreeCodeCamp and The Odin…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'Web development has become a highly sought-after skill in recent years, with many individuals looking to learn the ins and outs of coding…'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678456437102,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678456437102,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '0*__57h0CCTqkOX5qy',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 2.8965408805031445,
+                sequence: null,
+                title:
+                  'FreeCodeCamp vs The Odin Project: The Ultimate Web Development Showdown!',
+                uniqueSlug:
+                  'freecodecamp-vs-the-odin-project-the-ultimate-web-development-showdown-d29e40226e50',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: null,
+                isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@aravind16101800/freecodecamp-vs-the-odin-project-the-ultimate-web-development-showdown-d29e40226e50',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'programming',
+                    displayTitle: 'Programming',
+                    normalizedTagSlug: 'programming'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'coding',
+                    displayTitle: 'Coding',
+                    normalizedTagSlug: 'coding'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'learning-to-code',
+                    displayTitle: 'Learning To Code',
+                    normalizedTagSlug: 'learning-to-code'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'tech',
+                    displayTitle: 'Tech',
+                    normalizedTagSlug: 'tech'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: 'd25c75d3ac87',
+                creator: {
+                  __typename: 'User',
+                  name: 'Lovejot singh',
+                  username: 'lovejot.singh',
+                  id: '19d7e7ae1978',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 5,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'Javascript developer @Kochartech pvt ltd || Innovative web developer with a passion for coding and building exceptional apps, hailing from Punjab, India.',
+                  imageId: '1*3O82le3dUmWS_rFYNnrKlQ.jpeg'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '8add',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '75a3bcff5a7c_preview_0',
+                        name: '0ce0',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Exploring the Power of Iterators and Generators in JavaScript || Advanced JavaScript Iteration Techniques Using Iterators and Generators.',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [
                           {
                             type: 'STRONG',
                             start: 0,
-                            end: 7,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
+                            end: 65,
+                            href: '',
+                            anchorType: 'LINK',
+                            userId: '',
                             linkMetadata: null,
                             __typename: 'Markup'
                           }
@@ -4907,47 +2662,76 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'ac92b0203762_preview_4',
-                        name: '5d5d',
-                        type: 'OLI',
+                        id: '75a3bcff5a7c_preview_1',
+                        name: '548f',
+                        type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Definition for 5 Year Old',
+                        text: '“After reading this, I guarantee you’ll feel more confident.”',
                         hasDropCap: null,
                         dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'EM',
-                            start: 0,
-                            end: 25,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
+                        markups: [],
                         __typename: 'Paragraph',
                         codeBlockMetadata: null,
                         iframe: null,
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'ac92b0203762_preview_5',
-                        name: '0327',
-                        type: 'OLI',
+                        id: '75a3bcff5a7c_preview_2',
+                        name: '22d9',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '1*dGsH9FGDEGMZArC4ATXdog.jpeg',
+                          originalHeight: 500,
+                          originalWidth: 888,
+                          focusPercentX: -1,
+                          focusPercentY: -1,
+                          alt: '',
+                          __typename: 'ImageMetadata'
+                        },
+                        text: '',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '75a3bcff5a7c_preview_3',
+                        name: '1bb2',
+                        type: 'H3',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Types/ Forms (We will Leave tax calculations…',
+                        text: 'What are iterators?',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '75a3bcff5a7c_preview_4',
+                        name: '82b0',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'An iterator is an object that provides a way to access the elements of a collection, one at a time, without exposing the underlying data structure. …',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [
                           {
-                            type: 'EM',
-                            start: 0,
-                            end: 61,
+                            type: 'CODE',
+                            start: 208,
+                            end: 216,
                             href: null,
                             anchorType: null,
                             userId: null,
@@ -4966,80 +2750,82 @@ export async function GET(request: Request) {
                   isFullContent: false,
                   __typename: 'PreviewContent',
                   subtitle:
-                    'Hi Readers, It has been a while since I last posted on topic taxes!! So, let me continue with the same topic in this blog. We will be going…'
+                    '“After reading this, I guarantee you’ll feel more confident.”'
                 },
                 __typename: 'Post',
-                firstPublishedAt: 1670845895180,
+                firstPublishedAt: 1678433366421,
                 isLocked: false,
                 isSeries: false,
                 isShortform: false,
-                latestPublishedAt: 1670845895180,
+                latestPublishedAt: 1678434138123,
                 inResponseToCatalogResult: null,
                 pinnedAt: 0,
                 pinnedByCreatorAt: 0,
                 previewImage: {
-                  id: '0*Yb6qws5cfjEqua98',
+                  id: '1*dGsH9FGDEGMZArC4ATXdog.jpeg',
                   focusPercentX: null,
                   focusPercentY: null,
                   __typename: 'ImageMetadata'
                 },
-                readingTime: 2.3386792452830187,
+                readingTime: 3.9433962264150946,
                 sequence: null,
-                title: 'Taxes Explained: Part 2| Direct Taxes…',
-                uniqueSlug: 'taxes-explained-part-2-direct-taxes-dec017e20a4b',
+                title:
+                  'Exploring the Power of Iterators and Generators in JavaScript || Advanced JavaScript Iteration…',
+                uniqueSlug:
+                  'exploring-the-power-of-iterators-and-generators-in-javascript-advanced-javascript-iteration-d25c75d3ac87',
                 visibility: 'PUBLIC',
                 pendingCollection: null,
                 statusForCollection: null,
                 isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@lovejot.singh/exploring-the-power-of-iterators-and-generators-in-javascript-advanced-javascript-iteration-d25c75d3ac87',
+                clapCount: 10,
+                voterCount: 1,
+                recommenders: [],
                 allowResponses: true,
                 postResponses: {
-                  count: 1,
+                  count: 0,
                   __typename: 'PostResponses'
                 },
                 isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@rajveer761sharma/taxes-explained-part-2-direct-taxes-dec017e20a4b',
-                voterCount: 2,
-                recommenders: [],
-                clapCount: 2,
                 inResponseToEntityType: null,
                 tags: [
                   {
                     __typename: 'Tag',
-                    id: 'taxes',
-                    displayTitle: 'Taxes',
-                    normalizedTagSlug: 'taxes'
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian',
-                    displayTitle: 'Indian',
-                    normalizedTagSlug: 'indian'
+                    id: 'javascript-tips',
+                    displayTitle: 'Javascript Tips',
+                    normalizedTagSlug: 'javascript-tips'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-economy',
-                    displayTitle: 'Indian Economy',
-                    normalizedTagSlug: 'indian-economy'
+                    id: 'javascript-development',
+                    displayTitle: 'Javascript Development',
+                    normalizedTagSlug: 'javascript-development'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
+                    id: 'react',
+                    displayTitle: 'React',
+                    normalizedTagSlug: 'react'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-tax-law',
-                    displayTitle: 'Indian Tax Law',
-                    normalizedTagSlug: 'indian-tax-law'
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
                   }
                 ]
               },
               __typename: 'TagFeedItem'
             },
             {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
               reason: 84,
               moduleSourceEncoding: 17,
               postProviderExplanation: {
@@ -5048,12 +2834,2515 @@ export async function GET(request: Request) {
                 __typename: 'PostProviderExplanation'
               },
               post: {
-                id: 'e0deb632bab5',
+                id: '6503649e7bb6',
                 creator: {
                   __typename: 'User',
-                  name: 'MURTUZA BORIWALA',
-                  username: 'murtuza.bori24',
-                  id: 'd5d7ed40b4f6',
+                  name: 'Yeyu Huang',
+                  username: 'wenbohuang0307',
+                  id: '36da9d8de7e',
+                  mediumMemberAt: 1669604112000,
+                  socialStats: {
+                    followerCount: 54,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'Leading software program development for over 10 years, but still vibrant with coding, writing, consulting and knowledge sharing',
+                  imageId: '1*56MoILoyaRDA-_NLG2N8pg.jpeg'
+                },
+                collection: {
+                  __typename: 'Collection',
+                  id: '5517fd7b58a6',
+                  name: 'Level Up Coding',
+                  domain: 'levelup.gitconnected.com',
+                  slug: 'gitconnected'
+                },
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: 'fe4e',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '1fe579d7e776_preview_0',
+                        name: '0510',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'It’s Time To Create A Private ChatGPT For Yourself Today',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '1fe579d7e776_preview_1',
+                        name: '036f',
+                        type: 'H4',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'A step-by-step guide for building a chatbot website powered by gpt-3.5-turbo API',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '1fe579d7e776_preview_2',
+                        name: 'd9b6',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '1*SzsM17bNDXaC_jhZJ5hrCA.png',
+                          originalHeight: 698,
+                          originalWidth: 983,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: 'image by author',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '1fe579d7e776_preview_3',
+                        name: 'f8ad',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: "After “ChatGPT API” was released on Mar.1, 2023, thousands of applications around the APIs have been developed, opening up a new era of possibilities for businesses and individuals. With GPT-3.5's natural language processing capabilities, users can create chatbots that can seamlessly interact with people, for various purposes like answering questions…",
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'A step-by-step guide for building a chatbot website powered by gpt-3.5-turbo API'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678459723595,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678459723595,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '1*SzsM17bNDXaC_jhZJ5hrCA.png',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 6.59433962264151,
+                sequence: null,
+                title:
+                  'It’s Time To Create A Private ChatGPT For Yourself Today',
+                uniqueSlug:
+                  'its-time-to-create-a-private-chatgpt-for-yourself-today-6503649e7bb6',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: 'APPROVED',
+                isPublished: true,
+                mediumUrl:
+                  'https://levelup.gitconnected.com/its-time-to-create-a-private-chatgpt-for-yourself-today-6503649e7bb6',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 1,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'chatbots',
+                    displayTitle: 'Chatbots',
+                    normalizedTagSlug: 'chatbots'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'chatgpt',
+                    displayTitle: 'Chatgpt',
+                    normalizedTagSlug: 'chatgpt'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'python-programming',
+                    displayTitle: 'Python Programming',
+                    normalizedTagSlug: 'python-programming'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'streamlit',
+                    displayTitle: 'Streamlit',
+                    normalizedTagSlug: 'streamlit'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '7522fc9f771e',
+                creator: {
+                  __typename: 'User',
+                  name: 'Philip Wilkinson',
+                  username: 'philip-wilkinson',
+                  id: 'ec0e018f30da',
+                  mediumMemberAt: 1585995079395,
+                  socialStats: {
+                    followerCount: 2053,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: {
+                    live: {
+                      domain: 'philip-wilkinson.medium.com',
+                      __typename: 'CustomDomain'
+                    },
+                    __typename: 'CustomDomainState'
+                  },
+                  hasSubdomain: true,
+                  bio: 'CASA PhD student, Spatial Analysis, Data Science and Software Engineering. 400,000+ views. Connect on: www.linkedin.com/in/philip-wilkinson1',
+                  imageId: '1*JlXwVf5GztcY3BfL5xfdtw.jpeg'
+                },
+                collection: {
+                  __typename: 'Collection',
+                  id: '7f60cf5620c9',
+                  name: 'Towards Data Science',
+                  domain: 'towardsdatascience.com',
+                  slug: 'towards-data-science'
+                },
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '4e41',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '787afba0ef3b_preview_0',
+                        name: 'a09a',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Setting up a flask application for Data Science',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '787afba0ef3b_preview_1',
+                        name: 'cfe6',
+                        type: 'H4',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'The basic structure of a flask application to allow for modular development',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '787afba0ef3b_preview_2',
+                        name: 'dcd7',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '0*L9QqARSjQOb8VK2J',
+                          originalHeight: 4468,
+                          originalWidth: 6702,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: 'Photo by KOBU Agency on Unsplash',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 9,
+                            end: 20,
+                            href: 'https://unsplash.com/@kobuagency?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 24,
+                            end: 32,
+                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '787afba0ef3b_preview_3',
+                        name: '9099',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'A Data Science workflow often involves the use of notebooks and python scripts. These are great tools but it often means that your outputs can often remain in those files without seeing the light of day. A good way to change that however is by creating a website to show…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'The basic structure of a flask application to allow for modular development'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678462326857,
+                isLocked: true,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678462326857,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '0*L9QqARSjQOb8VK2J',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 8.576415094339623,
+                sequence: null,
+                title: 'Setting up a flask application for Data Science',
+                uniqueSlug:
+                  'setting-up-a-flask-application-for-data-science-7522fc9f771e',
+                visibility: 'LOCKED',
+                pendingCollection: null,
+                statusForCollection: 'APPROVED',
+                isPublished: true,
+                mediumUrl:
+                  'https://towardsdatascience.com/setting-up-a-flask-application-for-data-science-7522fc9f771e',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'flask',
+                    displayTitle: 'Flask',
+                    normalizedTagSlug: 'flask'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'software-development',
+                    displayTitle: 'Software Development',
+                    normalizedTagSlug: 'software-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'software-architecture',
+                    displayTitle: 'Software Architecture',
+                    normalizedTagSlug: 'software-architecture'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'hands-on-tutorials',
+                    displayTitle: 'Hands On Tutorials',
+                    normalizedTagSlug: 'hands-on-tutorials'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: 'fc44211fa8e1',
+                creator: {
+                  __typename: 'User',
+                  name: 'Eric Chung',
+                  username: 'ericchungdesign',
+                  id: 'bc5a56cb6bfe',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 2188,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'Product Designer. Writing about UX, business, career advice, and more!',
+                  imageId: '1*11Rp411_VMkg9TY0R_5Byw.jpeg'
+                },
+                collection: {
+                  __typename: 'Collection',
+                  id: '819cc2aaeee0',
+                  name: 'UX Planet',
+                  domain: 'uxplanet.org',
+                  slug: 'ux-planet'
+                },
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '667c',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: 'b9f000461e9d_preview_0',
+                        name: 'e05b',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Designing Side Panels That Add Value to Your Website’s UX',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'b9f000461e9d_preview_1',
+                        name: 'a574',
+                        type: 'H4',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Best practices and use cases for effective side panel design',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'b9f000461e9d_preview_2',
+                        name: '1214',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '0*SIe2D_-jfaPsX2Rc',
+                          originalHeight: 3264,
+                          originalWidth: 4896,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: 'Photo by Danist Soh on Unsplash',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 9,
+                            end: 19,
+                            href: 'https://unsplash.com/@danist07?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 23,
+                            end: 31,
+                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'b9f000461e9d_preview_3',
+                        name: 'bfd0',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Side panels are exactly what they sound like: a panel on one side of a screen. They typically contain secondary navigation, contextual information, or additional tools that are related to the primary content on the page. …',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 307,
+                            end: 321,
+                            href: 'https://www.justinmind.com/blog/tap-or-swipe-mobile-gestures-which-one-should-you-design-with/#:~:text=Mobile%20gestures%20are%20the%20movements,%2C%20and%20rotating%20the%20device).',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 349,
+                            end: 376,
+                            href: 'https://www.usability.gov/how-to-and-tools/methods/user-interface-elements.html',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'Designing Side Panels That Add Value to Your Website’s UX'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678360770126,
+                isLocked: true,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678360770126,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '0*SIe2D_-jfaPsX2Rc',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 7.570754716981132,
+                sequence: null,
+                title:
+                  'Designing Side Panels That Add Value to Your Website’s UX',
+                uniqueSlug:
+                  'designing-side-panels-that-add-value-to-your-websites-ux-fc44211fa8e1',
+                visibility: 'LOCKED',
+                pendingCollection: null,
+                statusForCollection: 'APPROVED',
+                isPublished: true,
+                mediumUrl:
+                  'https://uxplanet.org/designing-side-panels-that-add-value-to-your-websites-ux-fc44211fa8e1',
+                clapCount: 340,
+                voterCount: 7,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'ux',
+                    displayTitle: 'UX',
+                    normalizedTagSlug: 'ux'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'design',
+                    displayTitle: 'Design',
+                    normalizedTagSlug: 'design'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'ui',
+                    displayTitle: 'UI',
+                    normalizedTagSlug: 'ui'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'startup',
+                    displayTitle: 'Startup',
+                    normalizedTagSlug: 'startup'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: 'efd8863a0c1',
+                creator: {
+                  __typename: 'User',
+                  name: 'Josef Cruz',
+                  username: 'imjosef',
+                  id: 'd446e1b4a70b',
+                  mediumMemberAt: 1612230926000,
+                  socialStats: {
+                    followerCount: 10929,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: {
+                    live: {
+                      domain: 'imjosef.medium.com',
+                      __typename: 'CustomDomain'
+                    },
+                    __typename: 'CustomDomainState'
+                  },
+                  hasSubdomain: true,
+                  bio: 'Entrepreneur, coder, husband, father. I spend my days on the web learning and sharing information across the globe.',
+                  imageId: '1*RvB7OCsPIBQwZpVMW3UEeg.jpeg'
+                },
+                collection: {
+                  __typename: 'Collection',
+                  id: '4b3a1ed4f11c',
+                  name: 'JavaScript in Plain English',
+                  domain: 'javascript.plainenglish.io',
+                  slug: 'javascript-in-plain-english'
+                },
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '30e3',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      },
+                      {
+                        name: '441a',
+                        startIndex: 4,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '3b171617b9da_preview_0',
+                        name: '3937',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'The Difficulty of Learning Programming Across the Ages',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '3b171617b9da_preview_1',
+                        name: '2310',
+                        type: 'H4',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'From kids, youth, adults, and the elderly.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '3b171617b9da_preview_2',
+                        name: 'dbae',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '0*J8yySvaASArFFN4B',
+                          originalHeight: 3975,
+                          originalWidth: 5300,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: 'Photo by Austin Distel on Unsplash',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 9,
+                            end: 22,
+                            href: 'https://unsplash.com/@austindistel?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 26,
+                            end: 34,
+                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '3b171617b9da_preview_3',
+                        name: '4d04',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'It is believed that you can become a successful programmer in only up to 30–40 years, but this is not entirely true. Finding a well-paid job after forty will be more complicated than for young professionals. Otherwise, there are no restrictions.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '3b171617b9da_preview_4',
+                        name: '764b',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Programming for kids',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'STRONG',
+                            start: 0,
+                            end: 20,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '3b171617b9da_preview_5',
+                        name: '4333',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Programming requires a particular way of thinking from a…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle: 'From kids, youth, adults, and the elderly.'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678421800663,
+                isLocked: true,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678421800663,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '0*J8yySvaASArFFN4B',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 3.9547169811320755,
+                sequence: null,
+                title: 'The Difficulty of Learning Programming Across the Ages',
+                uniqueSlug:
+                  'the-difficulty-of-learning-programming-across-the-ages-efd8863a0c1',
+                visibility: 'LOCKED',
+                pendingCollection: null,
+                statusForCollection: 'APPROVED',
+                isPublished: true,
+                mediumUrl:
+                  'https://javascript.plainenglish.io/the-difficulty-of-learning-programming-across-the-ages-efd8863a0c1',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'programming',
+                    displayTitle: 'Programming',
+                    normalizedTagSlug: 'programming'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'technology',
+                    displayTitle: 'Technology',
+                    normalizedTagSlug: 'technology'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'software-development',
+                    displayTitle: 'Software Development',
+                    normalizedTagSlug: 'software-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: 'df444463813a',
+                creator: {
+                  __typename: 'User',
+                  name: 'Mobiux labs',
+                  username: 'mobiux-labs',
+                  id: '8559c312d908',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 5,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: {
+                    live: {
+                      domain: 'mobiux-labs.medium.com',
+                      __typename: 'CustomDomain'
+                    },
+                    __typename: 'CustomDomainState'
+                  },
+                  hasSubdomain: true,
+                  bio: 'We design brands, build apps, platforms, portals and websites. We keep it simple while delivering results & delighting customers. For you and your business.',
+                  imageId: '0*QzPXL-IOb0CjQzHW'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: 'ee15',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: 'd0ac6041c85f_preview_0',
+                        name: '0f87',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Things to make use of when using Firebase in app development',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd0ac6041c85f_preview_1',
+                        name: 'd601',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'By Bhuvan BN',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 0,
+                            end: 12,
+                            href: 'https://www.linkedin.com/in/bhuvan-nagaraj/',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd0ac6041c85f_preview_2',
+                        name: '729e',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '1*BzEPlndhdok5JNAWLIA-3A.png',
+                          originalHeight: 402,
+                          originalWidth: 680,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: '',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'd0ac6041c85f_preview_3',
+                        name: 'f52e',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'As far as app development platforms go, one may argue that Firebase has it all — a serverless way to build and deploy secure apps at a global scale, host databases in the cloud and sync data across online and offline devices. But that is not all…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'As far as app development platforms go, one may argue that Firebase has it all — a serverless way to build and deploy secure apps at a…'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678442856866,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678443645307,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '1*BzEPlndhdok5JNAWLIA-3A.png',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 2.450943396226415,
+                sequence: null,
+                title:
+                  'Things to make use of when using Firebase in app development',
+                uniqueSlug:
+                  'things-to-make-use-of-when-using-firebase-in-app-development-df444463813a',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: null,
+                isPublished: true,
+                mediumUrl:
+                  'https://mobiux-labs.medium.com/things-to-make-use-of-when-using-firebase-in-app-development-df444463813a',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'firebase',
+                    displayTitle: 'Firebase',
+                    normalizedTagSlug: 'firebase'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'firebase-cloud-functions',
+                    displayTitle: 'Firebase Cloud Functions',
+                    normalizedTagSlug: 'firebase-cloud-functions'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'firebaserealtimedatabase',
+                    displayTitle: 'Firebaserealtimedatabase',
+                    normalizedTagSlug: 'firebaserealtimedatabase'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'app-development',
+                    displayTitle: 'App Development',
+                    normalizedTagSlug: 'app-development'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '7723dddcc9ec',
+                creator: {
+                  __typename: 'User',
+                  name: 'Cihan',
+                  username: 'chntrks',
+                  id: 'cd37469d190',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 206,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: {
+                    live: {
+                      domain: 'chntrks.medium.com',
+                      __typename: 'CustomDomain'
+                    },
+                    __typename: 'CustomDomainState'
+                  },
+                  hasSubdomain: true,
+                  bio: '💻 Freelance Creative Developer 🙌 • 💯 Focus | Action | Disciplined Life | Level-up Your Mindset ⚡',
+                  imageId: '1*_J48tIzU2xnjcEt9V1qbTg.jpeg'
+                },
+                collection: {
+                  __typename: 'Collection',
+                  id: '3aa1515439cc',
+                  name: 'Interesting Coding',
+                  domain: null,
+                  slug: 'fullstack-programming-in-english'
+                },
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: 'b920',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: 'cf590179a021_preview_0',
+                        name: 'e957',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Mastering JavaScript Array Methods: A Step-by-Step Guide to Implementing map, filter, find, findIndex, and reduce Methods',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'cf590179a021_preview_1',
+                        name: '320f',
+                        type: 'H4',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Streamline your code, solve complex problems with ease, and take your coding game to the next level!',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'cf590179a021_preview_2',
+                        name: 'd3fb',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '0*I_dBp_jqPXQvje5n',
+                          originalHeight: 2349,
+                          originalWidth: 3152,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: 'Photo by Robert Bye on Unsplash',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 9,
+                            end: 19,
+                            href: 'https://unsplash.com/@robertbye?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 23,
+                            end: 31,
+                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'cf590179a021_preview_3',
+                        name: 'b17c',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: "I have a question for you: have you ever thought about how to code the built-in JavaScript methods map, filter, find, findIndex, and reduce? Here's a great practical application for you. If you can code these methods yourself, you've covered the basics! of JavaScript. These are some of the most…",
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'CODE',
+                            start: 99,
+                            end: 102,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'CODE',
+                            start: 104,
+                            end: 110,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'CODE',
+                            start: 112,
+                            end: 116,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'CODE',
+                            start: 118,
+                            end: 127,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'CODE',
+                            start: 133,
+                            end: 139,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'CODE',
+                            start: 246,
+                            end: 253,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'Streamline your code, solve complex problems with ease, and take your coding game to the next level!'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678450890404,
+                isLocked: true,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678450912842,
+                inResponseToCatalogResult: null,
+                pinnedAt: 1678451199905,
+                pinnedByCreatorAt: 1678451261959,
+                previewImage: {
+                  id: '0*I_dBp_jqPXQvje5n',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 5.7622641509433965,
+                sequence: null,
+                title:
+                  'Mastering JavaScript Array Methods: A Step-by-Step Guide to Implementing map, filter, find…',
+                uniqueSlug:
+                  'mastering-javascript-array-methods-a-step-by-step-guide-to-implementing-map-filter-find-7723dddcc9ec',
+                visibility: 'LOCKED',
+                pendingCollection: null,
+                statusForCollection: 'APPROVED',
+                isPublished: true,
+                mediumUrl:
+                  'https://medium.com/fullstack-programming-in-english/mastering-javascript-array-methods-a-step-by-step-guide-to-implementing-map-filter-find-7723dddcc9ec',
+                clapCount: 93,
+                voterCount: 2,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'technology',
+                    displayTitle: 'Technology',
+                    normalizedTagSlug: 'technology'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'programming',
+                    displayTitle: 'Programming',
+                    normalizedTagSlug: 'programming'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'software-development',
+                    displayTitle: 'Software Development',
+                    normalizedTagSlug: 'software-development'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '503f828233fa',
+                creator: {
+                  __typename: 'User',
+                  name: 'Josef Cruz',
+                  username: 'imjosef',
+                  id: 'd446e1b4a70b',
+                  mediumMemberAt: 1612230926000,
+                  socialStats: {
+                    followerCount: 10929,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: {
+                    live: {
+                      domain: 'imjosef.medium.com',
+                      __typename: 'CustomDomain'
+                    },
+                    __typename: 'CustomDomainState'
+                  },
+                  hasSubdomain: true,
+                  bio: 'Entrepreneur, coder, husband, father. I spend my days on the web learning and sharing information across the globe.',
+                  imageId: '1*RvB7OCsPIBQwZpVMW3UEeg.jpeg'
+                },
+                collection: {
+                  __typename: 'Collection',
+                  id: '4b3a1ed4f11c',
+                  name: 'JavaScript in Plain English',
+                  domain: 'javascript.plainenglish.io',
+                  slug: 'javascript-in-plain-english'
+                },
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: 'b57c',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: 'a48ea045c53c_preview_0',
+                        name: '520e',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'If Programming Is Hard, Why Is Finding a Job Much Harder',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'a48ea045c53c_preview_1',
+                        name: '0a21',
+                        type: 'H4',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'I’ll tell you why.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'a48ea045c53c_preview_2',
+                        name: 'e78b',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '0*kIDJNrAHDa3Rd4sy',
+                          originalHeight: 3072,
+                          originalWidth: 4812,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: 'Photo by the blowup on Unsplash',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 9,
+                            end: 19,
+                            href: 'https://unsplash.com/@theblowup?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'A',
+                            start: 23,
+                            end: 31,
+                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'a48ea045c53c_preview_3',
+                        name: '5b22',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'The labor market is not accessible, and sometimes even the most qualified candidate is often rejected by the employer. I passed dozens of interviews and interviews, but there has yet to be a result! In such a situation, any specialist will be slightly confused, and in his head, he will…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle: 'I’ll tell you why.'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678436209150,
+                isLocked: true,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678436209150,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '0*kIDJNrAHDa3Rd4sy',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 4.060377358490566,
+                sequence: null,
+                title:
+                  'If Programming Is Hard, Why Is Finding a Job Much Harder',
+                uniqueSlug:
+                  'if-programming-is-hard-why-is-finding-a-job-much-harder-503f828233fa',
+                visibility: 'LOCKED',
+                pendingCollection: null,
+                statusForCollection: 'APPROVED',
+                isPublished: true,
+                mediumUrl:
+                  'https://javascript.plainenglish.io/if-programming-is-hard-why-is-finding-a-job-much-harder-503f828233fa',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'programming',
+                    displayTitle: 'Programming',
+                    normalizedTagSlug: 'programming'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'technology',
+                    displayTitle: 'Technology',
+                    normalizedTagSlug: 'technology'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'software-development',
+                    displayTitle: 'Software Development',
+                    normalizedTagSlug: 'software-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '6a3a59665355',
+                creator: {
+                  __typename: 'User',
+                  name: 'Daniel Ekechukwu',
+                  username: 'creativedannyk',
+                  id: 'fc7477bbf130',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 13,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'I am web developer, tech enthusiast. I love sports and games as well',
+                  imageId: '1*ZN2K4xPdZLkjPLLdSFTUZA.jpeg'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '6573',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '872590a0fefa_preview_0',
+                        name: '25de',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '1*XgrEAQTunVFqZZVDOfkWgg.jpeg',
+                          originalHeight: 3448,
+                          originalWidth: 4592,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: '',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '872590a0fefa_preview_1',
+                        name: '7803',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'MAXIMIZING EFFICIENCY',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '872590a0fefa_preview_2',
+                        name: '9107',
+                        type: 'H4',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'HOW TO CURB DISTRACTIONS',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '872590a0fefa_preview_3',
+                        name: '9125',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'In whatever field we find ourselves, productivity is demanded and it can be measured in various ways. I have come to understand that our productivity is directly proportional to our efficiency. Efficiency in itself is a broad spectrum of different ideologies but personally, I believe it is a function of…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle: 'HOW TO CURB DISTRACTIONS'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678384829093,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678384829093,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '1*XgrEAQTunVFqZZVDOfkWgg.jpeg',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 3.900943396226415,
+                sequence: null,
+                title: 'MAXIMIZING EFFICIENCY',
+                uniqueSlug: 'maximizing-efficiency-6a3a59665355',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: null,
+                isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@creativedannyk/maximizing-efficiency-6a3a59665355',
+                clapCount: 51,
+                voterCount: 2,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'work-life-balance',
+                    displayTitle: 'Work Life Balance',
+                    normalizedTagSlug: 'work-life-balance'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'efficient-working',
+                    displayTitle: 'Efficient Working',
+                    normalizedTagSlug: 'efficient-working'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'tech',
+                    displayTitle: 'Tech',
+                    normalizedTagSlug: 'tech'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'productivity',
+                    displayTitle: 'Productivity',
+                    normalizedTagSlug: 'productivity'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '13b94bd7fe95',
+                creator: {
+                  __typename: 'User',
+                  name: 'Wasp Lang',
+                  username: 'WaspLang',
+                  id: '5c776237f273',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 80,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: '',
+                  imageId: '1*3TpKA6DStJlcZy9yGiNEhw.jpeg'
+                },
+                collection: {
+                  __typename: 'Collection',
+                  id: '4e2c1156667e',
+                  name: 'Dev Genius',
+                  domain: 'blog.devgenius.io',
+                  slug: 'dev-genius'
+                },
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '7c32',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: 'b9f99d9de6e3_preview_0',
+                        name: 'b7fb',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Building a full-stack app for learning Italian: Supabase vs. Wasp',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'b9f99d9de6e3_preview_1',
+                        name: '5ec8',
+                        type: 'IMG',
+                        href: null,
+                        layout: 'INSET_CENTER',
+                        metadata: {
+                          id: '1*XyTM4h-4GcaNaYlOvF1T5Q.jpeg',
+                          originalHeight: 637,
+                          originalWidth: 1000,
+                          focusPercentX: null,
+                          focusPercentY: null,
+                          alt: null,
+                          __typename: 'ImageMetadata'
+                        },
+                        text: '',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'b9f99d9de6e3_preview_2',
+                        name: 'd2bb',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Intro',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'b9f99d9de6e3_preview_3',
+                        name: 'f460',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'What to expect\u200b',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 14,
+                            end: 15,
+                            href: 'https://wasp-lang.dev/blog/2023/03/08/building-a-full-stack-app-supabase-vs-wasp#what-to-expect',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'b9f99d9de6e3_preview_4',
+                        name: '5244',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'In this blog post, I will explain how I created the Phrase Tutor app for learning Italian phrases using two different technologies. I will share some code snippets to show what was required to build the app with both Wasp and Supabase.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'A',
+                            start: 52,
+                            end: 64,
+                            href: 'https://phrasetutor.com/',
+                            anchorType: 'LINK',
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'Comparing Wasp and Supabase when building a side-project for learning Italian'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678458853884,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678458853884,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '1*XyTM4h-4GcaNaYlOvF1T5Q.jpeg',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 10.087735849056605,
+                sequence: null,
+                title:
+                  'Building a full-stack app for learning Italian: Supabase vs. Wasp',
+                uniqueSlug:
+                  'building-a-full-stack-app-for-learning-italian-supabase-vs-wasp-13b94bd7fe95',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: 'APPROVED',
+                isPublished: true,
+                mediumUrl:
+                  'https://blog.devgenius.io/building-a-full-stack-app-for-learning-italian-supabase-vs-wasp-13b94bd7fe95',
+                clapCount: 51,
+                voterCount: 2,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'wasp-lang',
+                    displayTitle: 'Wasp Lang',
+                    normalizedTagSlug: 'wasp-lang'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'supabase',
+                    displayTitle: 'Supabase',
+                    normalizedTagSlug: 'supabase'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'full-stack',
+                    displayTitle: 'Full Stack',
+                    normalizedTagSlug: 'full-stack'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'react',
+                    displayTitle: 'React',
+                    normalizedTagSlug: 'react'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '8c3a0418841f',
+                creator: {
+                  __typename: 'User',
+                  name: 'Grace Nieboer',
+                  username: 'grace.nieboer',
+                  id: '5798fb1831de',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 4,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'A baby dev writing just for fun, relating everything to food. I love meeting new people! Connect w/me here: https://www.linkedin.com/in/gracenieboer/',
+                  imageId: '1*HX9MS-ETGMY6fG0A8ezyNQ.png'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '07e8',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: 'fe36e56868bd_preview_0',
+                        name: '07ca',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Controlling Forms in React, One Input at a Time',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'fe36e56868bd_preview_1',
+                        name: '9c70',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Controlled Inputs: what are they, and when should they be used?',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [
+                          {
+                            type: 'STRONG',
+                            start: 19,
+                            end: 23,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          },
+                          {
+                            type: 'STRONG',
+                            start: 38,
+                            end: 42,
+                            href: null,
+                            anchorType: null,
+                            userId: null,
+                            linkMetadata: null,
+                            __typename: 'Markup'
+                          }
+                        ],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'fe36e56868bd_preview_2',
+                        name: '4c6e',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'A few weeks ago from the time I write this, I found myself in a position many other developers face when peering out from under the safety blanket of vanilla JavaScript to look at React.js: shook. After the initial…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'Controlled Inputs: what are they, and how can their power be leveraged?'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678459011571,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678459267287,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 0,
+                previewImage: {
+                  id: '',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 3.241509433962264,
+                sequence: null,
+                title:
+                  'Ultimate Control Over Forms in React.js, One Input at a Time',
+                uniqueSlug:
+                  'ultimate-control-over-forms-in-react-js-one-input-at-a-time-8c3a0418841f',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: null,
+                isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@grace.nieboer/ultimate-control-over-forms-in-react-js-one-input-at-a-time-8c3a0418841f',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'react',
+                    displayTitle: 'React',
+                    normalizedTagSlug: 'react'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'reactjs',
+                    displayTitle: 'Reactjs',
+                    normalizedTagSlug: 'reactjs'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'forms',
+                    displayTitle: 'Forms',
+                    normalizedTagSlug: 'forms'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '646d057d67d',
+                creator: {
+                  __typename: 'User',
+                  name: 'Canopus',
+                  username: 'Canopus22515',
+                  id: 'a7ecf5988d88',
+                  mediumMemberAt: 0,
+                  socialStats: {
+                    followerCount: 1,
+                    __typename: 'SocialStats'
+                  },
+                  verifications: {
+                    isBookAuthor: false,
+                    __typename: 'VerifiedInfo'
+                  },
+                  customDomainState: null,
+                  hasSubdomain: false,
+                  bio: 'I write articles based on my experience and knowledge. To enhance my way of expressing my self and to improve my writing skills.',
+                  imageId: '1*vmlD-FvJ6MES25T9eqaUDw.jpeg'
+                },
+                collection: null,
+                extendedPreviewContent: {
+                  bodyModel: {
+                    sections: [
+                      {
+                        name: '705c',
+                        startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      }
+                    ],
+                    paragraphs: [
+                      {
+                        id: '456547f01091_preview_0',
+                        name: '4b99',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'OSS-Open Source Software',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '456547f01091_preview_1',
+                        name: 'd637',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Hello readers.. In this article I am going to tell you about open source in a very simplified way.',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: '456547f01091_preview_2',
+                        name: '4ea9',
+                        type: 'P',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Open Source is a concept of software development where the source code is available free to every one to view, edit and contribute to it. Some of the very famous example…',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      }
+                    ],
+                    __typename: 'RichText'
+                  },
+                  isFullContent: false,
+                  __typename: 'PreviewContent',
+                  subtitle:
+                    'Hello readers.. In this article I am going to tell you about open source in a very simplified way.'
+                },
+                __typename: 'Post',
+                firstPublishedAt: 1678439307096,
+                isLocked: false,
+                isSeries: false,
+                isShortform: false,
+                latestPublishedAt: 1678439678567,
+                inResponseToCatalogResult: null,
+                pinnedAt: 0,
+                pinnedByCreatorAt: 1678439187104,
+                previewImage: {
+                  id: '1*Vlwb5YzwhlPggLR5fxiMrA.jpeg',
+                  focusPercentX: null,
+                  focusPercentY: null,
+                  __typename: 'ImageMetadata'
+                },
+                readingTime: 2.377358490566038,
+                sequence: null,
+                title: 'OSS-Open Source Software',
+                uniqueSlug: 'oss-open-source-software-646d057d67d',
+                visibility: 'PUBLIC',
+                pendingCollection: null,
+                statusForCollection: null,
+                isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@Canopus22515/oss-open-source-software-646d057d67d',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
+                allowResponses: true,
+                postResponses: {
+                  count: 0,
+                  __typename: 'PostResponses'
+                },
+                isLimitedState: false,
+                inResponseToEntityType: null,
+                tags: [
+                  {
+                    __typename: 'Tag',
+                    id: 'open-source',
+                    displayTitle: 'Open Source',
+                    normalizedTagSlug: 'open-source'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'technology',
+                    displayTitle: 'Technology',
+                    normalizedTagSlug: 'technology'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'coding',
+                    displayTitle: 'Coding',
+                    normalizedTagSlug: 'coding'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'github',
+                    displayTitle: 'Github',
+                    normalizedTagSlug: 'github'
+                  },
+                  {
+                    __typename: 'Tag',
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
+                  }
+                ]
+              },
+              __typename: 'TagFeedItem'
+            },
+            {
+              feedId: 'f840ced5-bf04-4660-a14e-2fbffba65b9c',
+              reason: 84,
+              moduleSourceEncoding: 17,
+              postProviderExplanation: {
+                reason: null,
+                topic: null,
+                __typename: 'PostProviderExplanation'
+              },
+              post: {
+                id: '16acf522ab2d',
+                creator: {
+                  __typename: 'User',
+                  name: 'Geeks Academy',
+                  username: 'geeksacademy-en',
+                  id: '8d8b19798e01',
                   mediumMemberAt: 0,
                   socialStats: {
                     followerCount: 3,
@@ -5065,16 +5354,36 @@ export async function GET(request: Request) {
                   },
                   customDomainState: null,
                   hasSubdomain: false,
-                  bio: '',
-                  imageId: '0*7Iv_FHEbAPT_FeQi'
+                  bio: 'Geeks Academy, international network for digital education: Cybersecurity & Cloud, AI & Big Data, Blockchain & Coding, Gaming & Metaverse, Technology Management',
+                  imageId: '1*an_1615mHNWp6OOBfrUQgw.png'
                 },
                 collection: null,
                 extendedPreviewContent: {
                   bodyModel: {
                     sections: [
                       {
-                        name: '91da',
+                        name: '5742',
                         startIndex: 0,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      },
+                      {
+                        name: '71b5',
+                        startIndex: 3,
+                        textLayout: null,
+                        imageLayout: null,
+                        backgroundImage: null,
+                        videoLayout: null,
+                        backgroundVideo: null,
+                        __typename: 'Section'
+                      },
+                      {
+                        name: 'c31f',
+                        startIndex: 4,
                         textLayout: null,
                         imageLayout: null,
                         backgroundImage: null,
@@ -5085,13 +5394,13 @@ export async function GET(request: Request) {
                     ],
                     paragraphs: [
                       {
-                        id: 'accf6e8d1c8d_preview_0',
-                        name: 'e899',
+                        id: 'e77031df1b1b_preview_0',
+                        name: 'ac09',
                         type: 'H3',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Votes manipulation — A Story of Current Gujarat Election',
+                        text: 'Javascript: web development and beyond',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -5101,270 +5410,21 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: 'accf6e8d1c8d_preview_1',
-                        name: '888e',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Let’s investigate the case using the data.',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'accf6e8d1c8d_preview_2',
-                        name: '3f97',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'Motivation',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: 'accf6e8d1c8d_preview_3',
-                        name: 'b73b',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'The Netflix series “Connected” explores the idea that everything is connected in some way or the other. In the episode “Digits,” the statistical technique known as Benford’s Law is explored in depth and the people who are using it interviewed. This law states…',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'STRONG',
-                            start: 438,
-                            end: 452,
-                            href: null,
-                            anchorType: null,
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      }
-                    ],
-                    __typename: 'RichText'
-                  },
-                  isFullContent: false,
-                  __typename: 'PreviewContent',
-                  subtitle: 'Let’s investigate the case using the data.'
-                },
-                __typename: 'Post',
-                firstPublishedAt: 1670761964187,
-                isLocked: false,
-                isSeries: false,
-                isShortform: false,
-                latestPublishedAt: 1670761964187,
-                inResponseToCatalogResult: null,
-                pinnedAt: 0,
-                pinnedByCreatorAt: 0,
-                previewImage: {
-                  id: '0*SyXqWdMyeibyc6Gc',
-                  focusPercentX: null,
-                  focusPercentY: null,
-                  __typename: 'ImageMetadata'
-                },
-                readingTime: 6.718867924528302,
-                sequence: null,
-                title:
-                  'Votes manipulation — A Story of Current Gujarat Election',
-                uniqueSlug:
-                  'votes-manipulation-a-story-of-current-gujarat-election-e0deb632bab5',
-                visibility: 'PUBLIC',
-                pendingCollection: null,
-                statusForCollection: null,
-                isPublished: true,
-                allowResponses: true,
-                postResponses: {
-                  count: 0,
-                  __typename: 'PostResponses'
-                },
-                isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/@murtuza.bori24/votes-manipulation-a-story-of-current-gujarat-election-e0deb632bab5',
-                voterCount: 3,
-                recommenders: [],
-                clapCount: 3,
-                inResponseToEntityType: null,
-                tags: [
-                  {
-                    __typename: 'Tag',
-                    id: 'data-visualization',
-                    displayTitle: 'Data Visualization',
-                    normalizedTagSlug: 'data-visualization'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'data-analysis',
-                    displayTitle: 'Data Analysis',
-                    normalizedTagSlug: 'data-analysis'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'scraping-with-python',
-                    displayTitle: 'Scraping With Python',
-                    normalizedTagSlug: 'scraping-with-python'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'gujarat-elections-2022',
-                    displayTitle: 'Gujarat Elections 2022',
-                    normalizedTagSlug: 'gujarat-elections-2022'
-                  },
-                  {
-                    __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
-                  }
-                ]
-              },
-              __typename: 'TagFeedItem'
-            },
-            {
-              feedId: '6e96f01a-d75d-45ea-bb21-2b6daf408c22',
-              reason: 84,
-              moduleSourceEncoding: 17,
-              postProviderExplanation: {
-                reason: null,
-                topic: null,
-                __typename: 'PostProviderExplanation'
-              },
-              post: {
-                id: '6447864ae10a',
-                creator: {
-                  __typename: 'User',
-                  name: 'Bhuvani',
-                  username: 'ammukupsc',
-                  id: '2905a4eeba33',
-                  mediumMemberAt: 0,
-                  socialStats: {
-                    followerCount: 37,
-                    __typename: 'SocialStats'
-                  },
-                  verifications: {
-                    isBookAuthor: false,
-                    __typename: 'VerifiedInfo'
-                  },
-                  customDomainState: {
-                    live: {
-                      domain: 'ammukupsc.medium.com',
-                      __typename: 'CustomDomain'
-                    },
-                    __typename: 'CustomDomainState'
-                  },
-                  hasSubdomain: true,
-                  bio: '',
-                  imageId: '0*-hVcIR-J6_xq-NP6.jpg'
-                },
-                collection: {
-                  name: 'Medpage',
-                  id: 'a9d15b4f9201',
-                  domain: null,
-                  slug: 'medpage',
-                  __typename: 'Collection'
-                },
-                extendedPreviewContent: {
-                  bodyModel: {
-                    sections: [
-                      {
-                        name: '3840',
-                        startIndex: 0,
-                        textLayout: null,
-                        imageLayout: null,
-                        backgroundImage: null,
-                        videoLayout: null,
-                        backgroundVideo: null,
-                        __typename: 'Section'
-                      }
-                    ],
-                    paragraphs: [
-                      {
-                        id: '269b7237ff98_preview_0',
-                        name: 'dcce',
-                        type: 'H3',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'The Doctor (Dr. B.R. Ambedkar)',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '269b7237ff98_preview_1',
-                        name: 'd453',
+                        id: 'e77031df1b1b_preview_1',
+                        name: '541b',
                         type: 'IMG',
                         href: null,
                         layout: 'INSET_CENTER',
                         metadata: {
-                          id: '0*SREdG1nfPDRV30OE',
-                          originalHeight: 5568,
-                          originalWidth: 3712,
+                          id: '1*T_OnlPrOyLMJ2D2xPaqyyg.png',
+                          originalHeight: 1080,
+                          originalWidth: 1080,
                           focusPercentX: null,
                           focusPercentY: null,
                           alt: null,
                           __typename: 'ImageMetadata'
                         },
-                        text: 'Photo by Ashkan Forouzani on Unsplash',
-                        hasDropCap: null,
-                        dropCapImage: null,
-                        markups: [
-                          {
-                            type: 'A',
-                            start: 9,
-                            end: 25,
-                            href: 'https://unsplash.com/@ashkfor121?utm_source=medium&utm_medium=referral',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          },
-                          {
-                            type: 'A',
-                            start: 29,
-                            end: 37,
-                            href: 'https://unsplash.com?utm_source=medium&utm_medium=referral',
-                            anchorType: 'LINK',
-                            userId: null,
-                            linkMetadata: null,
-                            __typename: 'Markup'
-                          }
-                        ],
-                        __typename: 'Paragraph',
-                        codeBlockMetadata: null,
-                        iframe: null,
-                        mixtapeMetadata: null
-                      },
-                      {
-                        id: '269b7237ff98_preview_2',
-                        name: 'c446',
-                        type: 'P',
-                        href: null,
-                        layout: null,
-                        metadata: null,
-                        text: 'The Unfathomable deprivation of Knowledge\nThe Inglorious dispossession by the varna\nThe innumerous insinuation of not being wanted\nThe forced inculcation of subservience\nThe elegy in him emerged into an erudition',
+                        text: '',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -5374,13 +5434,45 @@ export async function GET(request: Request) {
                         mixtapeMetadata: null
                       },
                       {
-                        id: '269b7237ff98_preview_3',
-                        name: '89a0',
+                        id: 'e77031df1b1b_preview_2',
+                        name: '68e5',
+                        type: 'BQ',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'JavaScript was invented for frontend web development. Due to its simplicity, it has become the choice number one for website building. Let’s discover its potential!',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'e77031df1b1b_preview_3',
+                        name: '8550',
+                        type: 'H3',
+                        href: null,
+                        layout: null,
+                        metadata: null,
+                        text: 'Discover Geeks Academy’s articles on: Blockchain, Coding, Cybersecurity, Cloud, Big Data, Artificial Intelligence, Gaming, Digital Innovation, Metaverse',
+                        hasDropCap: null,
+                        dropCapImage: null,
+                        markups: [],
+                        __typename: 'Paragraph',
+                        codeBlockMetadata: null,
+                        iframe: null,
+                        mixtapeMetadata: null
+                      },
+                      {
+                        id: 'e77031df1b1b_preview_4',
+                        name: '821a',
                         type: 'P',
                         href: null,
                         layout: null,
                         metadata: null,
-                        text: 'Venerated yet alienated by his own people\nFor the Scholastic did not fit the body politick\nA jurist with no equal…',
+                        text: 'improvement is therefore a key feature and programming languages, in an attempt to keep up with this endless race, often suffer the weight of a…',
                         hasDropCap: null,
                         dropCapImage: null,
                         markups: [],
@@ -5395,73 +5487,74 @@ export async function GET(request: Request) {
                   isFullContent: false,
                   __typename: 'PreviewContent',
                   subtitle:
-                    'The Unfathomable deprivation of Knowledge\nThe Inglorious dispossession by the varna\nThe innumerous insinuation of not being wanted\nThe…'
+                    'JavaScript was invented for frontend web development. Due to its simplicity, it has become the choice number one for website building…'
                 },
                 __typename: 'Post',
-                firstPublishedAt: 1670773464793,
+                firstPublishedAt: 1678456398249,
                 isLocked: false,
                 isSeries: false,
                 isShortform: false,
-                latestPublishedAt: 1670773464793,
+                latestPublishedAt: 1678456398249,
                 inResponseToCatalogResult: null,
                 pinnedAt: 0,
                 pinnedByCreatorAt: 0,
                 previewImage: {
-                  id: '0*SREdG1nfPDRV30OE',
+                  id: '1*T_OnlPrOyLMJ2D2xPaqyyg.png',
                   focusPercentX: null,
                   focusPercentY: null,
                   __typename: 'ImageMetadata'
                 },
-                readingTime: 0.9245283018867925,
+                readingTime: 4.466981132075472,
                 sequence: null,
-                title: 'The Doctor (Dr. B.R. Ambedkar)',
-                uniqueSlug: 'the-doctor-dr-b-r-ambedkar-6447864ae10a',
+                title: 'Javascript: web development and beyond',
+                uniqueSlug:
+                  'javascript-web-development-and-beyond-16acf522ab2d',
                 visibility: 'PUBLIC',
                 pendingCollection: null,
-                statusForCollection: 'APPROVED',
+                statusForCollection: null,
                 isPublished: true,
+                mediumUrl:
+                  'https://medium.com/@geeksacademy-en/javascript-web-development-and-beyond-16acf522ab2d',
+                clapCount: 0,
+                voterCount: 0,
+                recommenders: [],
                 allowResponses: true,
                 postResponses: {
                   count: 0,
                   __typename: 'PostResponses'
                 },
                 isLimitedState: false,
-                mediumUrl:
-                  'https://medium.com/medpage/the-doctor-dr-b-r-ambedkar-6447864ae10a',
-                voterCount: 2,
-                recommenders: [],
-                clapCount: 61,
                 inResponseToEntityType: null,
                 tags: [
                   {
                     __typename: 'Tag',
-                    id: 'political',
-                    displayTitle: 'Political',
-                    normalizedTagSlug: 'political'
+                    id: 'javascript',
+                    displayTitle: 'JavaScript',
+                    normalizedTagSlug: 'javascript'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'india',
-                    displayTitle: 'India',
-                    normalizedTagSlug: 'india'
+                    id: 'coding',
+                    displayTitle: 'Coding',
+                    normalizedTagSlug: 'coding'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'indian-politics',
-                    displayTitle: 'Indian Politics',
-                    normalizedTagSlug: 'indian-politics'
+                    id: 'programming-languages',
+                    displayTitle: 'Programming Languages',
+                    normalizedTagSlug: 'programming-languages'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'philosophy',
-                    displayTitle: 'Philosophy',
-                    normalizedTagSlug: 'philosophy'
+                    id: 'developer',
+                    displayTitle: 'Developer',
+                    normalizedTagSlug: 'developer'
                   },
                   {
                     __typename: 'Tag',
-                    id: 'medpage',
-                    displayTitle: 'Medpage',
-                    normalizedTagSlug: 'medpage'
+                    id: 'web-development',
+                    displayTitle: 'Web Development',
+                    normalizedTagSlug: 'web-development'
                   }
                 ]
               },
@@ -5508,39 +5601,39 @@ export async function GET(request: Request) {
   //   })
   // }
 
-  const users = await prisma.user.findMany()
-  const tags = await prisma.tag.findMany()
+  // const users = await prisma.user.findMany()
+  // const tags = await prisma.tag.findMany()
 
-  const posts = await Promise.all(
-    data[0].data.tagFeed.items.map(async (postData, i) => {
-      const { post } = postData as any
-      const user = users[(Math.random() * users.length) | 0].id
-      return await prisma.post.create({
-        data: {
-          authorId: user,
-          title: post.title,
-          slug: post.uniqueSlug,
-          bannerImage: 'https://miro.medium.com/v2/' + post.previewImage.id,
-          image: '',
-          isFeatured: i % 2 === 0,
-          isPremium: i % 3 === 0,
-          published: true,
-          isPublic: true,
-          content: post.extendedPreviewContent?.subtitle,
-          PostTag: {
-            createMany: {
-              data: post.tags.map((tag: any) => {
-                const tagId = tags.find(
-                  t => t.normalizedTagSlug === tag.normalizedTagSlug
-                )?.id
-                return { tagId }
-              })
-            }
-          }
-        }
-      })
-    })
-  )
+  // const posts = await Promise.all(
+  //   data[0].data.tagFeed.items.map(async (postData, i) => {
+  //     const { post } = postData as any
+  //     const user = users[(Math.random() * 25) | 0].id
+  //     return await prisma.post.create({
+  //       data: {
+  //         authorId: user,
+  //         title: post.title,
+  //         slug: post.uniqueSlug,
+  //         bannerImage: 'https://miro.medium.com/v2/' + post.previewImage.id,
+  //         image: '',
+  //         isFeatured: i % 2 === 0,
+  //         isPremium: i % 3 === 0,
+  //         published: true,
+  //         isPublic: true,
+  //         content: post.extendedPreviewContent?.subtitle,
+  //         PostTag: {
+  //           createMany: {
+  //             data: post.tags.map((tag: any) => {
+  //               const tagId = tags.find(
+  //                 t => t.normalizedTagSlug === tag.normalizedTagSlug
+  //               )?.id
+  //               return { tagId }
+  //             })
+  //           }
+  //         }
+  //       }
+  //     })
+  //   })
+  // )
 
-  return new Response(JSON.stringify(posts))
+  return new Response('JSON.stringify(posts)')
 }
