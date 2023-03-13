@@ -1,7 +1,8 @@
-import ListCard from '@/app/Components/Cards/ListCard'
+import ListCardWrapper from '@/app/Components/TagsAuthorComponents/Tags/ListCardWrapper'
 import RelatedTags from '@/app/Components/TagsAuthorComponents/Tags/RelatedTags'
 import Stat from '@/app/Components/TagsAuthorComponents/Tags/Stat'
 import TopAuthors from '@/app/Components/TagsAuthorComponents/Tags/TopAuthors'
+import { serializeObject } from '@/Utils/serializeObejct'
 import { AiFillTags } from 'react-icons/ai'
 import prisma from '../../../../prisma/client'
 
@@ -63,7 +64,8 @@ async function getPostsByTag(slug: string) {
     },
     orderBy: {
       published: 'desc'
-    }
+    },
+    take: 10
   })
 
   const relatedTags = await prisma.tag.findMany({
@@ -247,9 +249,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   </ul>
                 </div>
               </div>
-              {posts.map(post => (
-                <ListCard key={post.id} post={post} slug={slug} />
-              ))}
+              <ListCardWrapper
+                initialPosts={serializeObject(posts)}
+                slug={slug}
+              />
             </div>
             <div className="lg:col-span-4 border-l p-9 pt-0 hidden lg:block">
               <aside className="sticky top-[80px] self-start w-full">

@@ -419,6 +419,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                     <SwiperSlide key={user.id}>
                       <div key={user.id}>
                         <Link
+                          scroll={false}
                           href={'/' + user.username}
                           className="flex flex-col overflow-hidden [ nc-box-has-hover nc-dark-box-bg-has-hover ] hover:!shadow-none"
                         >

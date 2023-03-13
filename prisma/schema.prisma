@@ -14,7 +14,7 @@ model User {
   password          String
   bio               String?
   image             String?
-  username          String?            @unique
+  username          String             @unique
   createdAt         DateTime           @default(now()) @db.Timestamptz()
   updatedAt         DateTime           @default(now()) @updatedAt @db.Timestamptz()
   posts             Post[]
@@ -31,6 +31,48 @@ model User {
   UserCollection    UserCollection[]
   CollectionPost    CollectionPost[]
   CollectionMember  CollectionMember[]
+  accounts          Account[]
+  sessions          Session[]
+}
+
+model Account {
+  id                String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  userId            String   @db.Uuid
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?  @db.Text
+  access_token      String?  @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?  @db.Text
+  session_state     String?
+  createdAt         DateTime @default(now()) @db.Timestamptz()
+  updatedAt         DateTime @default(now()) @updatedAt @db.Timestamptz()
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map(name: "accounts")
+}
+
+model Session {
+  id           String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  sessionToken String   @unique
+  userId       String   @db.Uuid
+  expires      DateTime @db.Timestamptz()
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map(name: "sessions")
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime @db.Timestamptz()
+
+  @@unique([identifier, token])
+  @@map(name: "verification_tokens")
 }
 
 model Notification {
