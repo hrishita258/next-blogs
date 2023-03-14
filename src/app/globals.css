@@ -32,7 +32,15 @@ body {
   margin: 0;
   line-height: inherit;
 }
+.ce-block__content {
+  max-width: 800px !important;
+  width: 100% !important;
+}
 
+.codex-editor {
+  max-width: 800px !important;
+  width: 740px !important;
+}
 hr {
   height: 0;
   color: inherit;
@@ -42,16 +50,6 @@ hr {
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
 }
 
 a {
@@ -1041,8 +1039,6 @@ select:focus {
 }
 
 .prose :where(pre):not(:where([class~='not-prose'] *)) {
-  color: var(--tw-prose-pre-code);
-  background-color: var(--tw-prose-pre-bg);
   overflow-x: auto;
   font-weight: 400;
   font-size: 0.875em;
@@ -17880,4 +17876,9 @@ span.wp-block-page-list__submenu-icon {
 
 .glide--rtl {
   direction: rtl;
+}
+
+.nice-select {
+  width: 100% !important;
+  min-width: 250px !important;
 }
