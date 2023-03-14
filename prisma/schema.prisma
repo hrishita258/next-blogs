@@ -114,7 +114,8 @@ model Bookmark {
 model Post {
   id             String           @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
   title          String
-  content        String
+  excerpt        String?
+  content        Json
   slug           String           @unique
   published      Boolean          @default(false)
   image          String?
