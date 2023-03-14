@@ -2,7 +2,10 @@ import ListCardWrapper from '@/app/Components/TagsAuthorComponents/Tags/ListCard
 import RelatedTags from '@/app/Components/TagsAuthorComponents/Tags/RelatedTags'
 import Stat from '@/app/Components/TagsAuthorComponents/Tags/Stat'
 import TopAuthors from '@/app/Components/TagsAuthorComponents/Tags/TopAuthors'
+import { authOptions } from '@/lib/auth'
+import { getCurrentUser } from '@/lib/session'
 import { serializeObject } from '@/Utils/serializeObejct'
+import { redirect } from 'next/navigation'
 import { AiFillTags } from 'react-icons/ai'
 import prisma from '../../../../prisma/client'
 
@@ -179,6 +182,12 @@ async function getPostsByTag(slug: string) {
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const { slug } = params
+
+  const user = await getCurrentUser()
+
+  if (!user) {
+    redirect(authOptions?.pages?.signIn || '/login')
+  }
 
   const { posts, relatedTags, topAuthors, authorCount, postCount } =
     await getPostsByTag(slug)
