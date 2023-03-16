@@ -1,4 +1,4 @@
-import BlogRenderer from '@/app/Components/Blocks/BlogRenderer'
+import Editor from '@/app/Components/Blocks/Editor'
 
 const Blogs = () => {
   return (
@@ -7,7 +7,7 @@ const Blogs = () => {
         <div className="wp-block-group__inner-container">
           <div className="grid grid-cols-12 gap-5">
             <div className="lg:col-span-8 col-span-12">
-              <BlogRenderer
+              {/* <BlogRenderer
                 key={'hh'}
                 data={{
                   time: 1647331200000,
@@ -215,7 +215,8 @@ const Blogs = () => {
                     }
                   ]
                 }}
-              />
+              /> */}
+              <Editor />
             </div>
             <div className="lg:col-span-4 border-l p-9 pt-0 hidden lg:block">
               <aside className="sticky top-[80px] self-start w-full"></aside>

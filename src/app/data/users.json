@@ -1,0 +1,4504 @@
+[
+  {
+    "__typename": "User",
+    "id": "51e7eb466f57",
+    "algoliaObjectId": null,
+    "name": "Sean Kernan",
+    "bio": "Always on the hunt for a good story. That guy from Quora. Writing out of Tampa, Florida.",
+    "imageId": "1*3Z4Lk-vUNLQoVoWZOr3wVA.jpeg",
+    "mediumMemberAt": 1570133380000,
+    "username": "seanjkernan",
+    "customDomainState": {
+      "live": {
+        "domain": "seanjkernan.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "857388aceb0e",
+    "algoliaObjectId": null,
+    "name": "Nick Wignall",
+    "bio": "Psychologist and blogger. I help people use psychology for meaningful personal growth: https://nickwignall.com",
+    "imageId": "1*lFHRS5diqm4lzFkKQSJTLg.png",
+    "mediumMemberAt": 1523031141000,
+    "username": "nickwignall",
+    "customDomainState": {
+      "live": {
+        "domain": "nickwignall.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "54163a1723f6",
+    "algoliaObjectId": null,
+    "name": "Darius Foroux",
+    "bio": "Author & investor | Wise & Wealthy is my popular weekly newsletter full of proven ideas to become smarter and wealthier | Join: dariusforoux.com/wise-wealthy/",
+    "imageId": "1*3STednUKL3lkYQxtw1Xavg.jpeg",
+    "mediumMemberAt": 1509878893000,
+    "username": "dariusforoux",
+    "customDomainState": {
+      "live": {
+        "domain": "dariusforoux.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": true, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "2bb6ebc6319e",
+    "algoliaObjectId": null,
+    "name": "James White",
+    "bio": "Let’s make reading cool again! Featured in Publishous, Mind Cafe, Fanfare & Books Are Our Superpower.",
+    "imageId": "1*pv2_KNWjdlR734DI23U35w.jpeg",
+    "mediumMemberAt": 1655001414000,
+    "username": "james-white69",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "b6d641be1066",
+    "algoliaObjectId": null,
+    "name": "Tim Denning",
+    "bio": "Aussie Blogger with 500M+ views — Writer for CNBC & Business Insider. Inspiring the world through Personal Development and Entrepreneurship — timdenning.com/mb",
+    "imageId": "1*bfllCILGW4yHKXgFo8JkHg.jpeg",
+    "mediumMemberAt": 1633604147000,
+    "username": "timdenning",
+    "customDomainState": {
+      "live": {
+        "domain": "timdenning.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "2e2701ae378f",
+    "algoliaObjectId": null,
+    "name": "Ryan Holiday",
+    "bio": "Bestselling author of ‘Conspiracy,’ ‘Ego is the Enemy’ & ‘The Obstacle Is The Way’ http://amzn.to/24qKRWR",
+    "imageId": "0*oxw8NBp_Td0n3l4_.png",
+    "mediumMemberAt": 1642677550000,
+    "username": "ryanholiday",
+    "customDomainState": {
+      "live": {
+        "domain": "ryanholiday.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "5ccce2389f6d",
+    "algoliaObjectId": null,
+    "name": "Moreno Zugaro",
+    "bio": "Practical, no BS self-improvement • 10x top writer, 1M+ views • FREE 5 Habits To Develop Authentic Masculine Confidence: https://rebrand.ly/5htb",
+    "imageId": "1*OK32IawfN9Zfyz0yElimBA.png",
+    "mediumMemberAt": 1565593200000,
+    "username": "morenozugaro",
+    "customDomainState": {
+      "live": {
+        "domain": "morenozugaro.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "1dbd1f7e22bc",
+    "algoliaObjectId": null,
+    "name": "Darshak Rana",
+    "bio": "✦24 X Medium Top Writer ✦ Thinker. Spiritual. Pacifist. Engineer. Reader.✦ darshak.substack.com ✦ For ghostwriting gigs: darshakrana.co@gmail.com",
+    "imageId": "1*Z4m9taPSDh0YZiJwUUIkHw.png",
+    "mediumMemberAt": 1584545376660,
+    "username": "darshakrana",
+    "customDomainState": {
+      "live": {
+        "domain": "darshakrana.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "dd3942a5498a",
+    "algoliaObjectId": null,
+    "name": "Dr Mehmet Yildiz",
+    "bio": "Scientist, Technologist, Inventor, focusing on HEALTH and JOY. Founder of ILLUMINATION, curating key messages for society. Connection: https://digitalmehmet.com",
+    "imageId": "1*1aZbJiKfhx-6l8bGNf6fkQ.jpeg",
+    "mediumMemberAt": 1576912087924,
+    "username": "dr-mehmet-yildiz",
+    "customDomainState": {
+      "live": {
+        "domain": "dr-mehmet-yildiz.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "8c7f92ce547a",
+    "algoliaObjectId": null,
+    "name": "Neeramitra Reddy",
+    "bio": "I Live the Advice I Give • 2M+ Views • 11x Top Writer • 2x Columnist • Start Here: manximize.com",
+    "imageId": "1*EFcZgzjlRoIrDwaU3qK0tA.png",
+    "mediumMemberAt": 1657898935240,
+    "username": "neeramitra-reddy",
+    "customDomainState": {
+      "live": {
+        "domain": "neeramitra-reddy.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a66f89ac80ab",
+    "algoliaObjectId": null,
+    "name": "Ayodeji Awosika",
+    "bio": "Learn how to become a top Medium writer and make a living writing here — https://bit.ly/freemediumcourse4u",
+    "imageId": "2*YkbHaAA1eUYXY93CbGcATg.jpeg",
+    "mediumMemberAt": 1528700400000,
+    "username": "chef-boyardeji",
+    "customDomainState": {
+      "live": {
+        "domain": "chef-boyardeji.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "70ebcf5c0a17",
+    "algoliaObjectId": null,
+    "name": "Alberto García 🚀🚀🚀",
+    "bio": "Author. | Also on My Web: https://albertogarciamartin.com/",
+    "imageId": "1*O6SlfHPannoBhPxxnzMARA.png",
+    "mediumMemberAt": 1630523028000,
+    "username": "malafama",
+    "customDomainState": {
+      "live": { "domain": "malafama.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ece01ced04f6",
+    "algoliaObjectId": null,
+    "name": "Michael Lim",
+    "bio": "I write about personal development, finance and productivity. Connect with me at michaellim.co",
+    "imageId": "1*N8TdqQwDYdqXCAfZT-YcUw.png",
+    "mediumMemberAt": 1552944751000,
+    "username": "michael-lim",
+    "customDomainState": {
+      "live": {
+        "domain": "michael-lim.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3a74df8ffbe2",
+    "algoliaObjectId": null,
+    "name": "James Mayer",
+    "bio": "4x Top Writer | Truth Seeker. Self-Improvement Septon. Ambition Enthusiast | USAF Veteran, Aspiring Epic Fantasy Author, and Pre-Law Student",
+    "imageId": "1*ywHCxP9W4I0CEwc48axHww.jpeg",
+    "mediumMemberAt": 1670634573000,
+    "username": "James.mayer",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "13a8ad80bfc5",
+    "algoliaObjectId": null,
+    "name": "Eve Arnold",
+    "bio": "Join 6,800+ creators (over half my followers are part of the club) → https://part-timecreatorclub.ck.page/8c3dac5185",
+    "imageId": "1*m5D5idOD3yjfbXGlbHGrDw.png",
+    "mediumMemberAt": 1584861724000,
+    "username": "eve-arnold",
+    "customDomainState": {
+      "live": {
+        "domain": "eve-arnold.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3f48fb9ccc4b",
+    "algoliaObjectId": null,
+    "name": "Jari Roomer",
+    "bio": "5M Medium views | Founder wealthwise.net & personalgrowthlab.co | I write about personal finance and self-improvement",
+    "imageId": "1*_q-PU7xK57PxME6XCRWbaA.png",
+    "mediumMemberAt": 0,
+    "username": "jariroomer",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "db2e742ee83a",
+    "algoliaObjectId": null,
+    "name": "Andy Murphy",
+    "bio": "Spreading joy through writing and breathwork https://www.somabreath.com/#a_aid=AndyMurphy",
+    "imageId": "2*-LTko2i2psYWvSd77kIcPQ.jpeg",
+    "mediumMemberAt": 0,
+    "username": "andycmurphy1",
+    "customDomainState": {
+      "live": {
+        "domain": "andycmurphy1.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "95e22bddfc60",
+    "algoliaObjectId": null,
+    "name": "Thomas Oppong",
+    "bio": "Writer/Curator | Learning | Habits | Productivity | As seen on Forbes, Business Insider & Entrepreneur. For my popular essays, go here: https://thomasoppong.com",
+    "imageId": "1*m254ooIUMlrDSfTkImvDGw.jpeg",
+    "mediumMemberAt": 1617139979000,
+    "username": "thomas-oppong",
+    "customDomainState": {
+      "live": {
+        "domain": "thomas-oppong.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "17ccc054f003",
+    "algoliaObjectId": null,
+    "name": "Renuka Gavrani",
+    "bio": "100K on Instagram. I talk about slow & Intentional living. I wrote a book too, here: https://a.co/d/18omrHb",
+    "imageId": "1*TzDX7Xxji3c7cw_8m-Y5Lw.jpeg",
+    "mediumMemberAt": 0,
+    "username": "renukagavrani",
+    "customDomainState": {
+      "live": {
+        "domain": "renukagavrani.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "cb79355beb87",
+    "algoliaObjectId": null,
+    "name": "Irtiza Hafiz",
+    "bio": "I write about tech, productivity, intentional living, sustainability, personal finance, heath and other topics related to personal growth.",
+    "imageId": "0*zyHb8yqCDszgfGj3",
+    "mediumMemberAt": 1653289697000,
+    "username": "irtizahafiz",
+    "customDomainState": {
+      "live": {
+        "domain": "irtizahafiz.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "41dcfe5dac0",
+    "algoliaObjectId": null,
+    "name": "Josie Timberlake",
+    "bio": "American girl living in France. I love meeting new people and discovering different cultures. If we are brave enough to live boldly, life can be an adventure!",
+    "imageId": "1*b2HWtaLvErMzQiA0O8oHmQ.jpeg",
+    "mediumMemberAt": 1599176187000,
+    "username": "josietimberlake",
+    "customDomainState": {
+      "live": {
+        "domain": "josietimberlake.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "c6fe6f27d7a1",
+    "algoliaObjectId": null,
+    "name": "Rob Hourmont",
+    "bio": "Nutritionist, Metabolic Health Consultant, Writer, Blogger. Former Olympian. Connect: https://linktr.ee/robshealthcrunch",
+    "imageId": "1*dH3HSah4VOML2O3oQ_Ge7w@2x.jpeg",
+    "mediumMemberAt": 1630588135000,
+    "username": "robhourmont",
+    "customDomainState": {
+      "live": {
+        "domain": "robhourmont.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "849e2ebc72a8",
+    "algoliaObjectId": null,
+    "name": "Chris Davidson",
+    "bio": "Writer & 1:1 Online Coach for the Over-40s • Dad of 3 • Irishman • Trainer • Grab TWO Free Guides for Men 40+ : https://www.OFFAcoach.com",
+    "imageId": "1*7B3PdiW_B7GmSgD0PqJEdA.png",
+    "mediumMemberAt": 1604675399000,
+    "username": "offacoach",
+    "customDomainState": {
+      "live": {
+        "domain": "offacoach.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a8ff25ef3293",
+    "algoliaObjectId": null,
+    "name": "John P. Weiss",
+    "bio": "I write stories and essay about life, often illustrated with my photography and artwork. JohnPWeiss.com.",
+    "imageId": "1*h5q3H3GcPBoXB8OHLYUdbA.jpeg",
+    "mediumMemberAt": 1490498667000,
+    "username": "johnpweiss",
+    "customDomainState": {
+      "live": {
+        "domain": "johnpweiss.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "9a80627d86f8",
+    "algoliaObjectId": null,
+    "name": "Khyati Jain",
+    "bio": "10x Top Writer| Certified Yoga Trainer| I write about health, fitness, lifestyle, and more. Open to writing gigs. Contact:- khyatijainwrites01@gmail.com",
+    "imageId": "1*oKBrkleEX-knMU3oB-c9Sg.jpeg",
+    "mediumMemberAt": 1636987442000,
+    "username": "khyatijain01",
+    "customDomainState": {
+      "live": {
+        "domain": "khyatijain01.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a9719a2882f4",
+    "algoliaObjectId": null,
+    "name": "Kimberly Fosu",
+    "bio": "My book \"100 Billion Souls\" is Out. It helps you figure out what's blocking you from becoming all that you came here to be. https://a.co/d/9wzTXP7",
+    "imageId": "1*n63WqsvvNcHDCCY82MDS4w.png",
+    "mediumMemberAt": 1581967441000,
+    "username": "kimberlyskorner",
+    "customDomainState": {
+      "live": {
+        "domain": "kimberlyskorner.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "f94b3cba03dc",
+    "algoliaObjectId": null,
+    "name": "smoul",
+    "bio": "3X Top Writer | Writing about No-Code, productivity and growth.",
+    "imageId": "1*k3GDSD7MLzd9t0OzpC8Slw.jpeg",
+    "mediumMemberAt": 0,
+    "username": "moulshree",
+    "customDomainState": {
+      "live": {
+        "domain": "moulshree.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e4c12b0d9463",
+    "algoliaObjectId": null,
+    "name": "Alex Mathers",
+    "bio": "Helping you use your unique knowledge to grow, impact, and earn. Regular tips: https://www.themasterymemo.com/",
+    "imageId": "2*4nXTR1TepCVll5AWCiALMQ.jpeg",
+    "mediumMemberAt": 1491283026000,
+    "username": "iamalexmathers",
+    "customDomainState": {
+      "live": {
+        "domain": "iamalexmathers.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4f197d619280",
+    "algoliaObjectId": null,
+    "name": "Damian Clark",
+    "bio": "B. Sc (Psychology) | FREE Mindfulness Checklist→ http://bit.ly/3XO5qzm | clarkd34@hotmail.com",
+    "imageId": "1*-2DzS4L3y-wI3fJTeVEzrQ.jpeg",
+    "mediumMemberAt": 1639201007000,
+    "username": "DamianClark46",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "1093b86e701a",
+    "algoliaObjectId": null,
+    "name": "Jonathan Peykar",
+    "bio": "I write about relationships, getting women, and self-improvement.",
+    "imageId": "1*QiHC5MJeMkaSHEvkgLVR9Q.jpeg",
+    "mediumMemberAt": 1664993284000,
+    "username": "lifeofjohnny",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ecae52b307de",
+    "algoliaObjectId": null,
+    "name": "Cait Mack",
+    "bio": "I simplify everything so you can focus on crushing life FREE resources: caitmackcs.gumroad.com",
+    "imageId": "1*4P6Gj6qOibSINldjmCvdgA.jpeg",
+    "mediumMemberAt": 1577720904000,
+    "username": "caitmack",
+    "customDomainState": {
+      "live": { "domain": "caitmack.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "63780ce3f4e2",
+    "algoliaObjectId": null,
+    "name": "Karen Nimmo",
+    "bio": "Clinical psychologist, writer. Editor of On the Couch: Practical psychology for everyday life. karen@onthecouch.co.nz",
+    "imageId": "1*wBDZoFZEZhFd_cLYr7Tm5w.jpeg",
+    "mediumMemberAt": 1502749009000,
+    "username": "karennimmo",
+    "customDomainState": {
+      "live": {
+        "domain": "karennimmo.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ab9126eb4224",
+    "algoliaObjectId": null,
+    "name": "Alvin Ang",
+    "bio": "👑 Top Writer. Author of 'National Service' and 'Confessions of a Singaporean Weed Smoker.' BUY my books here! amazon.com/Alvin-Ang/e/B0BCQZKCG4/",
+    "imageId": "1*m2NNekfX1SP-29nMq1txQQ.jpeg",
+    "mediumMemberAt": 1601561384000,
+    "username": "alvinang125",
+    "customDomainState": {
+      "live": {
+        "domain": "alvinang125.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "bd3e47e54d2c",
+    "algoliaObjectId": null,
+    "name": "David Gerken",
+    "bio": "Meditation and Mindfulness teacher. Dad of three precious kids. Former writer for THE WEST WING. Follow me at davidgerken.net.",
+    "imageId": "2*V9Q8uFczPnPrjlWlgXhCYQ.png",
+    "mediumMemberAt": 1557342529000,
+    "username": "davidgerken",
+    "customDomainState": {
+      "live": {
+        "domain": "davidgerken.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d9d5da34eecc",
+    "algoliaObjectId": null,
+    "name": "Dr. Roopleen",
+    "bio": "Founder www.drroopleen.com | Author | Blogger | I write about personal development, success and motivation",
+    "imageId": "1*vPFUZTZ1UG38O4SwFW5vXw.jpeg",
+    "mediumMemberAt": 1621256580000,
+    "username": "drroopleen",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a5c9ebb61f7d",
+    "algoliaObjectId": null,
+    "name": "Dak Ray",
+    "bio": "I write about personal development, lifestyle, money, and relationships",
+    "imageId": "1*G_crYvKNxdR300YUlLJt0g.jpeg",
+    "mediumMemberAt": 1669310304000,
+    "username": "dakray",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "f373404d30af",
+    "algoliaObjectId": null,
+    "name": "Tony Fahkry",
+    "bio": "🚀 Unlock your full potential with a Self-empowerment Author, Expert Speaker & Life Coach. Get inspired & reach new heights! 💪 #Success: https://bit.ly/3IgyNpi",
+    "imageId": "1*2GL9q4gdbKxl0c4tY-GWiQ.jpeg",
+    "mediumMemberAt": 0,
+    "username": "tonyfahkry",
+    "customDomainState": {
+      "live": {
+        "domain": "tonyfahkry.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": true, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e6e9b39bbdb",
+    "algoliaObjectId": null,
+    "name": "Matthew Royse",
+    "bio": "10x Top Writer on Medium | 920K+ Views | Knowledge Enthusiast | Growth Marketer | YouTuber | Corporate Man by Day, Entrepreneur by Night | matthewroyse.com",
+    "imageId": "1*HHhoj3jZZybFSt2AmNMxNw.jpeg",
+    "mediumMemberAt": 1596397388000,
+    "username": "mattroyse",
+    "customDomainState": {
+      "live": {
+        "domain": "mattroyse.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "6e2475a6e38a",
+    "algoliaObjectId": null,
+    "name": "Anangsha Alammyan",
+    "bio": "Writing about life as a full-time creator & helping new writers get started. DM: anangsha@baos.pub. YouTube: https://www.youtube.com/c/AnangshaAlammyan/",
+    "imageId": "1*n7FgM6BXvvmNsSCrI4zSYQ.jpeg",
+    "mediumMemberAt": 1653237454000,
+    "username": "anangsha",
+    "customDomainState": {
+      "live": { "domain": "anangsha.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "33a2154d1ebd",
+    "algoliaObjectId": null,
+    "name": "Emilina Lomas",
+    "bio": "Health Writer. Exercise Scientist. Newsletter: Science-Backed Wellness. Top Writer in Health.",
+    "imageId": "1*osadCGmPOIXxQi8eNmn8xQ@2x.jpeg",
+    "mediumMemberAt": 1673694086000,
+    "username": "emilinalomas",
+    "customDomainState": {
+      "live": {
+        "domain": "emilinalomas.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "7dc08d71ebfd",
+    "algoliaObjectId": null,
+    "name": "Renata Ellera Gomes",
+    "bio": "Writing about love, relationships, culture, and life in general. Get my book, Acid Sugar, at shorturl.at/hvAVX",
+    "imageId": "1*UBvGElsoRcuhC560YL1WCA.png",
+    "mediumMemberAt": 1622211706000,
+    "username": "ellerarenata",
+    "customDomainState": {
+      "live": {
+        "domain": "ellerarenata.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "c72df56e89ce",
+    "algoliaObjectId": null,
+    "name": "Gary Buzzard",
+    "bio": "I’m a city meditator and Zen student. I write about how to discover your meditative mind, live spontaneously, and guide yourself toward a better life.",
+    "imageId": "1*5mVIcxuu1TS9kbOGhEc7-w.jpeg",
+    "mediumMemberAt": 1581876404000,
+    "username": "gary_14756",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "5ba760786877",
+    "algoliaObjectId": null,
+    "name": "Kurtis Pykes",
+    "bio": "Another Freelancer. Posts about the journey. Subscribe to Wisdom Wednesday, my weekly newsletter: https://bit.ly/3Vvq5Yh",
+    "imageId": "1*3SnjX10GOMz5v6E9cXuZ5Q@2x.jpeg",
+    "mediumMemberAt": 1576012404000,
+    "username": "kurtispykes",
+    "customDomainState": {
+      "live": {
+        "domain": "kurtispykes.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "70ae0bc797e3",
+    "algoliaObjectId": null,
+    "name": "Daniel Mesa",
+    "bio": "Fresh Ideas. danielmesa7951@gmail.com",
+    "imageId": "1*oUtIYeH7EdK-S9JL4GAimA.jpeg",
+    "mediumMemberAt": 1658410768000,
+    "username": "danielmesas",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e0a9a57adb56",
+    "algoliaObjectId": null,
+    "name": "J.W. Bertolotti",
+    "bio": "Founder at Perennial Leader Project | Host of In Search of Wisdom Podcast | Reflections on wisdom and life. Say hello: JW@perennialleader.com",
+    "imageId": "1*GCM0XDMXY_eQNY4ZlHMvLg.png",
+    "mediumMemberAt": 1598191503000,
+    "username": "JWBertolotti",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e4dc035a1f32",
+    "algoliaObjectId": null,
+    "name": "Kaki Okumura",
+    "bio": "Born in Dallas, raised in New York and Tokyo. I care about helping others learn to live a better, healthier life. My site: www.kakikata.space 🌱",
+    "imageId": "1*HQTxFkIf5fymNTatLc0qjA.jpeg",
+    "mediumMemberAt": 1591107789000,
+    "username": "kokumura",
+    "customDomainState": {
+      "live": { "domain": "kokumura.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d105f679c295",
+    "algoliaObjectId": null,
+    "name": "Sophia Bell On Medium",
+    "bio": "Writer, coach www.sophiaexplainsnarcs.com",
+    "imageId": "1*NyOl_YijNbpHjVpgb5eBeQ.jpeg",
+    "mediumMemberAt": 1662998169812,
+    "username": "sophiabelli",
+    "customDomainState": {
+      "live": {
+        "domain": "sophiabelli.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4841636d9f84",
+    "algoliaObjectId": null,
+    "name": "Diana Leotta",
+    "bio": "Retired from work, not from life. Musings on Life, Living and Learning. Always curious. Strong55plus@blogspot.com.",
+    "imageId": "1*nokOg3sDlgyzSSyoP63RTA.jpeg",
+    "mediumMemberAt": 1581550880000,
+    "username": "dianaleotta",
+    "customDomainState": {
+      "live": {
+        "domain": "dianaleotta.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3bffbb73610c",
+    "algoliaObjectId": null,
+    "name": "David Milgrim",
+    "bio": "Trying to feel okay, one comic at a time. www.OneComicAtATime.com",
+    "imageId": "1*qujztskF0BvvBCN8gtNFwQ.jpeg",
+    "mediumMemberAt": 1599571713000,
+    "username": "davidmilgrim",
+    "customDomainState": {
+      "live": {
+        "domain": "davidmilgrim.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "f3f90e8ed119",
+    "algoliaObjectId": null,
+    "name": "Diana Meresc",
+    "bio": "I like writing and drinking coffee. Join Medium : https://medium.com/@dianameresc/membership (affiliate link)",
+    "imageId": "1*hX9xvYJCnV7Y7BDYkktoCw.png",
+    "mediumMemberAt": 1641860240000,
+    "username": "dianameresc",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "41e01d325219",
+    "algoliaObjectId": null,
+    "name": "umair haque",
+    "bio": "vampire.",
+    "imageId": "1*N3XzP2bucTYwTm8ZmUZkUA.jpeg",
+    "mediumMemberAt": 1602677875000,
+    "username": "umairh",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ae911bc78bf7",
+    "algoliaObjectId": null,
+    "name": "B Kean",
+    "bio": "The past holds the answers to today’s problems. “Be curious, not judgmental,” at least until you have all the facts. Think and stop watching cable news.",
+    "imageId": "1*GTpsHF3GrVrWrwW2E2PDDg.jpeg",
+    "mediumMemberAt": 1649260701000,
+    "username": "brian-kean",
+    "customDomainState": {
+      "live": {
+        "domain": "brian-kean.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a188f58f7631",
+    "algoliaObjectId": null,
+    "name": "Barry Gander",
+    "bio": "I'm a Canadian from Connecticut, so 2 strikes against me. I'm a top writer in 5 fields, & I love finding the Meaning under the passing headlines.",
+    "imageId": "1*gk4c6ZYWRh72sCS8m3uahg.jpeg",
+    "mediumMemberAt": 1589369748000,
+    "username": "barry-gander",
+    "customDomainState": {
+      "live": {
+        "domain": "barry-gander.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "33d2006b60ef",
+    "algoliaObjectId": null,
+    "name": "Chris Snow",
+    "bio": "30+ year old History Professor and educator. MA in Business Ethics and Modern European History. History has much to teach, but it doesn't find enough students.",
+    "imageId": "1*Sjyai48F6sp0R1ltFeLgiQ.jpeg",
+    "mediumMemberAt": 1665430767000,
+    "username": "snowythefirst",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ea7d486472f1",
+    "algoliaObjectId": null,
+    "name": "Caren White",
+    "bio": "Top Writer in Politics and Government. I always speak my mind. Follow me on Mastodon @carenawhite",
+    "imageId": "2*LRmNJ3gCEwGFe5agzR-XRw.jpeg",
+    "mediumMemberAt": 1593351497000,
+    "username": "carenawhite",
+    "customDomainState": {
+      "live": {
+        "domain": "carenawhite.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "eb7885b30f40",
+    "algoliaObjectId": null,
+    "name": "Lauren Elizabeth",
+    "bio": "Lauren is a writer & leftist with analysis on topics related to politics & policy. She can be reached at LaurenMartinchek@gmail.com or Twitter @xlauren_mx",
+    "imageId": "1*LJ3yf4JA7s71hQFzvoOt7Q@2x.jpeg",
+    "mediumMemberAt": 1554590291600,
+    "username": "xlauren-mx",
+    "customDomainState": {
+      "live": {
+        "domain": "xlauren-mx.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "626a61ae142a",
+    "algoliaObjectId": null,
+    "name": "William Spivey",
+    "bio": "I write about politics, history, education, and race. Follow me at williamfspivey.com and support me at https://ko-fi.com/williamfspivey0680",
+    "imageId": "2*WVfU-6F6N9zVsEFY6kSwyQ.jpeg",
+    "mediumMemberAt": 1627929960000,
+    "username": "williamspivey",
+    "customDomainState": {
+      "live": {
+        "domain": "williamspivey.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "8f67d94fbbe9",
+    "algoliaObjectId": null,
+    "name": "Isaiah McCall",
+    "bio": "Former USA Today Journalist and NYC Comedian | Also on Substack: https://isaiahmccall.substack.com/ mccallisaiah@gmail.com",
+    "imageId": "1*zOvMfJZ8SLUlLE--q6iYpQ.jpeg",
+    "mediumMemberAt": 1590171892612,
+    "username": "mccallisaiah",
+    "customDomainState": {
+      "live": {
+        "domain": "mccallisaiah.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "9ed87b5c17b9",
+    "algoliaObjectId": null,
+    "name": "MartinEdic",
+    "bio": "Mastodon: @martinedic@md.dm, Writer, nine non-fiction books, two novels, Buddhist, train lover. Amateur cook, lover of life most of the time!",
+    "imageId": "2*uj4om66CEzjfvE6EUHbAMA.jpeg",
+    "mediumMemberAt": 1614697516000,
+    "username": "martinedic",
+    "customDomainState": {
+      "live": {
+        "domain": "martinedic.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ba2dc92083b9",
+    "algoliaObjectId": null,
+    "name": "That Guy, Noah",
+    "bio": "Your fellow friend, that is interested in current world wide news, science and astronomy!",
+    "imageId": "1*c2FbMUkVqohifIlnN17_fw.png",
+    "mediumMemberAt": 0,
+    "username": "ThatGuyNoah",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "958f31ca9617",
+    "algoliaObjectId": null,
+    "name": "David Wineberg",
+    "bio": "Author, The Straight Dope, or What I learned from my first thousand nonfiction reviews. 16 Essays. Free with Prime www.thestraightdope.net",
+    "imageId": "0*QqB5to6lYDCrJtdH.jpeg",
+    "mediumMemberAt": 0,
+    "username": "davidwineberg",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e43895122f94",
+    "algoliaObjectId": null,
+    "name": "Will Lockett",
+    "bio": "Journalist passionate about cutting edge technology, space and fighting climate change. Buy my latest book at https://www.amazon.com/dp/B0BRPPVR5Z",
+    "imageId": "1*V0qWMQ8V5_NaF9yUoHAdyg.jpeg",
+    "mediumMemberAt": 1591366308000,
+    "username": "wlockett",
+    "customDomainState": {
+      "live": { "domain": "wlockett.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": true, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "f5a68c2bcaa7",
+    "algoliaObjectId": null,
+    "name": "Adebayo Adeniran",
+    "bio": "A lifelong bibliophile, who seeks to unleash his energy on as many subjects as possible",
+    "imageId": "0*t_OToy95DEud2U_v.",
+    "mediumMemberAt": 1508841371000,
+    "username": "adebayoadeniran",
+    "customDomainState": {
+      "live": {
+        "domain": "adebayoadeniran.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4825cb2f0d13",
+    "algoliaObjectId": null,
+    "name": "George Dillard",
+    "bio": "Exploring the past to illuminate politics, the environment, and more. Social media & other projects: https://george-dillard.com. Email: whfacts at gmail.com",
+    "imageId": "2*BW9Uf55ho46Yns-rqlEPLQ.jpeg",
+    "mediumMemberAt": 1642115096000,
+    "username": "worldhistory",
+    "customDomainState": {
+      "live": {
+        "domain": "worldhistory.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d30498f21a97",
+    "algoliaObjectId": null,
+    "name": "Joe Duncan",
+    "bio": "I’ve worked in politics for twelve years and counting. Editor for Sexography: Medium.com/Sexography | The Science of Sex: http://thescienceofsex.substack.com",
+    "imageId": "1*ZP1sDlJTXGosAFntANvG-g.png",
+    "mediumMemberAt": 1547107200000,
+    "username": "joemduncan",
+    "customDomainState": {
+      "live": {
+        "domain": "joemduncan.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "9ad3f0fda3e4",
+    "algoliaObjectId": null,
+    "name": "Egberto Willies",
+    "bio": "Egberto Willies is a political activist, author, political blogger, radio show host, business owner, software developer, web designer, and mechanical engineer.",
+    "imageId": "0*Sj7B06kvEwXOnIio.jpg",
+    "mediumMemberAt": 1636682469000,
+    "username": "egbertowillies",
+    "customDomainState": {
+      "live": {
+        "domain": "medium.egbertowillies.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ceef4c8e43d4",
+    "algoliaObjectId": null,
+    "name": "Jared A. Brock",
+    "bio": "Helping you navigate life in an age of democratic destruction, ecological collapse, and economic irrelevance. Free newsletter: www.surviving-tomorrow.com",
+    "imageId": "1*CkPSU_ctxqhp8TB-kBLWVA.jpeg",
+    "mediumMemberAt": 1639665939000,
+    "username": "jaredabrock",
+    "customDomainState": {
+      "live": {
+        "domain": "jaredabrock.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d38584b41539",
+    "algoliaObjectId": null,
+    "name": "Anton Krutikov",
+    "bio": "Independent historian and political analyst, London, UK.",
+    "imageId": "0*DJrbmTtZrtHs-owx",
+    "mediumMemberAt": 0,
+    "username": "antonkrutikov",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "5f5a6f45b393",
+    "algoliaObjectId": null,
+    "name": "Wes O'Donnell",
+    "bio": "Army & Air Force Veteran | Global Security Writer for War is Boring, GENmag, OneZero, Edge | Law Student at WMU | TEDx Speaker | Dad to 3 | Hates nukes",
+    "imageId": "1*-ZS052wv0Pfzojh5iaUVVg.jpeg",
+    "mediumMemberAt": 1581117339000,
+    "username": "wesodonnell",
+    "customDomainState": {
+      "live": {
+        "domain": "wesodonnell.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "460757269c7",
+    "algoliaObjectId": null,
+    "name": "Charles Bastille",
+    "bio": "Hyperbole enthusiast and author of MagicLand, available at your favorite bookseller: https://charles-bastille.com All stories © 2022-23 by Charles Bastille.",
+    "imageId": "1*gvkBc4HHKJHhRV1I1oIVgw.jpeg",
+    "mediumMemberAt": 1596308179000,
+    "username": "charles-bastille",
+    "customDomainState": {
+      "live": {
+        "domain": "charles-bastille.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4229f274cb19",
+    "algoliaObjectId": null,
+    "name": "Alexander Ziperovich",
+    "bio": "Essayist, opinion columnist, dyspeptic political analyst, historian. I spread anti-propaganda. @alexziperovich Also at alexziperovich.substack.com",
+    "imageId": "1*biq_sSyK3F1eq9DMbrodsg.jpeg",
+    "mediumMemberAt": 1675205392000,
+    "username": "alexziperovich",
+    "customDomainState": {
+      "live": { "domain": "alexziperovich.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "fd05d0efaa8a",
+    "algoliaObjectId": null,
+    "name": "Spike Dolomite",
+    "bio": "Daily Crime Report - recounts of Trump and the Republicans’ daily disasters, with puns. Read them all in quarterly reports in The Treason Chronicles on Kindle.",
+    "imageId": "1*U_HvgP67S-gB0vY8dIajVA.jpeg",
+    "mediumMemberAt": 0,
+    "username": "spikedolomite",
+    "customDomainState": {
+      "live": {
+        "domain": "spikedolomite.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "21541f34f83c",
+    "algoliaObjectId": null,
+    "name": "James Finn",
+    "bio": "James Finn is an LGBTQ columnist, a former Air Force intelligence analyst, an alumnus of Act Up NY, and an agented but unpublished novelist.",
+    "imageId": "1*6qNWkWFJMJb_sLegbRXUkw.jpeg",
+    "mediumMemberAt": 1551802754000,
+    "username": "jfinn6511",
+    "customDomainState": {
+      "live": {
+        "domain": "jfinn6511.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "11c58e4b668d",
+    "algoliaObjectId": null,
+    "name": "Martin Knapp",
+    "bio": "Top writer in Economics. Fascinated by political economy. MA in Intl Relations. I write about economics, geopolitics, and war & diplomacy.",
+    "imageId": "1*G0TLTPTGV5eCJsjZuAmLWg.jpeg",
+    "mediumMemberAt": 1637731563070,
+    "username": "martinknapp",
+    "customDomainState": {
+      "live": {
+        "domain": "martinknapp.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "f473ba4fd780",
+    "algoliaObjectId": null,
+    "name": "Shankar Narayan",
+    "bio": "Lov stats and hate status-quo. Forecasted all the states Biden won in 2020. Correctly forecasted the twin Georgia elections in 2021, House and Senate in 2022.",
+    "imageId": "2*jMb2-5dDeS2OT7ndmuM2yg.jpeg",
+    "mediumMemberAt": 1595175335000,
+    "username": "shankar20",
+    "customDomainState": {
+      "live": {
+        "domain": "shankar20.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "6668ab199a99",
+    "algoliaObjectId": null,
+    "name": "My Lovely Suque",
+    "bio": "I write about race issues. I welcome all constructive criticism of my writing.",
+    "imageId": "1*AN1KqiWb001AP6i6TKyE8A.jpeg",
+    "mediumMemberAt": 1649822765499,
+    "username": "MyLovelySuqu",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "17a235d1fac1",
+    "algoliaObjectId": null,
+    "name": "Jude Ellison S. Doyle",
+    "bio": "Author of “Trainwreck” (Melville House, ‘16) and “Dead Blondes and Bad Mothers” (Melville House, ‘19). Columns published far and wide across the Internet.",
+    "imageId": "1*9e7erSQoCR3vjxtOZh28Jw.jpeg",
+    "mediumMemberAt": 0,
+    "username": "judedoyle",
+    "customDomainState": {
+      "live": {
+        "domain": "judedoyle.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "44d47ed2409b",
+    "algoliaObjectId": null,
+    "name": "Daniel McIntosh, PhD.",
+    "bio": "Writer, consultant, public speaker. Tired of living in the Dark Ages. Working for something better. Top writer in politics and economics..",
+    "imageId": "1*H3AhhsWc2oBKMic9qaUeQA.jpeg",
+    "mediumMemberAt": 1551023755000,
+    "username": "demcintosh",
+    "customDomainState": {
+      "live": {
+        "domain": "demcintosh.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4352f29046b9",
+    "algoliaObjectId": null,
+    "name": "Laura Halls",
+    "bio": "Trans/Genderfluid writer writing whatever comes to mind",
+    "imageId": "1*0w8yOWyMMMmthsX0a6dW-A.jpeg",
+    "mediumMemberAt": 1615645741000,
+    "username": "hallslaura",
+    "customDomainState": {
+      "live": {
+        "domain": "hallslaura.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "869f66f3cda",
+    "algoliaObjectId": null,
+    "name": "Andrew Tanner",
+    "bio": "Cat fanatic. Author of the Bringing Ragnarok and Bivrost Nine series. Systems nerd. Rogue Systems Recon is my substack: https://roguesystemsrecon.substack.com",
+    "imageId": "1*33b00SBc2gpA_TEU69WtdA.jpeg",
+    "mediumMemberAt": 1626294497000,
+    "username": "andrewmtanner",
+    "customDomainState": {
+      "live": {
+        "domain": "andrewmtanner.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "34aa02c4c64d",
+    "algoliaObjectId": null,
+    "name": "Mitchell Peterson",
+    "bio": "Freelance writer on my ninth year outside of the US, currently in Prague reading, teaching, and writing on politics, economics, and travel … IG: @mitchellglenn",
+    "imageId": "1*SeO3TE2-iCLHQwqhrAKv3Q.jpeg",
+    "mediumMemberAt": 1610183516000,
+    "username": "mitchellglennfrommichigan",
+    "customDomainState": {
+      "live": {
+        "domain": "mitchellglennfrommichigan.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a2d94879218a",
+    "algoliaObjectId": null,
+    "name": "Ossiana Tepfenhart",
+    "bio": "I’m a weirdo who loves to write. Deal with it. Available for hire. Instagram @ossiana.makes.content",
+    "imageId": "1*-HRsnXCsoRUAg61Kc5OK_Q.jpeg",
+    "mediumMemberAt": 1631883907000,
+    "username": "ossiana.tepfenhart",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "10f3937619a1",
+    "algoliaObjectId": null,
+    "name": "Dustin Arand",
+    "bio": "Lawyer turned stay-at-home dad. I write about philosophy, culture, and law. Author of the book “Truth Evolves”. Top writer in History, Culture, and Politics.",
+    "imageId": "0*hTr5hI2IKzfR4MwD.",
+    "mediumMemberAt": 1614871874000,
+    "username": "dustinarand",
+    "customDomainState": {
+      "live": {
+        "domain": "dustinarand.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ca0b27f6e98c",
+    "algoliaObjectId": null,
+    "name": "Walter Rhein",
+    "bio": "I greatly appreciate your support! https://ko-fi.com/walterrhein",
+    "imageId": "0*pr_6YpolqlwPhd3o.",
+    "mediumMemberAt": 1565923665000,
+    "username": "walterrhein",
+    "customDomainState": {
+      "live": {
+        "domain": "walterrhein.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "52a5f989cdbb",
+    "algoliaObjectId": null,
+    "name": "E.Eggert(m2c4)",
+    "bio": "Thoughtful discussions on politics and economics with sidelights in photography and astronomy. thesoundings.com; post.news/esquaredm2c4; esquaredm2c4@mas.to",
+    "imageId": "0*28cqs_W-ZY0n_oxd.jpg",
+    "mediumMemberAt": 0,
+    "username": "tidalsoundings",
+    "customDomainState": {
+      "live": {
+        "domain": "tidalsoundings.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "24760491e3c",
+    "algoliaObjectId": null,
+    "name": "Michelle Teheux",
+    "bio": "Lover of literature. Editor of Minds Without Borders. Former newspaper editor. Fascinated by everything. Contact at michelleteheux@gmail.com.",
+    "imageId": "1*PimMBnPy0ZnlkVGnBVFwfA.jpeg",
+    "mediumMemberAt": 1644958513000,
+    "username": "michelleteheux",
+    "customDomainState": {
+      "live": {
+        "domain": "michelleteheux.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "adb0e108a94b",
+    "algoliaObjectId": null,
+    "name": "Avi Loeb",
+    "bio": "Avi Loeb is the Frank B. Baird Jr Professor of Science and Institute director at Harvard University and is the bestselling author of “Extraterrestrial”.",
+    "imageId": "1*upiboNSChj1BIvycXiID7w.png",
+    "mediumMemberAt": 0,
+    "username": "avi-loeb",
+    "customDomainState": {
+      "live": { "domain": "avi-loeb.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "47673004d4da",
+    "algoliaObjectId": null,
+    "name": "Dash MacIntyre",
+    "bio": "Comedian, political satirist, and poet. Created The Halfway Post. Follow THP at twitter.com/HalfwayPost to read my Dada news.",
+    "imageId": "1*Kg3JzOLC0QZqRwMHplcwhA.png",
+    "mediumMemberAt": 1624843236000,
+    "username": "dashmacintyre",
+    "customDomainState": {
+      "live": {
+        "domain": "dashmacintyre.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "df74214abb39",
+    "algoliaObjectId": null,
+    "name": "Argumentative Penguin",
+    "bio": "Playwright. Screenwriter. Penguin. Fan of rationalism and polite discourse. Find me causing chaos in the comments. Contact: argumentativepenguin@outlook.com",
+    "imageId": "1*mosLZsYBO_ih_9Mv-SBUEQ.png",
+    "mediumMemberAt": 1630969754000,
+    "username": "argumentativepenguin",
+    "customDomainState": {
+      "live": {
+        "domain": "argumentativepenguin.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "c2c22e67f577",
+    "algoliaObjectId": null,
+    "name": "Stanley Grant",
+    "bio": "Multilingual Economist fascinated by world affairs - on a never-ending journey to explore all questions about economics, politics and finance.",
+    "imageId": "1*3iSQQPBmc0CUa-DFl3CcEA.png",
+    "mediumMemberAt": 1673478975000,
+    "username": "stanleygrant_2023",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "11902389922c",
+    "algoliaObjectId": null,
+    "name": "Benjamin Cain",
+    "bio": "Knowledge condemns. Art redeems. I learned that as an artistic writer who did a doctorate in philosophy. We should try to see the dark comedy in all things.",
+    "imageId": "2*5PBQVpJuS8aV0e4jEep46g.jpeg",
+    "mediumMemberAt": 1574528582000,
+    "username": "benjamincain8",
+    "customDomainState": {
+      "live": {
+        "domain": "benjamincain8.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3ffd28c561e3",
+    "algoliaObjectId": null,
+    "name": "CJ. Maffei",
+    "bio": "https://christophermaffei.substack.com https://cjmaffei.medium.com/subscribe https://t.me/christophermaffei",
+    "imageId": "1*hgVoCRhAuG_XoqIkxy5ECQ.jpeg",
+    "mediumMemberAt": 1654790392000,
+    "username": "cjmaffei",
+    "customDomainState": {
+      "live": { "domain": "cjmaffei.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "dabf09ccf26b",
+    "algoliaObjectId": null,
+    "name": "John Egelkrout",
+    "bio": "I am a teacher in an inner-city alternative school and work a small hobby farm with my wife. I write about politics, education, and social issues.",
+    "imageId": "1*cmvVtz8J5ml7laBBNPZAvw@2x.jpeg",
+    "mediumMemberAt": 1587493292000,
+    "username": "jegelkrout",
+    "customDomainState": {
+      "live": {
+        "domain": "jegelkrout.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "cbd2c86ad25f",
+    "algoliaObjectId": null,
+    "name": "Dylan Combellick",
+    "bio": "Retired analyst, Russian linguist, and New START inspector, father of 3, Ukraine is home while surviving in Krakow. https://www.youtube.com/@DylanC78",
+    "imageId": "0*pH6Vj2tkPMDvpyDp",
+    "mediumMemberAt": 1659018214553,
+    "username": "dylan.combellick",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "1ad5c19dd812",
+    "algoliaObjectId": null,
+    "name": "David Gamble",
+    "bio": "Blogger and writer with a keen interest in science, skepticism, critical thinking, and many other weird and whacky topics.",
+    "imageId": "1*hbolr09aBeEHcxrm7fa-Lw.jpeg",
+    "mediumMemberAt": 1577897512000,
+    "username": "skeptic-dave",
+    "customDomainState": {
+      "live": {
+        "domain": "skeptic-dave.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3096c2b8f752",
+    "algoliaObjectId": null,
+    "name": "Alexei Sorokin",
+    "bio": "A Russian immigrant in America, father of 4, Cambridge and Harvard Business School alum. I run and write every day.",
+    "imageId": "1*nZy7MwUAdxS-KyDq_27z-w.jpeg",
+    "mediumMemberAt": 1573319473000,
+    "username": "alexeisorokinstories",
+    "customDomainState": {
+      "live": {
+        "domain": "alexeisorokinstories.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ae38d08917ca",
+    "algoliaObjectId": null,
+    "name": "Mike Meyer",
+    "bio": "Educator, CIO, retired entrepreneur, grandfather with occasional fits of humor in the midst of disaster. . .",
+    "imageId": "1*aV5HFnr400Ab1P4GpI-bHQ.jpeg",
+    "mediumMemberAt": 1490223594000,
+    "username": "mike_meyer",
+    "customDomainState": { "live": null, "__typename": "CustomDomainState" },
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "8ee1dccb5395",
+    "algoliaObjectId": null,
+    "name": "Lilith Helstrom",
+    "bio": "I talk about religion, sex, emotions, and life. Whatever I happen to be thinking about that I think might be interesting. Top Writer in multiple categories.",
+    "imageId": "1*YyY95-dMd1BZpr-a-_ltYQ@2x.jpeg",
+    "mediumMemberAt": 1629938769000,
+    "username": "lilith.helstrom",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "cda5002daa86",
+    "algoliaObjectId": null,
+    "name": "Allan Milne Lees",
+    "bio": "Anyone who enjoys my articles here on Medium may be interested in my books Why Democracy Failed and The Praying Ape, both available from Amazon.",
+    "imageId": "2*1xofQMGAG7svPT-iMkPbRQ.jpeg",
+    "mediumMemberAt": 1564823985000,
+    "username": "allanmlees59",
+    "customDomainState": {
+      "live": {
+        "domain": "allanmlees59.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "63342d3d6b07",
+    "algoliaObjectId": null,
+    "name": "Erik Brown",
+    "bio": "Work out fanatic, martial artist, student, MBA, and connoisseur of useless information. CantWriteToSaveMyLife@yahoo.com",
+    "imageId": "1*HZyt2h8WEcyakLCNPzAbQg.jpeg",
+    "mediumMemberAt": 1534047486000,
+    "username": "erikcbrown267",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4a25c00139e6",
+    "algoliaObjectId": null,
+    "name": "Al Anany",
+    "bio": "CEO @ Albusi GmbH | Blockchain & Machine Learning-Focused | Zurich, Switzerland | Find me on UT and LI | www.albusi.com",
+    "imageId": "1*zwwpG0St4jn5uH0VVyjQng.png",
+    "mediumMemberAt": 1669211356000,
+    "username": "alanany",
+    "customDomainState": {
+      "live": { "domain": "entreprenal.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "9c6cbf57703",
+    "algoliaObjectId": null,
+    "name": "Nitin Sharma",
+    "bio": "8x Top Writer, Developer. Get in touch: linktr.ee/nitinfab.",
+    "imageId": "1*-z7GUMUUq8maKPDl8jL21A.jpeg",
+    "mediumMemberAt": 0,
+    "username": "nitinfab",
+    "customDomainState": {
+      "live": { "domain": "nitinfab.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "da57dce0f619",
+    "algoliaObjectId": null,
+    "name": "Aaron Dinin, PhD",
+    "bio": "I teach entrepreneurship at Duke. Software Engineer. PhD in English. I write about the mistakes entrepreneurs make since I’ve made plenty. More @ aarondinin.com",
+    "imageId": "2*7YSB9E-vJYEhaOW0rJt8Gw.png",
+    "mediumMemberAt": 1582850823000,
+    "username": "aarondinin",
+    "customDomainState": {
+      "live": {
+        "domain": "aarondinin.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "31a29ac4804",
+    "algoliaObjectId": null,
+    "name": "Jerry Keszka",
+    "bio": "Content creator sharing the tools and methods helping you to succeed in a digital economy. Never miss a new story - https://medium.com/@jkeszka/subscribe",
+    "imageId": "1*H4OvtTyMp62xmtOo4R7Ibg.jpeg",
+    "mediumMemberAt": 1643476174000,
+    "username": "jkeszka",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3a40cd9b2e06",
+    "algoliaObjectId": null,
+    "name": "Desiree Peralta",
+    "bio": "Turning ideas into reality. Programmer by profession, Writer by passion. Finance and business advice. | Weekly money advice https://dessyperalt.substack.com/",
+    "imageId": "1*6mgEZmtgEIYKM-aqXYAgMA@2x.jpeg",
+    "mediumMemberAt": 1654080414000,
+    "username": "dessyperalt",
+    "customDomainState": {
+      "live": {
+        "domain": "dessyperalt.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "af39049f1499",
+    "algoliaObjectId": null,
+    "name": "Joe Procopio",
+    "bio": "I’m a multi-exit, multi-failure entrepreneur. Building TeachingStartup.com & GetSpiffy.com. Exited ExitEvent & Automated Insights. More info at joeprocopio.com",
+    "imageId": "1*jSJzFhN0IssjAReXkUsQaQ.png",
+    "mediumMemberAt": 1551282534000,
+    "username": "jproco",
+    "customDomainState": {
+      "live": { "domain": "jproco.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "c17b2104abe6",
+    "algoliaObjectId": null,
+    "name": "Samanta Writes",
+    "bio": "Creative Writing. Blogs about money, health, and other interesting stuff. Never miss out an article: https://medium.com/@samantawrites/subscribe",
+    "imageId": "1*GWZp731eVB3BBAVxQwQyzA.png",
+    "mediumMemberAt": 0,
+    "username": "samantawrites",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "371e714a81a8",
+    "algoliaObjectId": null,
+    "name": "Tobias Charles",
+    "bio": "I write about leadership, learning, and personal growth. I love helping others get the best out of themselves, and I love finding out what I didn’t know!",
+    "imageId": "1*CINy-P9tm80W7TmtN88_LA.jpeg",
+    "mediumMemberAt": 1637303601000,
+    "username": "TobiasCharles",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "2a2dc1dfd713",
+    "algoliaObjectId": null,
+    "name": "Rachel Greenberg",
+    "bio": "Wall Street Investment Banker → Entrepreneur & Startup Consultant. “Top 10 Entrepreneurs of 2020” Yahoo Finance. CEO of Beta Bowl. Mom of 3 furbabies ❤",
+    "imageId": "1*evHik83hNS3SuWN7ZxD5qA.png",
+    "mediumMemberAt": 1609812111000,
+    "username": "imrachelgreenberg",
+    "customDomainState": {
+      "live": {
+        "domain": "imrachelgreenberg.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "8fcbf8ff6034",
+    "algoliaObjectId": null,
+    "name": "DC Palter",
+    "bio": "Entrepreneur, angel investor, startup mentor, sake snob. Author of the Silicon Valley mystery To Kill a Unicorn: https://amzn.to/3sD2SGH",
+    "imageId": "1*59QlNEVxLou5mkeqJANSAA.jpeg",
+    "mediumMemberAt": 1646440604000,
+    "username": "dcpalter",
+    "customDomainState": {
+      "live": { "domain": "dcpalter.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "fb44e21903f3",
+    "algoliaObjectId": null,
+    "name": "The PyCoach",
+    "bio": "8M+ Views in more than 200 Medium articles || Code Less, Earn More: Make money using your tech skills 👉 http://bit.ly/3ZRfGb4",
+    "imageId": "1*veEX4-CiLz5jqUjwWfQo_Q.jpeg",
+    "mediumMemberAt": 1676735732000,
+    "username": "frank-andrade",
+    "customDomainState": {
+      "live": {
+        "domain": "frank-andrade.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e94172eac11c",
+    "algoliaObjectId": null,
+    "name": "Joseph Mavericks",
+    "bio": "Living with a purpose and improving myself is changing my life — I also make Youtube videos: bit.ly/3QAEXTm",
+    "imageId": "2*88aaUjSHE4UHNEaMI87ckw.gif",
+    "mediumMemberAt": 1567870451000,
+    "username": "josephmavericks",
+    "customDomainState": {
+      "live": {
+        "domain": "josephmavericks.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "1bc0cb87a6e",
+    "algoliaObjectId": null,
+    "name": "David O.",
+    "bio": "Enlightening people. Exposing the financial system. To show that anyone can join the rich 1%. Go read my About section to find out more",
+    "imageId": "1*gaIrG9_EdiKNNH0o-Ov8iA.jpeg",
+    "mediumMemberAt": 1621773312000,
+    "username": "davidol",
+    "customDomainState": {
+      "live": { "domain": "davidol.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "bb5bc20ab7ff",
+    "algoliaObjectId": null,
+    "name": "Jenn Leach",
+    "bio": "A coffee obsessed, Netflix binge watching cat mama writing over at https://www.millennialnextdoor.com. 📩 jenn@millennialnextdoor.com",
+    "imageId": "1*UF0GCDhD8lBNGIrPbFfM4A.png",
+    "mediumMemberAt": 1625877490159,
+    "username": "millennialnextdoor",
+    "customDomainState": {
+      "live": {
+        "domain": "millennialnextdoor.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "7479aefa2a62",
+    "algoliaObjectId": null,
+    "name": "Christopher Kokoski",
+    "bio": "Endlessly curious| proud word nerd| Don’t miss my next article — sign up to my Medium email list: https://bit.ly/3yy18Bc",
+    "imageId": "2*rD1cak5ZMeTKXfJyll2CJA.jpeg",
+    "mediumMemberAt": 1612965270000,
+    "username": "christopherkokoski",
+    "customDomainState": {
+      "live": {
+        "domain": "christopherkokoski.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "22e6b0208ba8",
+    "algoliaObjectId": null,
+    "name": "Scott Stockdale",
+    "bio": "Freelance Writer | Host of Entrepreneurs Can Party | 1M+ views on Medium 🎉 scottstockdale.co.uk",
+    "imageId": "1*iGCf-2lycoi2xqwdKgMrWA.png",
+    "mediumMemberAt": 1640183094000,
+    "username": "scottstockdale",
+    "customDomainState": {
+      "live": {
+        "domain": "scottstockdale.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "6ca4e942111a",
+    "algoliaObjectId": null,
+    "name": "Victoria Kurichenko",
+    "bio": "Solopreneur. SEO writing expert. Helping companies attract potential customers through organic search results. https://selfmademillennials.com",
+    "imageId": "1*VOAJmV7PpNmKxVqXvid2YA.png",
+    "mediumMemberAt": 1593929134000,
+    "username": "victoria-kurichenko",
+    "customDomainState": {
+      "live": {
+        "domain": "victoria-kurichenko.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "22f809b0f6e",
+    "algoliaObjectId": null,
+    "name": "Kristina God",
+    "bio": "Writer, Mompreneur, Marketing Professional, Content Creator, Writing Coach. Learn how to make money writing online. Start here➜⚡ kristinagod.substack.com ⚡",
+    "imageId": "1*2GJDmPXvr9tsCBUAjWr_SA.png",
+    "mediumMemberAt": 1608314284646,
+    "username": "kristinagod",
+    "customDomainState": {
+      "live": {
+        "domain": "kristinagod.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3396d54427de",
+    "algoliaObjectId": null,
+    "name": "Kristen Walters",
+    "bio": "Lawyer turned full-time content creator --> https://bit.ly/about_kristen",
+    "imageId": "1*CuKvKvwUYQGbAGcgSmDpfg.png",
+    "mediumMemberAt": 1589308554000,
+    "username": "kristennwalters",
+    "customDomainState": {
+      "live": {
+        "domain": "kristennwalters.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "de3286f8ef58",
+    "algoliaObjectId": null,
+    "name": "Nick Wolny",
+    "bio": "Editorial mutt. I write for FastCo, FORTUNE, CNET, Out mag and others, and have owned a marketing consultancy for seven years. 🏳️‍🌈. 📍: LA. www.nickwolny.com",
+    "imageId": "1*maWCi1KPnTyBAKZcOnQxaw.png",
+    "mediumMemberAt": 1571580430000,
+    "username": "nickwolny",
+    "customDomainState": {
+      "live": {
+        "domain": "nickwolny.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "53649d00a493",
+    "algoliaObjectId": null,
+    "name": "David, @journeypreneur",
+    "bio": "I'm an Engineering Manager that decided to become a Solopreneur. Founder @ Remote-Work.app / SideHustlify.com / AIProductHub.com / FootballTips.app",
+    "imageId": "1*TOxFyK0QKPBqukFYbpQseA.png",
+    "mediumMemberAt": 1674215460000,
+    "username": "journeypreneur",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3a57dfae9bdf",
+    "algoliaObjectId": null,
+    "name": "Entrepreneuring",
+    "bio": "Top writer in Entrepreneurship - Unleash your inner entrepreneur, and join us for inspiration, strategies, and a dose of hustle.",
+    "imageId": "1*r2nOks79T_ioDQgSsxzxmw.png",
+    "mediumMemberAt": 1676189681258,
+    "username": "entrepreneuring",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "be7e9c3be38b",
+    "algoliaObjectId": null,
+    "name": "Jason Provencio",
+    "bio": "The Godfather of Medium. 59x Medium Top Writer. I love telling stories and standing up for what's right. Owner of Bouncin’ and Behavin’ Blogs.",
+    "imageId": "1*Vo_n_dX5fslxJjYtrnN1vg.jpeg",
+    "mediumMemberAt": 1640752181000,
+    "username": "Jason-P",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "955126973606",
+    "algoliaObjectId": null,
+    "name": "Mark Vassilevskiy",
+    "bio": "Writer. UI/UX Designer. Developer. I’m always happy to share my thoughts for you to achieve everything you’ve ever wanted. Over 500,000 views on Medium and Dev!",
+    "imageId": "1*bccvj0_zzEDkfrfszRiPkQ.jpeg",
+    "mediumMemberAt": 1673526461100,
+    "username": "metamark",
+    "customDomainState": {
+      "live": { "domain": "metamark.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "2461e05024fe",
+    "algoliaObjectId": null,
+    "name": "Aldric Chen",
+    "bio": "21x Top Writer (as of February 2023). I am a Consultant, and I run start-ups on top of my 9–6. I think, write to spread ideas that work.",
+    "imageId": "1*fTd9wmAyDw3EjezzaG-gfQ@2x.jpeg",
+    "mediumMemberAt": 1597212152000,
+    "username": "aldric-chen",
+    "customDomainState": {
+      "live": {
+        "domain": "aldric-chen.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "5b304e3a8d5",
+    "algoliaObjectId": null,
+    "name": "Dennis De Silva",
+    "bio": "8x Top Writer ▫️ Editor of WikiMonday + The Side Hustle Club ▫️ 700+ Medium Articles▫️Hire me: tdconsultingph@gmail.com",
+    "imageId": "1*b2iM3NFIXtDQwhhfNSOX2g.jpeg",
+    "mediumMemberAt": 1599872018165,
+    "username": "dennis-desilvaph",
+    "customDomainState": {
+      "live": {
+        "domain": "dennis-desilvaph.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "6c64bdfd0448",
+    "algoliaObjectId": null,
+    "name": "brett fox",
+    "bio": "I work with startup CEOs to help them grow their businesses . I built several businesses from $0 to >$100M. Learn more at https://www.brettjfox.com",
+    "imageId": "2*buo8KRTNdKmYNPo7pRMHtg.jpeg",
+    "mediumMemberAt": 1558565351000,
+    "username": "brett-j-fox",
+    "customDomainState": {
+      "live": {
+        "domain": "brett-j-fox.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a3471fae7025",
+    "algoliaObjectId": null,
+    "name": "Destiny S. Harris",
+    "bio": "600x Author | Finance, Personal Development, & Tech | linktr.ee/destinysharris",
+    "imageId": "1*U_O7mVeQ8OnUJGO8jdT2yg.jpeg",
+    "mediumMemberAt": 1579460935000,
+    "username": "destinyharris",
+    "customDomainState": {
+      "live": {
+        "domain": "destinyharris.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e0901a21f36c",
+    "algoliaObjectId": null,
+    "name": "Cozma Claudiu",
+    "bio": "Full-Time YouTuber, I like writing and talking about money and marketing! Follow me if that's something that interests you.",
+    "imageId": "1*lBGXOURyfwQjQT8OVJI4KQ.jpeg",
+    "mediumMemberAt": 0,
+    "username": "czmclaudiu",
+    "customDomainState": {
+      "live": {
+        "domain": "czmclaudiu.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3c68f7b89b81",
+    "algoliaObjectId": null,
+    "name": "Cameron",
+    "bio": "Writing about entrepreneurship, self improvement and living with more freedom.",
+    "imageId": "1*RBRou0dLvdwP5yNuD97Njg.jpeg",
+    "mediumMemberAt": 1677072159000,
+    "username": "cameron_15038",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d8a24a1b526b",
+    "algoliaObjectId": null,
+    "name": "Anthony Lam",
+    "bio": "Just a guy who likes to share random information. Join Medium: https://medium.com/@Anthony-Lam/membership (Affiliate Link)",
+    "imageId": "1*9_ljIh3EtHIxWmbZsJwi_Q.jpeg",
+    "mediumMemberAt": 1631645303000,
+    "username": "Anthony-Lam",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "808775ef59d6",
+    "algoliaObjectId": null,
+    "name": "Zoe Chew",
+    "bio": "Built 11+ MVPs. Founder: Venturescale.to Analyzing Consumer Tech & Platforms. On Deck ODF10. Product advisor US/APAC 👉About me: whizzoe.com",
+    "imageId": "1*y1JK2VlRkycyT_WSDPJySw.jpeg",
+    "mediumMemberAt": 0,
+    "username": "whizzoe",
+    "customDomainState": {
+      "live": { "domain": "whizzoe.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e6ae8dbfd303",
+    "algoliaObjectId": null,
+    "name": "Matt Giaro",
+    "bio": "Helping experts and creators attract more clients by creating better content, faster. Check out 👉 https://mattgiaro.com?source=medium-profile",
+    "imageId": "1*gBxV73LUEP91fZ-hi0o9lA.png",
+    "mediumMemberAt": 0,
+    "username": "mattgiaro",
+    "customDomainState": {
+      "live": {
+        "domain": "mattgiaro.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ea10c4206a98",
+    "algoliaObjectId": null,
+    "name": "Sammy Abdullah",
+    "bio": "co-founder at Blossom Street Ventures. Email me at sammy@blossomstreetventures.com",
+    "imageId": "1*igIOIMjOt17ub5hKwOAGYg.jpeg",
+    "mediumMemberAt": 0,
+    "username": "blossomstreetventures",
+    "customDomainState": {
+      "live": {
+        "domain": "blossomstreetventures.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "38c593de8421",
+    "algoliaObjectId": null,
+    "name": "Kit Campoy",
+    "bio": "I get to the point. Retail Leader → Freelance Writer. Leadership| Entrepreneurship | Writing| Web3| https://kitcampoy.com",
+    "imageId": "1*s-6ntq_2AuaABOsgMcl54w.jpeg",
+    "mediumMemberAt": 1580517494000,
+    "username": "kitcampoy",
+    "customDomainState": {
+      "live": {
+        "domain": "kitcampoy.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "10416d940f06",
+    "algoliaObjectId": null,
+    "name": "Robin Wilding 💎",
+    "bio": "Top Writer in Humor, Satire, Entrepreneurship, and Ideas. I'm a Canadian, pro writer for over a decade--and once got stuck in an East Timorese detention camp.",
+    "imageId": "1*hxvrNerrEBRG43KH1RdraQ.gif",
+    "mediumMemberAt": 1664342955000,
+    "username": "robin_wilding",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "10963201e6e5",
+    "algoliaObjectId": null,
+    "name": "Shivanshu Gupta",
+    "bio": "I provide SaaS Consultation and help my clients in development for there SaaS. Check my Linktree Link: https://linktr.ee/shivanshugupta",
+    "imageId": "1*4mU1ZYgSlvrb297cS69RrA.jpeg",
+    "mediumMemberAt": 0,
+    "username": "shivanshudev",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "8aa0c6af4626",
+    "algoliaObjectId": null,
+    "name": "Sam Schreim",
+    "bio": "Business Model Hackers Founder: Sharing real-life business cases from strategy, management and the application of complex systems in business https://bmh.ai",
+    "imageId": "1*HPQRjjK0lN_M2FbN-763ug.gif",
+    "mediumMemberAt": 1645629502000,
+    "username": "samschreim",
+    "customDomainState": {
+      "live": { "domain": "blog.bmh.ai", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "fea25fe26b50",
+    "algoliaObjectId": null,
+    "name": "Michael Lin",
+    "bio": "Engineering Consulting for Startups • Ex-Netflix • EECS @ UC Berkeley • Read my articles for free: https://michaellin.substack.com",
+    "imageId": "1*LyvHVDCJZB-xyPhQp3btMQ.png",
+    "mediumMemberAt": 1645644273981,
+    "username": "_michaellin",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a2d36236daea",
+    "algoliaObjectId": null,
+    "name": "Alana Rister, Ph.D.",
+    "bio": "Write about entrepreneurship, marketing, and personal development. Also me: @alanalrister and @scigradcoach https://www.alanarister.com/alana-rister-newsletter",
+    "imageId": "2*YgR5RdsZzkD0r1W4Of7Vrg.jpeg",
+    "mediumMemberAt": 1668998253000,
+    "username": "alanarister",
+    "customDomainState": {
+      "live": {
+        "domain": "alanarister.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e809b78876ed",
+    "algoliaObjectId": null,
+    "name": "buzzedison",
+    "bio": "Innovative writer bridging the gap between business, tech & self-care. Sharing insights & strategies to lead, thrive & succeed. https://www.buzzedison.com",
+    "imageId": "1*EmpodnAvRRnDjip6I4Bliw.jpeg",
+    "mediumMemberAt": 1673123143778,
+    "username": "buzzedison",
+    "customDomainState": {
+      "live": {
+        "domain": "buzzedison.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "aa38fec37f51",
+    "algoliaObjectId": null,
+    "name": "Dr. Mandar Karhade, MD. PhD.",
+    "bio": "Physician Scientist | Healthcare AI/ML leader | Builder | Photographer | Perpetual Learner",
+    "imageId": "1*Z4yG0-xCzgmOcPZaI7a77Q.jpeg",
+    "mediumMemberAt": 1646310766000,
+    "username": "ithinkbot",
+    "customDomainState": {
+      "live": { "domain": "ithinkbot.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "dfa24df0c833",
+    "algoliaObjectId": null,
+    "name": "Jayden Levitt",
+    "bio": "Top writer in Bitcoin, Finance, Business, Technology, NFTs, Crypto, Web3, Investing, Self Improvement - Join my Substack FREE https://jaydenlevitt.substack.com/",
+    "imageId": "1*97YUgQYxsyHO66CzJOWdCw@2x.jpeg",
+    "mediumMemberAt": 1644022548000,
+    "username": "jayden_levitt",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "408663adc71c",
+    "algoliaObjectId": null,
+    "name": "Nikhil Vemu",
+    "bio": "Apple Geek. | Support the Apple literacy movement 👉 https://nikhilvemu.medium.com/membership",
+    "imageId": "1*2rBQc171nwxUfGiqCOVReg.jpeg",
+    "mediumMemberAt": 1677728413490,
+    "username": "nikhilvemu",
+    "customDomainState": {
+      "live": {
+        "domain": "nikhilvemu.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e119a26506e3",
+    "algoliaObjectId": null,
+    "name": "Admiral Cloudberg",
+    "bio": "Analyzer of plane crashes. Contact me via @Admiral_Cloudberg on Reddit, @KyraCloudy on Twitter, or by email at kyracloudy97@gmail.com.",
+    "imageId": "2*pZPMtIONqtJYi2xHYD_Ivg.jpeg",
+    "mediumMemberAt": 0,
+    "username": "admiralcloudberg",
+    "customDomainState": {
+      "live": {
+        "domain": "admiralcloudberg.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "9b351e8113e9",
+    "algoliaObjectId": null,
+    "name": "Ignacio de Gregorio",
+    "bio": "Crypto & AI insights curated so that you're prepared for the digital economy. Opinions are my own. Sign up for my newsletter at https://www.thetechoasis.com",
+    "imageId": "1*ksXslfo6uLdzsHrr5bgBQQ.png",
+    "mediumMemberAt": 1655026315000,
+    "username": "ignacio.de.gregorio.noblejas",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e0297a7f5699",
+    "algoliaObjectId": null,
+    "name": "Michael King",
+    "bio": "Average dude with some not so average thoughts… Top-Writer for Technology, Art, Design, Books and Reading topics",
+    "imageId": "1*j8S9i89lwpd7uzHByeGg9A.jpeg",
+    "mediumMemberAt": 1555052400000,
+    "username": "neonforge",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "15fb24a3ff0d",
+    "algoliaObjectId": null,
+    "name": "Michael Burnett",
+    "bio": "Author and startup design leader. Head of Design @ Plastiq, formerly Credit Sesame, IMVU, Tango, Miles. MBA, Masters in Design Strategy @ CCA. STEAM nerd.",
+    "imageId": "1*_nRlSLLxOANILDkX_ubCqQ.png",
+    "mediumMemberAt": 1642273825000,
+    "username": "dtls",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "819323b399ac",
+    "algoliaObjectId": null,
+    "name": "Jim Clyde Monge",
+    "bio": "4X Top Writer. Software Engineer, Artist, Writer. Join me in medium: https://jimclydemonge.medium.com/membership",
+    "imageId": "1*y21asU2FcaTTiDiyXbJK9A.jpeg",
+    "mediumMemberAt": 1626224300000,
+    "username": "jimclydemonge",
+    "customDomainState": {
+      "live": {
+        "domain": "jimclydemonge.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "6026e0e2a201",
+    "algoliaObjectId": null,
+    "name": "The Useful Tech",
+    "bio": "Everything from the latest updates on Android and iOS, to AI and Cybersecurity. Follow to Stay updated on the latest tech trends and impress your friends!",
+    "imageId": "1*huaATcaUP76fICcfufubLw.png",
+    "mediumMemberAt": 1632575898000,
+    "username": "theusefultech",
+    "customDomainState": {
+      "live": { "domain": "theusefultech.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "665f2b5379e3",
+    "algoliaObjectId": null,
+    "name": "Mark Ellis",
+    "bio": "Tech reviewer and Medium entrepreneur. Register for my FREE Medium webinars ➡️ https://www.soloclub.online/",
+    "imageId": "1*J5nlHK-FENqXcx7CaT3gOA.jpeg",
+    "mediumMemberAt": 1592500299000,
+    "username": "markellisreviews",
+    "customDomainState": {
+      "live": {
+        "domain": "markellisreviews.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "24f5f16be697",
+    "algoliaObjectId": null,
+    "name": "Bennett Garner",
+    "bio": "DeveloperPurpose.com — Email course on how to build a tech career with meaning and purpose 💻 Top writer in technology ✍️",
+    "imageId": "1*88pnNcBd1mdOJhsri4lCHg.png",
+    "mediumMemberAt": 1587300738623,
+    "username": "bennettgarner",
+    "customDomainState": {
+      "live": {
+        "domain": "bennettgarner.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "71154650ecd4",
+    "algoliaObjectId": null,
+    "name": "The woman",
+    "bio": "Programming | AI | Data Science | Blockchain -> contact: the.woman.from.medium@gmail.com",
+    "imageId": "1*qz8tfR0xm0p7NDodpbr_5Q.jpeg",
+    "mediumMemberAt": 0,
+    "username": "thefemaleprogrammer",
+    "customDomainState": {
+      "live": {
+        "domain": "thefemaleprogrammer.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d3c270f2cefd",
+    "algoliaObjectId": null,
+    "name": "Yancy Dennis",
+    "bio": "MIT graduate, author and entrepreneur",
+    "imageId": "1*Oh9b3kP25xyBUBuw_4oOOA.jpeg",
+    "mediumMemberAt": 1597593651000,
+    "username": "dennisyd",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d8fc5db9b016",
+    "algoliaObjectId": null,
+    "name": "Sanjay Priyadarshi",
+    "bio": "Join a Community of People Who Love Javascript, Programming and Technology — codertoentrepreneurs.substack.com",
+    "imageId": "1*XutiHXIrmXbyn2h1ss34TA.png",
+    "mediumMemberAt": 1669606832000,
+    "username": "priyadarshisanjay",
+    "customDomainState": {
+      "live": {
+        "domain": "priyadarshisanjay.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "7ba6be8a3022",
+    "algoliaObjectId": null,
+    "name": "Alberto Romero",
+    "bio": "AI & Tech | Analyst at CambrianAI | Weekly AI Newsletter: https://thealgorithmicbridge.substack.com/ | Contact: alber.romgar@gmail.com",
+    "imageId": "2*oMdIZBsnK8EFhQLUaAB5ZA.jpeg",
+    "mediumMemberAt": 1523202691000,
+    "username": "albertoromgar",
+    "customDomainState": {
+      "live": {
+        "domain": "albertoromgar.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "30834bcaf46a",
+    "algoliaObjectId": null,
+    "name": "The Secret Developer",
+    "bio": "A top software developer who has worked for some of the biggest tech companies (yes, that one too) reveals the stories behind Big Tech and software engineering.",
+    "imageId": "1*dmbNkD5D-u45r44go_cf0g.png",
+    "mediumMemberAt": 0,
+    "username": "tsecretdeveloper",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "58c3f2972f73",
+    "algoliaObjectId": null,
+    "name": "Leon Zucchini",
+    "bio": "Founder at Curiosity",
+    "imageId": "1*PZkj4N9rMfWz9JZSMxTIdQ.png",
+    "mediumMemberAt": 0,
+    "username": "leonzucchini",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "114c2684cfef",
+    "algoliaObjectId": null,
+    "name": "Tom Smykowski",
+    "bio": "Subscribe To Stay Up To Date With Software Engineering",
+    "imageId": "1*QBY4yLB-8qciSZmu9tYqpA.jpeg",
+    "mediumMemberAt": 0,
+    "username": "tomaszs2",
+    "customDomainState": {
+      "live": { "domain": "tomaszs2.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "fd0cc3d61f6e",
+    "algoliaObjectId": null,
+    "name": "Jakub Jirak",
+    "bio": "Regular guy who likes technology, innovation, the future and science and decided to share his knowledge with others. Don't forget to clap and follow.",
+    "imageId": "1*5nKuUg38Hy8RaGKdL6Rr8A.png",
+    "mediumMemberAt": 1632988071000,
+    "username": "jakubjirak",
+    "customDomainState": {
+      "live": {
+        "domain": "jakubjirak.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "fe89705f4c85",
+    "algoliaObjectId": null,
+    "name": "Clark",
+    "bio": "I admire technological advancements and write about them on Medium.",
+    "imageId": "1*5c1ehGuOFj_z-PB_nFefyA@2x.jpeg",
+    "mediumMemberAt": 1677284801000,
+    "username": "cercinus",
+    "customDomainState": {
+      "live": { "domain": "cercinus.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a148fd75c2e9",
+    "algoliaObjectId": null,
+    "name": "Alexander Nguyen",
+    "bio": "120K Followers on LinkedIn Ideas about technology, software engineering and life https://www.linkedin.com/in/alxngu/",
+    "imageId": "1*cwYWYCjbeXNc_pAtTeq_Zg.jpeg",
+    "mediumMemberAt": 0,
+    "username": "alexcancode",
+    "customDomainState": {
+      "live": {
+        "domain": "alexcancode.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "76398be9016",
+    "algoliaObjectId": null,
+    "name": "Devansh- Machine Learning Made Simple",
+    "bio": "Deep Insights about Artificial Intelligence (AI), Machine Learning, Software Engineering, and the Tech Industry. Follow me to come out on top",
+    "imageId": "1*xiFRgHfgfMR7S111UB2hMw.jpeg",
+    "mediumMemberAt": 0,
+    "username": "machine-learning-made-simple",
+    "customDomainState": {
+      "live": {
+        "domain": "machine-learning-made-simple.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "20ae431f4bdc",
+    "algoliaObjectId": null,
+    "name": "Ilma Andrade",
+    "bio": "Top Writer in the Topics of Technology and Art - UX Designer B2B - Traveling the world with my computer and a 40L backpack",
+    "imageId": "1*RHhq3pIoCERqgp8SLfiS-w.jpeg",
+    "mediumMemberAt": 1668628828000,
+    "username": "zidailma",
+    "customDomainState": {
+      "live": { "domain": "zidailma.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d446e1b4a70b",
+    "algoliaObjectId": null,
+    "name": "Josef Cruz",
+    "bio": "Entrepreneur, coder, husband, father. I spend my days on the web learning and sharing information across the globe.",
+    "imageId": "1*RvB7OCsPIBQwZpVMW3UEeg.jpeg",
+    "mediumMemberAt": 1612230926000,
+    "username": "imjosef",
+    "customDomainState": {
+      "live": { "domain": "imjosef.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3c78414cd174",
+    "algoliaObjectId": null,
+    "name": "Michael Swengel",
+    "bio": "Tech enthusiast. Entrepreneur. Writing about tech, side hustles, and design. https://sidehustleroad.com | https://www.youtube.com/@spareroomtech",
+    "imageId": "1*CLxCRj6o12Fb4tas0w7c6A@2x.jpeg",
+    "mediumMemberAt": 1652545847000,
+    "username": "michaelswengel",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "2696f801a31a",
+    "algoliaObjectId": null,
+    "name": "Christianlauer",
+    "bio": "Big Data Enthusiast based in Hamburg and Kiel. Thankful if you would support my writing via: https://christianlauer90.medium.com/membership",
+    "imageId": "1*el0BA70BDU6wLvgrlTfEkA.jpeg",
+    "mediumMemberAt": 1585216353763,
+    "username": "christianlauer90",
+    "customDomainState": {
+      "live": {
+        "domain": "christianlauer90.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "df29d70fb6bd",
+    "algoliaObjectId": null,
+    "name": "Grant Piper",
+    "bio": "Thought provoking articles daily. Guaranteed.",
+    "imageId": "2*zTS3pOZe1sMk9TmESAX5uQ.jpeg",
+    "mediumMemberAt": 1580776849000,
+    "username": "grantpiperwriting",
+    "customDomainState": {
+      "live": {
+        "domain": "grantpiperwriting.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d4352eb68115",
+    "algoliaObjectId": null,
+    "name": "Clive Thompson",
+    "bio": "I write 2X a week on tech, science, culture — and how those collide. Writer at NYT mag/Wired; author, “Coders”. @clive@saturation.social clive@clivethompson.net",
+    "imageId": "1*C6KlQUX7cSZiV7VlS12Vyw.jpeg",
+    "mediumMemberAt": 1540914629000,
+    "username": "clivethompson",
+    "customDomainState": {
+      "live": {
+        "domain": "clivethompson.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": true, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ab8db76f5314",
+    "algoliaObjectId": null,
+    "name": "Yang Zhou",
+    "bio": "Full-Stack Engineer 🥷| Top Writer🏆",
+    "imageId": "2*LGEGZoQWcwrCYPOxGsacCg.jpeg",
+    "mediumMemberAt": 1598114306495,
+    "username": "yangzhou1993",
+    "customDomainState": {
+      "live": {
+        "domain": "yangzhou1993.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d662dd6a4ca8",
+    "algoliaObjectId": null,
+    "name": "SwitchUpCB",
+    "bio": "You.",
+    "imageId": "1*nZY8Iir9G0sgC1liAlVHlw.png",
+    "mediumMemberAt": 0,
+    "username": "switchupcb",
+    "customDomainState": {
+      "live": {
+        "domain": "switchupcb.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "f3e08a9cbae5",
+    "algoliaObjectId": null,
+    "name": "Noah",
+    "bio": "I write articles on productivity, personal development and technology. The tech world is what fascinates me https://medium.com/@nhshinwari21/membership",
+    "imageId": "1*SON5ddYxH8Wru-hrubxkuA.png",
+    "mediumMemberAt": 1675023088000,
+    "username": "nhshinwari21",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "5253c50d76c1",
+    "algoliaObjectId": null,
+    "name": "John Au-Yeung",
+    "bio": "Web developer. Check out https://thewebdev.info. Email me at hohanga@gmail.com",
+    "imageId": "2*FG4lpTG6MxKsIj_BBTqwRg.jpeg",
+    "mediumMemberAt": 0,
+    "username": "hohanga",
+    "customDomainState": {
+      "live": { "domain": "hohanga.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "5372db97c9da",
+    "algoliaObjectId": null,
+    "name": "Faisal Khan",
+    "bio": "A devout futurist keeping a keen eye on the latest in Emerging Tech, Global Economy, Space, Science, Cryptocurrencies & more",
+    "imageId": "1*zTg8HJw7-OAGn3swR20B2A@2x.jpeg",
+    "mediumMemberAt": 1557212400000,
+    "username": "khanfk",
+    "customDomainState": {
+      "live": { "domain": "khanfk.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e8bf59ddaa70",
+    "algoliaObjectId": null,
+    "name": "Farhan Tanvir",
+    "bio": "Believes in learn by doing . Currently working as a software engineer in japan . Passionate about mobile application development .",
+    "imageId": "1*v0f_R_HRzNOKCqI-sBoqcA.jpeg",
+    "mediumMemberAt": 1594861955000,
+    "username": "farhan-tanvir",
+    "customDomainState": {
+      "live": {
+        "domain": "farhan-tanvir.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "2415c881fd51",
+    "algoliaObjectId": null,
+    "name": "Jacob Ferus",
+    "bio": "Looking outside the box and making sense of the world using data.",
+    "imageId": "1*kBjZOzA4VnMIigyfQz5-KQ.png",
+    "mediumMemberAt": 1662585074000,
+    "username": "dreamferus",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "bc7e14e8bd25",
+    "algoliaObjectId": null,
+    "name": "Dineshchandgr - A Top writer in Technology",
+    "bio": "Principal Software Engineer and Technical Lead focussed on Backend Engineering who likes to upgrade the tech skills and share knowledge to the community",
+    "imageId": "1*EFU5pbJHa2uJKiUYddz3Rg.jpeg",
+    "mediumMemberAt": 1636505327413,
+    "username": "dineshchandgr",
+    "customDomainState": {
+      "live": {
+        "domain": "dineshchandgr.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "864ac3f74bd4",
+    "algoliaObjectId": null,
+    "name": "Tristan Wolff",
+    "bio": "Writer of screenplays & audio serials exploring stuff. Delving into sci-fi themes & 🤖 /🧠 symbiosis. https://medium.com/@tristwolff/membership",
+    "imageId": "1*Sroq2nC2n-In-UBpTfVKbg.png",
+    "mediumMemberAt": 1669719090000,
+    "username": "tristwolff",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "209207e81261",
+    "algoliaObjectId": null,
+    "name": "Hunter Walk",
+    "bio": "You’ll find me @homebrew , Seed Stage Venture Fund w @satyap . Previously made products at YouTube, Google & SecondLife. Married to @cbarlerin .",
+    "imageId": "1*RpIdeVkdL6-4tJ6x5q17gw.jpeg",
+    "mediumMemberAt": 1507996438000,
+    "username": "hunterwalk",
+    "customDomainState": {
+      "live": {
+        "domain": "hunterwalk.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "7c1ab936a5cc",
+    "algoliaObjectId": null,
+    "name": "Ellane W",
+    "bio": "Designer and educational publisher for 30 years+. Plain-text advocate. Still using paper, but less of it. https://linktr.ee/miscellaneplans",
+    "imageId": "1*ioxfmwpYXaaQV-mVPkLQOQ.jpeg",
+    "mediumMemberAt": 1592868470898,
+    "username": "miscellaneplans",
+    "customDomainState": {
+      "live": {
+        "domain": "miscellaneplans.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "2053aaf853f5",
+    "algoliaObjectId": null,
+    "name": "Attila Vágó",
+    "bio": "Pragmatic software engineer, editor, writer and occasional music critic. LEGO and Mac fan. Accessibility advocate. Life enthusiast. 10x+ Top Writer, 1M+ views",
+    "imageId": "1*Ilzy6aGvG__n7QzdkiL41A.jpeg",
+    "mediumMemberAt": 1637502714000,
+    "username": "attilavago",
+    "customDomainState": {
+      "live": {
+        "domain": "attilavago.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "67a9c31b5a5f",
+    "algoliaObjectId": null,
+    "name": "Entreprogrammer",
+    "bio": "Tech entrepreneur | Change maker | Enthusiastic about AI and Blockchain",
+    "imageId": "1*wbXofMkhXcYHsjFctIwMSA.png",
+    "mediumMemberAt": 1663316770000,
+    "username": "abrarmasum",
+    "customDomainState": {
+      "live": {
+        "domain": "abrarmasum.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "bf735f6b3d8a",
+    "algoliaObjectId": null,
+    "name": "David Lewis",
+    "bio": "Youtuber and blogger https://www.youtube.com/c/DavidLewistalkingtechandaudio",
+    "imageId": "1*h8LV969KwCPvflAPs99zgQ.jpeg",
+    "mediumMemberAt": 1630484462000,
+    "username": "Davidtalkingtech",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d28939b5ab78",
+    "algoliaObjectId": null,
+    "name": "LucianoSphere",
+    "bio": "https://www.lucianoabriata.com | Nature, science, technology, programming, biotech, bioinformatics.| Have a job for me? Contact me in ES FR EN IT",
+    "imageId": "1*_D6QHa8RBbslpMmy3jOGtw.jpeg",
+    "mediumMemberAt": 1669412521000,
+    "username": "lucianosphere",
+    "customDomainState": {
+      "live": {
+        "domain": "lucianosphere.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "58c587b768b6",
+    "algoliaObjectId": null,
+    "name": "Stephen Moore",
+    "bio": "Sassy takes on Big Tech, the Metaverse, NFTs and more. Currently: editor @Entrepreneur’s Handbook | Previously: editor @Medium | Contact: stephen@sjmblog.com",
+    "imageId": "1*S8My2cbR0NUBgnj8BvLLDA.png",
+    "mediumMemberAt": 1500307716000,
+    "username": "stephenmoore",
+    "customDomainState": {
+      "live": {
+        "domain": "stephenmoore.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "14d5c41e0264",
+    "algoliaObjectId": null,
+    "name": "Zulie Rane",
+    "bio": "Content creator, cat mom, 6-figure entrepreneur. She/her. Get 2x weekly emails on how to make money writing online: https://zuliewrites.ck.page/3e3d3a8187",
+    "imageId": "1*sPU_ZHS0My6X5eDlT7uA-w.png",
+    "mediumMemberAt": 1593014746000,
+    "username": "zulie",
+    "customDomainState": {
+      "live": { "domain": "zulie.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "7d35d46197ae",
+    "algoliaObjectId": null,
+    "name": "David Todd McCarty",
+    "bio": "A curmudgeonly writer and raconteur searching for hope and humor in trying times. Top Writer in Writing, Culture, Social Media, Politics, History, and Science.",
+    "imageId": "1*6SP766YLHuw3ly8KN4hAZQ.png",
+    "mediumMemberAt": 1622824651000,
+    "username": "davidtoddmccarty",
+    "customDomainState": {
+      "live": {
+        "domain": "davidtoddmccarty.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "9fc7a2e501ff",
+    "algoliaObjectId": null,
+    "name": "Kate Granger",
+    "bio": "I explore where romance, love, emotions and erotica meet in a relationship explosion. 4 x Top Writer.",
+    "imageId": "1*fxobQo85UkxS-dqjUjQVjA.jpeg",
+    "mediumMemberAt": 1666853707000,
+    "username": "KateGranger",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e3d7c21cf689",
+    "algoliaObjectId": null,
+    "name": "Zohvib",
+    "bio": "Author. Storyteller. Editor. Available for freelance gigs→ zohvibwords@gmail.com",
+    "imageId": "1*zS7DcnwVyvSY7-N4IyCYiw.jpeg",
+    "mediumMemberAt": 0,
+    "username": "zohvib",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "63f572313873",
+    "algoliaObjectId": null,
+    "name": "Paul Walker",
+    "bio": "Spiritual traveler, Prog Rock aficionado, Husband, Dad, Retired Anglican Priest figuring out what ‘retirement’ means.",
+    "imageId": "1*dJjSmsQ__oS3gG8Z99zB5w.jpeg",
+    "mediumMemberAt": 1635786700000,
+    "username": "paulwalker71",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "1cafb28399aa",
+    "algoliaObjectId": null,
+    "name": "Scott Myers",
+    "bio": "",
+    "imageId": "1*FOd2w7eFYOk0mYrS7ijv5Q.png",
+    "mediumMemberAt": 1531292400000,
+    "username": "scottdistillery",
+    "customDomainState": {
+      "live": {
+        "domain": "scottdistillery.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d5700e8fad77",
+    "algoliaObjectId": null,
+    "name": "Linda Caroll",
+    "bio": "Everything is storytelling. I’m at StoryTellerDesign.co I write about writing, marketing & Medium at https://lindac.substack.com/",
+    "imageId": "2*k9WGjFrkNI3f-kD5wjRxlQ.jpeg",
+    "mediumMemberAt": 1490214351000,
+    "username": "lindacaroll",
+    "customDomainState": {
+      "live": {
+        "domain": "lindacaroll.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e55fd9328e5b",
+    "algoliaObjectId": null,
+    "name": "Hazel Paradise",
+    "bio": "I believe every writer to be their own boss and have multiple sources of income. Consistency is all you need! https://beacons.ai/hazelparadise",
+    "imageId": "1*Zn83r7bsv_3HK_uKiyHbxA.png",
+    "mediumMemberAt": 0,
+    "username": "hazelparadise",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "799bdc99a0fd",
+    "algoliaObjectId": null,
+    "name": "Shaunta Grimes",
+    "bio": "Learn. Write. Repeat. Visit me at ninjawriters.org. Reach me at shauntagrimes@gmail.com. (My posts may contain affiliate links!)",
+    "imageId": "1*4aXqupIJzD7IGsZOrESopg.jpeg",
+    "mediumMemberAt": 1490216237000,
+    "username": "shauntagrimes",
+    "customDomainState": {
+      "live": {
+        "domain": "shauntagrimes.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "29553fe574a5",
+    "algoliaObjectId": null,
+    "name": "Shu Omi",
+    "bio": "I’m a former data scientist and now a full-time creator. I share what I learned about personal knowledge management and building an online audience",
+    "imageId": "1*KxPfRpdBsSMUsJJJRCoIaA.jpeg",
+    "mediumMemberAt": 1608360645000,
+    "username": "shuomi",
+    "customDomainState": {
+      "live": { "domain": "shuomi.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ad50bffdc5c1",
+    "algoliaObjectId": null,
+    "name": "Cole Haddon",
+    "bio": "Cole Haddon is a screenwriter, novelist, and journalist who works around the globe. He writes here about storytelling, the arts, and pop-culture in general.",
+    "imageId": "1*TOhBCTaV4wNWYNri5-jt0w.jpeg",
+    "mediumMemberAt": 1677888229000,
+    "username": "cole.haddon",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "37f296b78e9f",
+    "algoliaObjectId": null,
+    "name": "Abena Talks",
+    "bio": "💰Build a 7-figure income with niche blogs + faceless content pages. Entrepreneurship writer. Founder Freshlight Media. 📩 intriguework@gmail.com💰",
+    "imageId": "1*d2HbtwTyB9_uyp1glHK3yA.jpeg",
+    "mediumMemberAt": 1673036674000,
+    "username": "intriguework",
+    "customDomainState": {
+      "live": {
+        "domain": "intriguework.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "9fd8636bee90",
+    "algoliaObjectId": null,
+    "name": "Erica Verrillo",
+    "bio": "Helping writers get published and bolstering their flagging spirits at http://publishedtodeath.blogspot.com/",
+    "imageId": "1*DS9BlyaUlgAbRQvN-uFrLg.jpeg",
+    "mediumMemberAt": 0,
+    "username": "ericaverr",
+    "customDomainState": {
+      "live": {
+        "domain": "ericaverr.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "caa51e5ba081",
+    "algoliaObjectId": null,
+    "name": "Tom Kuegler",
+    "bio": "Travel blogger. 29 years old. Currently in Mexico. Get my free 5-day Medium course via email → https://bit.ly/35yyIIu",
+    "imageId": "1*EbowOrzpK3PAwrgyh1QQ6w.jpeg",
+    "mediumMemberAt": 1490218317000,
+    "username": "tomkuegler",
+    "customDomainState": {
+      "live": {
+        "domain": "tomkuegler.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a18ec273b218",
+    "algoliaObjectId": null,
+    "name": "Amalia",
+    "bio": "Mainly humor, a bit of self-improvement and money. Join Medium to help me live in Dubai: https://amaliaa.medium.com/membership ❤",
+    "imageId": "1*zTSbcjqDzYJLpuJzvMKGyg.png",
+    "mediumMemberAt": 1672408446000,
+    "username": "amaliaa",
+    "customDomainState": {
+      "live": { "domain": "amaliaa.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "8b7a0a3421b8",
+    "algoliaObjectId": null,
+    "name": "Yana Bostongirl",
+    "bio": "Top writer| NewsBreak contributor| My life + relationships + writing experiences = my blogs (a memoir in motion)| 🌸Connect: https://twitter.com/YBostongirl",
+    "imageId": "1*w3tvZB5IHnwLb244e12-1w.jpeg",
+    "mediumMemberAt": 1624983187000,
+    "username": "yanabostongirl",
+    "customDomainState": {
+      "live": {
+        "domain": "yanabostongirl.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "c11ae3a6d60f",
+    "algoliaObjectId": null,
+    "name": "Sanidhya Samyak",
+    "bio": "In a constant search of ‘cozy’—whatever that is. I write about books, lifestyle, spirituality, mindset,+ more!",
+    "imageId": "1*zEcjYJCG5wpw84NsXhv-QQ.jpeg",
+    "mediumMemberAt": 0,
+    "username": "sanidhya.samyak17",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ff009a5e3196",
+    "algoliaObjectId": null,
+    "name": "Justin Cox",
+    "bio": "I help writers and nonprofits grow. Editor of The Writing Cooperative. Contact at JustinCox.com",
+    "imageId": "1*leGzpv-yMZ0QErnkk9ji7w.jpeg",
+    "mediumMemberAt": 1490140800000,
+    "username": "justincox",
+    "customDomainState": {
+      "live": {
+        "domain": "justincox.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3bf92c92c9e0",
+    "algoliaObjectId": null,
+    "name": "Brandt Amelia",
+    "bio": "Amelia, a writer and lover of literature.dedicates her life to the written word. brandtniko40@gmail.com , https://brandtamela.medium.com/membership",
+    "imageId": "1*TTTdRUyY4VncSIQ1C1RkTA.png",
+    "mediumMemberAt": 0,
+    "username": "brandtamela",
+    "customDomainState": {
+      "live": {
+        "domain": "brandtamela.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "cf34e7a26565",
+    "algoliaObjectId": null,
+    "name": "ILLUMINATION",
+    "bio": "Lead Editor of ILLUMINATION Integrated Publications on Medium. Cross-pollinating and supporting 19,000+ writers. Apply via https://digitalmehmet.com/contact",
+    "imageId": "1*Z_viPWqtZ-ZtsfA0NSs74w.png",
+    "mediumMemberAt": 1674915436000,
+    "username": "illumination",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "23a7c75fe6b9",
+    "algoliaObjectId": null,
+    "name": "Wikan",
+    "bio": "Wikan is a blind person born and raised in Bali. He will tell his story from the perspective of a blind man from Bali Island, and you will deal with it!",
+    "imageId": "1*O3oqQ8tbv3EBkJacdslW_A.jpeg",
+    "mediumMemberAt": 0,
+    "username": "IamWikan",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "650e3af69034",
+    "algoliaObjectId": null,
+    "name": "Lipika Sahu",
+    "bio": "6X Top Writer in Writing || Reach me at lipikasahu194@gmail.com || Check out freebies — https://lipika.gumroad.com",
+    "imageId": "1*ym6PMqw2zmm7afzf4PisNw.jpeg",
+    "mediumMemberAt": 1678421274000,
+    "username": "lipikasahu",
+    "customDomainState": {
+      "live": {
+        "domain": "lipikasahu.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "64e66c908ab5",
+    "algoliaObjectId": null,
+    "name": "Joseph Godwin",
+    "bio": "Classroom Teacher ★ Writer ★ and Blogger. Founder: https://speronigh.com",
+    "imageId": "1*OKFLUGCBTmxZoiGFbZGgMg.jpeg",
+    "mediumMemberAt": 0,
+    "username": "josephyala",
+    "customDomainState": {
+      "live": {
+        "domain": "josephyala.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "902c38d4e2c9",
+    "algoliaObjectId": null,
+    "name": "ILLUMINATION Amplifiers",
+    "bio": "Senior editor and content curator of Illumination Integrated Publications, amplifying valuable stories. https://medium.com/@technnology-hits/membership",
+    "imageId": "1*vVTChf9p3QqfsyRo_q-bpQ.jpeg",
+    "mediumMemberAt": 1676274213000,
+    "username": "technnology-hits",
+    "customDomainState": {
+      "live": {
+        "domain": "technnology-hits.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "6c268c2ef0e1",
+    "algoliaObjectId": null,
+    "name": "David B. Clear",
+    "bio": "Cartoonist, science fan, PhD, eukaryote. Doesn't eat cats, dogs, nor other animals. 1,000x Bottom Writer. davidbclear.com",
+    "imageId": "1*5Y4Ycvman1k4QsRT8cpPjA@2x.jpeg",
+    "mediumMemberAt": 1572535920000,
+    "username": "davidbclear",
+    "customDomainState": {
+      "live": {
+        "domain": "davidbclear.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "1b747570c689",
+    "algoliaObjectId": null,
+    "name": "Pamela Kazmierczak",
+    "bio": "Helping Writers find places to submit their work to — sometimes for money! I write about other stuff sometimes, too!",
+    "imageId": "1*Y_b5qCIVgd6y_RMMNIUpkA.jpeg",
+    "mediumMemberAt": 1590862367395,
+    "username": "pamelakazmierczak",
+    "customDomainState": {
+      "live": {
+        "domain": "pamelakazmierczak.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "dcd055366520",
+    "algoliaObjectId": null,
+    "name": "Janice Harayda",
+    "bio": "Critic, novelist, award-winning journalist. Former book editor of the Plain Dealer and book columnist for Glamour. Words in NYT, WSJ, and other major media.",
+    "imageId": "0*TriFMHXU8-wBBGm0.jpg",
+    "mediumMemberAt": 1620152223000,
+    "username": "janiceharayda",
+    "customDomainState": {
+      "live": {
+        "domain": "janiceharayda.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "241706b67407",
+    "algoliaObjectId": null,
+    "name": "Matthew Donnellon",
+    "bio": "Matthew Donnellon is a writer, artist, and sit down comedian. He is the author of The Curious Case of Emma Lee and Other Stories.",
+    "imageId": "1*2bDla40yQqp6nM6tDGTMrQ.jpeg",
+    "mediumMemberAt": 1533625200000,
+    "username": "matthewdonnellon",
+    "customDomainState": {
+      "live": {
+        "domain": "matthewdonnellon.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "b39265bfce60",
+    "algoliaObjectId": null,
+    "name": "Sarah Cy",
+    "bio": "(aka The Scylighter). Writer, musician, reader, daughter. Join our Merry Band, become a Brilliant Writer, and dazzle your readers! BeABrilliantWriter.com",
+    "imageId": "1*PicUU-c0KHP9ZJ3nIrF15w.jpeg",
+    "mediumMemberAt": 1669410922000,
+    "username": "sarahcy",
+    "customDomainState": {
+      "live": { "domain": "sarahcy.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4f9ebe5743c",
+    "algoliaObjectId": null,
+    "name": "Nour Boustani",
+    "bio": "Write to transform, write to inspire.",
+    "imageId": "1*tqlA6x0cEegR7ECUFEXEdg.jpeg",
+    "mediumMemberAt": 1652129013000,
+    "username": "nourboustani",
+    "customDomainState": {
+      "live": {
+        "domain": "nourboustani.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a3cb267bd2b4",
+    "algoliaObjectId": null,
+    "name": "Susie Kearley",
+    "bio": "Freelance writer on writing, environment, health, animals, psych. Qualified in nutrition, psychology, MBA Join Medium https://susiekearley.medium.com/membership",
+    "imageId": "1*GIezRva7MNjkDcKrHUhGcw.jpeg",
+    "mediumMemberAt": 1663573660000,
+    "username": "susiekearley",
+    "customDomainState": {
+      "live": {
+        "domain": "susiekearley.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4c07c129d9d3",
+    "algoliaObjectId": null,
+    "name": "Raymond M.E. Aguirre",
+    "bio": "Sharing insights about growing an solo writing business | Top Writer | Creator | 10+ years in healthcare | Newsletter-https://thecreatorheadspace.substack.com",
+    "imageId": "1*qy0ZxEuDJ2W5MeBZgnQ06Q@2x.jpeg",
+    "mediumMemberAt": 1660603200000,
+    "username": "rmeaguirre",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "905a992c9875",
+    "algoliaObjectId": null,
+    "name": "KiKi Walter",
+    "bio": "AKA \"The Memoir Queen.\" Ki is the founder & co-publisher of The Memoirist, Age of Empathy, Black Bear, Dear KiKi, QuickTalk, The Mayhem, & The Writing Pub.",
+    "imageId": "1*QZyyMLsgascxV9azuJPeAw@2x.jpeg",
+    "mediumMemberAt": 1635617070000,
+    "username": "kikiwalter",
+    "customDomainState": {
+      "live": {
+        "domain": "kikiwalter.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "f8dc6d9b012d",
+    "algoliaObjectId": null,
+    "name": "LIFE 2.0",
+    "bio": "It's time for a system upgrade. Health, psychology, tech, productivity, career. Life hacks for the modern human.",
+    "imageId": "1*lgCZNAAxXN14nJi_2PW3Og.png",
+    "mediumMemberAt": 1671082014770,
+    "username": "life2",
+    "customDomainState": {
+      "live": { "domain": "life2.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "810fcdc6e457",
+    "algoliaObjectId": null,
+    "name": "Ghazalarizvi",
+    "bio": "Sometime aggressive businesswoman, mostly benign writer",
+    "imageId": "1*wV8VlLzw1zG0wF-aPE9Gtw.jpeg",
+    "mediumMemberAt": 0,
+    "username": "ghazalarizvi",
+    "customDomainState": {
+      "live": {
+        "domain": "ghazalarizvi.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "231104518f37",
+    "algoliaObjectId": null,
+    "name": "Burk",
+    "bio": "Hi. I’m Burk. Writer, Notion creator & designer. Learn how I went from 0 to 12K+ followers & 650+ subs on Medium in 2 years. It's FREE → masterminds.byburk.net",
+    "imageId": "1*iQ2uBOw6BWWzmfhzHtJveA.jpeg",
+    "mediumMemberAt": 1613740652000,
+    "username": "burkrosemann",
+    "customDomainState": {
+      "live": {
+        "domain": "burkrosemann.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "bb36d8439904",
+    "algoliaObjectId": null,
+    "name": "javinpaul",
+    "bio": "I am Java programmer, blogger, working on Java, J2EE, UNIX, FIX Protocol. I share Java tips on http://javarevisited.blogspot.com and http://java67.com",
+    "imageId": "0*u9Ha3uTCjEmW_3gn.gif",
+    "mediumMemberAt": 0,
+    "username": "javinpaul",
+    "customDomainState": {
+      "live": {
+        "domain": "javinpaul.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "8213af8f3ccf",
+    "algoliaObjectId": null,
+    "name": "Josep Ferrer",
+    "bio": "700K+views on Medium || Outstand using data. ◼️ Data Science, Design and Tech ◼️ Not an expert, but still trying! :D 👉🏻Inquiries in rfeers@gmail.com",
+    "imageId": "1*Gr0xVxA3lg7una5lydy1Og.jpeg",
+    "mediumMemberAt": 1647430929000,
+    "username": "rfeers",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "c4c28b790cfe",
+    "algoliaObjectId": null,
+    "name": "Bhargav Bachina",
+    "bio": "Entrepreneur | 600+ Tech Articles | Subscribe to upcoming Videos https://www.youtube.com/channel/UCWLSuUulkLIQvbMHRUfKM-g | https://www.linkedin.com/in/bachina",
+    "imageId": "2*bSxBzySUaoCIbUat-AEy6A.jpeg",
+    "mediumMemberAt": 1552930273000,
+    "username": "bhargavbachina",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "76c21e75463a",
+    "algoliaObjectId": null,
+    "name": "Giorgos Myrianthous",
+    "bio": "I write about Python, DataOps and MLOps",
+    "imageId": "1*h7N9lGEJNfg1RtRbm--OCw.jpeg",
+    "mediumMemberAt": 1615729311000,
+    "username": "gmyrianthous",
+    "customDomainState": {
+      "live": {
+        "domain": "gmyrianthous.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "39db050c2ac2",
+    "algoliaObjectId": null,
+    "name": "Bex T.",
+    "bio": "BEXGBoost | DataCamp Instructor |🥇Top 10 AI/ML Writer on Medium | Kaggle Master | https://www.linkedin.com/in/bextuychiev/",
+    "imageId": "1*dEWNYKjVLledNST1EBuL_A.png",
+    "mediumMemberAt": 1612944784000,
+    "username": "ibexorigin",
+    "customDomainState": {
+      "live": {
+        "domain": "ibexorigin.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "adc8ea174c69",
+    "algoliaObjectId": null,
+    "name": "Ahmed Besbes",
+    "bio": "Medium Top Writer | I share stories to help data scientists become better programmers | https://ahmedbesbes.medium.com/membership",
+    "imageId": "1*SC35wIudR_HF3sA8F_n0yA.png",
+    "mediumMemberAt": 0,
+    "username": "ahmedbesbes",
+    "customDomainState": {
+      "live": {
+        "domain": "ahmedbesbes.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "b477bd92efe7",
+    "algoliaObjectId": null,
+    "name": "aruva - empowering ideas",
+    "bio": "We build world-class accelerators for businesses to take their idea from conceptualization to reality",
+    "imageId": "1*48d1lMvwlo5UyloFAs9Yhw.png",
+    "mediumMemberAt": 1590959504000,
+    "username": "aruva",
+    "customDomainState": {
+      "live": { "domain": "aruva.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "84c56aa6339f",
+    "algoliaObjectId": null,
+    "name": "Mohamed Aboelez",
+    "bio": "Software Engineer",
+    "imageId": "1*RjJNbQcqhgVZyJC_Aq3gUA.png",
+    "mediumMemberAt": 0,
+    "username": "moh.aboelez",
+    "customDomainState": { "live": null, "__typename": "CustomDomainState" },
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "1ccd9ab36c61",
+    "algoliaObjectId": null,
+    "name": "Antoine Craske",
+    "bio": "Director, Writer, Speaker | Shaping Quality Engineering at https://qeunit.com",
+    "imageId": "1*2Gu8Eu0C_GIDpVam1LD4pQ.png",
+    "mediumMemberAt": 1605700475000,
+    "username": "nto1",
+    "customDomainState": {
+      "live": { "domain": "nto1.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "7709f5c2ae4f",
+    "algoliaObjectId": null,
+    "name": "IcePanel",
+    "bio": "🧊 Align on technical decisions across your software engineering and product teams icepanel.io 🔗",
+    "imageId": "1*juUnUnffUkz33FyQ9vjOzQ.png",
+    "mediumMemberAt": 0,
+    "username": "icepanel",
+    "customDomainState": {
+      "live": { "domain": "icepanel.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "11ac44078875",
+    "algoliaObjectId": null,
+    "name": "C.A. Exline",
+    "bio": "Writer of speculative fiction and non-fiction. https://ko-fi.com/caexline",
+    "imageId": "1*FCdUohxtGBRXF5OE4Xmolg.jpeg",
+    "mediumMemberAt": 0,
+    "username": "x.line",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "154de6c1e04f",
+    "algoliaObjectId": null,
+    "name": "Israel Josué Parra Rosales",
+    "bio": "I'm a software developer with more than 9 years of experience. The last 7 years I have been working with Go. I love to learn and share my knowledge.",
+    "imageId": "1*tSAe_8L3hl9IAz0My3xADw.jpeg",
+    "mediumMemberAt": 0,
+    "username": "josueparra2892",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "3ee586bcbc2f",
+    "algoliaObjectId": null,
+    "name": "Beyond Boundaries",
+    "bio": "Top Writer in Productivity. Productivity, programming, and Engineering Blogs. Strong focus on tech.",
+    "imageId": "1*vSwvtvIA-480LMS-J1ejrw.png",
+    "mediumMemberAt": 1629985112000,
+    "username": "beyondbounds",
+    "customDomainState": {
+      "live": {
+        "domain": "beyondbounds.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4b7646df6df4",
+    "algoliaObjectId": null,
+    "name": "Christoph Janz",
+    "bio": "Internet entrepreneur turned angel investor turned micro VC. Managing Partner at http://t.co/5WJ3Pepbcv.",
+    "imageId": "0*asIYNoVFg1htfNhb.jpeg",
+    "mediumMemberAt": 1596009066000,
+    "username": "chrija",
+    "customDomainState": {
+      "live": { "domain": "chrija.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "c447256b1f6f",
+    "algoliaObjectId": null,
+    "name": "Anthony Trad",
+    "bio": "Senior Software Engineer focused on .NET and the Cloud. Reconsidering major principles and patterns, ideas are my own.",
+    "imageId": "1*SHwUOSWY-fZzB85mYHkWvA.png",
+    "mediumMemberAt": 0,
+    "username": "anthony-trad",
+    "customDomainState": {
+      "live": {
+        "domain": "anthony-trad.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "41a4dcb8343e",
+    "algoliaObjectId": null,
+    "name": "Umair Feroze",
+    "bio": "ECU Alumni👨🏼‍🎓| Software Engineer 👨🏼‍💻 MERN Developer | Innovative Tech Lover💡| Muslim ❤️ |Email: umayir10@gmail.com",
+    "imageId": "1*sUatxHtJehwDBaWx18WLdQ.jpeg",
+    "mediumMemberAt": 0,
+    "username": "umayir10",
+    "customDomainState": {
+      "live": { "domain": "umayir10.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "6e94ace4b5a9",
+    "algoliaObjectId": null,
+    "name": "Katie Jgln",
+    "bio": "Essayist, satirist and social scientist. London based. Also at: https://thenoosphere.substack.com",
+    "imageId": "1*2oetO4lu2d_ITdF2CWRFfw@2x.jpeg",
+    "mediumMemberAt": 1578160938000,
+    "username": "katiejgln",
+    "customDomainState": {
+      "live": {
+        "domain": "katiejgln.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "60a5c5eeb2a0",
+    "algoliaObjectId": null,
+    "name": "Faze",
+    "bio": "Hi there! A history geek who loves to write about history.",
+    "imageId": "1*hoSVqanFtr7cR7O2Mmjv1w.jpeg",
+    "mediumMemberAt": 0,
+    "username": "faze17",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "aba2358369a4",
+    "algoliaObjectId": null,
+    "name": "Aure's Notes",
+    "bio": "I write entertaining pieces on Medium and actionable no-bs articles on auresnotes.com. 2X Msc in pol. science and business economics. From Belgium. No niche.",
+    "imageId": "1*0CVjwpIwdblKyt_h_LZN9A.jpeg",
+    "mediumMemberAt": 1646342478000,
+    "username": "auresnotes",
+    "customDomainState": {
+      "live": {
+        "domain": "auresnotes.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "84e3dc4a4835",
+    "algoliaObjectId": null,
+    "name": "Melissa Gray",
+    "bio": "9x top writer. I don't fit in a box, unless it's a box of chocolates. You never know what you’re gonna get. Follow me anyway. Mom of two. Wife of one. Editor.",
+    "imageId": "1*lSsp9k9-_MEOBIr-4jsmFg.jpeg",
+    "mediumMemberAt": 1663283228000,
+    "username": "mgray-editing",
+    "customDomainState": {
+      "live": {
+        "domain": "mgray-editing.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "5320ecb977d9",
+    "algoliaObjectId": null,
+    "name": "Rocco Pendola",
+    "bio": "I write about living the semi-retired life, money and cities on Medium, at https://roccopendola.substack.com. Creator of City Life, https://medium.com/city-life",
+    "imageId": "1*ayiF0nprICnmN7rfxz2Erw.png",
+    "mediumMemberAt": 1595869758000,
+    "username": "roccopendola",
+    "customDomainState": {
+      "live": {
+        "domain": "roccopendola.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "6bd1324669a",
+    "algoliaObjectId": null,
+    "name": "Emmarie Hodge",
+    "bio": "I write interactive tarot readings here on Medium 🔮 Check out my blog for even more tarot content: EmmarieHodge.com",
+    "imageId": "1*dN6NcONpYoEtDcCxLSxilg.jpeg",
+    "mediumMemberAt": 1611005371000,
+    "username": "emmariehodge",
+    "customDomainState": {
+      "live": {
+        "domain": "emmariehodge.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "7debff54ca0d",
+    "algoliaObjectId": null,
+    "name": "Ceebla Cuud",
+    "bio": "I am a mom, wife, analyst & work for the NHS Trust. I love reading about finance and true crime stories. A new writer who has a lot to say. So bear with me.",
+    "imageId": "1*x8ajSyQ2LtSs4OhRFLpYDQ.png",
+    "mediumMemberAt": 1634148130000,
+    "username": "ceeblacuud",
+    "customDomainState": {
+      "live": {
+        "domain": "ceeblacuud.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "e940be120278",
+    "algoliaObjectId": null,
+    "name": "Addie Page",
+    "bio": "Essayist. Parent. Unusual woman. Sign up here to be notified when I publish: https://addiepage.medium.com/subscribe",
+    "imageId": "1*T75flHUjuZKGGqNQCR_X4Q.png",
+    "mediumMemberAt": 1655564171000,
+    "username": "addiepage",
+    "customDomainState": {
+      "live": {
+        "domain": "addiepage.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "be08b013cc2a",
+    "algoliaObjectId": null,
+    "name": "Shannon Ashley",
+    "bio": "It's not about being flawless, it's about being honest. 🍵 https://ko-fi.com/shannonashley 📧shannon.ashley.medium@gmail.com",
+    "imageId": "2*KorYsHhw9GLLdscX42RxWw.jpeg",
+    "mediumMemberAt": 1526145903689,
+    "username": "Shesreallyfat",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "c8e5d4980403",
+    "algoliaObjectId": null,
+    "name": "Allison Wiltz",
+    "bio": "Womanist Scholar bylines @ Oprah Daily, Zora, GEN, Momentum, GEN, EIC Cultured, AfroSapiophile #WEOC Founder allisonthedailywriter.com ☕️ ko-fi.com/allyfromnola",
+    "imageId": "1*F3GjxIvwXAd387rZfVqIDg.png",
+    "mediumMemberAt": 1593180377190,
+    "username": "allyfromnola",
+    "customDomainState": {
+      "live": {
+        "domain": "allyfromnola.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "ec3e666d9386",
+    "algoliaObjectId": null,
+    "name": "Annie Tanasugarn, PhD",
+    "bio": "Psychologist. Certified Trauma & Relationship Specialist. https://behaviorthrive.com/",
+    "imageId": "1*C2z6wuBRia1UfTYOq-SLNg.png",
+    "mediumMemberAt": 1592068749000,
+    "username": "thrivewithannie",
+    "customDomainState": {
+      "live": {
+        "domain": "thrivewithannie.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "9283912099ce",
+    "algoliaObjectId": null,
+    "name": "Dan Foster",
+    "bio": "Writer, Poet, Blogger: Tackling life, faith, culture, religion, politics, and spirituality. Newsletter: danfosterwriter.com/subscribe",
+    "imageId": "1*h9MF5af2iBT-qrUGDYiLsA.png",
+    "mediumMemberAt": 1561122035774,
+    "username": "danfosterwriter",
+    "customDomainState": {
+      "live": {
+        "domain": "danfosterwriter.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "bc0a8ac13a1",
+    "algoliaObjectId": null,
+    "name": "Pete Williams",
+    "bio": "Author, occasional ranter. Athlete and soldier in a previous life. 15x Top Writer on my mom’s fridge. https://onepercentman.substack.com/about",
+    "imageId": "1*ILQZEjiCGC2U9MqmebczTQ.jpeg",
+    "mediumMemberAt": 1530056230000,
+    "username": "pwross",
+    "customDomainState": {
+      "live": { "domain": "pwross.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "4661cbed3073",
+    "algoliaObjectId": null,
+    "name": "Michelle Brown",
+    "bio": "Coffee Shop Gypsy, Word Practitioner. Host of The Pondering Stepmom Podcast. Like what I write? Subscribe at https://michelleponders.medium.com/membership",
+    "imageId": "1*W0iSG_s-ltca9s-fPKCyWw.jpeg",
+    "mediumMemberAt": 1589039505000,
+    "username": "michelleponders",
+    "customDomainState": {
+      "live": {
+        "domain": "michelleponders.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "2460381df518",
+    "algoliaObjectId": null,
+    "name": "Dark Energy Articles",
+    "bio": "Follow me if you are interested in engaging articles. Top writer in Space, Science, Technology, History, Life, Travel and more!",
+    "imageId": "1*nSrpVn6XSacqEvqmeL8UZA.jpeg",
+    "mediumMemberAt": 0,
+    "username": "darkenergyarticles",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "bb18b13c5ef4",
+    "algoliaObjectId": null,
+    "name": "Michael Thompson",
+    "bio": "I teach storytelling to Fortune 500s, MBA students, and first graders • Free storytelling guide read by 7,000+ curious minds here: : https://bit.ly/3h1KZeT",
+    "imageId": "1*NZzjhJsbWDMhFcstUDH32w.png",
+    "mediumMemberAt": 1494260010000,
+    "username": "michael-thompson",
+    "customDomainState": {
+      "live": {
+        "domain": "michael-thompson.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "a76a07d5fec3",
+    "algoliaObjectId": null,
+    "name": "Klara Jane Holloway",
+    "bio": "I write about my experiences in life. Some mundane, some sad, some funny, and hopefully none boring! And, I now have top writer status in “Life”.",
+    "imageId": "1*TXV_bNUaf_c_IOylN83__w@2x.jpeg",
+    "mediumMemberAt": 1610855594000,
+    "username": "hklarajane",
+    "customDomainState": {
+      "live": {
+        "domain": "hklarajane.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "741c6590e996",
+    "algoliaObjectId": null,
+    "name": "U-Ming Lee",
+    "bio": "I write about business, finance, and freelancing life. | How to contact me: https://linktr.ee/uming.lee",
+    "imageId": "1*FkuFehWC90cZm8bmzFzG6Q.png",
+    "mediumMemberAt": 1590895619331,
+    "username": "uming",
+    "customDomainState": {
+      "live": { "domain": "uming.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "7d8341a13e2c",
+    "algoliaObjectId": null,
+    "name": "Niharikaa Kaur Sodhi",
+    "bio": "22x Top Writer | Linkedin Top Voice 2022. Helping you live a healthy & happy life through my writing. Free Side Hustler’s Checklist: https://bit.ly/3rjgB4v",
+    "imageId": "1*3WMkZtLpTHOqWcMEHHAb8A.png",
+    "mediumMemberAt": 1607093391000,
+    "username": "niharikasodhi",
+    "customDomainState": {
+      "live": {
+        "domain": "niharikasodhi.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "191453ed7774",
+    "algoliaObjectId": null,
+    "name": "E.B. Johnson",
+    "bio": "Top writer with > 6 million views | Trauma informed | NLPMP | Viral TikTok coach | Host Practical Growth Pod | Get my tools: https://linktr.ee/ebjohnson01",
+    "imageId": "1*WDsw4tJSoK72l2K6MASdgQ.jpeg",
+    "mediumMemberAt": 1548489600000,
+    "username": "ebjohnson",
+    "customDomainState": {
+      "live": {
+        "domain": "ebjohnson.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "cf67a9c9c8f0",
+    "algoliaObjectId": null,
+    "name": "Charlie Brown",
+    "bio": "Writer of opinions. Wine pro. Simple words designed for a simple life. Also at simpleandstraightforward.substack.com",
+    "imageId": "1*1JP4NEj_hL0IqI4PKlziMA.jpeg",
+    "mediumMemberAt": 1656142898000,
+    "username": "charlie-brown",
+    "customDomainState": {
+      "live": {
+        "domain": "charlie-brown.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "d85f9c2d1537",
+    "algoliaObjectId": null,
+    "name": "Jessica Stillman",
+    "bio": "Top Inc.com columnist/ Editor/ Ghostwriter. Book lover. Travel fiend. Nap enthusiast. https://jessicastillman.com/",
+    "imageId": "2*WCWpog6WqKnaXo5lhsRLZA.jpeg",
+    "mediumMemberAt": 1552979717000,
+    "username": "entrylevelrebel",
+    "customDomainState": {
+      "live": {
+        "domain": "entrylevelrebel.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "2211569fb17b",
+    "algoliaObjectId": null,
+    "name": "The CHADIE Foundation",
+    "bio": "",
+    "imageId": "1*M-hT4ebUI3BrAqsPDchFgg.jpeg",
+    "mediumMemberAt": 0,
+    "username": "chadie",
+    "customDomainState": null,
+    "hasSubdomain": false,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "6bd48481dac6",
+    "algoliaObjectId": null,
+    "name": "Claire Franky",
+    "bio": "A sarcastic teller of stories.",
+    "imageId": "1*msxI6rwU3wwPHtHshbd6gA.jpeg",
+    "mediumMemberAt": 1667750695034,
+    "username": "clairefranky",
+    "customDomainState": {
+      "live": {
+        "domain": "clairefranky.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "84ef29c45140",
+    "algoliaObjectId": null,
+    "name": "Emily Jennings",
+    "bio": "Wellness & Oneness Writer and Author | Alignment Coach | Spiritual and TF Guide | Podcaster | Sometimes Funny | IG: @wellness_oneness | www.wellnessoneness.com",
+    "imageId": "1*IqRWq3Xic5OXKBQ2faEKjA@2x.jpeg",
+    "mediumMemberAt": 1604870220000,
+    "username": "emily-jennings",
+    "customDomainState": {
+      "live": {
+        "domain": "emily-jennings.medium.com",
+        "__typename": "CustomDomain"
+      },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  },
+  {
+    "__typename": "User",
+    "id": "556052192962",
+    "algoliaObjectId": null,
+    "name": "Ali Hall",
+    "bio": "🏆 Top Writer. Kindness = my superpower. ✍Psychology, friendship, social justice, feminism & personal growth. Lover of trail running & dogs.💦 Spread the Ripple",
+    "imageId": "1*IvpZVzFFEE6s3r0CggEdSA.jpeg",
+    "mediumMemberAt": 1613725237000,
+    "username": "ali-hall",
+    "customDomainState": {
+      "live": { "domain": "ali-hall.medium.com", "__typename": "CustomDomain" },
+      "__typename": "CustomDomainState"
+    },
+    "hasSubdomain": true,
+    "verifications": { "isBookAuthor": false, "__typename": "VerifiedInfo" }
+  }
+]
