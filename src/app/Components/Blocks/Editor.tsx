@@ -9,230 +9,31 @@ interface EditorProps {
   onChange?: (value: string) => void
 }
 
-// const post = {
-//   time: 1647331200000,
-//   blocks: [
-//     {
-//       type: 'header',
-//       data: {
-//         text: 'Building a Simple Blog App with Next.js, Prisma, and TypeScript',
-//         level: 1
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: "In this tutorial, we'll build a simple blog app with Next.js, Prisma, and TypeScript. The app will allow users to create, read, update, and delete blog posts."
-//       }
-//     },
-//     {
-//       type: 'header',
-//       data: {
-//         text: 'Getting Started',
-//         level: 2
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'Before we start building the app, make sure you have the following installed on your computer:'
-//       }
-//     },
-//     {
-//       type: 'list',
-//       data: {
-//         style: 'unordered',
-//         items: [
-//           'Node.js (version 14 or higher)',
-//           'npm (version 7 or higher)',
-//           'Next.js (version 11 or higher)',
-//           'Prisma (version 3 or higher)'
-//         ]
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'Once you have these installed, you can create a new Next.js app with the following command:'
-//       }
-//     },
-//     {
-//       type: 'code',
-//       data: {
-//         code: 'npx create-next-app my-blog-app --typescript'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'This will create a new Next.js app with TypeScript support.'
-//       }
-//     },
-//     {
-//       type: 'header',
-//       data: {
-//         text: 'Setting up Prisma',
-//         level: 2
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: "Prisma is a tool that allows us to easily work with databases in a type-safe way. We'll use Prisma to create and manage our blog posts."
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'To set up Prisma, first install the Prisma CLI with the following command:'
-//       }
-//     },
-//     {
-//       type: 'code',
-//       data: {
-//         code: 'npm install prisma --save-dev'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'Next, create a new file called `schema.prisma` in the root of your project with the following content:'
-//       }
-//     },
-//     {
-//       type: 'code',
-//       data: {
-//         code: 'datasource db {\n  provider = "postgresql"\n  url = env("DATABASE_URL")\n}\n\nmodel Post {\n  id        Int      @id @default(autoincrement())\n  title     String\n  content   String\n  createdAt DateTime @default(now())\n}'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'This file defines our database schema. It creates a `Post` model with `id`, `title`, `content`, and `createdAt` fields.'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'Once we have our schema defined, we need to generate our Prisma client to interact with our database. We can do this by running the following command in our terminal:'
-//       }
-//     },
-//     {
-//       type: 'code',
-//       data: {
-//         code: 'npx prisma generate',
-//         language: 'bash'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'This will create a node_modules/@prisma/client directory in our project, which contains the generated Prisma client code.'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: "Now that our Prisma client is generated, we can use it to interact with our database. Let's create a simple API endpoint in our Next.js app to retrieve all posts from the database."
-//       }
-//     },
-//     {
-//       type: 'code',
-//       data: {
-//         code: "import { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default async function handler(req, res) {\n const posts = await prisma.post.findMany();\n res.status(200).json(posts);\n}",
-//         language: 'javascript'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'In this code, we first import the PrismaClient from the @prisma/client package. We then create a new instance of the PrismaClient, which we can use to interact with our database.'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'Our API endpoint is a simple async function that retrieves all posts from the database using the findMany() method on the post model in our Prisma client. We then return the posts as JSON in the response.'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: "Now that we have an API endpoint to retrieve posts, let's create a page in our Next.js app to display them."
-//       }
-//     },
-//     {
-//       type: 'code',
-//       data: {
-//         code: "import { GetServerSideProps } from 'next';\nimport { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport const getServerSideProps: GetServerSideProps = async () => {\n const posts = await prisma.post.findMany();\n return {\n props: {\n posts,\n },\n };\n};\n\nexport default function PostsPage({ posts }) {\n return (\n <div>\n {posts.map(post => (\n <div key={post.id}>\n <h2>{post.title}</h2>\n <p>{post.content}</p>\n </div>\n ))}\n </div>\n );\n}",
-//         language: 'javascript'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'In this code, we first import the GetServerSideProps type from Next.js and the PrismaClient from the @prisma/client package. We then create a new instance of the PrismaClient.'
-//       }
-//     },
-//     {
-//       type: 'code',
-//       data: {
-//         code: "import { GetServerSideProps } from 'next'\nimport { PrismaClient } from '@prisma/client'\n\nconst prisma = new PrismaClient()\n",
-//         language: 'javascript'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'Next, we define the getServerSideProps function. This function is called on the server-side and is used to fetch data that is required for the page. In this case, we fetch all the posts from the database using the prisma.post.findMany method.'
-//       }
-//     },
-//     {
-//       type: 'code',
-//       data: {
-//         code: "export const getServerSideProps: GetServerSideProps = async () => {\n const posts = await prisma.post.findMany({\n orderBy: {\n createdAt: 'desc'\n }\n })\n\n return {\n props: {\n posts\n }\n }\n}\n",
-//         language: 'javascript'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'Finally, we export the HomePage component which renders the list of posts. We map over the posts array and render each post title and content in a div element.'
-//       }
-//     },
-//     {
-//       type: 'code',
-//       data: {
-//         code: 'interface Props {\n posts: {\n id: number,\n title: string,\n content: string,\n createdAt: Date\n }[]\n}\n\nexport default function HomePage({ posts }: Props) {\n return (\n <div>\n {posts.map(post => (\n <div key={post.id}>\n <h2>{post.title}</h2>\n <p>{post.content}</p>\n </div>\n ))}\n </div>\n )\n}\n',
-//         language: 'jsx'
-//       }
-//     },
-//     {
-//       type: 'paragraph',
-//       data: {
-//         text: 'In conclusion, we have built a simple blog app using Next.js, Prisma, and TypeScript. We learned how to set up the project, create a database schema using Prisma, and define server-side rendering using GetServerSideProps in Next.js. We also explored how to create a new blog post, retrieve blog posts from the database, and display them on the home page. With this foundation, you can build upon this app to add more features such as authentication, pagination, and searching. I hope this blog helped you get started with building your own blog app. Happy coding!'
-//       }
-//     }
-//   ]
-// }
-
 const post = {
-  time: 1678907890432,
+  time: 1678988884075,
   blocks: [
     {
       type: 'header',
       data: {
-        text: 'Using Prisma ORM to build a Node.js application with MySQL',
+        text: 'Automatic preloading in Rails: the dream that came true.',
         level: 3
       }
     },
     {
+      type: 'paragraph',
+      data: {
+        text: 'Recently, I published an article about “<a href="https://medium.com/@evgeniydemin/stop-using-eager-loading-in-your-rails-application-use-this-instead-b837f0246033">Stop using manual preloading in your Rails application; use this instead.</a>” Many people were interested, but I failed to explain <strong>the ultimate solution</strong>. Considering that I still see posts about ActiveRecord <code class="inline-code">includes</code>, I want to elaborate on the idea deeply.'
+      }
+    },
+    {
       type: 'image',
       data: {
-        text: 'Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sharon McCutcheon</a> on <a href="https://unsplash.com/s/photos/prism?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
-        file: { url: '1*Ws3eWfzfq2F_7R65mKCunQ.jpeg' },
+        text: 'Generated on <a href="https://imgflip.com/memegenerator">https://imgflip.com/memegenerator</a>',
+        file: {
+          url: 'https://miro.medium.com/v2/1*kn1MI1althbmEdrSpogYmA.jpeg'
+        },
         caption:
-          'Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sharon McCutcheon</a> on <a href="https://unsplash.com/s/photos/prism?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
+          'Generated on <a href="https://imgflip.com/memegenerator">https://imgflip.com/memegenerator</a>',
         withBorder: false,
         withBackground: false,
         stretched: true
@@ -241,38 +42,126 @@ const post = {
     {
       type: 'paragraph',
       data: {
-        text: 'Productivity is important for developers, and when it comes to building an application that interacts database, there is CRUD (Create, Read, Update, Delete) actions that are repetitive; this task can be boring for those who already know SQL and want to focus on the business logic. \nMoreover, the SQL written can be exposed to SQL injection if we don’t pay attention. Another issue is when you want to change the database, you are obliged to rewrite your SQL queries for the target database. These are problems <a href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">ORM</a>s try to solve.'
+        text: '<em>If you haven’t read the original article, please do so. However, this is not required to understand the subject.</em>'
+      }
+    },
+    {
+      type: 'linkTool',
+      data: {
+        success: 1,
+        meta: {
+          title:
+            'Stop using manual preloading in your Rails application; use this instead.',
+          description:
+            'It’s a popular internet recommendation to use preloading in Ruby on Rails applications to eliminate the N+1 query problem. It may seem like…',
+          image: {
+            url: 'https://miro.medium.com/v2/resize:fit:918/1*RRKDoqNIzR6MD7WcE-Ml1g.png'
+          }
+        }
+      }
+    },
+    {
+      type: 'paragraph',
+      data: { text: 'Without further ado, let’s get into the topic.' }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: '<em>Skip the next section if you are well familiar with N+1 issues.</em>'
       }
     },
     {
       type: 'paragraph',
       data: {
-        text: 'There are many ORM in the Node.js ecosystems, and today, we will focus on <a href="https://www.prisma.io/">Prisma</a>, which is one of the best of the class.'
-      }
-    },
-    { type: 'header', data: { text: 'Prisma features', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Prisma provides features other ORMs in a different way. Database migration and Typescript support are interesting features. Prisma also provides tools to follow who throughout the development lifecycle. Check this <a href="https://www.prisma.io/docs/concepts/overview/why-prisma">link</a> to know more about it.'
+        text: 'I’m sure you’ve all heard of N+1 issues here. In case you don’t, putting it simply, I would say:'
       }
     },
     {
-      type: 'paragraph',
+      type: 'quote',
       data: {
-        text: 'When I write this, Prisma supports MySQL, PostgresSQL, Microsoft SQL Server, and MongoDB. Check out this <a href="https://www<strong>.prisma.io/docs/reference/database-reference/supporte</strong>d-databases">link</a> to see the database version supported.'
+        text: '“The code executes many similar inefficient database queries/HTTP requests/complex calculations.”'
       }
     },
     {
       type: 'paragraph',
       data: {
-        text: 'About programming language, only Javascript and Typescript are supported. A Prisma client for GoLand is available in early access.'
+        text: 'Most often, in the Ruby on Rails world, it’s all about database queries so we will stop on that part. Ruby on Rails offers a <a href="https://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations">built-in solution</a> for dealing with N+1 issues regarding fetching associations.'
+      }
+    },
+    { type: 'paragraph', data: { text: 'Now, let’s look at the example.' } },
+    {
+      type: 'code',
+      data: {
+        text: 'class User < ActiveRecord::Base\n  has_many :accounts\nend\n\nclass Account < ActiveRecord::Base\n  has_many :contacts\nend\n\nclass Contact < ActiveRecord::Base\nend',
+        code: 'class User < ActiveRecord::Base\n  has_many :accounts\nend\n\nclass Account < ActiveRecord::Base\n  has_many :contacts\nend\n\nclass Contact < ActiveRecord::Base\nend',
+        showlinenumbers: false,
+        language: 'ruby'
       }
     },
     {
       type: 'paragraph',
       data: {
-        text: 'With Prisma, you define the schema of your database using the Prisma Schema Language (PSL). This schema is used to generate the code related to Database Access Layer and also migrations every time you update the schema:'
+        text: 'Somewhere in the code, you want to show your users’ accounts’ contacts.'
+      }
+    },
+    {
+      type: 'code',
+      data: {
+        text: 'users = User.all \n\nusers.each do |user|\n  user.accounts.each do |account|\n    p account.contact\n  end\nend',
+        code: 'users = User.all \n\nusers.each do |user|\n  user.accounts.each do |account|\n    p account.contact\n  end\nend',
+        showlinenumbers: false,
+        language: 'ruby'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: '<em>If you didn’t spot the issue yet, please stop here for a moment, look carefully at the code above, and try to find it.</em>'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'The problem is that for every user, there will be a query to a database to fetch accounts; moreover, for every account then, there will be a query to fetch its contacts.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'As you can see, this chain of calls can grow as a snowball, leading to hundreds or even thousands of requests.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'Rails’ solution is to use <code class="inline-code"><a href="https://guides.rubyonrails.org/active_record_querying.html#includes">include</code>s</a> at the very beginning of the chain. The fixed code would look like this:'
+      }
+    },
+    {
+      type: 'code',
+      data: {
+        text: 'users = User.includes(accounts: :contacts).all\n# ...',
+        code: 'users = User.includes(accounts: :contacts).all\n# ...',
+        showlinenumbers: false,
+        language: 'ruby'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'This code will preload all needed data in <strong>only three queries:</strong> all users, their accounts and contacts.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: '<em>If you have ever worked with <code class="inline-code">includes</code> before, please pause here and remember what you didn’t like about i</em>t.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'To keep the post concise and focused on <strong>the elegant solution</strong> we are looking at soon, I will shortly share mine:'
       }
     },
     {
@@ -280,342 +169,62 @@ const post = {
       data: {
         style: 'unordered',
         items: [
-          '<a href="https://www.prisma.io/docs/concepts/components/prisma-client/">Pris<strong>ma Client</a></strong>: Auto-generated and type-safe database client for use in your application.',
-          '<a href="https://www.prisma.io/docs/concepts/components/prisma-migrate/">Pris<strong>ma Migrate</a></strong>: A declarative data modeling and migration tool.',
-          '<a href="https://www.prisma.io/docs/concepts/components/prisma-studio/">Pris<strong>ma Studio</a></strong>: A modern GUI for browsing and managing data in your database.'
+          'you have to accurately and manually keep your beginning point <strong>consistent</strong> with the rest during the execution. If you no longer need down-the-road <code class="inline-code">contacts</code>, you better update <code class="inline-code">includes</code>, too; otherwise, you load extra data for no reason. If you need more data, let’s say <code class="inline-code">referrals</code>, you must update <code class="inline-code">includes</code>, or you get another N+1 issue. The effort required for consistency depends on how much the execution trace is spread along the project, but it isn’t trivial.',
+          '<code class="inline-code">includes</code> fetches all the data immediately. Sometimes, we need to show information under the conditions. Following our case, what if <code class="inline-code">contacts </code>should only be displayed for primary accounts? It’s possible to do partial includes by directly calling <code class="inline-code">ActiveRecord::Associations::Preloader</code>, but this way isn’t convenient nor recommended by the guidelines.'
         ]
       }
     },
-    { type: 'header', data: { text: 'Prerequisites', level: 3 } },
     {
       type: 'paragraph',
-      data: { text: 'To follow this tutorial, you need to have' }
+      data: {
+        text: 'Now, when we recall the N+1 problem and its most-popular Rails-way solution for that, let’s look at <strong>the proposed standard</strong>.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'The Ruby on Rails framework is all about a convention and fast delivery. The goal is to focus closely on the business rather than technical aspects. With this in mind, let’s look at the fix provided by <code class="inline-code">includes</code>.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'When I look at it, I wonder: if the only thing needed to avoid the N+1 problem is to type <code class="inline-code">includes</code> with specified associations, why can’t Rails do that for me? Is it possible?'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'Gladly, it is! It’s already production-proven and awaits you at zero integration cost.'
+      }
     },
     {
       type: 'list',
       data: {
-        style: 'unordered',
+        style: 'ordered',
         items: [
-          'Node.js >= 12.2',
-          'Typescript >= 4.1',
-          'Yarn >= 1.19.2',
-          'MySQL >= 5.6 follow <a href="https://www.prisma.io/dataguide/mysql/setting-up-a-local-mysql-database">this tutorial</a> to install on your computer, or if you have Docker, launch a Docker container for MySQL 8 with this command.'
+          'Add <code class="inline-code">gem "ar_lazy_preload”</code> to your <code class="inline-code">Gemfile</code>.',
+          'Enable auto-preloading globally <code class="inline-code">ArLazyPreload.config.auto_preload = true</code>',
+          'Remove redundant <code class="inline-code">includes</code>'
         ]
       }
     },
     {
-      data: {
-        text: 'docker run -it -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=hotels --name prisma_db -p 3307:3306 mysql:8.0'
-      }
-    },
-    { type: 'header', data: { text: 'What we build', level: 3 } },
-    {
       type: 'paragraph',
       data: {
-        text: 'To see Prisma in action, we are going to build a minimal product inventory system.'
+        text: '<em>Chain your loading with <code class="inline-code">.preload_associations_lazily</code> If you don’t want to enable auto-preloading globally. For example, <code class="inline-code">User.preload_associations_lazily.all</code>. Any consequential association loading on every <code class="inline-code">user</code> (and following loaded records) won’t create an N+1 pr</em>oblem.'
       }
     },
     {
       type: 'paragraph',
       data: {
-        text: 'A product belongs to a category and can have many tags. Here is the database schema draw <a href="https://drawsql.app/teco/diagrams/product-inventory">drawSQL</a>. We will use Prisma to create migrations then performs some CRUD.'
-      }
-    },
-    {
-      type: 'image',
-      data: {
-        text: 'Database schema to build with Prisma',
-        file: { url: '1*3nWw3npZ9GbzXKtwtaiKGA.png' },
-        caption: 'Database schema to build with Prisma',
-        withBorder: false,
-        withBackground: false,
-        stretched: true
-      }
-    },
-    { type: 'header', data: { text: 'Setup the project', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'To start, we will use a boilerplate for the Node.js project we built on this <a href="https://blog.tericcabrel.com/set-up-a-nodejs-project-with-typescript-eslint-and-prettier/">tutorial</a>.'
-      }
-    },
-    {
-      data: {
-        text: 'git clone <a href="https://github.com/tericcabrel/node-ts-starter.git">https://github.com/tericcabrel/node-ts-starter.git</a> node-prisma-mysql'
-      }
-    },
-    { data: { text: 'cd node-prisma-mysql' } },
-    { data: { text: 'yarn install' } },
-    { data: { text: 'yarn start' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'If everything works as expected, let’s continue by installing Prisma CLI.'
-      }
-    },
-    { data: { text: 'yarn add -D prisma' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Run the command below to create the basic <a href="https://www.prisma.io/docs/concepts/components/prisma-schema/">Prisma schema</a>'
-      }
-    },
-    { data: { text: 'yarn prisma init' } },
-    { type: 'paragraph', data: { text: 'We got the output below:' } },
-    {
-      type: 'image',
-      data: {
-        text: 'Install and initialize Prisma',
-        file: { url: '1*cj80zjJ_F0y-LAkaR8m6jQ.png' },
-        caption: 'Install and initialize Prisma',
-        withBorder: false,
-        withBackground: false,
-        stretched: true
+        text: 'Let’s investigate what it does to avoid the N+1 problem. I will also show you when it doesn’t work as a bonus.'
       }
     },
     {
       type: 'paragraph',
       data: {
-        text: 'A folder named <strong>prisma</strong> was created, and inside there is a file named <strong>schema.prisma</strong> where we will write the definition of our database. Also, a file .env was created which contains the connection string to the database. Let’s update to match our local database.'
-      }
-    },
-    {
-      data: {
-        text: 'DATABASE_URL="mysql://root:secret@localhost:3307/prisma_db"'
-      }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'This configuration matches with the MySQL instance running by Docker. I gave the command to launch this container upper.'
-      }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Now, open the file schema.prisma and replace the property’s value called provider by <strong>mysql</strong> (actually <strong>postgresql</strong>).'
-      }
-    },
-    {
-      type: 'header',
-      data: { text: 'Create Category and Tags table', level: 3 }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'We will use the Prisma Schema Language to write the structure of our table. Check out this <a href="https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference">link</a> to all the capabilities of the Schema Language since we can’t cover all of them.'
-      }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'There is a plugin for PSL for some editors we can use for a better experience. Check out this <a href="https://www.prisma.io/docs/concepts/more/editor-setup">link</a> to find the instructions for your editor. I use the plugin for Webstorm.'
-      }
-    },
-    {
-      type: 'paragraph',
-      data: { text: 'Open the file schema.prisma and the code below:' }
-    },
-    { type: 'embed', data: { text: '' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'We create the model Category and Tag with their properties. But let’s explain what does<strong> @map</strong> and <strong>@@map</strong>.'
-      }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Imagine when designing your database, you want to have the table’s name in plural and lowercase. <strong>@@map</strong> Map, the Category model to a database table named categories.'
-      }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: '<strong>@map</strong> does the same thing but for the table columns.'
-      }
-    },
-    { type: 'header', data: { text: 'Run the migration', level: 3 } },
-    {
-      type: 'paragraph',
-      data: { text: 'Run the command to create migration and execute' }
-    },
-    {
-      data: {
-        text: 'yarn prisma migrate dev --name create-categories-and-tags-table'
-      }
-    },
-    { type: 'paragraph', data: { text: 'This command will do two things:' } },
-    {
-      type: 'list',
-      data: {
-        style: 'unordered',
-        items: [
-          'Generate the migration for these tables (prisma generate is executed under the hood)',
-          'Once the migration is generated, it will be executed.'
-        ]
-      }
-    },
-    {
-      type: 'image',
-      data: {
-        text: 'Run migration with Prisma',
-        file: { url: '1*zJ-oBR3QhV4nkq-UP3rENQ.png' },
-        caption: 'Run migration with Prisma',
-        withBorder: false,
-        withBackground: false,
-        stretched: true
-      }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'A folder named migrations is created at the root of the project folder.'
-      }
-    },
-    { type: 'header', data: { text: 'Create Products table', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Open the file <strong>schema.prisma</strong> and add the code below:'
-      }
-    },
-    { type: 'embed', data: { text: '' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Here is the final file of the <strong>schema.prisma</strong>. Run the migration:'
-      }
-    },
-    { data: { text: 'yarn prisma migrate dev --name create-products-table' } },
-    { type: 'header', data: { text: 'Working with Prisma client', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Now we have our database schema created. We will use Prisma client to store data and retrieve them. Run the command below to install:'
-      }
-    },
-    {
-      data: {
-        text: 'yarn add <a href="http://twitter.com/prisma/client">@prisma/client</a>'
-      }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: '<strong>Note:</strong> If you ran yarn prisma migrate before running this command, the Prisma client is already installed because it is required when generating the migration.'
-      }
-    },
-    { type: 'header', data: { text: 'Seeding database', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'We want to add categories and tags before we launch the application to have predefined values. To do that, we need to seed the database with these data. Let’s create a file <strong>seed.ts</strong> inside the folder <strong>prisma</strong> and add the code below:'
-      }
-    },
-    { type: 'embed', data: { text: '' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Run the command below to seed the database and verify the data inserted:'
-      }
-    },
-    { data: { text: 'yarn prisma db seed --preview-feature' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: '<strong>Note1:</strong> The property skipDuplicates prevents the insertion of data if they already exist. It is useful when you update the script with new data to be inserted and re-run it.'
-      }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: '<strong>Note2:</strong> The flag <strong>“preview-feature”</strong> is required because this feature is still in testing.'
-      }
-    },
-    {
-      data: {
-        text: '<strong>Update 2022:</strong> Database seed is no longer in preview so, no need to add the flag --preview-feature'
-      }
-    },
-    { type: 'header', data: { text: 'Insert data', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Inserting data is pretty straightforward with the Prisma client. Create a file <strong>insert-data.ts</strong> inside the <strong>src</strong> folder and add the code below:'
-      }
-    },
-    { type: 'embed', data: { text: '' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Run the file with the command ts-node src/insert-data and see the output.'
-      }
-    },
-    {
-      type: 'image',
-      data: {
-        text: 'Insert data with Prisma',
-        file: { url: '1*0KY7oTp3yNXvBYTA6OOY-Q.png' },
-        caption: 'Insert data with Prisma',
-        withBorder: false,
-        withBackground: false,
-        stretched: true
-      }
-    },
-    {
-      type: 'paragraph',
-      data: {
-        text: '<strong>Note:</strong> the property <strong>reference</strong> in the product has a value, yet we didn’t provide one when inserting the data. It is because we defined it as auto-generated with a random UUID. Check out the Prisma schema to see it.'
-      }
-    },
-    { type: 'header', data: { text: 'Update data', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Create a file <strong>update-data.ts</strong> inside the <strong>src</strong> folder and add the code below:'
-      }
-    },
-    { type: 'embed', data: { text: '' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Run the file with the command ts-node src/update-data.ts and see the output.'
-      }
-    },
-    { type: 'header', data: { text: 'Delete data', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Create a file <strong>delete-data.ts</strong> inside the <strong>src</strong> folder and add the code below:'
-      }
-    },
-    { type: 'embed', data: { text: '' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Run the file with the command ts-node src/delete-data.ts and see the output.'
-      }
-    },
-    { type: 'header', data: { text: 'Retrieve data', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Create a file <strong>retrieve-data.ts</strong> inside the <strong>src</strong> folder and add the code below:'
-      }
-    },
-    { type: 'embed', data: { text: '' } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'Run the file with the command ts-node src/retrieve-data.ts and see the output.'
-      }
-    },
-    { type: 'header', data: { text: 'Conclusion', level: 3 } },
-    {
-      type: 'paragraph',
-      data: {
-        text: 'We reached the end of this tutorial, where we have seen how to use Prisma with a MySQL database. Here are some important key points:'
+        text: '<em>Want to read more topics about #ruby and #rails?</em> Please <strong>join</strong> my network:'
       }
     },
     {
@@ -623,37 +232,166 @@ const post = {
       data: {
         style: 'unordered',
         items: [
-          'The Prisma Schema removes the need to create a class to map our database.<a href="https://www.prisma.io/docs/concepts"></a>',
-          'It provides database versioning through migration.<a href="https://www.prisma.io/docs/concepts"></a>',
-          'The Prisma client auto-generated from the schema has a good API and provides autocom<a href="https://www.prisma.io/docs/concepts">pletion which is ess</a>ential for productivity.'
+          '<a href="https://evgeniydemin.medium.com/subscribe">Medium</a>',
+          '<a href="https://www.linkedin.com/in/evgeniydemin/">LinkedIn</a>',
+          '<a href="https://twitter.com/EvgeniyDemin/">Twitter</a>',
+          '<a href="https://github.com/djezzzl">GitHub</a>'
+        ]
+      }
+    },
+    {
+      type: 'paragraph',
+      data: { text: 'There are two main parts that make auto-preloading work:' }
+    },
+    {
+      type: 'list',
+      data: {
+        style: 'unordered',
+        items: [
+          '<code class="inline-code"><a href="https://github.com/DmitryTsepelev/ar_lazy_preload/blob/master/lib/ar_lazy_preload/contexts/base_context.rb">ArLazyPreload Contex</code>t</a> (it has two implementations: one for globally enabled preloading and another for preloading through <code class="inline-code">.preload_associations_lazily</code>)',
+          '<code class="inline-code"><a href="https://github.com/DmitryTsepelev/ar_lazy_preload/blob/master/lib/ar_lazy_preload/active_record/relation.rb">ArLazyPreload Relatio</code>n</a> patch'
         ]
       }
     },
     {
       type: 'paragraph',
       data: {
-        text: 'There are many capabilities I didn’t cover, and I highly recommend checking out the <a href="https://www.prisma.io/docs/concepts">Prisma documentation</a>, which I found very well written.'
+        text: '<code class="inline-code">Context</code> is an object that stores metadata in with every <code class="inline-code">ActiveRecord</code> instance. It’s stored in <code class="inline-code">.lazy_preload_context</code> instance method. The most important metadata is the list of sibling records.'
       }
     },
     {
       type: 'paragraph',
       data: {
-        text: 'Find the source code on the <a href="https://github.com/tericcabrel/blog-tutorials/tree/main/node-prisma-mysql">GitHub repository</a>.'
+        text: 'Sibling records are the records of the same class fetched in the same query and conceptually treated as similar records.'
+      }
+    },
+    {
+      type: 'code',
+      data: {
+        text: 'users = User.preload_associations_lazily.first(5)\n# Records are siblings/Share single Context\nusers.map(&:lazy_preload_context).uniq.count == 1\n\nother_users = User.preload_assocations_lazily.first(5)\n# Records are siblings/Share single Context\nother_users.map(&:lazy_preload_context).uniq.count == 1\n\n# But "users" aren\'t siblings with "other_users" \nusers.first.lazy_preload_context != other_users.first.lazy_preload_context',
+        code: 'users = User.preload_associations_lazily.first(5)\n# Records are siblings/Share single Context\nusers.map(&:lazy_preload_context).uniq.count == 1\n\nother_users = User.preload_assocations_lazily.first(5)\n# Records are siblings/Share single Context\nother_users.map(&:lazy_preload_context).uniq.count == 1\n\n# But "users" aren\'t siblings with "other_users" \nusers.first.lazy_preload_context != other_users.first.lazy_preload_context',
+        showlinenumbers: false,
+        language: 'ruby'
       }
     },
     {
       type: 'paragraph',
       data: {
-        text: 'This post was originally published on my blog <a href="https://blog.tericcabrel.com">https://blog.tericcabrel.com</a> where I write about building the Backend applications.'
+        text: 'In the code above, instances in <code class="inline-code">users</code> and <code class="inline-code">other_users</code> groups are sibling records among their groups, but the two groups are not siblings.'
       }
     },
     {
       type: 'paragraph',
       data: {
-        text: 'Please, follow me on <a href="https://twitter.com/intent/user?screen_name=tericcabrel">Twitter</a> or subscribe to <a href="https://newsletter.tericcabrel.com/">my newsletter</a> to get notified when I publish a new post.'
+        text: '<code class="inline-code"><em>Contex</code>t also keeps track of a tree of already preloaded associations, but this is unnecessary to understand the main point.</em>'
       }
     },
-    { type: 'paragraph', data: { text: 'Happy to see you soon 😉' } }
+    {
+      type: 'paragraph',
+      data: {
+        text: '<code class="inline-code"><a href="https://github.com/DmitryTsepelev/ar_lazy_preload/blob/master/lib/ar_lazy_preload/active_record/relation.rb">Relatio</code>n</a> patches <code class="inline-code">ActiveRecord::Relation</code> class to look into the <code class="inline-code">Context</code> when deciding on loading the association. It will preload the association <strong>in one query for all records</strong> in the context if it exists. New records are properly distributed per referencing instance and cached there as if they would be manually preloaded with <code class="inline-code">includes</code>. After that, it assigns the context to loaded records, <strong>keeping them as siblings</strong> so they won’t produce the N+1 problem too.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'Does that mean we don’t need to think about the N+1 at all?'
+      }
+    },
+    { type: 'paragraph', data: { text: '<em>Well, yes and no.</em>' } },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'The answer depends on how well you know how <code class="inline-code">includes</code> is working. For example, please, look at the code below and think if it has the N+1 issue.'
+      }
+    },
+    {
+      type: 'code',
+      data: {
+        text: 'users = User.includes(:accounts).all\n\nusers.each do |user|\n  user.accounts.where(primary: true) do |account|\n    p account\n  end\nend',
+        code: 'users = User.includes(:accounts).all\n\nusers.each do |user|\n  user.accounts.where(primary: true) do |account|\n    p account\n  end\nend',
+        showlinenumbers: false,
+        language: 'ruby'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: { text: 'The answer is <strong>yes</strong>.' }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: '<em>I leave it to you to understand why because this is very important and would help you avoid many pitfalls.</em>'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: { text: 'There are two main quick solutions:' }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'First way is to replace <code class="inline-code">.where</code> with in-memory Ruby filtering by <code class="inline-code">select { |account| account.primary == true }</code>. However, I don’t recommend you this way as it is inefficient.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'The second way is to create a new scoped association in <code class="inline-code">User</code> model and use that instead.'
+      }
+    },
+    {
+      type: 'code',
+      data: {
+        text: 'class User < ActiveRecord::Base\n  has_many :primary_accounts, -> { where(primary: true) }\nend\n\nusers = User.includes(:primary_accounts)\n\nusers.each do |user|\n  user.primary_accounts do |account|\n    p account\n  end\nend',
+        code: 'class User < ActiveRecord::Base\n  has_many :primary_accounts, -> { where(primary: true) }\nend\n\nusers = User.includes(:primary_accounts)\n\nusers.each do |user|\n  user.primary_accounts do |account|\n    p account\n  end\nend',
+        showlinenumbers: false,
+        language: 'ruby'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: '<em>This approach works well. However, it is very negotiable due to software design aspects; therefore, it may or may not be accepted in your project.</em>'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'The same pattern comes when using auto-preloading. You can’t chain associations without declaring a new scoped association to avoid the N+1 issue. It’s simple to do, though.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: 'That’s about it for auto-preloading in ActiveRecord (Rails default ORM). I hope this time I did better in explaining how it works and why you should start using it.'
+      }
+    },
+    {
+      type: 'paragraph',
+      data: { text: '<em>Please consider <strong>subscribing</em>!</strong>' }
+    },
+    {
+      type: 'paragraph',
+      data: {
+        text: '<em>And don’t forget to share what you think about the topic. Do you consider N+1 issues to be important in your projects? I would be happy to hear from you.</em>'
+      }
+    },
+    {
+      type: 'list',
+      data: {
+        style: 'unordered',
+        items: {
+          type: 'unordered',
+          items: [
+            '<a href="https://evgeniydemin.medium.com/subscribe">Medium</a>',
+            '<a href="https://www.linkedin.com/in/evgeniydemin/">LinkedIn</a>',
+            '<a href="https://twitter.com/EvgeniyDemin/">Twitter</a>',
+            '<a href="https://github.com/djezzzl">GitHub</a>'
+          ]
+        }
+      }
+    }
   ]
 }
 
@@ -873,7 +611,7 @@ const Editor: React.FC<EditorProps> = ({ initialValue, onChange }) => {
         linkTool: {
           class: require('@editorjs/link'),
           config: {
-            endpoint: 'http://localhost:3000/api/links/fetch'
+            endpoint: 'http://localhost:3001/api/linkTool'
           }
         },
         image: {
@@ -919,7 +657,24 @@ const Editor: React.FC<EditorProps> = ({ initialValue, onChange }) => {
               twitter: true,
               facebook: true,
               vk: true,
-              twitch: true
+              twitch: true,
+              github: {
+                regex:
+                  /https?:\/\/github.com\/([^\/]*)\/([^\/]*)\/(blob|tree)\/([^\/]*)\/(.+)/,
+                embedUrl: 'https://github.com/<%= remote_id %>',
+                html: "<iframe height='500' frameborder='0' scrolling='no' style='width:100%;'></iframe>",
+                height: 500,
+                width: 600,
+                id: (groups: any[]) =>
+                  `github-${groups[1]}-${groups[2]}-${groups[4]}-${groups[5]}`
+              },
+              medium: {
+                regex: /https?:\/\/medium.com\/([\w-]+)\/([\w-]+)-([\w-]+)/,
+                embedUrl: 'https://medium.com/media/<%= remote_id %>',
+                html: "<iframe src='https://medium.com/media/<%= remote_id %>' frameborder='0' scrolling='auto' height='550' width='100%'></iframe>",
+                height: 550,
+                width: '100%'
+              }
             }
           }
         }

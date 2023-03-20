@@ -420,7 +420,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                       <div key={user.id}>
                         <Link
                           scroll={false}
-                          href={'/' + user.username}
+                          href={'/@' + user.username}
                           className="flex flex-col overflow-hidden [ nc-box-has-hover nc-dark-box-bg-has-hover ] hover:!shadow-none"
                         >
                           <div className="relative flex-shrink-0 ">

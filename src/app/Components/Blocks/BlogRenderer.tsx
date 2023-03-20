@@ -22,7 +22,12 @@ function BlogRenderer({ data }: BlogRendererProps) {
           warning: require('@editorjs/warning'),
           delimiter: require('@editorjs/delimiter'),
           inlineCode: require('@editorjs/inline-code'),
-          linkTool: require('@editorjs/link'),
+          linkTool: {
+            class: require('@editorjs/link'),
+            config: {
+              endpoint: 'http://localhost:3000/api/linkTool'
+            }
+          },
           image: require('@editorjs/image'),
           embed: require('@editorjs/embed'),
           header: {

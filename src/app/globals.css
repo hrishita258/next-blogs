@@ -810,7 +810,7 @@ select:focus {
 
 .prose {
   color: var(--tw-prose-body);
-  max-width: 65ch;
+  max-width: 75ch;
 }
 
 .prose :where([class~='lead']):not(:where([class~='not-prose'] *)) {
@@ -1078,6 +1078,45 @@ select:focus {
   font-size: 0.875em;
   line-height: 1.7142857;
 }
+
+blockquote {
+  box-shadow: inset 3px 0 0 0 rgb(41 41 41);
+  margin-left: -20px !important;
+  padding-left: 23px !important;
+}
+
+blockquote .cdx-quote__caption {
+  display: none !important;
+}
+
+blockquote .cdx-input {
+  border: none !important;
+}
+
+.cdx-quote__text {
+  margin: 0;
+  min-height: 70px !important;
+}
+
+.codex-editor--narrow .link-tool__image {
+    display: block !important;
+}
+.ce-block{
+  margin-top: 2em !important;
+}
+
+.link-tool__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 0 30px;
+    width: 150px !important;
+    height: 125px !important;
+    border-radius: 3px;
+    float: right;
+    display: block !important;
+}
+
 
 .prose :where(thead):not(:where([class~='not-prose'] *)) {
   border-bottom-width: 1px;

@@ -1,3 +1,5 @@
+'use client'
+
 import { formatDate } from '@/Utils/formatDate'
 import { Post } from '@prisma/client'
 import Image from 'next/image'
@@ -56,7 +58,7 @@ const ListCard = ({ post, slug }: Props) => {
             </a>
           </h3>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm sm:text-base line-clamp-3">
-            {post?.content}
+            {post?.excerpt}
           </p>
           <div className="nc-PostCardMeta inline-flex items-center text-neutral-800 dark:text-neutral-200 overflow-hidden text-xs leading-none">
             {post.author ? (

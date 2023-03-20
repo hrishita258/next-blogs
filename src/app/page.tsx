@@ -22,7 +22,7 @@ async function getHomePageData() {
         }
       }
     },
-    take: 10
+    take: 12
   })
   const users = await prisma.user.findMany({
     include: {
@@ -44,7 +44,8 @@ async function getHomePageData() {
           PostTag: true
         }
       }
-    }
+    },
+    take: 12
   })
   return { posts, users, tags }
 }
