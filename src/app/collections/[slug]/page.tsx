@@ -7,9 +7,9 @@ async function getCollection(slug: string) {
       slug
     },
     include: {
-      posts: {
+      CollectionPost: {
         select: {
-          post: {
+          Post: {
             select: {
               id: true,
               title: true,
@@ -23,10 +23,12 @@ async function getCollection(slug: string) {
               isPublic: true,
               authorId: true,
               updatedAt: true,
+              excerpt: true,
+              primaryTopicId: true,
               slug: true,
               PostTag: {
                 select: {
-                  tag: {
+                  Tag: {
                     select: {
                       displayTitle: true,
                       normalizedTagSlug: true,
@@ -47,7 +49,7 @@ async function getCollection(slug: string) {
           }
         }
       },
-      author: {
+      User: {
         select: {
           email: true,
           name: true,
@@ -89,23 +91,23 @@ export default async function Page({ params }: { params: { slug: string } }) {
               className="block whitespace-nowrap overflow-visible text-ellipsis relative"
             >
               <img
-                src={collectionWithPosts?.author?.image || ''}
+                src={collectionWithPosts?.User?.image || ''}
                 alt="sda"
                 className="h-16 w-16 rounded-full"
               />
             </a>
             <div className="ml-4">
               <span>
-                <b className="mr-2">{collectionWithPosts?.author.name}</b>
+                <b className="mr-2">{collectionWithPosts?.User.name}</b>
                 Author
               </span>
-              <p className="text-sm"> {collectionWithPosts?.author.email}</p>
+              <p className="text-sm"> {collectionWithPosts?.User.email}</p>
             </div>
           </div>
           <div></div>
         </div>
-        {collectionWithPosts?.posts.map(({ post }) => (
-          <ListCard key={post.id} post={post} slug={'something'} />
+        {collectionWithPosts?.CollectionPost.map(({ Post }) => (
+          <ListCard key={Post.id} post={Post} slug={'something'} />
         ))}
       </article>
     </div>

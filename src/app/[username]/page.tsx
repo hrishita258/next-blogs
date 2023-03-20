@@ -13,11 +13,11 @@ async function getPosts(username: string) {
       username: true,
       email: true,
       bio: true,
-      posts: {
+      Post: {
         include: {
           PostTag: {
             select: {
-              tag: {
+              Tag: {
                 select: {
                   displayTitle: true,
                   normalizedTagSlug: true,
@@ -79,11 +79,11 @@ export default async function Page({
                   </ul>
                 </div>
               </div>
-              {posts?.posts.map(post => (
+              {posts?.Post.map(post => (
                 <ListCard
                   key={post.id}
                   post={{ ...post, author: null }}
-                  slug={post.PostTag[0].tag.normalizedTagSlug}
+                  slug={post.PostTag[0].Tag.normalizedTagSlug}
                 />
               ))}
             </div>

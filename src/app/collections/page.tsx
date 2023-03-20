@@ -8,17 +8,18 @@ async function getCollections() {
     include: {
       _count: {
         select: {
-          posts: true
+          CollectionPost: true
         }
       },
-      author: {
+      User: {
         select: {
           name: true,
           image: true,
           id: true
         }
       }
-    }
+    },
+    take: 20
   })
   return { collections }
 }
@@ -33,8 +34,8 @@ export default async function Page() {
             <div key={item.id} className="cursor-pointer group">
               <div className=" overflow-hidden transition-all  rounded-md dark:bg-gray-800   hover:scale-105">
                 <span className="inline-block text-sm  tracking-wider mb-1 text-pink-600">
-                  {item._count.posts}
-                  {item._count.posts > 1 ? ' Posts' : ' Post'}
+                  {item._count.CollectionPost}
+                  {item._count.CollectionPost > 1 ? ' Posts' : ' Post'}
                 </span>
                 <div className="relative block aspect-square">
                   <Image
@@ -70,10 +71,10 @@ export default async function Page() {
                           fill
                           className="rounded-full object-cover"
                           loading="lazy"
-                          src={item.author.image || ''}
+                          src={item.User.image || ''}
                         />
                       </div>
-                      <span className="text-sm">{item.author.name}</span>
+                      <span className="text-sm">{item.User.name}</span>
                     </div>
                     <span className="text-xs text-gray-300 dark:text-gray-600">
                       •
