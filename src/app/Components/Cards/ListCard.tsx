@@ -11,7 +11,7 @@ interface Props {
 
 interface PostWithTags extends Post {
   PostTag: {
-    tag: {
+    Tag: {
       id: string
       displayTitle: string
       normalizedTagSlug: string
@@ -42,7 +42,7 @@ const ListCard = ({ post, slug }: Props) => {
                 className="transition-colors py-0.5  hover:text-white duration-300 nc-Badge inline-flex lg:py-1 rounded-full   relative  px-3 my-1 text-xs text-blue-800 bg-blue-100 hover:bg-blue-800"
               >
                 {
-                  post?.PostTag.find(s => s.tag.normalizedTagSlug === slug)?.tag
+                  post?.PostTag.find(s => s.Tag.normalizedTagSlug === slug)?.Tag
                     ?.displayTitle
                 }
               </a>

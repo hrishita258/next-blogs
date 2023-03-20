@@ -195,7 +195,7 @@ model Post {
   Comment        Comment[]
   Like           Like[]
   Notification   Notification[]
-  User           User             @relation(fields: [authorId], references: [id])
+  author         User             @relation(fields: [authorId], references: [id])
   Topics         Topics?          @relation(fields: [primaryTopicId], references: [id])
   PostTag        PostTag[]
   PostTopics     PostTopics[]

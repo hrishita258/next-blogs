@@ -11,7 +11,7 @@ interface ListCardWrapperProps {
 
 interface PostWithTagsAndAuthor extends Post {
   PostTag: {
-    tag: {
+    Tag: {
       id: string
       normalizedTagSlug: string
       displayTitle: string

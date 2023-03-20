@@ -7,7 +7,7 @@ async function getHomePageData() {
       author: true,
       PostTag: {
         select: {
-          tag: {
+          Tag: {
             select: {
               normalizedTagSlug: true,
               displayTitle: true,
@@ -18,7 +18,7 @@ async function getHomePageData() {
       },
       _count: {
         select: {
-          likes: true
+          Like: true
         }
       }
     },
@@ -28,7 +28,7 @@ async function getHomePageData() {
     include: {
       _count: {
         select: {
-          posts: true
+          Post: true
         }
       }
     },

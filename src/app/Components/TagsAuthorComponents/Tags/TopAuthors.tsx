@@ -7,7 +7,7 @@ interface TopAuthorsProps {
     name: string
     bio: string | null
     _count: {
-      posts: number
+      Post: number
     }
     email: string
   }[]

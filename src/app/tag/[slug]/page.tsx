@@ -13,7 +13,7 @@ async function getPostsByTag(slug: string) {
         {
           PostTag: {
             some: {
-              tag: {
+              Tag: {
                 normalizedTagSlug: slug
               }
             }
@@ -22,13 +22,13 @@ async function getPostsByTag(slug: string) {
         {
           PostTag: {
             some: {
-              post: {
+              Post: {
                 PostTag: {
                   some: {
-                    tag: {
+                    Tag: {
                       PostTag: {
                         some: {
-                          tag: {
+                          Tag: {
                             normalizedTagSlug: slug
                           }
                         }
@@ -52,7 +52,7 @@ async function getPostsByTag(slug: string) {
       },
       PostTag: {
         select: {
-          tag: {
+          Tag: {
             select: {
               displayTitle: true,
               normalizedTagSlug: true,
@@ -74,10 +74,10 @@ async function getPostsByTag(slug: string) {
         {
           PostTag: {
             some: {
-              post: {
+              Post: {
                 PostTag: {
                   some: {
-                    tag: {
+                    Tag: {
                       normalizedTagSlug: slug
                     }
                   }
@@ -89,13 +89,13 @@ async function getPostsByTag(slug: string) {
         {
           PostTag: {
             some: {
-              post: {
+              Post: {
                 PostTag: {
                   some: {
-                    tag: {
+                    Tag: {
                       PostTag: {
                         some: {
-                          tag: {
+                          Tag: {
                             normalizedTagSlug: slug
                           }
                         }
@@ -113,7 +113,7 @@ async function getPostsByTag(slug: string) {
       }
     },
     orderBy: {
-      posts: {
+      Post: {
         _count: 'desc'
       }
     },
@@ -122,11 +122,11 @@ async function getPostsByTag(slug: string) {
 
   const topAuthors = await prisma.user.findMany({
     where: {
-      posts: {
+      Post: {
         some: {
           PostTag: {
             some: {
-              tag: {
+              Tag: {
                 normalizedTagSlug: slug
               }
             }
@@ -142,12 +142,12 @@ async function getPostsByTag(slug: string) {
       email: true,
       _count: {
         select: {
-          posts: true
+          Post: true
         }
       }
     },
     orderBy: {
-      posts: {
+      Post: {
         _count: 'desc'
       }
     },
@@ -160,14 +160,14 @@ async function getPostsByTag(slug: string) {
       select: {
         PostTag: {
           select: {
-            post: true
+            Post: true
           }
         }
       }
     })
     .then(tag => {
-      const postIds = tag?.PostTag.map(post => post.post.id)
-      const authorIds = tag?.PostTag.map(post => post.post.authorId)
+      const postIds = tag?.PostTag.map(post => post.Post.id)
+      const authorIds = tag?.PostTag.map(post => post.Post.authorId)
       return {
         postCount: new Set(postIds).size,
         authorCount: new Set(authorIds).size
@@ -197,8 +197,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
                     <h1 className="ml-2  lg:text-4xl text-3xl lg:font-medium  text-ellipsis overflow-hidden max-h-[52px] break-words">
                       {
                         posts[0]?.PostTag.find(
-                          s => s.tag.normalizedTagSlug === slug
-                        )?.tag?.displayTitle
+                          s => s.Tag.normalizedTagSlug === slug
+                        )?.Tag?.displayTitle
                       }
                     </h1>
                   </div>

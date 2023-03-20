@@ -15,7 +15,7 @@ export async function GET(request: Request) {
         {
           PostTag: {
             some: {
-              tag: {
+              Tag: {
                 normalizedTagSlug: slug
               }
             }
@@ -24,13 +24,13 @@ export async function GET(request: Request) {
         {
           PostTag: {
             some: {
-              post: {
+              Post: {
                 PostTag: {
                   some: {
-                    tag: {
+                    Tag: {
                       PostTag: {
                         some: {
-                          tag: {
+                          Tag: {
                             normalizedTagSlug: slug
                           }
                         }
@@ -54,7 +54,7 @@ export async function GET(request: Request) {
       },
       PostTag: {
         select: {
-          tag: {
+          Tag: {
             select: {
               displayTitle: true,
               normalizedTagSlug: true,
