@@ -439,7 +439,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                             </div>
                             <div className="absolute top-3 inset-x-3 flex">
                               <div className=" py-1 px-4 bg-neutral-100 dark:bg-neutral-800 rounded-full flex items-center justify-center leading-none text-xs font-medium">
-                                {user?._count.posts}
+                                {user?._count.Post}
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"

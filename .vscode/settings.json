@@ -1,4 +1,3 @@
-{
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:14dc6a1c4815908e6ac171bf4f722625b3778a8ea8428d34b047a111cba6e666
+size 108

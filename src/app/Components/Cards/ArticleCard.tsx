@@ -1,5 +1,6 @@
 import { formatDate } from '@/Utils/formatDate'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface PostWithAuthorAndTags {
   id: string
@@ -63,10 +64,10 @@ const ArticleCard = ({ post }: Props) => {
             </a>
           </div>
         </div>
-        <a
-          href="https://ncmaz.chisnghiax.com/placeat-omnis-alias-quia-nihil-distinctio/"
+        <Link
+          href={'/article/' + post.slug}
           className="absolute block inset-0 bg-neutral-900 bg-opacity-20 opacity-0 transition-opacity"
-        ></a>
+        ></Link>
       </div>
       <div className="hidden absolute top-3 inset-x-3 sm:flex justify-between items-start space-x-4 z-10">
         <div className="nc-CategoryBadgeList flow-root ">
@@ -124,9 +125,9 @@ const ArticleCard = ({ post }: Props) => {
       <div className="space-y-2.5 mt-4 sm:px-2.5">
         <div className="nc-PostCardMetaV2 inline-flex items-center flex-wrap text-neutral-800 dark:text-neutral-200 overflow-hidden text-xs leading-none">
           <div className="relative flex sm:space-x-2 overflow-hidden">
-            <a
+            <Link
               className="hidden sm:flex flex-shrink-0 pt-1"
-              href="https://ncmaz.chisnghiax.com/author/admin/"
+              href={'/article/' + post.slug}
             >
               <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden z-0 text-neutral-100 uppercase font-semibold shadow-inner rounded-full h-9 w-9 text-base ring-1 ring-white/80 dark:ring-neutral-900">
                 <Image
@@ -140,9 +141,9 @@ const ArticleCard = ({ post }: Props) => {
                 />
                 <span className="wil-avatar__name">a</span>
               </div>
-            </a>
-            <a
-              href="https://ncmaz.chisnghiax.com/placeat-omnis-alias-quia-nihil-distinctio/"
+            </Link>
+            <Link
+              href={'/user/' + (post.author as any)?.username}
               className="grid grid-cols-1 overflow-hidden"
             >
               <h4 className="block font-semibold nc-card-title text-sm sm:text-base">
@@ -159,7 +160,7 @@ const ArticleCard = ({ post }: Props) => {
                   {formatDate(post?.createdAt)}
                 </span>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
