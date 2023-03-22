@@ -22,7 +22,10 @@ async function getHomePageData() {
         }
       }
     },
-    take: 12
+    take: 24,
+    orderBy: {
+      createdAt: 'desc'
+    }
   })
   const users = await prisma.user.findMany({
     include: {
@@ -32,9 +35,9 @@ async function getHomePageData() {
         }
       }
     },
-    orderBy: {
-      createdAt: 'desc'
-    },
+    // orderBy: {
+    //   createdAt: 'desc'
+    // },
     take: 12
   })
   const tags = await prisma.tag.findMany({

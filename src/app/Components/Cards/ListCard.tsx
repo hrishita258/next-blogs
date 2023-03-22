@@ -3,6 +3,7 @@
 import { formatDate } from '@/Utils/formatDate'
 import { Post } from '@prisma/client'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface Props {
   post: PostWithTags
@@ -29,10 +30,10 @@ const ListCard = ({ post, slug }: Props) => {
       key={post.id}
       className="relative flex group flex-row items-center p-3 sm:p-4 border-b mb-4"
     >
-      <a
-        href="https://ncmaz.chisnghiax.com/ut-non-rerum-quia-ea/"
+      <Link
+        href={'/article/' + post?.slug}
         className="absolute inset-0 z-0"
-      ></a>
+      ></Link>
       <div className="flex flex-col flex-grow">
         <div className="space-y-2 sm:space-y-3 sm:mb-4">
           <div className="nc-CategoryBadgeList flow-root ">
@@ -49,13 +50,9 @@ const ListCard = ({ post, slug }: Props) => {
             </div>
           </div>
           <h3 className="block font-semibold text-sm sm:text-lg nc-card-title">
-            <a
-              href="https://ncmaz.chisnghiax.com/ut-non-rerum-quia-ea/"
-              className="line-clamp-2 "
-              title="DIYer and TV host Trisha Hershberger’s journey through"
-            >
+            <Link href={'/article/' + post?.slug} className="line-clamp-2 ">
               {post?.title}
-            </a>
+            </Link>
           </h3>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm sm:text-base line-clamp-3">
             {post?.excerpt}
@@ -63,8 +60,8 @@ const ListCard = ({ post, slug }: Props) => {
           <div className="nc-PostCardMeta inline-flex items-center text-neutral-800 dark:text-neutral-200 overflow-hidden text-xs leading-none">
             {post.author ? (
               <>
-                <a
-                  href="https://ncmaz.chisnghiax.com/author/bayer-fredy/"
+                <Link
+                  href={'/article/' + post?.slug}
                   className="flex-shrink-0 relative flex items-center space-x-2 "
                 >
                   <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden z-0 text-neutral-100 uppercase font-semibold shadow-inner rounded-full h-5 w-5 sm:h-7 sm:w-7 text-xs sm:text-sm ring-1 ring-white/80 dark:ring-neutral-900">
@@ -81,7 +78,7 @@ const ListCard = ({ post, slug }: Props) => {
                   <span className="block text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white font-medium ">
                     <span className="line-clamp-1">{post.author?.name}</span>
                   </span>
-                </a>
+                </Link>
                 <span className="text-neutral-500 dark:text-neutral-400 mx-[6px] font-medium">
                   ·
                 </span>
@@ -202,8 +199,8 @@ const ListCard = ({ post, slug }: Props) => {
       </div>
 
       <div className="flex-shrink-0 ml-3 w-4/12 sm:w-24 md:w-40">
-        <a
-          href="https://ncmaz.chisnghiax.com/ut-non-rerum-quia-ea/"
+        <Link
+          href={'/article/' + post?.slug}
           className="w-full block h-0 aspect-h-16 aspect-w-16 rounded-md sm:rounded-xl overflow-hidden z-0"
         >
           <div className="nc-NcImage absolute inset-0 overflow-hidden z-0 mabeUrlOk">
@@ -219,7 +216,7 @@ const ListCard = ({ post, slug }: Props) => {
           <span>
             <div className="nc-PostTypeFeaturedIcon absolute left-1 bottom-1 sm:left-2 sm:bottom-2"></div>
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   )

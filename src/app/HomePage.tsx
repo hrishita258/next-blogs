@@ -420,7 +420,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                       <div key={user.id}>
                         <Link
                           scroll={false}
-                          href={'/@' + user.username}
+                          href={'/user/' + user.username}
                           className="flex flex-col overflow-hidden [ nc-box-has-hover nc-dark-box-bg-has-hover ] hover:!shadow-none"
                         >
                           <div className="relative flex-shrink-0 ">
@@ -439,7 +439,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                             </div>
                             <div className="absolute top-3 inset-x-3 flex">
                               <div className=" py-1 px-4 bg-neutral-100 dark:bg-neutral-800 rounded-full flex items-center justify-center leading-none text-xs font-medium">
-                                {user?._count.posts}
+                                {user?._count.Post}
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
