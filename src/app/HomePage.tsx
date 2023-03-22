@@ -420,7 +420,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                       <div key={user.id}>
                         <Link
                           scroll={false}
-                          href={'/@' + user.username}
+                          href={'/user/' + user.username}
                           className="flex flex-col overflow-hidden [ nc-box-has-hover nc-dark-box-bg-has-hover ] hover:!shadow-none"
                         >
                           <div className="relative flex-shrink-0 ">
@@ -521,45 +521,46 @@ const HomePage = ({ users, posts, tags }: Props) => {
                 {homeComponentData?.tags?.map((tag: Tag) => (
                   <SwiperSlide key={tag.id}>
                     <li key={tag.id} className="!h-auto">
-                      <a
-                        href="https://ncmaz.chisnghiax.com/category/photos/"
-                        className="nc-CardCategory4 flex flex-col "
-                        data-nc-id="CardCategory4"
+                      <Link
+                        scroll={false}
+                        href={'/tag/' + tag.normalizedTagSlug}
                       >
-                        <div className="flex-shrink-0 relative w-full aspect-w-7 aspect-h-5 h-0 rounded-3xl overflow-hidden z-0 group">
-                          <div
-                            className="nc-NcImage  overflow-hidden z-0 mabeUrlOk"
-                            data-nc-id="NcImage"
-                          >
-                            <Image
-                              src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2.jpeg"
-                              alt="Photos"
-                              className="object-cover w-full h-full rounded-2xl"
-                              loading="lazy"
-                              width={1}
-                              height={1}
-                              sizes="(max-width: 475px) 100vw, 475px"
-                            />
+                        <div className="nc-CardCategory4 flex flex-col ">
+                          <div className="flex-shrink-0 relative w-full aspect-w-7 aspect-h-5 h-0 rounded-3xl overflow-hidden z-0 group">
+                            <div
+                              className="nc-NcImage  overflow-hidden z-0 mabeUrlOk"
+                              data-nc-id="NcImage"
+                            >
+                              <Image
+                                src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2.jpeg"
+                                alt="Photos"
+                                className="object-cover w-full h-full rounded-2xl"
+                                loading="lazy"
+                                width={1}
+                                height={1}
+                                sizes="(max-width: 475px) 100vw, 475px"
+                              />
+                            </div>
+                            <div>
+                              <span className="nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs  text-indigo-800 bg-indigo-100  absolute top-3 left-3">
+                                #1
+                              </span>
+                            </div>
+                            <span className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-10 transition-opacity"></span>
                           </div>
-                          <div>
-                            <span className="nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs  text-indigo-800 bg-indigo-100  absolute top-3 left-3">
-                              #1
-                            </span>
+                          <div className="flex items-center mt-2.5 sm:mt-5">
+                            <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9 bg-indigo-500 rounded-full"></div>
+                            <div className="ml-3 truncate">
+                              <h3 className="text-base text-neutral-700 dark:text-neutral-100 font-medium truncate">
+                                {tag.displayTitle}
+                              </h3>
+                              <span className="block sm:mt-1 text-sm text-neutral-6000 dark:text-neutral-400">
+                                {(tag as any)._count?.PostTag} Articles
+                              </span>
+                            </div>
                           </div>
-                          <span className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-10 transition-opacity"></span>
                         </div>
-                        <div className="flex items-center mt-2.5 sm:mt-5">
-                          <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9 bg-indigo-500 rounded-full"></div>
-                          <div className="ml-3 truncate">
-                            <h3 className="text-base text-neutral-700 dark:text-neutral-100 font-medium truncate">
-                              {tag.displayTitle}
-                            </h3>
-                            <span className="block sm:mt-1 text-sm text-neutral-6000 dark:text-neutral-400">
-                              {(tag as any)._count?.PostTag} Articles
-                            </span>
-                          </div>
-                        </div>
-                      </a>
+                      </Link>
                     </li>
                   </SwiperSlide>
                 ))}

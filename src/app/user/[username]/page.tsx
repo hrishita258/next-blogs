@@ -1,5 +1,5 @@
-import prisma from '../../../prisma/client'
-import ListCard from '../Components/Cards/ListCard'
+import prisma from '../../../../prisma/client'
+import ListCard from '../../Components/Cards/ListCard'
 
 async function getPosts(username: string) {
   const posts = await prisma.user.findFirst({

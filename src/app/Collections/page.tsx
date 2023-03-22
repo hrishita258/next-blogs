@@ -30,7 +30,7 @@ export default async function Page() {
     <div className="container">
       <div className="grid gap-10 mt-10 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
         {collections.map(item => (
-          <Link key={item.id} href={'collections/' + item.slug}>
+          <Link key={item.id} href={'Collections/' + item.slug}>
             <div key={item.id} className="cursor-pointer group">
               <div className=" overflow-hidden transition-all  rounded-md dark:bg-gray-800   hover:scale-105">
                 <span className="inline-block text-sm  tracking-wider mb-1 text-pink-600">
