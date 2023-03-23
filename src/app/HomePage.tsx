@@ -1,6 +1,5 @@
 'use client'
 
-import { Tag } from '@prisma/client'
 import Image from 'next/image'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -432,7 +431,11 @@ const HomePage = ({ users, posts, tags }: Props) => {
                                   loading="lazy"
                                   fill
                                   src={
-                                    'https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-3330118.jpeg'
+                                    user?.Post &&
+                                    user?.Post[0] &&
+                                    user?.Post[0]?.bannerImage
+                                      ? user?.Post[0]?.bannerImage
+                                      : 'https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-3800412-1.jpeg'
                                   }
                                 />
                               </div>
@@ -474,7 +477,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                                 </span>
                               </h4>
                               <span className="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">
-                                UX Designer
+                                {'@' + user?.username}
                               </span>
                             </div>
                           </div>
@@ -518,7 +521,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                   }
                 }}
               >
-                {homeComponentData?.tags?.map((tag: Tag) => (
+                {homeComponentData?.tags?.map((tag: any) => (
                   <SwiperSlide key={tag.id}>
                     <li key={tag.id} className="!h-auto">
                       <Link
@@ -532,7 +535,13 @@ const HomePage = ({ users, posts, tags }: Props) => {
                               data-nc-id="NcImage"
                             >
                               <Image
-                                src="https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2.jpeg"
+                                src={
+                                  tag?.PostTag &&
+                                  tag?.PostTag[0] &&
+                                  tag?.PostTag[0]?.Post?.bannerImage
+                                    ? tag?.PostTag[0]?.Post?.bannerImage
+                                    : 'https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2.jpeg'
+                                }
                                 alt="Photos"
                                 className="object-cover w-full h-full rounded-2xl"
                                 loading="lazy"

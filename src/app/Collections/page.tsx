@@ -19,7 +19,10 @@ async function getCollections() {
         }
       }
     },
-    take: 20
+    take: 20,
+    orderBy: {
+      createdAt: 'desc'
+    }
   })
   return { collections }
 }

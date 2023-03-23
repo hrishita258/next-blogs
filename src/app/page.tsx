@@ -33,11 +33,20 @@ async function getHomePageData() {
         select: {
           Post: true
         }
+      },
+      Post: {
+        where: {
+          createdAt: {
+            gte: new Date(new Date().setDate(new Date().getDate() - 30))
+          }
+        },
+        select: {
+          bannerImage: true,
+          image: true
+        },
+        take: 1
       }
     },
-    // orderBy: {
-    //   createdAt: 'desc'
-    // },
     take: 12
   })
   const tags = await prisma.tag.findMany({
@@ -46,10 +55,22 @@ async function getHomePageData() {
         select: {
           PostTag: true
         }
+      },
+      PostTag: {
+        select: {
+          Post: {
+            select: {
+              bannerImage: true,
+              image: true
+            }
+          }
+        },
+        take: 1
       }
     },
     take: 12
   })
+
   return { posts, users, tags }
 }
 

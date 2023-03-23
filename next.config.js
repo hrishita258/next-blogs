@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true
   },
   images: {
-    domains: ['ncmaz.chisnghiax.com', 'miro.medium.com']
+    domains: ['ncmaz.chisnghiax.com', 'miro.medium.com', 'upload.wikimedia.org']
   }
 }
 

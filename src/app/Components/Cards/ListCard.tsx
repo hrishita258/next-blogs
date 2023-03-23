@@ -197,27 +197,28 @@ const ListCard = ({ post, slug }: Props) => {
           </div>
         </div>
       </div>
-
-      <div className="flex-shrink-0 ml-3 w-4/12 sm:w-24 md:w-40">
-        <Link
-          href={'/article/' + post?.slug}
-          className="w-full block h-0 aspect-h-16 aspect-w-16 rounded-md sm:rounded-xl overflow-hidden z-0"
-        >
-          <div className="nc-NcImage absolute inset-0 overflow-hidden z-0 mabeUrlOk">
-            <Image
-              src={post?.bannerImage || ''}
-              alt="DIYer and TV host Trisha Hershberger’s journey through"
-              className="object-cover w-full h-full group-hover:scale-105 duration-500 transition-transform"
-              loading="lazy"
-              fill
-              sizes="(max-width: 475px) 100vw, 475px"
-            />
-          </div>
-          <span>
-            <div className="nc-PostTypeFeaturedIcon absolute left-1 bottom-1 sm:left-2 sm:bottom-2"></div>
-          </span>
-        </Link>
-      </div>
+      {post?.bannerImage ? (
+        <div className="flex-shrink-0 ml-3 w-4/12 sm:w-24 md:w-40">
+          <Link
+            href={'/article/' + post?.slug}
+            className="w-full block h-0 aspect-h-16 aspect-w-16 rounded-md sm:rounded-xl overflow-hidden z-0"
+          >
+            <div className="nc-NcImage absolute inset-0 overflow-hidden z-0 mabeUrlOk">
+              <Image
+                src={post?.bannerImage || ''}
+                alt="DIYer and TV host Trisha Hershberger’s journey through"
+                className="object-cover w-full h-full group-hover:scale-105 duration-500 transition-transform"
+                loading="lazy"
+                fill
+                sizes="(max-width: 475px) 100vw, 475px"
+              />
+            </div>
+            <span>
+              <div className="nc-PostTypeFeaturedIcon absolute left-1 bottom-1 sm:left-2 sm:bottom-2"></div>
+            </span>
+          </Link>
+        </div>
+      ) : null}
     </div>
   )
 }
