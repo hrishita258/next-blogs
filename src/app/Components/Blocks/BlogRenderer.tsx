@@ -61,7 +61,7 @@ function BlogRenderer({ data }: BlogRendererProps) {
 
       return () => {
         ref.current?.destroy()
-        ref.current = null
+        ;(ref as any).current = null
       }
     }
   }, [isMounted])
@@ -108,7 +108,12 @@ function BlogRenderer({ data }: BlogRendererProps) {
     return null
   }
 
-  return <div id="editor" className="prose w-full mt-12"></div>
+  return (
+    <div
+      id="editor"
+      className="prose  lg:prose-lg xl:prose-xl  w-full mt-12"
+    ></div>
+  )
 }
 
 export default BlogRenderer

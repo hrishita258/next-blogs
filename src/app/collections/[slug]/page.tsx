@@ -1,4 +1,5 @@
 import ListCard from '@/app/Components/Cards/ListCard'
+import Image from 'next/image'
 import prisma from '../../../../prisma/client'
 
 async function getCollection(slug: string) {
@@ -69,19 +70,31 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <div className="flex flex-col gap-5  mx-auto md:flex-row relative">
-      <aside className="sticky top-16  self-start w-1/3">
+      <aside className="hidden 2xl:block sticky top-16  self-start w-1/3">
         <img
           src={collectionWithPosts?.image || ''}
           alt="sda"
           className="h-[92vh]"
         />
       </aside>
-      <article className="flex-1" style={{ margin: '210px 80px 80px 80px' }}>
+      <article className="flex-1 px-2 2xl:mt-[210px] 2xl:mx-[80px] 2xl:mb-[80px]">
+        <div className="flex justify-center p-3 2xl:hidden">
+          <div className="relative h-80 w-4/5">
+            <Image
+              alt="collection"
+              src={collectionWithPosts?.image || ''}
+              fill
+              loading="eager"
+            />
+          </div>
+        </div>
         <span className="transition-colors py-0.5  hover:text-white duration-300 nc-Badge inline-flex lg:py-1 rounded-full lg:font-medium  relative px-1 my-1  text-sm  text-blue-800 hover:bg-blue-800 uppercase">
           Collection
         </span>
-        <h1 className="text-6xl ">{collectionWithPosts?.name}</h1>
-        <p className="text-gray-800 mt-3 mb-9 text-lg">
+        <h1 className="2xl:text-6xl text-3xl font-semibold">
+          {collectionWithPosts?.name}
+        </h1>
+        <p className="2xl:text-gray-800 mt-3 mb-9 text-lg text-gray-500">
           {collectionWithPosts?.description}
         </p>
         <div className="flex items-end border-b mb-5 py-3">

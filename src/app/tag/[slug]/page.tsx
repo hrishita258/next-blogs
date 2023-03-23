@@ -7,174 +7,205 @@ import { AiFillTags } from 'react-icons/ai'
 import prisma from '../../../../prisma/client'
 
 async function getPostsByTag(slug: string) {
-  const posts = await prisma.post.findMany({
-    where: {
-      OR: [
-        {
-          PostTag: {
-            some: {
-              Tag: {
-                normalizedTagSlug: slug
-              }
-            }
-          }
+  const transaction = await prisma.$transaction([
+    // Get posts based on the topic slug and related topics
+    prisma.post.findMany({
+      where: {
+        isPublic: true,
+        Topics: {
+          slug: slug
         },
-        {
-          PostTag: {
+        OR: {
+          PostTopics: {
             some: {
-              Post: {
-                PostTag: {
-                  some: {
-                    Tag: {
-                      PostTag: {
-                        some: {
-                          Tag: {
-                            normalizedTagSlug: slug
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
+              Topics: {
+                slug: slug
               }
             }
           }
-        }
-      ]
-    },
-    include: {
-      author: {
-        select: {
-          id: true,
-          name: true,
-          image: true
         }
       },
-      PostTag: {
-        select: {
-          Tag: {
-            select: {
-              displayTitle: true,
-              normalizedTagSlug: true,
-              id: true
-            }
-          }
-        }
-      }
-    },
-    orderBy: {
-      published: 'desc'
-    },
-    take: 10
-  })
 
-  const relatedTags = await prisma.tag.findMany({
-    where: {
-      OR: [
-        {
-          PostTag: {
-            some: {
-              Post: {
-                PostTag: {
-                  some: {
-                    Tag: {
-                      normalizedTagSlug: slug
-                    }
-                  }
-                }
+      select: {
+        author: {
+          select: {
+            id: true,
+            name: true,
+            image: true,
+            email: true,
+            username: true
+          }
+        },
+        Topics: {
+          select: {
+            name: true,
+            slug: true
+          }
+        },
+        slug: true,
+        title: true,
+        excerpt: true,
+        PostTopics: {
+          select: {
+            Topics: {
+              select: {
+                id: true,
+                name: true,
+                slug: true
               }
             }
           }
         },
-        {
-          PostTag: {
-            some: {
-              Post: {
-                PostTag: {
-                  some: {
-                    Tag: {
-                      PostTag: {
-                        some: {
-                          Tag: {
-                            normalizedTagSlug: slug
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      NOT: {
-        normalizedTagSlug: slug
-      }
-    },
-    orderBy: {
-      Post: {
-        _count: 'desc'
-      }
-    },
-    take: 10
-  })
-
-  const topAuthors = await prisma.user.findMany({
-    where: {
-      Post: {
-        some: {
-          PostTag: {
-            some: {
-              Tag: {
-                normalizedTagSlug: slug
-              }
-            }
-          }
-        }
-      }
-    },
-    select: {
-      id: true,
-      name: true,
-      image: true,
-      bio: true,
-      email: true,
-      _count: {
-        select: {
-          Post: true
-        }
-      }
-    },
-    orderBy: {
-      Post: {
-        _count: 'desc'
-      }
-    },
-    take: 10
-  })
-
-  const { postCount, authorCount } = await prisma.tag
-    .findUnique({
-      where: { normalizedTagSlug: slug },
-      select: {
         PostTag: {
+          include: {
+            Tag: {
+              select: {
+                displayTitle: true,
+                normalizedTagSlug: true
+              }
+            }
+          }
+        }
+      },
+      orderBy: {
+        createdAt: 'desc'
+      },
+      take: 12
+    }),
+
+    //get related topic
+    prisma.topics.findMany({
+      where: {
+        Post: {
+          some: {
+            Topics: {
+              slug
+            }
+          }
+        },
+        NOT: {
+          slug: slug
+        }
+      },
+      take: 3,
+      orderBy: {
+        createdAt: 'desc'
+      }
+    }),
+
+    // Get top authors in this topic
+    prisma.user.findMany({
+      where: {
+        Post: {
+          some: {
+            isPublic: true,
+            Topics: {
+              slug: slug
+            }
+          }
+        }
+      },
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        image: true,
+        bio: true,
+        _count: {
           select: {
             Post: true
           }
         }
-      }
-    })
-    .then(tag => {
-      const postIds = tag?.PostTag.map(post => post.Post.id)
-      const authorIds = tag?.PostTag.map(post => post.Post.authorId)
-      return {
-        postCount: new Set(postIds).size,
-        authorCount: new Set(authorIds).size
-      }
-    })
+      },
+      orderBy: {
+        Post: {
+          _count: 'desc'
+        }
+      },
+      take: 12
+    }),
 
-  return { posts, relatedTags, topAuthors, postCount, authorCount }
+    //get authors and stories count in this
+    prisma.post.findMany({
+      where: {
+        Topics: {
+          slug: slug
+        },
+        OR: {
+          PostTopics: {
+            some: {
+              Topics: {
+                slug: slug
+              }
+            }
+          }
+        }
+      },
+      select: {
+        authorId: true
+      }
+    })
+  ])
+
+  // const relatedTags = await prisma.tag.findMany({
+  //   where: {
+  //     OR: [
+  //       {
+  //         PostTag: {
+  //           some: {
+  //             Post: {
+  //               PostTag: {
+  //                 some: {
+  //                   Tag: {
+  //                     normalizedTagSlug: slug
+  //                   }
+  //                 }
+  //               }
+  //             }
+  //           }
+  //         }
+  //       },
+  //       {
+  //         PostTag: {
+  //           some: {
+  //             Post: {
+  //               PostTag: {
+  //                 some: {
+  //                   Tag: {
+  //                     PostTag: {
+  //                       some: {
+  //                         Tag: {
+  //                           normalizedTagSlug: slug
+  //                         }
+  //                       }
+  //                     }
+  //                   }
+  //                 }
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  //     ],
+  //     NOT: {
+  //       normalizedTagSlug: slug
+  //     }
+  //   },
+  //   orderBy: {
+  //     Post: {
+  //       _count: 'desc'
+  //     }
+  //   },
+  //   take: 10
+  // })
+  console.log(JSON.stringify(transaction[3]))
+  return {
+    posts: transaction[0],
+    relatedTags: transaction[1],
+    topAuthors: transaction[2],
+    postCount: transaction[3].length,
+    authorCount: new Set(transaction[3].map(item => item.authorId)).size
+  }
 }
 
 export default async function Page({ params }: { params: { slug: string } }) {
