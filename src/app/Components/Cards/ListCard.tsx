@@ -18,6 +18,14 @@ interface PostWithTags extends Post {
       normalizedTagSlug: string
     }
   }[]
+  PostTopics: {
+    Topics: {
+      id: string
+      name: string
+      slug: string
+    }
+  }[]
+
   author: {
     id: string
     image: string | null
@@ -43,8 +51,8 @@ const ListCard = ({ post, slug }: Props) => {
                 className="transition-colors py-0.5  hover:text-white duration-300 nc-Badge inline-flex lg:py-1 rounded-full   relative  px-3 my-1 text-xs text-blue-800 bg-blue-100 hover:bg-blue-800"
               >
                 {
-                  post?.PostTag.find(s => s.Tag.normalizedTagSlug === slug)?.Tag
-                    ?.displayTitle
+                  post?.PostTopics.find(s => s.Topics.slug === slug)?.Topics
+                    ?.name
                 }
               </a>
             </div>

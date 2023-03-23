@@ -17,6 +17,13 @@ interface PostWithTagsAndAuthor extends Post {
       displayTitle: string
     }
   }[]
+  PostTopics: {
+    Topics: {
+      id: string
+      name: string
+      slug: string
+    }
+  }[]
   author: {
     id: string
     image: string | null

@@ -11,19 +11,23 @@ async function getPostsByTag(slug: string) {
     // Get posts based on the topic slug and related topics
     prisma.post.findMany({
       where: {
-        isPublic: true,
-        Topics: {
-          slug: slug
-        },
-        OR: {
-          PostTopics: {
-            some: {
-              Topics: {
-                slug: slug
+        OR: [
+          {
+            Topics: { slug }
+          },
+          {
+            PostTopics: {
+              some: {
+                Post: {
+                  OR: [
+                    { Topics: { slug } },
+                    { PostTopics: { some: { Topics: { slug } } } }
+                  ]
+                }
               }
             }
           }
-        }
+        ]
       },
 
       select: {
@@ -73,24 +77,40 @@ async function getPostsByTag(slug: string) {
       take: 12
     }),
 
-    //get related topic
     prisma.topics.findMany({
       where: {
-        Post: {
-          some: {
-            Topics: {
-              slug
+        OR: [
+          {
+            PostTopics: {
+              some: {
+                Post: {
+                  PostTopics: {
+                    some: {
+                      Topics: { slug }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            PostTopics: {
+              some: {
+                Post: {
+                  Topics: { slug }
+                }
+              }
             }
           }
-        },
-        NOT: {
-          slug: slug
-        }
+        ],
+        NOT: { slug }
       },
-      take: 3,
-      orderBy: {
-        createdAt: 'desc'
-      }
+      orderBy: [
+        {
+          PostTopics: { _count: 'desc' }
+        }
+      ],
+      take: 10
     }),
 
     // Get top authors in this topic
@@ -125,86 +145,37 @@ async function getPostsByTag(slug: string) {
       take: 12
     }),
 
-    //get authors and stories count in this
-    prisma.post.findMany({
+    // Get total post count and author count
+    prisma.post.groupBy({
+      by: ['authorId'],
       where: {
-        Topics: {
-          slug: slug
-        },
-        OR: {
-          PostTopics: {
-            some: {
-              Topics: {
-                slug: slug
-              }
-            }
-          }
-        }
+        OR: [
+          { Topics: { slug: slug } },
+          { PostTopics: { some: { Topics: { slug: slug } } } }
+        ]
       },
-      select: {
+      _count: {
         authorId: true
+      },
+      orderBy: {
+        _count: {
+          authorId: 'desc'
+        }
       }
     })
   ])
 
-  // const relatedTags = await prisma.tag.findMany({
-  //   where: {
-  //     OR: [
-  //       {
-  //         PostTag: {
-  //           some: {
-  //             Post: {
-  //               PostTag: {
-  //                 some: {
-  //                   Tag: {
-  //                     normalizedTagSlug: slug
-  //                   }
-  //                 }
-  //               }
-  //             }
-  //           }
-  //         }
-  //       },
-  //       {
-  //         PostTag: {
-  //           some: {
-  //             Post: {
-  //               PostTag: {
-  //                 some: {
-  //                   Tag: {
-  //                     PostTag: {
-  //                       some: {
-  //                         Tag: {
-  //                           normalizedTagSlug: slug
-  //                         }
-  //                       }
-  //                     }
-  //                   }
-  //                 }
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  //     ],
-  //     NOT: {
-  //       normalizedTagSlug: slug
-  //     }
-  //   },
-  //   orderBy: {
-  //     Post: {
-  //       _count: 'desc'
-  //     }
-  //   },
-  //   take: 10
-  // })
-  console.log(JSON.stringify(transaction[3]))
+  const authorCount = transaction[3].length
+  const storyCount = transaction[3].reduce(
+    (acc, curr) => acc + (curr?._count as any)?.authorId,
+    0
+  )
   return {
     posts: transaction[0],
     relatedTags: transaction[1],
     topAuthors: transaction[2],
-    postCount: transaction[3].length,
-    authorCount: new Set(transaction[3].map(item => item.authorId)).size
+    postCount: storyCount,
+    authorCount: authorCount
   }
 }
 
@@ -227,9 +198,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   <div>
                     <h1 className="ml-2  lg:text-4xl text-3xl lg:font-medium  text-ellipsis overflow-hidden max-h-[52px] break-words">
                       {
-                        posts[0]?.PostTag.find(
-                          s => s.Tag.normalizedTagSlug === slug
-                        )?.Tag?.displayTitle
+                        posts[0]?.PostTopics.find(s => s.Topics.slug === slug)
+                          ?.Topics?.name
                       }
                     </h1>
                   </div>

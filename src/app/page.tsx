@@ -5,13 +5,12 @@ async function getHomePageData() {
   const posts = await prisma.post.findMany({
     include: {
       author: true,
-      PostTag: {
+      PostTopics: {
         select: {
-          Tag: {
+          Topics: {
             select: {
-              normalizedTagSlug: true,
-              displayTitle: true,
-              id: true
+              name: true,
+              slug: true
             }
           }
         }
@@ -49,14 +48,16 @@ async function getHomePageData() {
     },
     take: 12
   })
-  const tags = await prisma.tag.findMany({
-    include: {
+  const tags = await prisma.topics.findMany({
+    select: {
+      name: true,
+      slug: true,
       _count: {
         select: {
-          PostTag: true
+          PostTopics: true
         }
       },
-      PostTag: {
+      PostTopics: {
         select: {
           Post: {
             select: {
@@ -70,7 +71,6 @@ async function getHomePageData() {
     },
     take: 12
   })
-
   return { posts, users, tags }
 }
 

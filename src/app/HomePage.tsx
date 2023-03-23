@@ -524,10 +524,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                 {homeComponentData?.tags?.map((tag: any) => (
                   <SwiperSlide key={tag.id}>
                     <li key={tag.id} className="!h-auto">
-                      <Link
-                        scroll={false}
-                        href={'/tag/' + tag.normalizedTagSlug}
-                      >
+                      <Link scroll={false} href={'/tag/' + tag.slug}>
                         <div className="nc-CardCategory4 flex flex-col ">
                           <div className="flex-shrink-0 relative w-full aspect-w-7 aspect-h-5 h-0 rounded-3xl overflow-hidden z-0 group">
                             <div
@@ -536,10 +533,10 @@ const HomePage = ({ users, posts, tags }: Props) => {
                             >
                               <Image
                                 src={
-                                  tag?.PostTag &&
-                                  tag?.PostTag[0] &&
-                                  tag?.PostTag[0]?.Post?.bannerImage
-                                    ? tag?.PostTag[0]?.Post?.bannerImage
+                                  tag?.PostTopics &&
+                                  tag?.PostTopics[0] &&
+                                  tag?.PostTopics[0]?.Post?.bannerImage
+                                    ? tag?.PostTopics[0]?.Post?.bannerImage
                                     : 'https://ncmaz.chisnghiax.com/wp-content/uploads/2021/09/pexels-photo-250591-2.jpeg'
                                 }
                                 alt="Photos"
@@ -561,10 +558,10 @@ const HomePage = ({ users, posts, tags }: Props) => {
                             <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9 bg-indigo-500 rounded-full"></div>
                             <div className="ml-3 truncate">
                               <h3 className="text-base text-neutral-700 dark:text-neutral-100 font-medium truncate">
-                                {tag.displayTitle}
+                                {tag.name}
                               </h3>
                               <span className="block sm:mt-1 text-sm text-neutral-6000 dark:text-neutral-400">
-                                {(tag as any)._count?.PostTag} Articles
+                                {(tag as any)._count?.PostTopics} Articles
                               </span>
                             </div>
                           </div>
