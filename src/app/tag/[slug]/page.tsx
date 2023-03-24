@@ -11,25 +11,8 @@ async function getPostsByTag(slug: string) {
     // Get posts based on the topic slug and related topics
     prisma.post.findMany({
       where: {
-        OR: [
-          {
-            Topics: { slug }
-          },
-          {
-            PostTopics: {
-              some: {
-                Post: {
-                  OR: [
-                    { Topics: { slug } },
-                    { PostTopics: { some: { Topics: { slug } } } }
-                  ]
-                }
-              }
-            }
-          }
-        ]
+        Topics: { slug }
       },
-
       select: {
         author: {
           select: {
@@ -164,7 +147,7 @@ async function getPostsByTag(slug: string) {
       }
     })
   ])
-
+  console.log(transaction[0][0].PostTopics)
   const authorCount = transaction[3].length
   const storyCount = transaction[3].reduce(
     (acc, curr) => acc + (curr?._count as any)?.authorId,
