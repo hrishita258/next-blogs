@@ -25,6 +25,17 @@ async function getPosts(username: string) {
                 }
               }
             }
+          },
+          PostTopics: {
+            select: {
+              Topics: {
+                select: {
+                  name: true,
+                  slug: true,
+                  id: true
+                }
+              }
+            }
           }
         }
       }

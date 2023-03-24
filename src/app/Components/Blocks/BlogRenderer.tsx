@@ -12,7 +12,7 @@ function BlogRenderer({ data }: BlogRendererProps) {
   const ref = React.useRef<EditorJS>()
   const [isMounted, setIsMounted] = React.useState<boolean>(false)
 
-  function initializeEditor() {
+  const initializeEditor = React.useCallback(async () => {
     if (!ref.current) {
       const editor = new EditorJS({
         holder: 'editor',
@@ -22,7 +22,7 @@ function BlogRenderer({ data }: BlogRendererProps) {
         readOnly: true, // make editor read-only
         tools: {
           list: require('@editorjs/list'),
-          code: require('@calumk/editorjs-codeflask'),
+          code: require('@editorjs/code'),
           quote: require('@editorjs/quote'),
           warning: require('@editorjs/warning'),
           delimiter: require('@editorjs/delimiter'),
@@ -47,7 +47,7 @@ function BlogRenderer({ data }: BlogRendererProps) {
         data
       })
     }
-  }
+  }, [data])
 
   React.useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -64,45 +64,7 @@ function BlogRenderer({ data }: BlogRendererProps) {
         ;(ref as any).current = null
       }
     }
-  }, [isMounted])
-
-  // React.useEffect(() => {
-  //   if (data && data.blocks) {
-  //     const editor = new EditorJS({
-  //       holder: 'editor',
-  //       readOnly: true, // make editor read-only
-  //       tools: {
-  //         list: require('@editorjs/list'),
-  //         code: require('@calumk/editorjs-codeflask'),
-  //         quote: require('@editorjs/quote'),
-  //         warning: require('@editorjs/warning'),
-  //         delimiter: require('@editorjs/delimiter'),
-  //         inlineCode: require('@editorjs/inline-code'),
-  //         linkTool: {
-  //           class: require('@editorjs/link'),
-  //           config: {
-  //             endpoint: 'http://localhost:3000/api/linkTool'
-  //           }
-  //         },
-  //         image: require('@editorjs/image'),
-  //         embed: require('@editorjs/embed'),
-  //         header: {
-  //           class: require('@editorjs/header'),
-  //           config: {
-  //             placeholder: 'Enter a heading...',
-  //             levels: [1, 2, 3, 4],
-  //             defaultLevel: 2
-  //           }
-  //         }
-  //       },
-  //       data
-  //     })
-
-  //     return () => {
-  //       editor.destroy()
-  //     }
-  //   }
-  // }, [data])
+  }, [initializeEditor, isMounted])
 
   if (!isMounted) {
     return null

@@ -39,10 +39,11 @@ const ListCard = ({ post, slug }: Props) => {
       className="relative flex group flex-row items-center p-3 sm:p-4 border-b mb-4"
     >
       <Link
+        key={post.id}
         href={'/article/' + post?.slug}
         className="absolute inset-0 z-0"
       ></Link>
-      <div className="flex flex-col flex-grow">
+      <div className="flex flex-col flex-grow" key={post.id}>
         <div className="space-y-2 sm:space-y-3 sm:mb-4">
           <div className="nc-CategoryBadgeList flow-root ">
             <div className="flex flex-wrap space-x-2 -my-1 ">
@@ -81,7 +82,9 @@ const ListCard = ({ post, slug }: Props) => {
                       loading="lazy"
                       fill
                     />
-                    <span className="wil-avatar__name">m</span>
+                    <span className="wil-avatar__name">
+                      {post?.author?.name.at(0)}
+                    </span>
                   </div>
                   <span className="block text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white font-medium ">
                     <span className="line-clamp-1">{post.author?.name}</span>

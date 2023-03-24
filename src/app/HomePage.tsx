@@ -55,7 +55,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                   >
                     <a
                       href="https://ncmaz.chisnghiax.com/doloremque-magnam-saepe-deserunt/"
-                      className="block flex-shrink-0 relative w-full h-0 aspect-w-4 aspect-h-3 rounded-3xl overflow-hidden z-0"
+                      className="block flex-shrink-0 relative w-full h-0 aspect-w-4  aspect-h-3 rounded-3xl overflow-hidden z-0"
                     >
                       <div
                         className="nc-NcImage absolute inset-0 overflow-hidden z-0 mabeUrlOk"
@@ -580,10 +580,10 @@ const HomePage = ({ users, posts, tags }: Props) => {
               background={'bg-neutral-100'}
               slider
             >
-              <div className="glide__track" data-glide-el="track">
-                <ul className="glide__slides">
+              <div>
+                <ul>
                   <li
-                    className="glide__slide !h-auto"
+                    className="!h-auto"
                     style={{ width: '227px', marginRight: '16px' }}
                   >
                     <a
