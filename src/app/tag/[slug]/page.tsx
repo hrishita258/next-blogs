@@ -147,6 +147,7 @@ async function getPostsByTag(slug: string) {
       }
     })
   ])
+
   const authorCount = transaction[3].length
   const storyCount = transaction[3].reduce(
     (acc, curr) => acc + (curr?._count as any)?.authorId,
