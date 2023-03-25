@@ -73,7 +73,7 @@ function BlogRenderer({ data }: BlogRendererProps) {
   return (
     <div
       id="editor"
-      className="prose  lg:prose-lg xl:prose-xl  w-full mt-12"
+      className="prose  lg:prose-lg prose-pink  w-full mt-12"
     ></div>
   )
 }

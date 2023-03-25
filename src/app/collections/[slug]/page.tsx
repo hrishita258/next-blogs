@@ -45,6 +45,17 @@ async function getCollection(slug: string) {
                   image: true,
                   id: true
                 }
+              },
+              PostTopics: {
+                select: {
+                  Topics: {
+                    select: {
+                      id: true,
+                      name: true,
+                      slug: true
+                    }
+                  }
+                }
               }
             }
           }
