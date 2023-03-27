@@ -9,66 +9,59 @@ export async function GET(request: Request) {
   if (!slug) return new Response('Slug is required', { status: 400 })
   if (!page) return new Response('Page is required', { status: 400 })
 
-  const posts = await prisma.post.findMany({
-    where: {
-      OR: [
-        {
-          PostTag: {
-            some: {
-              Tag: {
-                normalizedTagSlug: slug
+  const transaction = await prisma.$transaction([
+    // Get posts based on the topic slug and related topics
+    prisma.post.findMany({
+      where: {
+        Topics: { slug }
+      },
+      select: {
+        author: {
+          select: {
+            id: true,
+            name: true,
+            image: true,
+            email: true,
+            username: true
+          }
+        },
+        Topics: {
+          select: {
+            name: true,
+            slug: true
+          }
+        },
+        slug: true,
+        title: true,
+        excerpt: true,
+        PostTopics: {
+          select: {
+            Topics: {
+              select: {
+                id: true,
+                name: true,
+                slug: true
               }
             }
           }
         },
-        {
-          PostTag: {
-            some: {
-              Post: {
-                PostTag: {
-                  some: {
-                    Tag: {
-                      PostTag: {
-                        some: {
-                          Tag: {
-                            normalizedTagSlug: slug
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
+        PostTag: {
+          select: {
+            Tag: {
+              select: {
+                displayTitle: true,
+                normalizedTagSlug: true
               }
             }
           }
         }
-      ]
-    },
-    include: {
-      author: {
-        select: {
-          id: true,
-          name: true,
-          image: true
-        }
       },
-      PostTag: {
-        select: {
-          Tag: {
-            select: {
-              displayTitle: true,
-              normalizedTagSlug: true,
-              id: true
-            }
-          }
-        }
-      }
-    },
-    orderBy: {
-      published: 'desc'
-    },
-    skip: offset,
-    take: 10
-  })
-  return NextResponse.json(posts)
+      orderBy: {
+        createdAt: 'desc'
+      },
+      take: 12
+    })
+  ])
+
+  return NextResponse.json(transaction[0])
 }

@@ -391,6 +391,18 @@ const post = {
           ]
         }
       }
+    },
+    {
+      id: 'TG7nr1KJ4V',
+      type: 'embed',
+      data: {
+        service: 'github',
+        source: 'https://gist.github.com/ahoward/1105733.js',
+        embed: 'https://gist.github.com/ahoward/1105733.js',
+        width: 580,
+        height: 320,
+        caption: ''
+      }
     }
   ]
 }
@@ -568,84 +580,132 @@ const Editor: React.FC<EditorProps> = ({ initialValue, onChange }) => {
       //   ]
       // },
       data: post,
+      // tools: {
+      //   header: {
+      //     class: require('@editorjs/header'),
+      //     config: {
+      //       placeholder: 'Enter a heading...',
+      //       levels: [1, 2, 3, 4],
+      //       defaultLevel: 2
+      //     }
+      //   },
+      //   list: {
+      //     class: require('@editorjs/list'),
+      //     inlineToolbar: true
+      //   },
+      //   code: require('@calumk/editorjs-codeflask'),
+      //   quote: {
+      //     class: require('@editorjs/quote'),
+      //     inlineToolbar: true,
+      //     shortcut: 'CMD+SHIFT+O',
+      //     config: {
+      //       quotePlaceholder: 'Enter a quote',
+      //       captionPlaceholder: "Quote's author"
+      //     }
+      //   },
+      //   warning: {
+      //     class: require('@editorjs/warning'),
+      //     inlineToolbar: true,
+      //     shortcut: 'CMD+SHIFT+W',
+      //     config: {
+      //       titlePlaceholder: 'Title',
+      //       messagePlaceholder: 'Message'
+      //     }
+      //   },
+      //   delimiter: {
+      //     class: require('@editorjs/delimiter'),
+      //     inlineToolbar: true
+      //   },
+      //   inlineCode: {
+      //     class: require('@editorjs/inline-code'),
+      //     shortcut: 'CMD+SHIFT+C'
+      //   },
+      //   linkTool: {
+      //     class: require('@editorjs/link'),
+      //     config: {
+      //       endpoint: 'http://localhost:3001/api/linkTool'
+      //     }
+      //   },
+      //   image: {
+      //     class: require('@editorjs/image'),
+      //     config: {
+      //       uploader: {
+      //         uploadByFile(file: File) {
+      //           const formData = new FormData()
+      //           formData.append('image', file)
+
+      //           return fetch('http://localhost:3000/api/images/upload', {
+      //             method: 'POST',
+      //             body: formData
+      //           })
+      //             .then(response => response.json())
+      //             .then(data => {
+      //               return {
+      //                 success: 1,
+      //                 file: {
+      //                   url: data.url
+      //                 }
+      //               }
+      //             })
+      //             .catch(() => {
+      //               return {
+      //                 success: 0,
+      //                 message: 'Image upload failed'
+      //               }
+      //             })
+      //         },
+      //         uploadByUrl(url: string) {}
+      //       }
+      //     }
+      //   },
+      //   embed: require('@editorjs/embed')
+      //   // embed: {
+      //   //   class: require('@editorjs/embed'),
+      //   //   // config: {
+      //   //   //   services: {
+      //   //   //     youtube: true,
+      //   //   //     coub: true,
+      //   //   //     codepen: true,
+      //   //   //     instagram: true,
+      //   //   //     twitter: true,
+      //   //   //     facebook: true,
+      //   //   //     vk: true,
+      //   //   //     twitch: true,
+      //   //   //     github: {
+      //   //   //       regex:
+      //   //   //         /https?:\/\/github.com\/([^\/]*)\/([^\/]*)\/(blob|tree)\/([^\/]*)\/(.+)/,
+      //   //   //       embedUrl: 'https://github.com/<%= remote_id %>',
+      //   //   //       html: "<iframe height='500' frameborder='0' scrolling='no' style='width:100%;'></iframe>",
+      //   //   //       height: 500,
+      //   //   //       width: 600,
+      //   //   //       id: (groups: any[]) =>
+      //   //   //         `github-${groups[1]}-${groups[2]}-${groups[4]}-${groups[5]}`
+      //   //   //     },
+      //   //   //     medium: {
+      //   //   //       regex: /https?:\/\/medium.com\/([\w-]+)\/([\w-]+)-([\w-]+)/,
+      //   //   //       embedUrl: 'https://medium.com/media/<%= remote_id %>',
+      //   //   //       html: "<iframe src='https://medium.com/media/<%= remote_id %>' frameborder='0' scrolling='auto' height='550' width='100%'></iframe>",
+      //   //   //       height: 550,
+      //   //   //       width: '100%'
+      //   //   //     }
+      //   //   //   }
+      //   //   // }
+      //   // }
+      // }
       tools: {
-        header: {
-          class: require('@editorjs/header'),
-          config: {
-            placeholder: 'Enter a heading...',
-            levels: [1, 2, 3, 4],
-            defaultLevel: 2
-          }
-        },
-        list: {
-          class: require('@editorjs/list'),
-          inlineToolbar: true
-        },
-        code: require('@calumk/editorjs-codeflask'),
-        quote: {
-          class: require('@editorjs/quote'),
-          inlineToolbar: true,
-          shortcut: 'CMD+SHIFT+O',
-          config: {
-            quotePlaceholder: 'Enter a quote',
-            captionPlaceholder: "Quote's author"
-          }
-        },
-        warning: {
-          class: require('@editorjs/warning'),
-          inlineToolbar: true,
-          shortcut: 'CMD+SHIFT+W',
-          config: {
-            titlePlaceholder: 'Title',
-            messagePlaceholder: 'Message'
-          }
-        },
-        delimiter: {
-          class: require('@editorjs/delimiter'),
-          inlineToolbar: true
-        },
-        inlineCode: {
-          class: require('@editorjs/inline-code'),
-          shortcut: 'CMD+SHIFT+C'
-        },
+        list: require('@editorjs/list'),
+        code: require('@editorjs/code'),
+        quote: require('@editorjs/quote'),
+        warning: require('@editorjs/warning'),
+        delimiter: require('@editorjs/delimiter'),
+        inlineCode: require('@editorjs/inline-code'),
         linkTool: {
           class: require('@editorjs/link'),
           config: {
-            endpoint: 'http://localhost:3001/api/linkTool'
+            endpoint: 'http://localhost:3000/api/linkTool'
           }
         },
-        image: {
-          class: require('@editorjs/image'),
-          config: {
-            uploader: {
-              uploadByFile(file: File) {
-                const formData = new FormData()
-                formData.append('image', file)
-
-                return fetch('http://localhost:3000/api/images/upload', {
-                  method: 'POST',
-                  body: formData
-                })
-                  .then(response => response.json())
-                  .then(data => {
-                    return {
-                      success: 1,
-                      file: {
-                        url: data.url
-                      }
-                    }
-                  })
-                  .catch(() => {
-                    return {
-                      success: 0,
-                      message: 'Image upload failed'
-                    }
-                  })
-              },
-              uploadByUrl(url: string) {}
-            }
-          }
-        },
+        image: require('@editorjs/image'),
         embed: {
           class: require('@editorjs/embed'),
           config: {
@@ -659,14 +719,12 @@ const Editor: React.FC<EditorProps> = ({ initialValue, onChange }) => {
               vk: true,
               twitch: true,
               github: {
-                regex:
-                  /https?:\/\/github.com\/([^\/]*)\/([^\/]*)\/(blob|tree)\/([^\/]*)\/(.+)/,
-                embedUrl: 'https://github.com/<%= remote_id %>',
-                html: "<iframe height='500' frameborder='0' scrolling='no' style='width:100%;'></iframe>",
-                height: 500,
-                width: 600,
-                id: (groups: any[]) =>
-                  `github-${groups[1]}-${groups[2]}-${groups[4]}-${groups[5]}`
+                regex: /https?:\/\/gist.github.com\/(.+)\/(\w+)\.js/,
+                embedUrl: 'https://gist.github.com/<%= remote_id %>',
+                html: '<script src="https://gist.github.com/<%= remote_id %>.js"></script>',
+                height: null,
+                width: null,
+                id: (groups: any[]) => `github-${groups[1]}-${groups[2]}`
               },
               medium: {
                 regex: /https?:\/\/medium.com\/([\w-]+)\/([\w-]+)-([\w-]+)/,
@@ -677,6 +735,26 @@ const Editor: React.FC<EditorProps> = ({ initialValue, onChange }) => {
               }
             }
           }
+        },
+        header: {
+          class: require('@editorjs/header'),
+          config: {
+            placeholder: 'Enter a heading...',
+            levels: [1, 2, 3, 4],
+            defaultLevel: 2
+          }
+        },
+        table: {
+          class: require('@editorjs/table'),
+          inlineToolbar: true
+        },
+        marker: {
+          class: require('@editorjs/marker'),
+          shortcut: 'CMD+SHIFT+M'
+        },
+        checkList: {
+          class: require('@editorjs/checklist'),
+          inlineToolbar: true
         }
       }
     })

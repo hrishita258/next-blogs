@@ -42,11 +42,13 @@ const ListCardWrapper = ({ initialPosts, slug }: ListCardWrapperProps) => {
 
     if (!res.ok) throw new Error('Failed to fetch data')
     const newPosts = await res.json()
+    console.log(newPosts)
     if (newPosts.length === 0) {
       setHasMore(false)
     } else {
       setPosts([...posts, ...newPosts])
       setCurrentPage(currentPage + 1)
+      console.log({ currentPage })
     }
   }, [currentPage, posts, slug])
 
@@ -77,7 +79,7 @@ const ListCardWrapper = ({ initialPosts, slug }: ListCardWrapperProps) => {
       {posts?.map(post => (
         <ListCard key={post.id} post={post} slug={slug} />
       ))}
-      <div id="bottom" />
+      <div id="bottom" key={'some'} />
     </div>
   )
 }

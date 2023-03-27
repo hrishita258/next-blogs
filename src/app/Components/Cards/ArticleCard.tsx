@@ -3,7 +3,6 @@
 import { formatDate } from '@/Utils/formatDate'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 
 interface PostWithAuthorAndTags {
   id: string
@@ -44,8 +43,6 @@ interface Props {
 }
 
 const ArticleCard = ({ post }: Props) => {
-  const [error, setError] = useState<any>(false)
-
   return (
     <div key={post.id} className="nc-Card10V2 relative flex flex-col h-full">
       <div className="block group rounded-xl sm:rounded-3xl flex-shrink-0 relative w-full aspect-w-16 aspect-h-9 overflow-hidden z-0">
@@ -58,14 +55,13 @@ const ArticleCard = ({ post }: Props) => {
               <div className="nc-NcImage absolute inset-0 overflow-hidden z-0 mabeUrlOk">
                 <Image
                   src={
-                    error
-                      ? 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Image_not_available.png/640px-Image_not_available.png'
-                      : post.bannerImage
+                    post.bannerImage !== 'NULL'
+                      ? post?.bannerImage
+                      : 'https://cdni.iconscout.com/illustration/premium/thumb/photographer-3462310-2895992.png?f=webp'
                   }
                   className="object-cover w-full h-full"
                   alt={post.slug}
                   loading="lazy"
-                  onError={() => setError(true)}
                   width={1}
                   height={1}
                   sizes="(max-width: 640px) 100vw, 640px"

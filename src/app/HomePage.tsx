@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import { formatDate } from '@/Utils/formatDate'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Navigation, Pagination } from 'swiper'
@@ -29,7 +30,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
   const [swiperState, setSwiperState] = useState<any>(null)
 
   return (
-    <main className="pb-16 relative overflow-hidden">
+    <main className="pb-16 relative overflow-hidden" key={'homepage'}>
       <div
         className="nc-BgGlassmorphism absolute inset-x-0 md:top-10 xl:top-20 min-h-0 pl-20 py-24 flex overflow-hidden z-0"
         data-nc-id="BgGlassmorphism"
@@ -625,7 +626,9 @@ const HomePage = ({ users, posts, tags }: Props) => {
             {/* fifth */}
             <Section
               title={'Featured Articles 🧬'}
-              subtitle={'This is sub-heading of section'}
+              subtitle={
+                'Unpacking the mysteries of dark matter: what we know so far'
+              }
               slider
             >
               <Swiper
@@ -656,7 +659,7 @@ const HomePage = ({ users, posts, tags }: Props) => {
                   ?.filter((p: any) => p.isFeatured)
                   ?.map((post: any) => (
                     <SwiperSlide key={post.id}>
-                      <li className="!h-auto">
+                      <li className="!h-auto" key={post.id}>
                         <div className="nc-Card7 relative flex flex-col group rounded-lg sm:rounded-3xl z-0 overflow-hidden  h-full">
                           <div className="ncmaz-button-like-post hidden sm:block absolute top-3 right-3 z-10">
                             <button className="simplefavorite-button active has-count">
@@ -687,7 +690,11 @@ const HomePage = ({ users, posts, tags }: Props) => {
                           >
                             <div className="nc-NcImage absolute inset-0 overflow-hidden z-0  mabeUrlOk">
                               <Image
-                                src={post.bannerImage}
+                                src={
+                                  post.bannerImage !== 'NULL'
+                                    ? post?.bannerImage
+                                    : 'https://cdni.iconscout.com/illustration/premium/thumb/photographer-3462310-2895992.png?f=webp'
+                                }
                                 alt="Quae quis vel sit"
                                 className="object-cover w-full h-full rounded-lg sm:rounded-3xl "
                                 loading="lazy"
@@ -783,10 +790,10 @@ const HomePage = ({ users, posts, tags }: Props) => {
                               </div>
                               <div className="overflow-hidden">
                                 <h4 className="text-sm text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white font-medium truncate">
-                                  admin
+                                  {post?.author?.name}
                                 </h4>
                                 <span className="flex items-center mt-1 text-xs text-neutral-500 dark:text-neutral-400 truncate">
-                                  <span>Sep 02, 2021</span>
+                                  <span>{formatDate(post?.createdAt)}</span>
                                   <span className="hidden lg:inline mx-1 transition-opacity ">
                                     ·
                                   </span>

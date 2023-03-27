@@ -1,81 +1,26 @@
+import fs from 'fs'
 import { NextResponse } from 'next/server'
 import prisma from '../../../../prisma/client'
 
 export async function GET(request: Request) {
-  // const existingTags = await prisma.tag.findMany({
-  //   select: { normalizedTagSlug: true }
-  // })
-  // const existingTagSlugs = new Set(
-  //   existingTags.map(tag => tag.normalizedTagSlug)
-  // )
+  function readJsonFile(filePath: string): Promise<any> {
+    return new Promise((resolve, reject) => {
+      fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+          reject(err)
+        } else {
+          try {
+            const jsonData = JSON.parse(data)
+            resolve(jsonData)
+          } catch (err) {
+            reject(err)
+          }
+        }
+      })
+    })
+  }
 
-  // const newTags = []
-  // for (const item of data[0].data.tagFeed.items) {
-  //   for (const tag of item.post.tags) {
-  //     if (!existingTagSlugs.has(tag.normalizedTagSlug)) {
-  //       existingTagSlugs.add(tag.normalizedTagSlug)
-  //       newTags.push({
-  //         displayTitle: tag.displayTitle,
-  //         normalizedTagSlug: tag.normalizedTagSlug
-  //       })
-  //     }
-  //   }
-  // }
-
-  // if (newTags.length > 0) {
-  //   await prisma.tag.createMany({
-  //     data: newTags
-  //   })
-  // }
-
-  // const users = await prisma.user.findMany()
-  // const tags = await prisma.tag.findMany()
-
-  // const posts = await Promise.all(
-  //   data[0].data.tagFeed.items.map(async (postData, i) => {
-  //     const { post } = postData as any
-  //     const user = users[(Math.random() * 25) | 0].id
-  //     return await prisma.post.create({
-  //       data: {
-  //         authorId: user,
-  //         title: post.title,
-  //         slug: post.uniqueSlug,
-  //         bannerImage: 'https://miro.medium.com/v2/' + post.previewImage.id,
-  //         image: '',
-  //         isFeatured: i % 2 === 0,
-  //         isPremium: i % 3 === 0,
-  //         published: true,
-  //         isPublic: true,
-  //         content: post.extendedPreviewContent?.subtitle,
-  //         PostTag: {
-  //           createMany: {
-  //             data: post.tags.map((tag: any) => {
-  //               const tagId = tags.find(
-  //                 t => t.normalizedTagSlug === tag.normalizedTagSlug
-  //               )?.id
-  //               return { tagId }
-  //             })
-  //           }
-  //         }
-  //       }
-  //     })
-  //   })
-  // )
-
-  // const result = await prisma.user.createMany({
-  //   data: users.map(user => {
-  //     return {
-  //       image: 'https://miro.medium.com/v2/' + user.imageId,
-  //       email: user.id + '@sanchaar.com',
-  //       username: user.username,
-  //       bio: user.bio,
-  //       password: '123456',
-  //       name: user.name
-  //     }
-  //   })
-  // })
-
-  // const data = await request.json()
+  const jsonFile = await readJsonFile('src/data.json')
 
   const mapping: any = {
     P: 'paragraph',
@@ -268,16 +213,20 @@ export async function GET(request: Request) {
 
     const promises = rows.map(async row => {
       try {
-        const result = await fetch(
-          'http://localhost:4000/idharseudhar?slug=' + row.slug
+        const result = jsonFile.find(
+          (item: any) => item[0].data.postResult.uniqueSlug === row.slug
         )
-        const data = await result.json()
-        const content = await convertToEditorJSData(data)
-        await prisma.post.update({
-          where: { id: row.id },
-          data: { content }
-        })
-        return { status: 'fulfilled', value: row.id }
+        if (result) {
+          const data = result[0].data.postResult.content.bodyModel.paragraphs
+          const content = await convertToEditorJSData(data)
+          if (content) {
+            await prisma.post.update({
+              where: { id: row.id },
+              data: { content }
+            })
+            return { status: 'fulfilled', value: row.id }
+          }
+        }
       } catch (err) {
         return { status: 'rejected', reason: err, value: row.id }
       }
@@ -285,7 +234,7 @@ export async function GET(request: Request) {
 
     const results = await Promise.allSettled(promises)
 
-    console.log(`Processed ${results.length} rows`)
+    // console.log(results.filter((item: any) => item.status === 'fulfilled'))
 
     offset += batchSize
     console.log(`Offset: ${offset}`)
