@@ -1,5 +1,6 @@
 import ListCardWrapper from '@/app/Components/TagsAuthorComponents/Tags/ListCardWrapper'
 import RelatedTags from '@/app/Components/TagsAuthorComponents/Tags/RelatedTags'
+import RightSideWrapper from '@/app/Components/TagsAuthorComponents/Tags/RightSideWrapper'
 import Stat from '@/app/Components/TagsAuthorComponents/Tags/Stat'
 import TopAuthors from '@/app/Components/TagsAuthorComponents/Tags/TopAuthors'
 import { serializeObject } from '@/Utils/serializeObejct'
@@ -125,7 +126,7 @@ async function getPostsByTag(slug: string) {
           _count: 'desc'
         }
       },
-      take: 12
+      take: 10
     }),
 
     // Get total post count and author count
@@ -239,21 +240,23 @@ export default async function Page({ params }: { params: { slug: string } }) {
               />
             </div>
             <div className="lg:col-span-4 border-l p-9 pt-0 hidden lg:block">
-              <aside className="sticky top-[80px] self-start w-full">
-                <div>
-                  {/* first */}
-                  <Stat
-                    postCount={postCount}
-                    authorCount={authorCount}
-                    UsersImages={UsersImages}
-                  />
-                  {/* second */}
-                  <RelatedTags relatedTags={relatedTags} />
+              <RightSideWrapper>
+                <aside className="self-start w-full sticky">
+                  <div className="sticky">
+                    {/* first */}
+                    <Stat
+                      postCount={postCount}
+                      authorCount={authorCount}
+                      UsersImages={UsersImages}
+                    />
+                    {/* second */}
+                    <RelatedTags relatedTags={relatedTags} />
 
-                  {/* third */}
-                  <TopAuthors topAuthors={topAuthors} />
-                </div>
-              </aside>
+                    {/* third */}
+                    <TopAuthors topAuthors={topAuthors.slice(0, 5)} />
+                  </div>
+                </aside>
+              </RightSideWrapper>
             </div>
           </div>
         </div>

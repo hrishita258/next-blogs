@@ -77,7 +77,7 @@ const ListCardWrapper = ({ initialPosts, slug }: ListCardWrapperProps) => {
       {posts?.map(post => (
         <ListCard key={post.id} post={post} slug={slug} />
       ))}
-      <div id="bottom" />
+      <div id="bottom" key={'some'} />
     </div>
   )
 }

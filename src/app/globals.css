@@ -7,8 +7,14 @@
   width: 100% !important;
 }
 
-.codex-editor {
-  max-width: 800px !important;
+@media (min-width: 1280px) {
+  .codex-editor {
+    width: 800px !important;
+  }
+}
+
+.codex-editor__redactor {
+  padding-bottom: 25px !important;
 }
 
 .\!container {
